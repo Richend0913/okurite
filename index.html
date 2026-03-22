@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okurite｜大切な人に贈る、特別なギフトを見つけよう</title>
+  <meta name="description" content="母の日・父の日・誕生日・お祝いに。シーンに合わせた上質なギフトをご提案。大切な人への贈り物選びをお手伝いします。">
+  <meta name="keywords" content="ギフト,プレゼント,贈り物,母の日,父の日,誕生日,お祝い,お中元,お歳暮,還暦">
+  <meta name="google-site-verification" content="GRXPtbHLxfl8zA96yG12Rml4YJ00PvNXt6lHKJOYQiE" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">Okurite</div>
+      <button class="hamburger" onclick="document.querySelector('.nav').classList.toggle('open')">&#9776;</button>
+      <ul class="nav">
+        <li><a href="#categories">カテゴリ</a></li>
+        <li><a href="#popular">人気ギフト</a></li>
+        <li><a href="#scene">シーンで選ぶ</a></li>
+        <li><a href="#budget">予算で選ぶ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div>
+      <h1>大切な人に、<span>特別な贈り物</span>を</h1>
+      <p>シーンに合わせた上質なギフトをご提案。<br>あなたの「ありがとう」を形にします。</p>
+      <a href="#categories" class="btn-primary">ギフトを探す</a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- カテゴリ -->
+  <section class="section" id="categories">
+    <h2 class="section-title">贈る相手で選ぶ</h2>
+    <p class="section-sub">誰に贈りますか？</p>
+    <div class="cat-grid">
+      <div class="cat-card" onclick="scrollToSection('popular')">
+        <div class="cat-icon">👩</div>
+        <h3>お母さんへ</h3>
+        <p>母の日・誕生日・還暦祝い</p>
+      </div>
+      <div class="cat-card" onclick="scrollToSection('popular')">
+        <div class="cat-icon">👨</div>
+        <h3>お父さんへ</h3>
+        <p>父の日・誕生日・退職祝い</p>
+      </div>
+      <div class="cat-card" onclick="scrollToSection('popular')">
+        <div class="cat-icon">👶</div>
+        <h3>お子さまへ</h3>
+        <p>入学祝い・誕生日・クリスマス</p>
+      </div>
+      <div class="cat-card" onclick="scrollToSection('popular')">
+        <div class="cat-icon">👫</div>
+        <h3>友人へ</h3>
+        <p>誕生日・結婚祝い・出産祝い</p>
+      </div>
+      <div class="cat-card" onclick="scrollToSection('popular')">
+        <div class="cat-icon">💼</div>
+        <h3>ビジネス</h3>
+        <p>お中元・お歳暮・昇進祝い・手土産</p>
+      </div>
+      <div class="cat-card" onclick="scrollToSection('popular')">
+        <div class="cat-icon">💑</div>
+        <h3>パートナーへ</h3>
+        <p>記念日・誕生日・バレンタイン</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 人気ギフト -->
+  <section class="section" id="popular">
+    <h2 class="section-title">人気のギフト</h2>
+    <p class="section-sub">今、選ばれている贈り物</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-img">🌸</div>
+        <div class="product-info">
+          <div class="product-name">プリザーブドフラワー ボックスアレンジ</div>
+          <div class="product-desc">枯れないお花のギフト。母の日や誕生日に。高級感のあるボックス入り。</div>
+          <div class="product-price">¥4,980</div>
+          <div class="product-tags">
+            <span class="product-tag">母の日</span>
+            <span class="product-tag">誕生日</span>
+            <span class="product-tag">女性向け</span>
+          </div>
+          <div class="buy-links">
+            <a href="#" class="buy-amazon">Amazonで見る</a>
+            <a href="#" class="buy-rakuten">楽天で見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🍫</div>
+        <div class="product-info">
+          <div class="product-name">ゴディバ ゴールドコレクション 20粒</div>
+          <div class="product-desc">世界が認める高級チョコレート。特別な日の贈り物に最適。</div>
+          <div class="product-price">¥5,400</div>
+          <div class="product-tags">
+            <span class="product-tag">お祝い</span>
+            <span class="product-tag">ビジネス</span>
+            <span class="product-tag">定番</span>
+          </div>
+          <div class="buy-links">
+            <a href="#" class="buy-amazon">Amazonで見る</a>
+            <a href="#" class="buy-rakuten">楽天で見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🧴</div>
+        <div class="product-info">
+          <div class="product-name">SABON ボディスクラブ ギフトセット</div>
+          <div class="product-desc">イスラエル発の人気ボディケア。女性への贈り物に喜ばれる定番。</div>
+          <div class="product-price">¥6,200</div>
+          <div class="product-tags">
+            <span class="product-tag">女性向け</span>
+            <span class="product-tag">誕生日</span>
+            <span class="product-tag">美容</span>
+          </div>
+          <div class="buy-links">
+            <a href="#" class="buy-amazon">Amazonで見る</a>
+            <a href="#" class="buy-rakuten">楽天で見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🍶</div>
+        <div class="product-info">
+          <div class="product-name">獺祭 純米大吟醸 磨き三割九分 720ml</div>
+          <div class="product-desc">日本を代表する銘酒。お父さんへの贈り物や接待の手土産に。</div>
+          <div class="product-price">¥3,300</div>
+          <div class="product-tags">
+            <span class="product-tag">父の日</span>
+            <span class="product-tag">男性向け</span>
+            <span class="product-tag">お酒</span>
+          </div>
+          <div class="buy-links">
+            <a href="#" class="buy-amazon">Amazonで見る</a>
+            <a href="#" class="buy-rakuten">楽天で見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">💊</div>
+        <div class="product-info">
+          <div class="product-name">マルチビタミン＆ミネラル プレミアム</div>
+          <div class="product-desc">健康を気遣う贈り物。毎日の栄養補給に。親御さんへのギフトに。</div>
+          <div class="product-price">¥2,980</div>
+          <div class="product-tags">
+            <span class="product-tag">健康</span>
+            <span class="product-tag">サプリ</span>
+            <span class="product-tag">親向け</span>
+          </div>
+          <div class="buy-links">
+            <a href="#" class="buy-amazon">Amazonで見る</a>
+            <a href="#" class="buy-rakuten">楽天で見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">⌚</div>
+        <div class="product-info">
+          <div class="product-name">ダニエルウェリントン クラシックウォッチ</div>
+          <div class="product-desc">シンプルで洗練されたデザイン。大切な人への特別な贈り物に。</div>
+          <div class="product-price">¥22,000</div>
+          <div class="product-tags">
+            <span class="product-tag">記念日</span>
+            <span class="product-tag">パートナー</span>
+            <span class="product-tag">高級</span>
+          </div>
+          <div class="buy-links">
+            <a href="#" class="buy-amazon">Amazonで見る</a>
+            <a href="#" class="buy-rakuten">楽天で見る</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- シーンで選ぶ -->
+  <section class="section" id="scene">
+    <h2 class="section-title">シーンで選ぶ</h2>
+    <p class="section-sub">どんな場面での贈り物ですか？</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-icon">🎂</div>
+        <h3>誕生日</h3>
+        <p>年に一度の特別な日に</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🌷</div>
+        <h3>母の日</h3>
+        <p>いつもありがとうの気持ちを</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">👔</div>
+        <h3>父の日</h3>
+        <p>お父さんへの感謝を形に</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">💒</div>
+        <h3>結婚祝い</h3>
+        <p>新しい門出を祝って</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🎓</div>
+        <h3>入学・卒業祝い</h3>
+        <p>新たなスタートに</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🎁</div>
+        <h3>お中元・お歳暮</h3>
+        <p>季節のご挨拶に</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 予算で選ぶ -->
+  <section class="section" id="budget">
+    <h2 class="section-title">予算で選ぶ</h2>
+    <p class="section-sub">ご予算に合わせてお探しいただけます</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-icon">🪙</div>
+        <h3>〜3,000円</h3>
+        <p>ちょっとした感謝の気持ちに</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">💰</div>
+        <h3>3,000〜5,000円</h3>
+        <p>定番の価格帯で選ぶ</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">💎</div>
+        <h3>5,000〜10,000円</h3>
+        <p>少し贅沢な贈り物を</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">👑</div>
+        <h3>10,000円〜</h3>
+        <p>特別な日にふさわしい一品</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Okurite. All rights reserved.</p>
+    <p style="margin-top:8px;">当サイトはアフィリエイトプログラムに参加しています。</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
