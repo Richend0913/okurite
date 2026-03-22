@@ -40,32 +40,32 @@
     <h2 class="section-title">贈る相手で選ぶ</h2>
     <p class="section-sub">誰に贈りますか？</p>
     <div class="cat-grid">
-      <div class="cat-card" onclick="scrollToSection('popular')">
+      <div class="cat-card" data-filter="target:mother" onclick="setFilterFromCard(this)">
         <div class="cat-icon">Mother</div>
         <h3>お母さんへ</h3>
         <p>母の日・誕生日・還暦祝い</p>
       </div>
-      <div class="cat-card" onclick="scrollToSection('popular')">
+      <div class="cat-card" data-filter="target:father" onclick="setFilterFromCard(this)">
         <div class="cat-icon">Father</div>
         <h3>お父さんへ</h3>
         <p>父の日・誕生日・退職祝い</p>
       </div>
-      <div class="cat-card" onclick="scrollToSection('popular')">
+      <div class="cat-card" data-filter="target:kids" onclick="setFilterFromCard(this)">
         <div class="cat-icon">Kids</div>
         <h3>お子さまへ</h3>
         <p>入学祝い・誕生日・クリスマス</p>
       </div>
-      <div class="cat-card" onclick="scrollToSection('popular')">
+      <div class="cat-card" data-filter="target:friends" onclick="setFilterFromCard(this)">
         <div class="cat-icon">Friends</div>
         <h3>友人へ</h3>
         <p>誕生日・結婚祝い・出産祝い</p>
       </div>
-      <div class="cat-card" onclick="scrollToSection('popular')">
+      <div class="cat-card" data-filter="target:business" onclick="setFilterFromCard(this)">
         <div class="cat-icon">Business</div>
         <h3>ビジネス</h3>
         <p>お中元・お歳暮・昇進祝い・手土産</p>
       </div>
-      <div class="cat-card" onclick="scrollToSection('popular')">
+      <div class="cat-card" data-filter="target:partner" onclick="setFilterFromCard(this)">
         <div class="cat-icon">Partner</div>
         <h3>パートナーへ</h3>
         <p>記念日・誕生日・バレンタイン</p>
@@ -75,120 +75,56 @@
 
   <hr class="divider">
 
-  <!-- 人気ギフト -->
+  <!-- ギフト一覧 -->
   <section class="section" id="popular">
-    <h2 class="section-title">人気のギフト</h2>
-    <p class="section-sub">今、選ばれている贈り物</p>
-    <div class="product-grid">
+    <h2 class="section-title">ギフトを探す</h2>
+    <p class="section-sub">条件を組み合わせて、ぴったりのギフトを見つけましょう</p>
 
-      <div class="product-card">
-        <div class="product-img">Preserved Flower</div>
-        <div class="product-info">
-          <div class="product-name">プリザーブドフラワー ボックスアレンジ</div>
-          <div class="product-desc">枯れないお花のギフト。母の日や誕生日に。高級感のあるボックス入り。</div>
-          <div class="product-price">¥4,980</div>
-          <div class="product-tags">
-            <span class="product-tag">母の日</span>
-            <span class="product-tag">誕生日</span>
-            <span class="product-tag">女性向け</span>
-          </div>
-          <div class="buy-links">
-            <a href="#" class="buy-amazon">Amazonで見る</a>
-            <a href="#" class="buy-rakuten">楽天で見る</a>
-          </div>
+    <!-- 組み合わせフィルター -->
+    <div style="background:#fff; border:1px solid rgba(180,160,120,.15); border-radius:14px; padding:24px; margin-bottom:32px;">
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
+        <div style="flex:1; min-width:150px;">
+          <label style="font-size:.75rem; color:#999; display:block; margin-bottom:4px;">贈る相手</label>
+          <select id="filterTarget" onchange="applyFilters()" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; font-size:.9rem; color:#333;">
+            <option value="">すべて</option>
+            <option value="mother">お母さん</option>
+            <option value="father">お父さん</option>
+            <option value="kids">お子さま</option>
+            <option value="friends">友人</option>
+            <option value="business">ビジネス</option>
+            <option value="partner">パートナー</option>
+          </select>
+        </div>
+        <div style="flex:1; min-width:150px;">
+          <label style="font-size:.75rem; color:#999; display:block; margin-bottom:4px;">シーン</label>
+          <select id="filterScene" onchange="applyFilters()" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; font-size:.9rem; color:#333;">
+            <option value="">すべて</option>
+            <option value="birthday">誕生日</option>
+            <option value="mothers_day">母の日</option>
+            <option value="fathers_day">父の日</option>
+            <option value="wedding">結婚祝い</option>
+            <option value="school">入学・卒業祝い</option>
+            <option value="seasonal">お中元・お歳暮</option>
+            <option value="anniversary">記念日</option>
+            <option value="baby">出産祝い</option>
+          </select>
+        </div>
+        <div style="flex:1; min-width:150px;">
+          <label style="font-size:.75rem; color:#999; display:block; margin-bottom:4px;">予算</label>
+          <select id="filterBudget" onchange="applyFilters()" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; font-size:.9rem; color:#333;">
+            <option value="">すべて</option>
+            <option value="3000">〜3,000円</option>
+            <option value="5000">3,000〜5,000円</option>
+            <option value="10000">5,000〜10,000円</option>
+            <option value="99999">10,000円〜</option>
+          </select>
         </div>
       </div>
+      <div id="filterResult" style="font-size:.85rem; color:#8b6914;"></div>
+    </div>
 
-      <div class="product-card">
-        <div class="product-img">GODIVA Chocolate</div>
-        <div class="product-info">
-          <div class="product-name">ゴディバ ゴールドコレクション 20粒</div>
-          <div class="product-desc">世界が認める高級チョコレート。特別な日の贈り物に最適。</div>
-          <div class="product-price">¥5,400</div>
-          <div class="product-tags">
-            <span class="product-tag">お祝い</span>
-            <span class="product-tag">ビジネス</span>
-            <span class="product-tag">定番</span>
-          </div>
-          <div class="buy-links">
-            <a href="#" class="buy-amazon">Amazonで見る</a>
-            <a href="#" class="buy-rakuten">楽天で見る</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-img">SABON Body Care</div>
-        <div class="product-info">
-          <div class="product-name">SABON ボディスクラブ ギフトセット</div>
-          <div class="product-desc">イスラエル発の人気ボディケア。女性への贈り物に喜ばれる定番。</div>
-          <div class="product-price">¥6,200</div>
-          <div class="product-tags">
-            <span class="product-tag">女性向け</span>
-            <span class="product-tag">誕生日</span>
-            <span class="product-tag">美容</span>
-          </div>
-          <div class="buy-links">
-            <a href="#" class="buy-amazon">Amazonで見る</a>
-            <a href="#" class="buy-rakuten">楽天で見る</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-img">Dassai Sake</div>
-        <div class="product-info">
-          <div class="product-name">獺祭 純米大吟醸 磨き三割九分 720ml</div>
-          <div class="product-desc">日本を代表する銘酒。お父さんへの贈り物や接待の手土産に。</div>
-          <div class="product-price">¥3,300</div>
-          <div class="product-tags">
-            <span class="product-tag">父の日</span>
-            <span class="product-tag">男性向け</span>
-            <span class="product-tag">お酒</span>
-          </div>
-          <div class="buy-links">
-            <a href="#" class="buy-amazon">Amazonで見る</a>
-            <a href="#" class="buy-rakuten">楽天で見る</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-img">Supplement</div>
-        <div class="product-info">
-          <div class="product-name">マルチビタミン＆ミネラル プレミアム</div>
-          <div class="product-desc">健康を気遣う贈り物。毎日の栄養補給に。親御さんへのギフトに。</div>
-          <div class="product-price">¥2,980</div>
-          <div class="product-tags">
-            <span class="product-tag">健康</span>
-            <span class="product-tag">サプリ</span>
-            <span class="product-tag">親向け</span>
-          </div>
-          <div class="buy-links">
-            <a href="#" class="buy-amazon">Amazonで見る</a>
-            <a href="#" class="buy-rakuten">楽天で見る</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-img">Daniel Wellington</div>
-        <div class="product-info">
-          <div class="product-name">ダニエルウェリントン クラシックウォッチ</div>
-          <div class="product-desc">シンプルで洗練されたデザイン。大切な人への特別な贈り物に。</div>
-          <div class="product-price">¥22,000</div>
-          <div class="product-tags">
-            <span class="product-tag">記念日</span>
-            <span class="product-tag">パートナー</span>
-            <span class="product-tag">高級</span>
-          </div>
-          <div class="buy-links">
-            <a href="#" class="buy-amazon">Amazonで見る</a>
-            <a href="#" class="buy-rakuten">楽天で見る</a>
-          </div>
-        </div>
-      </div>
-
+    <div class="product-grid" id="productGrid">
+      <p id="loadingMsg" style="text-align:center; color:#aaa; grid-column:1/-1;">読み込み中...</p>
     </div>
   </section>
 
@@ -267,10 +203,119 @@
     <p style="margin-top:8px;">当サイトはアフィリエイトプログラムに参加しています。</p>
   </footer>
 
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
   <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAyfqJPXfSTVJ0XaUUt0v15HyWbAsHDYW4",
+      authDomain: "jobconnect-app-54a70.firebaseapp.com",
+      projectId: "jobconnect-app-54a70",
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    let allProducts = [];
+    const targetLabels = { mother:'お母さん', father:'お父さん', kids:'お子さま', friends:'友人', business:'ビジネス', partner:'パートナー' };
+    const sceneLabels = { birthday:'誕生日', mothers_day:'母の日', fathers_day:'父の日', wedding:'結婚祝い', school:'入学祝い', seasonal:'お中元・お歳暮', anniversary:'記念日', baby:'出産祝い' };
+
+    // Firestore読み込み
+    async function loadProducts() {
+      const snapshot = await db.collection('gifts').orderBy('createdAt', 'desc').get();
+      allProducts = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      applyFilters();
+    }
+
+    // フィルター適用
+    function applyFilters() {
+      const target = document.getElementById('filterTarget').value;
+      const scene = document.getElementById('filterScene').value;
+      const budget = document.getElementById('filterBudget').value;
+
+      let filtered = allProducts;
+
+      if (target) filtered = filtered.filter(p => p.targets && p.targets.includes(target));
+      if (scene) filtered = filtered.filter(p => p.scenes && p.scenes.includes(scene));
+      if (budget) {
+        const b = parseInt(budget);
+        if (b === 3000) filtered = filtered.filter(p => p.price <= 3000);
+        else if (b === 5000) filtered = filtered.filter(p => p.price > 3000 && p.price <= 5000);
+        else if (b === 10000) filtered = filtered.filter(p => p.price > 5000 && p.price <= 10000);
+        else if (b === 99999) filtered = filtered.filter(p => p.price > 10000);
+      }
+
+      const result = document.getElementById('filterResult');
+      result.textContent = filtered.length + ' 件のギフトが見つかりました';
+
+      renderProducts(filtered);
+    }
+
+    // 商品カード描画
+    function renderProducts(products) {
+      const grid = document.getElementById('productGrid');
+
+      if (products.length === 0) {
+        grid.innerHTML = '<p style="text-align:center; color:#aaa; grid-column:1/-1; padding:40px 0;">条件に合うギフトが見つかりませんでした。<br>管理ページから商品を登録してください。</p>';
+        return;
+      }
+
+      grid.innerHTML = products.map(p => {
+        const tags = [
+          ...(p.targets || []).map(t => targetLabels[t] || t),
+          ...(p.scenes || []).map(s => sceneLabels[s] || s),
+        ].slice(0, 4);
+
+        let buyLinks = '';
+        if (p.amazonUrl && p.rakutenUrl) {
+          buyLinks = `<div class="buy-links"><a href="${p.amazonUrl}" target="_blank" rel="noopener" class="buy-amazon">Amazonで見る</a><a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-rakuten">楽天で見る</a></div>`;
+        } else if (p.amazonUrl) {
+          buyLinks = `<a href="${p.amazonUrl}" target="_blank" rel="noopener" class="buy-link">Amazonで見る</a>`;
+        } else if (p.rakutenUrl) {
+          buyLinks = `<a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-link" style="background:#bf0000;">楽天で見る</a>`;
+        }
+
+        return `
+          <div class="product-card">
+            <div class="product-img" ${p.image ? `style="background:url('${p.image}') center/cover; font-size:0;"` : ''}>${p.image ? '' : p.name.substring(0, 20)}</div>
+            <div class="product-info">
+              <div class="product-name">${p.name}</div>
+              <div class="product-desc">${p.desc}</div>
+              <div class="product-price">&yen;${p.price.toLocaleString()}</div>
+              <div class="product-tags">${tags.map(t => `<span class="product-tag">${t}</span>`).join('')}</div>
+              ${buyLinks}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // カテゴリカードからフィルター設定
+    function setFilter(type, value) {
+      if (type === 'target') document.getElementById('filterTarget').value = value;
+      if (type === 'scene') document.getElementById('filterScene').value = value;
+      applyFilters();
+      document.getElementById('popular')?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function setFilterFromCard(el) {
+      const filter = el.dataset.filter;
+      if (!filter) { scrollToSection('popular'); return; }
+      const [type, value] = filter.split(':');
+      // リセットしてからセット
+      document.getElementById('filterTarget').value = '';
+      document.getElementById('filterScene').value = '';
+      document.getElementById('filterBudget').value = '';
+      if (type === 'target') document.getElementById('filterTarget').value = value;
+      if (type === 'scene') document.getElementById('filterScene').value = value;
+      applyFilters();
+      document.getElementById('popular')?.scrollIntoView({ behavior: 'smooth' });
+    }
+
     function scrollToSection(id) {
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     }
+
+    // 初期化
+    document.addEventListener('DOMContentLoaded', loadProducts);
   </script>
 </body>
 </html>
