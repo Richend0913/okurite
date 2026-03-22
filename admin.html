@@ -156,8 +156,19 @@
     auth.onAuthStateChanged(user => {
       currentUser = user;
       if (user) {
+        // 管理者チェック
+        if (ADMIN_UIDS.length > 0 && !ADMIN_UIDS.includes(user.uid)) {
+          document.getElementById('loginArea').innerHTML = `
+            <div style="color:#c62828; margin-bottom:16px;">管理者権限がありません。</div>
+            <p style="color:#999; font-size:.85rem;">このページは管理者専用です。</p>
+            <button onclick="auth.signOut(); location.reload();" style="margin-top:16px; padding:10px 24px; border:1px solid #ddd; border-radius:8px; background:#fff; cursor:pointer;">ログアウト</button>
+          `;
+          return;
+        }
         document.getElementById('loginArea').style.display = 'none';
         document.getElementById('adminArea').style.display = 'block';
+        // 初回ログイン時にUID確認用
+        console.log('Admin UID:', user.uid);
         loadProducts();
       }
     });
