@@ -109,12 +109,13 @@ a:hover { color: #c49b1a; }
   border-color: rgba(180,160,120,.3);
 }
 .cat-icon {
-  width: 56px; height: 56px; margin: 0 auto 16px;
+  width: 64px; height: 64px; margin: 0 auto 14px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(196,155,26,.1), rgba(139,105,20,.05));
-  border: 1px solid rgba(139,105,20,.15);
+  background: linear-gradient(135deg, #f5efe5, #ece5d8);
+  border: 1px solid rgba(139,105,20,.12);
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.3rem; color: #8b6914;
+  font-size: .7rem; font-weight: 600; color: #8b6914;
+  letter-spacing: .03em; font-family: 'Helvetica Neue', sans-serif;
 }
 .cat-card h3 { font-size: 1.1rem; font-weight: 400; color: #3a3a3a; margin-bottom: 8px; letter-spacing: .03em; }
 .cat-card p { font-size: .8rem; color: #aaa; font-weight: 300; }
