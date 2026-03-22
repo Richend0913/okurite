@@ -37,17 +37,25 @@ a:hover { color: #c49b1a; }
   min-height: 85vh;
   display: flex; align-items: center; justify-content: center;
   text-align: center;
-  background: linear-gradient(160deg, #fdfbf7 0%, #f5efe5 40%, #faf8f5 100%);
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  position: relative;
   padding: 120px 24px 80px;
 }
+.hero::before {
+  content: '';
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(255,255,255,.82);
+}
+.hero > div { position: relative; z-index: 1; }
 .hero h1 {
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(2rem, 6vw, 3.2rem);
   font-weight: 400;
   color: #3a3a3a;
-  letter-spacing: .05em;
-  margin-bottom: 16px;
+  letter-spacing: .08em;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
-.hero h1 span { color: #8b6914; }
+.hero h1 span { color: #8b6914; display: block; }
 .hero p { font-size: 1rem; color: #999; max-width: 520px; margin: 0 auto 36px; font-weight: 300; }
 .btn-primary {
   display: inline-block;
@@ -100,7 +108,14 @@ a:hover { color: #c49b1a; }
   box-shadow: 0 12px 40px rgba(139,105,20,.1);
   border-color: rgba(180,160,120,.3);
 }
-.cat-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.cat-icon {
+  width: 56px; height: 56px; margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(196,155,26,.1), rgba(139,105,20,.05));
+  border: 1px solid rgba(139,105,20,.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; color: #8b6914;
+}
 .cat-card h3 { font-size: 1.1rem; font-weight: 400; color: #3a3a3a; margin-bottom: 8px; letter-spacing: .03em; }
 .cat-card p { font-size: .8rem; color: #aaa; font-weight: 300; }
 
@@ -124,9 +139,9 @@ a:hover { color: #c49b1a; }
 .product-img {
   width: 100%; height: 200px;
   object-fit: cover;
-  background: #f0ece4;
+  background: linear-gradient(135deg, #f5f0e8, #ece5d8);
   display: flex; align-items: center; justify-content: center;
-  font-size: 3rem;
+  font-size: 1rem; color: #8b6914; font-style: italic; letter-spacing: .05em;
 }
 .product-info { padding: 18px; }
 .product-name { font-size: .95rem; font-weight: 400; color: #3a3a3a; margin-bottom: 6px; }
