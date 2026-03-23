@@ -263,8 +263,8 @@
     const RAKUTEN_AFF_ID = '522e40a0.f2dc4208.522e40a1.385f875e';
     const AMAZON_TAG = 'okuritegift-22';
 
-    // 管理者のUID
-    const ADMIN_UIDS = ['nIdxWXfimibcDSQZpx4039tH2bD2'];
+    // 許可されたメールアドレス
+    const ADMIN_EMAILS = ['ryosuke459a@gmail.com'];
 
     // 検索で選んだ商品を保持
     let selectedProduct = null;
@@ -272,10 +272,10 @@
     auth.onAuthStateChanged(user => {
       currentUser = user;
       if (user) {
-        if (ADMIN_UIDS.length > 0 && !ADMIN_UIDS.includes(user.uid)) {
+        if (!ADMIN_EMAILS.includes(user.email)) {
           document.getElementById('loginArea').innerHTML = `
             <div style="color:#c62828; margin-bottom:16px;">管理者権限がありません。</div>
-            <p style="color:#999; font-size:.85rem;">このページは管理者専用です。</p>
+            <p style="color:#999; font-size:.85rem;">このページは管理者専用です。<br>許可されたアカウントでログインしてください。</p>
             <button onclick="auth.signOut(); location.reload();" style="margin-top:16px; padding:10px 24px; border:1px solid #ddd; border-radius:8px; background:#fff; cursor:pointer;">ログアウト</button>
           `;
           return;
