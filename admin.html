@@ -47,12 +47,42 @@
     .status-error { background: #ffebee; color: #c62828; }
     .login-box { text-align: center; padding: 60px 20px; }
     .login-btn { padding: 14px 36px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border: none; border-radius: 10px; font-size: 1rem; cursor: pointer; }
+
+    /* 商品検索 */
+    .search-box { display: flex; gap: 8px; margin-bottom: 16px; }
+    .search-box input { flex: 1; }
+    .search-box button { padding: 10px 20px; background: #8b6914; color: #fff; border: none; border-radius: 8px; font-size: .9rem; cursor: pointer; white-space: nowrap; }
+    .search-box button:hover { opacity: .9; }
+    .search-box button:disabled { background: #ccc; cursor: not-allowed; }
+    .search-results { max-height: 500px; overflow-y: auto; }
+    .search-item {
+      display: flex; gap: 12px; padding: 12px; border: 1px solid #eee; border-radius: 8px;
+      margin-bottom: 8px; background: #fafafa; transition: all .2s; cursor: pointer;
+    }
+    .search-item:hover { border-color: #8b6914; background: #fffdf5; }
+    .search-item img { width: 80px; height: 80px; object-fit: contain; border-radius: 6px; background: #fff; }
+    .search-item-info { flex: 1; min-width: 0; }
+    .search-item-name { font-size: .85rem; font-weight: 600; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .search-item-price { font-size: .9rem; color: #c62828; font-weight: 700; margin-bottom: 2px; }
+    .search-item-shop { font-size: .7rem; color: #999; }
+    .search-item .btn-add { padding: 6px 14px; background: #8b6914; color: #fff; border: none; border-radius: 6px; font-size: .8rem; cursor: pointer; white-space: nowrap; align-self: center; }
+    .search-item .btn-add:hover { opacity: .9; }
+    .search-loading { text-align: center; padding: 20px; color: #999; }
+    .search-empty { text-align: center; padding: 20px; color: #999; font-size: .85rem; }
+    .tab-btns { display: flex; gap: 8px; margin-bottom: 20px; }
+    .tab-btn { flex: 1; padding: 10px; text-align: center; border: 1px solid #ddd; border-radius: 8px; font-size: .85rem; cursor: pointer; background: #fff; transition: all .2s; }
+    .tab-btn.active { background: #8b6914; color: #fff; border-color: #8b6914; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .settings-row { display: flex; gap: 8px; align-items: end; margin-bottom: 12px; }
+    .settings-row .form-group { flex: 1; margin-bottom: 0; }
+    .settings-row button { padding: 10px 16px; background: #4caf50; color: #fff; border: none; border-radius: 8px; font-size: .85rem; cursor: pointer; white-space: nowrap; height: 42px; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Okurite 管理ページ</h1>
-    <p class="subtitle">商品の登録・編集・削除</p>
+    <p class="subtitle">商品検索・登録・編集・削除</p>
 
     <!-- ログイン前 -->
     <div id="loginArea" class="card login-box">
@@ -64,61 +94,140 @@
     <div id="adminArea" style="display:none;">
       <div id="statusMsg" class="status"></div>
 
-      <!-- 商品登録フォーム -->
-      <div class="card">
-        <h2>商品を登録</h2>
-        <form id="productForm" onsubmit="return handleSubmit(event)">
+      <!-- API設定 -->
+      <div class="card" id="settingsCard">
+        <h2>API設定</h2>
+        <p style="font-size:.8rem; color:#999; margin-bottom:12px;">楽天APIのApplication IDが必要です。<a href="https://webservice.rakuten.co.jp/app/create" target="_blank">こちらで無料取得</a></p>
+        <div class="settings-row">
           <div class="form-group">
-            <label>商品名 *</label>
-            <input type="text" id="pName" required placeholder="例: プリザーブドフラワー ボックスアレンジ">
+            <label>楽天 Application ID</label>
+            <input type="text" id="rakutenAppId" placeholder="例: 1234567890123456789">
+          </div>
+          <button onclick="saveSettings()">保存</button>
+        </div>
+        <div id="settingsStatus" style="font-size:.8rem; color:#4caf50; margin-top:4px;"></div>
+      </div>
+
+      <!-- タブ切り替え -->
+      <div class="tab-btns">
+        <div class="tab-btn active" onclick="switchTab('search')">楽天から検索して登録</div>
+        <div class="tab-btn" onclick="switchTab('manual')">手動で登録</div>
+      </div>
+
+      <!-- 楽天検索タブ -->
+      <div class="tab-content active" id="tab-search">
+        <div class="card">
+          <h2>楽天市場で商品検索</h2>
+          <div class="search-box">
+            <input type="text" id="searchKeyword" placeholder="例: プリザーブドフラワー ギフト 母の日" onkeydown="if(event.key==='Enter')searchRakuten()">
+            <button id="searchBtn" onclick="searchRakuten()">検索</button>
+          </div>
+          <div id="searchResults"></div>
+        </div>
+
+        <!-- 検索から選択した商品の登録 -->
+        <div class="card" id="searchRegisterCard" style="display:none;">
+          <h2>商品を登録</h2>
+          <div style="display:flex; gap:12px; margin-bottom:16px; padding:12px; background:#fafafa; border-radius:8px;">
+            <img id="srImage" style="width:80px; height:80px; object-fit:contain; border-radius:6px;">
+            <div>
+              <div id="srName" style="font-size:.9rem; font-weight:600;"></div>
+              <div id="srPrice" style="font-size:.95rem; color:#c62828; font-weight:700; margin-top:4px;"></div>
+              <div style="margin-top:4px; font-size:.7rem; color:#999;">
+                <span id="srRakutenOk" style="color:#4caf50;">✓ 楽天リンク</span>
+                <span id="srAmazonOk" style="color:#4caf50; margin-left:8px;">✓ Amazonリンク</span>
+              </div>
+            </div>
           </div>
           <div class="form-group">
             <label>説明文 *</label>
-            <textarea id="pDesc" required placeholder="商品の説明やおすすめポイント"></textarea>
-          </div>
-          <div class="form-group">
-            <label>価格（税込） *</label>
-            <input type="number" id="pPrice" required placeholder="4980">
-          </div>
-          <div class="form-group">
-            <label>商品画像URL</label>
-            <input type="url" id="pImage" placeholder="https://example.com/image.jpg">
-            <img id="imagePreview" class="preview" style="display:none;">
-          </div>
-          <div class="form-group">
-            <label>Amazon URL</label>
-            <input type="url" id="pAmazon" placeholder="https://amazon.co.jp/dp/...">
-          </div>
-          <div class="form-group">
-            <label>楽天 URL</label>
-            <input type="url" id="pRakuten" placeholder="https://item.rakuten.co.jp/...">
+            <textarea id="srDesc" required placeholder="商品の説明やおすすめポイント"></textarea>
           </div>
           <div class="form-group">
             <label>贈る相手（複数選択可） *</label>
             <div class="checkbox-group">
-              <label class="checkbox-label"><input type="checkbox" name="target" value="mother">お母さん</label>
-              <label class="checkbox-label"><input type="checkbox" name="target" value="father">お父さん</label>
-              <label class="checkbox-label"><input type="checkbox" name="target" value="kids">お子さま</label>
-              <label class="checkbox-label"><input type="checkbox" name="target" value="friends">友人</label>
-              <label class="checkbox-label"><input type="checkbox" name="target" value="business">ビジネス</label>
-              <label class="checkbox-label"><input type="checkbox" name="target" value="partner">パートナー</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-target" value="mother">お母さん</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-target" value="father">お父さん</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-target" value="kids">お子さま</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-target" value="friends">友人</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-target" value="business">ビジネス</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-target" value="partner">パートナー</label>
             </div>
           </div>
           <div class="form-group">
             <label>シーン（複数選択可） *</label>
             <div class="checkbox-group">
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="birthday">誕生日</label>
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="mothers_day">母の日</label>
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="fathers_day">父の日</label>
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="wedding">結婚祝い</label>
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="school">入学・卒業祝い</label>
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="seasonal">お中元・お歳暮</label>
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="anniversary">記念日</label>
-              <label class="checkbox-label"><input type="checkbox" name="scene" value="baby">出産祝い</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="birthday">誕生日</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="mothers_day">母の日</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="fathers_day">父の日</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="wedding">結婚祝い</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="school">入学・卒業祝い</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="seasonal">お中元・お歳暮</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="anniversary">記念日</label>
+              <label class="checkbox-label"><input type="checkbox" name="sr-scene" value="baby">出産祝い</label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">商品を登録する</button>
-        </form>
+          <button class="btn btn-primary" onclick="registerSearchProduct()">この商品を登録する</button>
+        </div>
+      </div>
+
+      <!-- 手動登録タブ -->
+      <div class="tab-content" id="tab-manual">
+        <div class="card">
+          <h2>商品を手動登録</h2>
+          <form id="productForm" onsubmit="return handleSubmit(event)">
+            <div class="form-group">
+              <label>商品名 *</label>
+              <input type="text" id="pName" required placeholder="例: プリザーブドフラワー ボックスアレンジ">
+            </div>
+            <div class="form-group">
+              <label>説明文 *</label>
+              <textarea id="pDesc" required placeholder="商品の説明やおすすめポイント"></textarea>
+            </div>
+            <div class="form-group">
+              <label>価格（税込） *</label>
+              <input type="number" id="pPrice" required placeholder="4980">
+            </div>
+            <div class="form-group">
+              <label>商品画像URL</label>
+              <input type="url" id="pImage" placeholder="https://example.com/image.jpg">
+              <img id="imagePreview" class="preview" style="display:none;">
+            </div>
+            <div class="form-group">
+              <label>Amazon URL</label>
+              <input type="url" id="pAmazon" placeholder="https://amazon.co.jp/dp/...">
+            </div>
+            <div class="form-group">
+              <label>楽天 URL</label>
+              <input type="url" id="pRakuten" placeholder="https://item.rakuten.co.jp/...">
+            </div>
+            <div class="form-group">
+              <label>贈る相手（複数選択可） *</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="target" value="mother">お母さん</label>
+                <label class="checkbox-label"><input type="checkbox" name="target" value="father">お父さん</label>
+                <label class="checkbox-label"><input type="checkbox" name="target" value="kids">お子さま</label>
+                <label class="checkbox-label"><input type="checkbox" name="target" value="friends">友人</label>
+                <label class="checkbox-label"><input type="checkbox" name="target" value="business">ビジネス</label>
+                <label class="checkbox-label"><input type="checkbox" name="target" value="partner">パートナー</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>シーン（複数選択可） *</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="birthday">誕生日</label>
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="mothers_day">母の日</label>
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="fathers_day">父の日</label>
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="wedding">結婚祝い</label>
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="school">入学・卒業祝い</label>
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="seasonal">お中元・お歳暮</label>
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="anniversary">記念日</label>
+                <label class="checkbox-label"><input type="checkbox" name="scene" value="baby">出産祝い</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">商品を登録する</button>
+          </form>
+        </div>
       </div>
 
       <!-- 登録済み商品一覧 -->
@@ -150,13 +259,19 @@
     const db = firebase.firestore();
     let currentUser = null;
 
-    // 管理者のUID（初回ログイン後にコンソールで確認して設定）
+    // アフィリエイトID
+    const RAKUTEN_AFF_ID = '522e40a0.f2dc4208.522e40a1.385f875e';
+    const AMAZON_TAG = 'okuritegift-22';
+
+    // 管理者のUID
     const ADMIN_UIDS = ['nIdxWXfimibcDSQZpx4039tH2bD2'];
+
+    // 検索で選んだ商品を保持
+    let selectedProduct = null;
 
     auth.onAuthStateChanged(user => {
       currentUser = user;
       if (user) {
-        // 管理者チェック
         if (ADMIN_UIDS.length > 0 && !ADMIN_UIDS.includes(user.uid)) {
           document.getElementById('loginArea').innerHTML = `
             <div style="color:#c62828; margin-bottom:16px;">管理者権限がありません。</div>
@@ -167,8 +282,8 @@
         }
         document.getElementById('loginArea').style.display = 'none';
         document.getElementById('adminArea').style.display = 'block';
-        // 初回ログイン時にUID確認用
         console.log('Admin UID:', user.uid);
+        loadSettings();
         loadProducts();
       }
     });
@@ -178,7 +293,174 @@
       auth.signInWithPopup(provider);
     }
 
-    // 画像プレビュー
+    // === 設定管理 ===
+    function loadSettings() {
+      const appId = localStorage.getItem('rakutenAppId') || '';
+      document.getElementById('rakutenAppId').value = appId;
+      if (appId) {
+        document.getElementById('settingsStatus').textContent = '✓ 設定済み';
+        document.getElementById('settingsCard').style.border = '1px solid #4caf50';
+      }
+    }
+
+    function saveSettings() {
+      const appId = document.getElementById('rakutenAppId').value.trim();
+      if (!appId) { alert('Application IDを入力してください'); return; }
+      localStorage.setItem('rakutenAppId', appId);
+      document.getElementById('settingsStatus').textContent = '✓ 保存しました';
+      document.getElementById('settingsCard').style.border = '1px solid #4caf50';
+    }
+
+    // === タブ切り替え ===
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach((b, i) => {
+        b.classList.toggle('active', (tab === 'search' && i === 0) || (tab === 'manual' && i === 1));
+      });
+      document.getElementById('tab-search').classList.toggle('active', tab === 'search');
+      document.getElementById('tab-manual').classList.toggle('active', tab === 'manual');
+    }
+
+    // === 楽天商品検索 ===
+    async function searchRakuten() {
+      const keyword = document.getElementById('searchKeyword').value.trim();
+      if (!keyword) return;
+
+      const appId = localStorage.getItem('rakutenAppId');
+      if (!appId) {
+        alert('先に楽天 Application IDを設定してください');
+        return;
+      }
+
+      const btn = document.getElementById('searchBtn');
+      const results = document.getElementById('searchResults');
+      btn.disabled = true;
+      btn.textContent = '検索中...';
+      results.innerHTML = '<div class="search-loading">検索中...</div>';
+
+      try {
+        const url = `https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?applicationId=${appId}&keyword=${encodeURIComponent(keyword)}&hits=20&imageFlag=1&sort=-reviewCount&formatVersion=2`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (data.error) {
+          results.innerHTML = `<div class="search-empty">エラー: ${data.error_description || data.error}</div>`;
+          return;
+        }
+
+        if (!data.Items || data.Items.length === 0) {
+          results.innerHTML = '<div class="search-empty">商品が見つかりませんでした</div>';
+          return;
+        }
+
+        results.innerHTML = '<div class="search-results">' + data.Items.map((item, i) => {
+          const img = (item.mediumImageUrls && item.mediumImageUrls[0]) || '';
+          const price = item.itemPrice;
+          const name = item.itemName;
+          const shop = item.shopName;
+          const url = item.itemUrl;
+
+          return `
+            <div class="search-item" onclick="selectProduct(${i})">
+              <img src="${img}" alt="" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 80 80%22><rect fill=%22%23f0ece4%22 width=%2280%22 height=%2280%22/></svg>'">
+              <div class="search-item-info">
+                <div class="search-item-name">${name}</div>
+                <div class="search-item-price">&yen;${price.toLocaleString()}</div>
+                <div class="search-item-shop">${shop}</div>
+              </div>
+              <button class="btn-add" onclick="event.stopPropagation(); selectProduct(${i})">追加</button>
+            </div>
+          `;
+        }).join('') + '</div>';
+
+        // データを保持
+        window._searchItems = data.Items;
+
+      } catch (err) {
+        results.innerHTML = `<div class="search-empty">検索エラー: ${err.message}</div>`;
+      } finally {
+        btn.disabled = false;
+        btn.textContent = '検索';
+      }
+    }
+
+    // === 商品選択 ===
+    function selectProduct(index) {
+      const item = window._searchItems[index];
+      if (!item) return;
+
+      const img = (item.mediumImageUrls && item.mediumImageUrls[0]) || '';
+      // 大きい画像URLに変換（128→256）
+      const largeImg = img.replace('128x128', '256x256').replace('?_ex=128x128', '?_ex=256x256');
+      const productUrl = item.itemUrl;
+      const name = item.itemName;
+      const price = item.itemPrice;
+      const desc = (item.itemCaption || '').replace(/<[^>]+>/g, '').substring(0, 200);
+
+      // 楽天アフィリエイトリンク生成
+      const rakutenAffUrl = `https://hb.afl.rakuten.co.jp/ichiba/${RAKUTEN_AFF_ID}/?pc=${encodeURIComponent(productUrl)}&link_type=hybrid_url`;
+
+      // Amazon検索リンク生成（商品名で検索 + アソシエイトタグ）
+      const amazonSearchUrl = `https://www.amazon.co.jp/s?k=${encodeURIComponent(name.substring(0, 80))}&tag=${AMAZON_TAG}`;
+
+      selectedProduct = {
+        name: name,
+        price: price,
+        image: largeImg || img,
+        rakutenUrl: rakutenAffUrl,
+        amazonUrl: amazonSearchUrl,
+      };
+
+      // UI更新
+      document.getElementById('srImage').src = largeImg || img;
+      document.getElementById('srName').textContent = name;
+      document.getElementById('srPrice').textContent = '¥' + price.toLocaleString();
+      document.getElementById('srDesc').value = desc;
+      document.getElementById('searchRegisterCard').style.display = 'block';
+
+      // チェックボックスリセット
+      document.querySelectorAll('input[name="sr-target"], input[name="sr-scene"]').forEach(c => c.checked = false);
+
+      // スクロール
+      document.getElementById('searchRegisterCard').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // === 検索商品を登録 ===
+    async function registerSearchProduct() {
+      if (!selectedProduct) return;
+
+      const targets = [...document.querySelectorAll('input[name="sr-target"]:checked')].map(c => c.value);
+      const scenes = [...document.querySelectorAll('input[name="sr-scene"]:checked')].map(c => c.value);
+      const desc = document.getElementById('srDesc').value.trim();
+
+      if (targets.length === 0) { alert('贈る相手を1つ以上選択してください'); return; }
+      if (scenes.length === 0) { alert('シーンを1つ以上選択してください'); return; }
+      if (!desc) { alert('説明文を入力してください'); return; }
+
+      const product = {
+        name: selectedProduct.name,
+        desc: desc,
+        price: selectedProduct.price,
+        image: selectedProduct.image,
+        amazonUrl: selectedProduct.amazonUrl,
+        rakutenUrl: selectedProduct.rakutenUrl,
+        targets: targets,
+        scenes: scenes,
+        createdAt: new Date().toISOString(),
+        createdBy: currentUser.uid,
+      };
+
+      try {
+        await db.collection('gifts').add(product);
+        showStatus('商品を登録しました！', 'success');
+        document.getElementById('searchRegisterCard').style.display = 'none';
+        selectedProduct = null;
+        loadProducts();
+      } catch (err) {
+        showStatus('エラー: ' + err.message, 'error');
+      }
+    }
+
+    // === 手動登録 ===
     document.getElementById('pImage')?.addEventListener('input', function() {
       const preview = document.getElementById('imagePreview');
       if (this.value) {
@@ -189,7 +471,6 @@
       }
     });
 
-    // 商品登録
     async function handleSubmit(e) {
       e.preventDefault();
 
@@ -224,7 +505,7 @@
       return false;
     }
 
-    // 商品一覧読み込み
+    // === 商品一覧 ===
     async function loadProducts() {
       const snapshot = await db.collection('gifts').orderBy('createdAt', 'desc').get();
       const list = document.getElementById('productList');
@@ -257,7 +538,6 @@
       }).join('');
     }
 
-    // 商品削除
     async function deleteProduct(id) {
       if (!confirm('この商品を削除しますか？')) return;
       await db.collection('gifts').doc(id).delete();
