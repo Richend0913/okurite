@@ -160,15 +160,8 @@ a:hover { color: #c49b1a; }
   transition: opacity .2s; letter-spacing: .03em;
 }
 .buy-link:hover { opacity: .85; color: #fff; }
-.buy-links { display: flex; gap: 8px; }
-.buy-links a {
-  flex: 1; text-align: center; padding: 10px; border-radius: 8px;
-  font-size: .8rem; font-weight: 500; transition: opacity .2s;
-}
-.buy-amazon { background: #ff9900; color: #fff; }
-.buy-amazon:hover { opacity: .85; color: #fff; }
-.buy-rakuten { background: #bf0000; color: #fff; }
-.buy-rakuten:hover { opacity: .85; color: #fff; }
+.buy-sub { text-align: center; font-size: .75rem; color: #999; margin-top: 8px; }
+.buy-sub a { color: #8b6914; font-weight: 500; }
 
 /* ── フッター ── */
 .footer {

@@ -266,11 +266,11 @@
 
         let buyLinks = '';
         if (p.amazonUrl && p.rakutenUrl) {
-          buyLinks = `<div class="buy-links"><a href="${p.amazonUrl}" target="_blank" rel="noopener" class="buy-amazon">Amazonで見る</a><a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-rakuten">楽天で見る</a></div>`;
+          buyLinks = `<a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-link">楽天市場で購入する</a><div class="buy-sub">Amazonでも購入できます → <a href="${p.amazonUrl}" target="_blank" rel="noopener">Amazon</a></div>`;
         } else if (p.amazonUrl) {
-          buyLinks = `<a href="${p.amazonUrl}" target="_blank" rel="noopener" class="buy-link">Amazonで見る</a>`;
+          buyLinks = `<a href="${p.amazonUrl}" target="_blank" rel="noopener" class="buy-link">Amazonで購入する</a>`;
         } else if (p.rakutenUrl) {
-          buyLinks = `<a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-link" style="background:#bf0000;">楽天で見る</a>`;
+          buyLinks = `<a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-link">楽天市場で購入する</a>`;
         }
 
         return `
