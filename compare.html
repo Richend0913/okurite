@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ボタン表示比較</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', 'Noto Serif JP', serif; background: #faf8f5; color: #3a3a3a; padding: 20px; }
+    h2 { font-size: 1rem; color: #8b6914; margin: 24px 0 12px; font-weight: 400; }
+    .card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 14px; overflow: hidden; max-width: 300px; margin-bottom: 32px; }
+    .card-img { width: 100%; height: 180px; background: linear-gradient(135deg, #f5f0e8, #ece5d8); display: flex; align-items: center; justify-content: center; }
+    .card-img img { width: 100%; height: 100%; object-fit: cover; }
+    .card-body { padding: 16px; }
+    .card-name { font-size: .9rem; font-weight: 400; margin-bottom: 6px; }
+    .card-desc { font-size: .75rem; color: #aaa; margin-bottom: 8px; }
+    .card-price { font-size: 1.1rem; font-weight: 600; color: #8b6914; margin-bottom: 10px; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: .65rem; background: rgba(139,105,20,.06); color: #8b6914; border: 1px solid rgba(139,105,20,.12); margin-right: 4px; margin-bottom: 8px; }
+
+    /* パターンA: 今の形 */
+    .btns-current { display: flex; gap: 8px; }
+    .btns-current a { flex: 1; text-align: center; padding: 10px; border-radius: 8px; font-size: .8rem; font-weight: 500; color: #fff; }
+    .btn-amazon { background: #ff9900; }
+    .btn-rakuten { background: #bf0000; }
+
+    /* パターンB: メイン1つ + サブリンク */
+    .btn-main { display: block; text-align: center; padding: 12px; border-radius: 8px; font-size: .85rem; font-weight: 600; color: #fff; background: linear-gradient(135deg, #c49b1a, #8b6914); margin-bottom: 8px; }
+    .btn-sub { text-align: center; font-size: .75rem; color: #999; }
+    .btn-sub a { color: #8b6914; }
+
+    /* パターンC: 価格比較 */
+    .price-compare { display: flex; gap: 6px; margin-bottom: 8px; }
+    .price-box { flex: 1; border: 1px solid #eee; border-radius: 8px; padding: 8px; text-align: center; cursor: pointer; transition: all .2s; }
+    .price-box:hover { border-color: #8b6914; }
+    .price-box.best { border-color: #8b6914; background: rgba(139,105,20,.04); }
+    .price-box .store { font-size: .7rem; color: #999; margin-bottom: 2px; }
+    .price-box .amount { font-size: .9rem; font-weight: 700; }
+    .price-box .amount.cheaper { color: #c62828; }
+    .price-box .badge-best { font-size: .6rem; background: #c62828; color: #fff; padding: 1px 6px; border-radius: 8px; }
+
+    /* パターンD: 縦並び + レビュー */
+    .btn-stack a { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-radius: 8px; margin-bottom: 6px; color: #fff; font-size: .8rem; }
+    .btn-stack .review { font-size: .7rem; opacity: .9; }
+    .btn-stack .arrow { font-size: 1rem; }
+
+    .label { display: inline-block; background: #faf8f5; border: 1px dashed #ccc; padding: 4px 12px; border-radius: 6px; font-size: .75rem; color: #888; margin-bottom: 8px; font-family: sans-serif; }
+  </style>
+</head>
+<body>
+
+<h2>パターンA: 現在の形（2ボタン並列）</h2>
+<span class="label">迷いやすい</span>
+<div class="card">
+  <div class="card-img"><img src="https://image.rakuten.co.jp/hanayoshi/cabinet/preserved/imgrc0098025714.jpg" alt=""></div>
+  <div class="card-body">
+    <div class="card-name">プリザーブドフラワー ボックスアレンジ</div>
+    <div class="card-desc">枯れないお花のギフト。母の日や誕生日に。</div>
+    <div class="card-price">¥4,980</div>
+    <div><span class="tag">母の日</span><span class="tag">誕生日</span></div>
+    <div class="btns-current">
+      <a href="#" class="btn-amazon">Amazonで見る</a>
+      <a href="#" class="btn-rakuten">楽天で見る</a>
+    </div>
+  </div>
+</div>
+
+<h2>パターンB: メイン1つ + サブリンク</h2>
+<span class="label">シンプルで迷わない</span>
+<div class="card">
+  <div class="card-img"><img src="https://image.rakuten.co.jp/hanayoshi/cabinet/preserved/imgrc0098025714.jpg" alt=""></div>
+  <div class="card-body">
+    <div class="card-name">プリザーブドフラワー ボックスアレンジ</div>
+    <div class="card-desc">枯れないお花のギフト。母の日や誕生日に。</div>
+    <div class="card-price">¥4,980</div>
+    <div><span class="tag">母の日</span><span class="tag">誕生日</span></div>
+    <a href="#" class="btn-main">楽天市場で購入する</a>
+    <div class="btn-sub">Amazonでも購入できます → <a href="#">Amazon</a></div>
+  </div>
+</div>
+
+<h2>パターンC: 価格比較型</h2>
+<span class="label">お得感で誘導</span>
+<div class="card">
+  <div class="card-img"><img src="https://image.rakuten.co.jp/hanayoshi/cabinet/preserved/imgrc0098025714.jpg" alt=""></div>
+  <div class="card-body">
+    <div class="card-name">プリザーブドフラワー ボックスアレンジ</div>
+    <div class="card-desc">枯れないお花のギフト。母の日や誕生日に。</div>
+    <div><span class="tag">母の日</span><span class="tag">誕生日</span></div>
+    <div class="price-compare">
+      <div class="price-box best" onclick="">
+        <div class="store">楽天市場</div>
+        <div class="amount cheaper">¥4,980</div>
+        <div><span class="badge-best">最安値</span></div>
+      </div>
+      <div class="price-box" onclick="">
+        <div class="store">Amazon</div>
+        <div class="amount">¥5,200</div>
+        <div style="font-size:.65rem; color:#999;">送料無料</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>パターンD: 縦並び + レビュー情報</h2>
+<span class="label">信頼感で後押し</span>
+<div class="card">
+  <div class="card-img"><img src="https://image.rakuten.co.jp/hanayoshi/cabinet/preserved/imgrc0098025714.jpg" alt=""></div>
+  <div class="card-body">
+    <div class="card-name">プリザーブドフラワー ボックスアレンジ</div>
+    <div class="card-desc">枯れないお花のギフト。母の日や誕生日に。</div>
+    <div class="card-price">¥4,980</div>
+    <div><span class="tag">母の日</span><span class="tag">誕生日</span></div>
+    <div class="btn-stack">
+      <a href="#" style="background:#bf0000;">
+        <span>楽天市場で見る <span class="review">★4.6 (2,340件)</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a href="#" style="background:#ff9900;">
+        <span>Amazonで見る <span class="review">★4.4 (1,890件)</span></span>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
