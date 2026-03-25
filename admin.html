@@ -97,11 +97,15 @@
       <!-- API設定 -->
       <div class="card" id="settingsCard">
         <h2>API設定</h2>
-        <p style="font-size:.8rem; color:#999; margin-bottom:12px;">楽天APIのApplication IDが必要です。<a href="https://webservice.rakuten.co.jp/app/create" target="_blank">こちらで無料取得</a></p>
+        <p style="font-size:.8rem; color:#999; margin-bottom:12px;">楽天APIのApplication IDとAccess Keyが必要です。<a href="https://webservice.rakuten.co.jp/app/list" target="_blank">こちらで確認</a></p>
+        <div class="form-group" style="margin-bottom:8px;">
+          <label>楽天 Application ID</label>
+          <input type="text" id="rakutenAppId" placeholder="例: 1d41d4f8-6277-4abe-a006-...">
+        </div>
         <div class="settings-row">
           <div class="form-group">
-            <label>楽天 Application ID</label>
-            <input type="text" id="rakutenAppId" placeholder="例: 1234567890123456789">
+            <label>楽天 Access Key</label>
+            <input type="text" id="rakutenAccessKey" placeholder="例: abcdef1234567890...">
           </div>
           <button onclick="saveSettings()">保存</button>
         </div>
@@ -296,8 +300,10 @@
     // === 設定管理 ===
     function loadSettings() {
       const appId = localStorage.getItem('rakutenAppId') || '';
+      const accessKey = localStorage.getItem('rakutenAccessKey') || '';
       document.getElementById('rakutenAppId').value = appId;
-      if (appId) {
+      document.getElementById('rakutenAccessKey').value = accessKey;
+      if (appId && accessKey) {
         document.getElementById('settingsStatus').textContent = '✓ 設定済み';
         document.getElementById('settingsCard').style.border = '1px solid #4caf50';
       }
@@ -305,8 +311,10 @@
 
     function saveSettings() {
       const appId = document.getElementById('rakutenAppId').value.trim();
-      if (!appId) { alert('Application IDを入力してください'); return; }
+      const accessKey = document.getElementById('rakutenAccessKey').value.trim();
+      if (!appId || !accessKey) { alert('Application IDとAccess Keyの両方を入力してください'); return; }
       localStorage.setItem('rakutenAppId', appId);
+      localStorage.setItem('rakutenAccessKey', accessKey);
       document.getElementById('settingsStatus').textContent = '✓ 保存しました';
       document.getElementById('settingsCard').style.border = '1px solid #4caf50';
     }
@@ -326,8 +334,9 @@
       if (!keyword) return;
 
       const appId = localStorage.getItem('rakutenAppId');
-      if (!appId) {
-        alert('先に楽天 Application IDを設定してください');
+      const accessKey = localStorage.getItem('rakutenAccessKey');
+      if (!appId || !accessKey) {
+        alert('先に楽天 Application IDとAccess Keyを設定してください');
         return;
       }
 
@@ -338,8 +347,10 @@
       results.innerHTML = '<div class="search-loading">検索中...</div>';
 
       try {
-        const url = `https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?applicationId=${appId}&keyword=${encodeURIComponent(keyword)}&hits=20&imageFlag=1&sort=-reviewCount&formatVersion=2`;
-        const res = await fetch(url);
+        const url = `https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601?applicationId=${appId}&accessKey=${accessKey}&keyword=${encodeURIComponent(keyword)}&hits=20&imageFlag=1&sort=-reviewCount&formatVersion=2`;
+        const res = await fetch(url, {
+          headers: { 'Origin': 'https://richend0913.github.io' }
+        });
         const data = await res.json();
 
         if (data.error) {
