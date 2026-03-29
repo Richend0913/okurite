@@ -136,12 +136,17 @@
     .gift-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(244,114,182,.15); }
     .gift-card[data-budget][data-target] { display: flex; flex-direction: column; }
 
-    .gift-image {
-      width: 100%; aspect-ratio: 4/3;
-      background: linear-gradient(135deg, #fce7f3, #fdf2f8);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 3rem;
+    /* ===== 商品画像 ===== */
+    .gift-image-link { display: block; }
+    .gift-img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #f8f8f8;
+      border-radius: 8px 8px 0 0;
+      transition: opacity .2s;
     }
+    .gift-image-link:hover .gift-img { opacity: .9; }
 
     .gift-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
     .gift-body h3 { font-size: .9rem; font-weight: 700; margin-bottom: 4px; }
@@ -261,8 +266,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="3k5k" data-target="female parents">
-          <div class="gift-image">🍡</div>
+          <a href="https://item.rakuten.co.jp/buriruby/xzvbbxrdxputkmepoy57noo3ke/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/buriruby/cabinet/12797424/41429072_1.jpg" alt="高麗橋吉兆 栗ぜんざいギフト 4個入" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>高麗橋吉兆 栗ぜんざいギフト 4個入</h3>
             <p class="price">¥3,754（送料無料）</p>
@@ -274,8 +282,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="5k10k" data-target="female parents">
-          <div class="gift-image">🌸</div>
+          <a href="https://item.rakuten.co.jp/jmei3rd/fgift-389/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/jmei3rd/cabinet/eat01/b/se_10-01.jpg" alt="カーネーション花鉢＋ヴィタメール焼き菓子セット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>カーネーション花鉢＋ヴィタメール焼き菓子セット</h3>
             <p class="price">¥7,300（送料無料）</p>
@@ -287,8 +298,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="female">
-          <div class="gift-image">💆</div>
+          <a href="https://item.rakuten.co.jp/skindesign/perfumed-hand-cream5set/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/skindesign/cabinet/cosme/thesaem/perfumedhandcream/main5_00.jpg" alt="THE SAEM 選べるハンドクリーム 5個セット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>THE SAEM 選べるハンドクリーム 5個セット</h3>
             <p class="price">¥2,000（送料無料）</p>
@@ -300,11 +314,14 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="female parents">
-          <div class="gift-image">🌿</div>
+          <a href="https://item.rakuten.co.jp/bridgehappy/kj03/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/bridgehappy/cabinet/zakka1/kj/hkc/kj03_top.jpg" alt="日本製 ガーゼハンカチ＋ハンドクリームセット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>日本製 ガーゼハンカチ＋ハンドクリームセット</h3>
-            <p class="price">¥2,000（送料無料）</p>
+            <p class="price">¥1,900（送料無料）</p>
             <p class="description">上品なガーゼハンカチとホワイトティーの香りのハンドクリームの日本製ギフトセット。</p>
             <div class="tag-row"><span class="tag">女性向け</span><span class="tag">両親へ</span></div>
             <div class="affiliate-links">
@@ -313,8 +330,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="female">
-          <div class="gift-image">🌼</div>
+          <a href="https://item.rakuten.co.jp/bridgehappy/cl0018/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/bridgehappy/cabinet/zakka1/cl/cl18_top.jpg" alt="金木犀 ハンドクリーム プチギフト 日本製" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>金木犀 ハンドクリーム プチギフト 日本製</h3>
             <p class="price">¥2,000（送料無料）</p>
@@ -326,6 +346,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -339,8 +360,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="under3k" data-target="male parents">
-          <div class="gift-image">🍺</div>
+          <a href="https://item.rakuten.co.jp/isekadoyabeer/paleale-b-1p/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/isekadoyabeer/cabinet/biiino/item/s-image-3/imgrc0084774386.jpg" alt="伊勢角屋麦酒 クラフトビール ペールエール 瓶セット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>伊勢角屋麦酒 クラフトビール ペールエール 瓶セット</h3>
             <p class="price">¥1,835〜（価格+送料）</p>
@@ -352,8 +376,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="male parents">
-          <div class="gift-image">🍻</div>
+          <a href="https://item.rakuten.co.jp/arumama/gu-330-1/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/arumama/cabinet/shohin/sake/beer/gu-330-1.jpg" alt="城崎温泉 地ビール ギフトセット（330ml）" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>城崎温泉 地ビール ギフトセット（330ml）</h3>
             <p class="price">¥2,090（価格+送料）</p>
@@ -365,8 +392,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="male parents">
-          <div class="gift-image">🐟</div>
+          <a href="https://item.rakuten.co.jp/yamaichi-himono/s-himono-1/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/yamaichi-himono/cabinet/04735669/sab1nis1kam2koa3.jpg" alt="国産旬彩 干物セット（サバ・ニシン等）" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>国産旬彩 干物セット（サバ・ニシン等）</h3>
             <p class="price">¥3,000（送料無料）</p>
@@ -378,11 +408,14 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="male female parents">
-          <div class="gift-image">🍦</div>
+          <a href="https://item.rakuten.co.jp/hokkaido-gourmation/fax-089-ice12/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/hokkaido-gourmation/cabinet/syouhin/cbell/26cbell_sg001rt.jpg" alt="北海道 カウベルアイスクリーム 詰め合わせ 12個" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>北海道 カウベルアイスクリーム 詰め合わせ 12個</h3>
-            <p class="price">¥3,180（送料無料）</p>
+            <p class="price">¥3,980（送料無料）</p>
             <p class="description">北海道産の濃厚アイスクリーム12個詰め合わせ。夏の父の日にぴったりの冷たいギフト。</p>
             <div class="tag-row"><span class="tag">男性向け</span><span class="tag">女性向け</span><span class="tag">両親へ</span></div>
             <div class="affiliate-links">
@@ -391,11 +424,14 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="male parents">
-          <div class="gift-image">🥩</div>
+          <a href="https://item.rakuten.co.jp/hisarekomafu/compass1640161685/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/hisarekomafu/cabinet/compass1689051895.jpg" alt="仙台牛 低温調理ユッケ 2個セット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>仙台牛 低温調理ユッケ 2個セット</h3>
-            <p class="price">¥3,945〜（価格+送料）</p>
+            <p class="price">¥3,120〜（価格+送料）</p>
             <p class="description">最高級A5仙台牛の低温調理ユッケ2個セット。特別な日にふさわしい高級感ある肉ギフト。</p>
             <div class="tag-row"><span class="tag">男性向け</span><span class="tag">両親へ</span></div>
             <div class="affiliate-links">
@@ -404,6 +440,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -423,8 +460,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="under3k" data-target="female">
-          <div class="gift-image">🧀</div>
+          <a href="https://item.rakuten.co.jp/monmiya/70005926/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/monmiya/cabinet/m3/70005926_0620.jpg" alt="チーズファクトリー 厳選スイーツセット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>チーズファクトリー 厳選スイーツセット</h3>
             <p class="price">¥2,000（送料無料）</p>
@@ -436,8 +476,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="female male">
-          <div class="gift-image">🍮</div>
+          <a href="https://item.rakuten.co.jp/watch-me/t-11-035/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/watch-me/cabinet/syokuhin/syokuhin2/imgrc0108459948.jpg" alt="ジュレパフェ 6個セット フルーツゼリー" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>ジュレパフェ 6個セット フルーツゼリー</h3>
             <p class="price">¥2,200（送料無料）</p>
@@ -449,45 +492,55 @@
             </div>
           </div>
         </div>
-        <div class="gift-card" data-budget="5k10k" data-target="female">
-          <div class="gift-image">💎</div>
+
+        <div class="gift-card" data-budget="under3k" data-target="female">
+          <a href="https://item.rakuten.co.jp/i-wish/nu21100501c/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/i-wish/cabinet/number/nu21100501-1.jpg" alt="天然石 誕生石ブレスレット ギフト" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>誕生日 アクセサリー（ネックレス・ピアス）</h3>
-            <p class="price">¥5,000〜¥10,000</p>
-            <p class="description">シンプルで使いやすいシルバー・ゴールドのネックレス。誕生日に定番の人気ジュエリーギフト。</p>
+            <h3>天然石 誕生石ブレスレット ギフト</h3>
+            <p class="price">¥3,160（価格+送料）</p>
+            <p class="description">天然石パワーストーンを使った誕生石ブレスレット。数秘・運命数鑑定付きで特別感のあるギフト。</p>
             <div class="tag-row"><span class="tag">女性向け</span></div>
             <div class="affiliate-links">
-              <a href="https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9+%E3%82%AE%E3%83%95%E3%83%88+%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9+%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88+%E5%A4%A9%E7%84%B6%E7%9F%B3+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://item.rakuten.co.jp/i-wish/nu21100501c/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
-        <div class="gift-card" data-budget="over10k" data-target="male female">
-          <div class="gift-image">👛</div>
+
+        <div class="gift-card" data-budget="5k10k" data-target="male female">
+          <a href="https://item.rakuten.co.jp/alevel/12766-bds/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/alevel/cabinet/tommy/12766-bds.jpg" alt="トミーヒルフィガー 二つ折り財布 メンズ" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>ブランド財布 誕生日プレゼント</h3>
-            <p class="price">¥8,000〜¥15,000</p>
-            <p class="description">長財布・二つ折り財布。実用的で毎日使えるため男女問わず喜ばれる定番ギフト。</p>
+            <h3>トミーヒルフィガー 二つ折り財布 メンズ</h3>
+            <p class="price">¥9,980（価格+送料）</p>
+            <p class="description">ヨーロッパ輸入モデルの二つ折り財布。実用的で毎日使えるため男女問わず喜ばれる定番ギフト。</p>
             <div class="tag-row"><span class="tag">男性向け</span><span class="tag">女性向け</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E8%B2%A1%E5%B8%83+%E3%82%AE%E3%83%95%E3%83%88+%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E8%AA%95%E7%94%9F%E6%97%A5+%E8%B2%A1%E5%B8%83+%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/alevel/12766-bds/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="over10k" data-target="male female">
-          <div class="gift-image">🎫</div>
+          <a href="https://item.rakuten.co.jp/ringbellshop/r809-015/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/ringbellshop/cabinet/catalog/smartgift/cgsmartgift_2.jpg" alt="リンベル スマートギフト カタログギフト" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>体験ギフト（グルメ・アクティビティ・スパ）</h3>
-            <p class="price">¥8,000〜¥15,000</p>
-            <p class="description">旅行・グルメ・スパなど体験型プレゼント。モノより思い出の特別感ある誕生日ギフト。</p>
+            <h3>リンベル スマートギフト カタログギフト</h3>
+            <p class="price">¥6,600〜（送料無料）</p>
+            <p class="description">旅行・グルメ・スパなど体験型も選べる豪華カタログギフト。楽天1位受賞の特別感ある誕生日ギフト。</p>
             <div class="tag-row"><span class="tag">全員向け</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E4%BD%93%E9%A8%93%E3%82%AE%E3%83%95%E3%83%88+%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E4%BD%93%E9%A8%93%E3%82%AE%E3%83%95%E3%83%88+%E8%AA%95%E7%94%9F%E6%97%A5/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/ringbellshop/r809-015/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -501,8 +554,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="3k5k" data-target="female male">
-          <div class="gift-image">📋</div>
+          <a href="https://item.rakuten.co.jp/giftman/neko-sh-be/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/giftman/cabinet/new_catalogue/harmonick-v/3740.jpg" alt="カタログギフト 3,740円コース（ネコポス便）" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>カタログギフト 3,740円コース（ネコポス便）</h3>
             <p class="price">¥3,000（送料無料）</p>
@@ -514,8 +570,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="female male">
-          <div class="gift-image">🎁</div>
+          <a href="https://item.rakuten.co.jp/rambbit/649933/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/rambbit/cabinet/ikou_20100223/c001.jpg" alt="グランチョイスギフト カタログ 2,900円コース" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>グランチョイスギフト カタログ 2,900円コース</h3>
             <p class="price">¥3,000（送料無料）</p>
@@ -527,8 +586,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="female male">
-          <div class="gift-image">💝</div>
+          <a href="https://item.rakuten.co.jp/toolandmeal/105069450/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/toolandmeal/cabinet/item/12592352/concierge_card_th_02.jpg" alt="ハートフルセレクション カタログギフト（カードタイプ）" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>ハートフルセレクション カタログギフト（カードタイプ）</h3>
             <p class="price">¥3,080〜（送料無料）</p>
@@ -540,8 +602,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="female male">
-          <div class="gift-image">🏠</div>
+          <a href="https://item.rakuten.co.jp/bellevie-harima/cat-tower-003/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/bellevie-harima/cabinet/0330/gift/cat-tower-003_s1.jpg" alt="山崎実業 tower WEBカタログギフト" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>山崎実業 tower WEBカタログギフト</h3>
             <p class="price">¥3,630〜（価格+送料）</p>
@@ -553,19 +618,23 @@
             </div>
           </div>
         </div>
-        <div class="gift-card" data-budget="5k10k" data-target="female male">
-          <div class="gift-image">🛁</div>
+
+        <div class="gift-card" data-budget="over10k" data-target="female male">
+          <a href="https://item.rakuten.co.jp/balloon-cube/s_kk79100/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/balloon-cube/cabinet/item/towel/kk/kk79100.jpg" alt="今治タオル 木箱入り ギフトセット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>結婚祝い 今治タオルセット</h3>
-            <p class="price">¥5,000〜¥8,000</p>
-            <p class="description">日本が誇る今治タオルの高級セット。新生活に実用的で縁起の良い贈り物。</p>
+            <h3>今治タオル 木箱入り ギフトセット</h3>
+            <p class="price">¥11,000（送料無料）</p>
+            <p class="description">日本が誇る今治タオルの高級セット（バスタオル2枚・フェイスタオル2枚）。新生活に実用的で縁起の良い贈り物。</p>
             <div class="tag-row"><span class="tag">ペアで</span><span class="tag">実用的</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E4%BB%8A%E6%B2%BB%E3%82%BF%E3%82%AA%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E4%BB%8A%E6%B2%BB%E3%82%BF%E3%82%AA%E3%83%AB/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/balloon-cube/s_kk79100/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -579,8 +648,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="3k5k" data-target="child female">
-          <div class="gift-image">🌟</div>
+          <a href="https://item.rakuten.co.jp/gift-bmcjapan/o20211030/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/gift-bmcjapan/cabinet/toothcase/thntb3.jpg" alt="名入れ 乳歯ケース 木製 記念品" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>名入れ 乳歯ケース 木製 記念品</h3>
             <p class="price">¥3,000（送料無料）</p>
@@ -592,11 +664,14 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="child female">
-          <div class="gift-image">👶</div>
+          <a href="https://item.rakuten.co.jp/fika/set002/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/fika/cabinet/08062032/holder_wood_001/set002_re/set002_re.jpg" alt="fika 木製 歯固め＋ホルダーセット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>fika 木製 歯固め＋ホルダーセット</h3>
-            <p class="price">¥3,325（価格+送料）</p>
+            <p class="price">¥3,025（価格+送料）</p>
             <p class="description">厚生労働省認定機関検査合格のオーガニック素材。赤ちゃんに安心な木製歯固めとホルダーセット。</p>
             <div class="tag-row"><span class="tag">子供へ</span><span class="tag">安心素材</span></div>
             <div class="affiliate-links">
@@ -605,8 +680,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="child female">
-          <div class="gift-image">👕</div>
+          <a href="https://item.rakuten.co.jp/neomamaism/nm21swd001/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/neomamaism/cabinet/biiino/item/main-image/nm21swd001.jpg" alt="ネオママイズム 柄おくるみ オーガニックコットン" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>ネオママイズム 柄おくるみ オーガニックコットン</h3>
             <p class="price">¥3,080（送料無料）</p>
@@ -618,11 +696,14 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="child female">
-          <div class="gift-image">🌸</div>
+          <a href="https://item.rakuten.co.jp/omutsufactory/kontex-buraburabib/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/omutsufactory/cabinet/11013756/imgrc0096174926.jpg" alt="今治タオル コンテックス ビブ（スタイ）セット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>今治タオル コンテックス ビブ（スタイ）セット</h3>
-            <p class="price">¥3,850（価格+送料）</p>
+            <p class="price">¥3,080（価格+送料）</p>
             <p class="description">日本が誇る今治タオルブランドのビブ（よだれかけ）セット。肌触り抜群で実用的な出産祝い。</p>
             <div class="tag-row"><span class="tag">子供へ</span><span class="tag">実用的</span></div>
             <div class="affiliate-links">
@@ -631,19 +712,23 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="5k10k" data-target="child female">
-          <div class="gift-image">🎂</div>
+          <a href="https://item.rakuten.co.jp/hatty-narku/name-toll/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/hatty-narku/cabinet/03709856/imgrc0178418785.jpg" alt="おむつケーキ オーガニック 2段 名入れ無料" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>出産祝い おむつケーキ 人気</h3>
-            <p class="price">¥5,000〜¥8,000</p>
-            <p class="description">おむつをケーキ型に飾り付けた人気ギフト。実用的でインスタ映えする出産祝いの定番アイテム。</p>
+            <h3>おむつケーキ オーガニック 2段 名入れ無料</h3>
+            <p class="price">¥5,300（送料無料）</p>
+            <p class="description">おむつをケーキ型に飾り付けた人気ギフト。オーガニック素材・名入れ刺繍無料で実用的かつインスタ映え。</p>
             <div class="tag-row"><span class="tag">子供へ</span><span class="tag">見た目◎</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%81%8A%E3%82%80%E3%81%A4%E3%82%B1%E3%83%BC%E3%82%AD+%E4%BA%BA%E6%B0%97&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%81%8A%E3%82%80%E3%81%A4%E3%82%B1%E3%83%BC%E3%82%AD+%E4%BA%BA%E6%B0%97/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/hatty-narku/name-toll/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -657,8 +742,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="under3k" data-target="child">
-          <div class="gift-image">🎮</div>
+          <a href="https://item.rakuten.co.jp/k999/360011/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/k999/cabinet/item/05992753/360011-sam202112.jpg" alt="子供用 お医者さん・大工ごっこ 知育おもちゃ" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>子供用 お医者さん・大工ごっこ 知育おもちゃ</h3>
             <p class="price">¥2,180（送料無料）</p>
@@ -670,8 +758,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="child">
-          <div class="gift-image">🏄</div>
+          <a href="https://item.rakuten.co.jp/lifetips/life-30114/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/lifetips/cabinet/08454712/08673425/08944100/imgrc0098953092.jpg" alt="バランスボード ゆらゆら 体幹トレーニング" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>バランスボード ゆらゆら 体幹トレーニング</h3>
             <p class="price">¥2,180〜（送料無料）</p>
@@ -683,32 +774,55 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="female male child">
-          <div class="gift-image">🍫</div>
+          <a href="https://item.rakuten.co.jp/matsukazeya-ec/ar-10/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/matsukazeya-ec/cabinet/foucher/amanderois/ar-10_0304u.jpg" alt="フーシェ アマンド・ロワ 焼き菓子詰め合わせ" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>クリスマス 高級チョコ・焼き菓子 詰め合わせ</h3>
-            <p class="price">¥1,500〜¥3,000</p>
-            <p class="description">クリスマス限定パッケージの高級チョコレートや焼き菓子のセット。大人にも子供にも人気。</p>
+            <h3>フーシェ アマンド・ロワ 焼き菓子詰め合わせ</h3>
+            <p class="price">¥1,080（送料無料）</p>
+            <p class="description">クリスマス限定パッケージの高級焼き菓子セット。大人にも子供にも喜ばれる定番スイーツギフト。</p>
             <div class="tag-row"><span class="tag">全員向け</span><span class="tag">子供へ</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%81%8A%E8%8F%93%E5%AD%90+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%81%8A%E8%8F%93%E5%AD%90+%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/matsukazeya-ec/ar-10/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="female">
-          <div class="gift-image">🕯️</div>
+          <a href="https://item.rakuten.co.jp/howmoreliving/olor-027/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/howmoreliving/cabinet/06943964/olor/olor-027.jpg" alt="アロマキャンドル クリスマスギフト イギリス正規輸入品" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>アロマ・キャンドルセット クリスマスギフト</h3>
-            <p class="price">¥3,000〜¥5,000</p>
-            <p class="description">冬の夜にぴったりのアロマキャンドルセット。インテリアにもなるおしゃれな大人へのギフト。</p>
+            <h3>アロマキャンドル クリスマスギフト イギリス正規輸入品</h3>
+            <p class="price">¥4,180（価格+送料）</p>
+            <p class="description">冬の夜にぴったりのイギリス産アロマキャンドル。インテリアにもなるおしゃれな大人へのギフト。</p>
             <div class="tag-row"><span class="tag">女性向け</span></div>
             <div class="affiliate-links">
-              <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%89%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://item.rakuten.co.jp/howmoreliving/olor-027/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
+        <div class="gift-card" data-budget="under3k" data-target="child">
+          <a href="https://item.rakuten.co.jp/houjou-kyouzai/uno/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/houjou-kyouzai/cabinet/reku/uno1.jpg" alt="UNO カードゲーム ファミリーパーティー" loading="lazy" class="gift-img">
+          </a>
+          <div class="gift-body">
+            <h3>UNO カードゲーム ファミリーパーティー</h3>
+            <p class="price">¥1,310（価格+送料）</p>
+            <p class="description">家族みんなで楽しめる定番カードゲームUNO。子供への知育プレゼントとしても人気。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">知育</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=UNO+%E3%82%AB%E3%83%BC%E3%83%89%E3%82%B2%E3%83%BC%E3%83%A0+%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://item.rakuten.co.jp/houjou-kyouzai/uno/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -722,8 +836,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="under3k" data-target="child">
-          <div class="gift-image">✏️</div>
+          <a href="https://item.rakuten.co.jp/backyard/softpencase5/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/backyard/cabinet/main07/softpencase5.jpg" alt="両面 ソフトペンケース 小学生 入学準備" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>両面 ソフトペンケース 小学生 入学準備</h3>
             <p class="price">¥2,026（送料無料）</p>
@@ -735,8 +852,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="child">
-          <div class="gift-image">⌚</div>
+          <a href="https://item.rakuten.co.jp/lucky13/sfkidswatch/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/lucky13/cabinet/main03/sfkidswatch.jpg" alt="子供用 アナログ腕時計 入学祝い" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>子供用 アナログ腕時計 入学祝い</h3>
             <p class="price">¥2,129（送料無料）</p>
@@ -748,32 +868,55 @@
             </div>
           </div>
         </div>
-        <div class="gift-card" data-budget="3k5k" data-target="child">
-          <div class="gift-image">📚</div>
+
+        <div class="gift-card" data-budget="under3k" data-target="child">
+          <a href="https://item.rakuten.co.jp/lapiz/lpmg/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/lapiz/cabinet/original/lpmg/lpmg-s1_2.jpg" alt="名入れ 鉛筆セット 入学祝い プレゼント" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>入学祝い 学習図鑑・辞典セット</h3>
-            <p class="price">¥3,000〜¥5,000</p>
-            <p class="description">学習意欲を育てる人気の図鑑や辞典セット。長く使えて知育にもなる喜ばれる贈り物。</p>
-            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">知育</span></div>
+            <h3>名入れ 鉛筆セット 入学祝い</h3>
+            <p class="price">¥690〜（送料無料）</p>
+            <p class="description">子供の名前を入れた特別な鉛筆12本セット。日本製でお手頃な入学祝いの定番プレゼント。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">記念品</span></div>
             <div class="affiliate-links">
-              <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E5%9B%B3%E9%91%91+%E5%AD%90%E4%BE%9B+%E4%BA%BA%E6%B0%97&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E5%9B%B3%E9%91%91+%E5%B0%8F%E5%AD%A6%E7%94%9F/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E5%90%8D%E5%85%A5%E3%82%8C+%E9%89%9B%E7%AD%86+%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://item.rakuten.co.jp/lapiz/lpmg/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="5k10k" data-target="child">
-          <div class="gift-image">🎲</div>
+          <a href="https://item.rakuten.co.jp/gekiyasu-kagu/10011176/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/gekiyasu-kagu/cabinet/2022/4001046.jpg" alt="ThinkFun ローラーコースターチャレンジ 立体パズル" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>入学祝い 知育ボードゲーム・パズル</h3>
-            <p class="price">¥5,000〜¥8,000</p>
-            <p class="description">思考力・コミュニケーション力を育てるボードゲームやパズル。家族で楽しめる知育玩具。</p>
+            <h3>ThinkFun ローラーコースターチャレンジ</h3>
+            <p class="price">¥5,940（送料無料）</p>
+            <p class="description">物理的思考力を育む立体パズルゲーム。日本語説明書付きで入学祝いにぴったりの知育玩具。</p>
             <div class="tag-row"><span class="tag">子供へ</span><span class="tag">知育</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E7%9F%A5%E8%82%B2%E7%8E%A9%E5%85%B7+%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B2%E3%83%BC%E3%83%A0&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E7%9F%A5%E8%82%B2%E7%8E%A9%E5%85%B7/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/gekiyasu-kagu/10011176/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
+        <div class="gift-card" data-budget="under3k" data-target="child">
+          <a href="https://item.rakuten.co.jp/erikaland/erem4756/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/erikaland/cabinet/07746014/08564067/09631264/erem4756-1.jpg" alt="ソニック うかサポ 筆箱 入学 2026年度" loading="lazy" class="gift-img">
+          </a>
+          <div class="gift-body">
+            <h3>ソニック うかサポ 筆箱 入学準備</h3>
+            <p class="price">¥1,579（送料無料）</p>
+            <p class="description">整理・取り出しやすい設計の人気ソニック筆箱。2026年度入学の小学生にぴったりのギフト。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">実用的</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E7%AD%86%E7%AE%B1+%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF+%E5%B0%8F%E5%AD%A6%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://item.rakuten.co.jp/erikaland/erem4756/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -787,8 +930,11 @@
         </div>
       </div>
       <div class="gift-grid">
+
         <div class="gift-card" data-budget="under3k" data-target="parents boss">
-          <div class="gift-image">🥩</div>
+          <a href="https://item.rakuten.co.jp/imobuta/0041/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/imobuta/cabinet/11151275/11151277/imgrc0102419392.jpg" alt="千葉県産 いも豚 3点ハムセット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>千葉県産 いも豚 3点ハムセット</h3>
             <p class="price">¥2,140〜（送料無料）</p>
@@ -800,8 +946,11 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="under3k" data-target="parents boss female">
-          <div class="gift-image">🍮</div>
+          <a href="https://item.rakuten.co.jp/watch-me/t-11-035/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/watch-me/cabinet/syokuhin/syokuhin2/imgrc0108459948.jpg" alt="Hitotoe ジュレパフェ 6個セット フルーツゼリー" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
             <h3>Hitotoe ジュレパフェ 6個セット フルーツゼリー</h3>
             <p class="price">¥2,200（送料無料）</p>
@@ -813,32 +962,55 @@
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="3k5k" data-target="parents boss">
-          <div class="gift-image">🍺</div>
+          <a href="https://item.rakuten.co.jp/baeren/bss-10bc/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/baeren/cabinet/bin/08898732/gift/imgrc0150289738.jpg" alt="ベアレンビール ギフト 瓶・缶 5種10本セット" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>お中元・お歳暮 ビール・お酒 詰め合わせ</h3>
-            <p class="price">¥3,000〜¥5,000</p>
-            <p class="description">定番のビールセットや日本酒・焼酎の詰め合わせ。幅広い年代に喜ばれる王道ギフト。</p>
+            <h3>ベアレンビール ギフト 5種10本セット</h3>
+            <p class="price">¥5,300（送料無料）</p>
+            <p class="description">岩手・盛岡のクラフトビール5種10本ギフトBOX入り。定番ビールセットや日本酒好きへの王道ギフト。</p>
             <div class="tag-row"><span class="tag">両親へ</span><span class="tag">上司へ</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%83%93%E3%83%BC%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88+%E4%BA%BA%E6%B0%97&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E3%81%8A%E4%B8%AD%E5%85%83+%E3%83%93%E3%83%BC%E3%83%AB%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/baeren/bss-10bc/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
         <div class="gift-card" data-budget="5k10k" data-target="parents boss">
-          <div class="gift-image">🫒</div>
+          <a href="https://item.rakuten.co.jp/rebun/shimanohito-selection/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/rebun/cabinet/2507sele600.jpg" alt="北海道 海鮮6点 島の人セレクション" loading="lazy" class="gift-img">
+          </a>
           <div class="gift-body">
-            <h3>高級グルメセット お中元・お歳暮</h3>
-            <p class="price">¥5,000〜¥10,000</p>
-            <p class="description">産地直送の海産物・肉・惣菜のグルメセット。目上の方への格式ある贈り物。</p>
+            <h3>北海道 海鮮6点 島の人セレクション</h3>
+            <p class="price">¥5,990（送料無料）</p>
+            <p class="description">北海道直送の海鮮6点詰め合わせ。産地直送の新鮮さが自慢の高級グルメギフトセット。</p>
             <div class="tag-row"><span class="tag">両親へ</span><span class="tag">上司へ</span></div>
             <div class="affiliate-links">
               <a href="https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%82%B0%E3%83%AB%E3%83%A1+%E3%82%AE%E3%83%95%E3%83%88+%E9%AB%98%E7%B4%9A&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="https://search.rakuten.co.jp/search/mall/%E3%81%8A%E4%B8%AD%E5%85%83+%E3%82%B0%E3%83%AB%E3%83%A1%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+              <a href="https://item.rakuten.co.jp/rebun/shimanohito-selection/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
         </div>
+
+        <div class="gift-card" data-budget="under3k" data-target="parents boss">
+          <a href="https://item.rakuten.co.jp/japangift/zz-iz-30w/" target="_blank" rel="noopener" class="gift-image-link">
+            <img src="https://tshop.r10s.jp/japangift/cabinet/pointex/20260328pup/iz-30shi-30.jpg" alt="揖保乃糸 そうめん 特級品 黒帯 古 ひね" loading="lazy" class="gift-img">
+          </a>
+          <div class="gift-body">
+            <h3>揖保乃糸 そうめん 特級品 黒帯 古ひね</h3>
+            <p class="price">¥2,298〜（送料無料）</p>
+            <p class="description">1年熟成の高級素麺・揖保乃糸特級品（黒帯）。夏のお中元・お歳暮に定番の上質なギフト。</p>
+            <div class="tag-row"><span class="tag">両親へ</span><span class="tag">上司へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E6%8F%96%E4%BF%9D%E4%B9%83%E7%B3%B8+%E3%81%9D%E3%81%86%E3%82%81%E3%82%93+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://item.rakuten.co.jp/japangift/zz-iz-30w/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
