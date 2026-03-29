@@ -3,355 +3,866 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Okurite｜大切な人に贈る、特別なギフトを見つけよう</title>
-  <meta name="description" content="母の日・父の日・誕生日・お祝いに。シーンに合わせた上質なギフトをご提案。大切な人への贈り物選びをお手伝いします。">
-  <meta name="keywords" content="ギフト,プレゼント,贈り物,母の日,父の日,誕生日,お祝い,お中元,お歳暮,還暦">
+  <title>Okurite（おくりて）| シーン別ギフト・プレゼント検索【2026年版】</title>
+  <meta name="description" content="母の日、誕生日、結婚祝い…シーン別・予算別でぴったりのギフトが見つかる。Amazon・楽天の人気商品を厳選比較。">
+  <meta name="keywords" content="ギフト,プレゼント,贈り物,母の日,父の日,誕生日,結婚祝い,出産祝い,クリスマス,お中元,お歳暮">
   <meta name="google-site-verification" content="GRXPtbHLxfl8zA96yG12Rml4YJ00PvNXt6lHKJOYQiE" />
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Okurite（おくりて）| シーン別ギフト・プレゼント検索">
+  <meta property="og:description" content="母の日、誕生日、結婚祝い…シーン別・予算別でぴったりのギフトが見つかる。Amazon・楽天の人気商品を厳選比較。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://richend0913.github.io/okurite/">
+  <meta property="og:image" content="https://richend0913.github.io/okurite/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6327505164684489" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --pink: #f472b6;
+      --coral: #fb7185;
+      --peach: #fda4af;
+      --rose: #e11d48;
+      --light: #fff1f2;
+      --text: #1f1f2e;
+      --text-muted: #6b7280;
+      --border: #fce7f3;
+      --card-bg: #fff;
+      --grad: linear-gradient(135deg, #f9a8d4 0%, #fb7185 50%, #f472b6 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans JP', sans-serif; color: var(--text); background: #fdf2f8; line-height: 1.7; }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(10px);
+      position: sticky; top: 0; z-index: 100;
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px;
+    }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 1.4rem; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .header-nav { display: flex; gap: 24px; list-style: none; }
+    .header-nav a { text-decoration: none; color: var(--text-muted); font-size: .85rem; font-weight: 500; transition: color .2s; }
+    .header-nav a:hover { color: var(--rose); }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--grad);
+      padding: 80px 20px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 16px; }
+    .hero h1 span { display: block; font-size: clamp(1.1rem, 3vw, 1.6rem); font-weight: 400; opacity: .9; margin-top: 8px; }
+    .hero p { color: rgba(255,255,255,.9); font-size: 1rem; margin-bottom: 32px; }
+
+    .scene-btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 0; }
+    .scene-btn {
+      background: rgba(255,255,255,.2);
+      border: 1px solid rgba(255,255,255,.4);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: .85rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all .2s;
+      backdrop-filter: blur(4px);
+    }
+    .scene-btn:hover { background: rgba(255,255,255,.35); transform: translateY(-2px); }
+
+    /* ===== AD SLOT ===== */
+    .ad-slot { max-width: 1100px; margin: 24px auto; padding: 0 20px; text-align: center; }
+    .ad-placeholder { background: #f3f4f6; border: 1px dashed #d1d5db; border-radius: 8px; padding: 20px; color: #9ca3af; font-size: .8rem; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+
+    /* ===== FILTER BAR ===== */
+    .filter-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 12px 20px; position: sticky; top: 60px; z-index: 90; }
+    .filter-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .filter-label { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; margin-right: 4px; }
+    .filter-btn {
+      padding: 5px 14px;
+      border-radius: 50px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text-muted);
+      font-size: .78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .filter-btn:hover, .filter-btn.active { background: var(--rose); color: #fff; border-color: var(--rose); }
+    .filter-sep { width: 1px; height: 20px; background: var(--border); margin: 0 4px; }
+
+    /* ===== MAIN CONTENT ===== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px 80px; }
+
+    .scene-section { margin-bottom: 60px; }
+    .scene-section[data-scene] { display: block; }
+    .scene-section.hidden { display: none; }
+
+    .scene-header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+    .scene-icon { font-size: 2rem; }
+    .scene-header h2 { font-size: 1.3rem; font-weight: 700; }
+    .scene-header p { font-size: .82rem; color: var(--text-muted); margin-top: 2px; }
+
+    .gift-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+
+    .gift-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .gift-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(244,114,182,.15); }
+    .gift-card[data-budget][data-target] { display: flex; flex-direction: column; }
+
+    .gift-image {
+      width: 100%; aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #fce7f3, #fdf2f8);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+    }
+
+    .gift-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+    .gift-body h3 { font-size: .9rem; font-weight: 700; margin-bottom: 4px; }
+    .price { font-size: .82rem; color: var(--rose); font-weight: 700; margin-bottom: 6px; }
+    .description { font-size: .78rem; color: var(--text-muted); flex: 1; margin-bottom: 12px; line-height: 1.5; }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
+    .tag { font-size: .65rem; padding: 2px 8px; border-radius: 50px; background: var(--light); color: var(--rose); font-weight: 500; }
+
+    .affiliate-links { display: flex; flex-direction: column; gap: 6px; }
+    .btn-amazon {
+      display: block; text-align: center; text-decoration: none;
+      background: #ff9900; color: #fff;
+      padding: 8px 12px; border-radius: 8px;
+      font-size: .78rem; font-weight: 700;
+      transition: opacity .2s;
+    }
+    .btn-amazon:hover { opacity: .85; }
+    .btn-rakuten {
+      display: block; text-align: center; text-decoration: none;
+      background: #bf0000; color: #fff;
+      padding: 8px 12px; border-radius: 8px;
+      font-size: .78rem; font-weight: 700;
+      transition: opacity .2s;
+    }
+    .btn-rakuten:hover { opacity: .85; }
+
+    /* ===== FOOTER ===== */
+    .footer { background: var(--text); color: #9ca3af; text-align: center; padding: 32px 20px; font-size: .75rem; }
+    .footer a { color: #9ca3af; text-decoration: none; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 640px) {
+      .header-nav { display: none; }
+      .hero { padding: 60px 16px 40px; }
+      .gift-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .gift-body { padding: 12px; }
+      .filter-bar { padding: 10px 12px; }
+    }
+    @media (max-width: 400px) {
+      .gift-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="header">
     <div class="header-inner">
       <div class="logo">Okurite</div>
-      <button class="hamburger" onclick="document.querySelector('.nav').classList.toggle('open')">&#9776;</button>
-      <ul class="nav">
-        <li><a href="#categories">カテゴリ</a></li>
-        <li><a href="#popular">人気ギフト</a></li>
-        <li><a href="#scene">シーンで選ぶ</a></li>
-        <li><a href="#budget">予算で選ぶ</a></li>
-        <li><a href="blog/">コラム</a></li>
+      <ul class="header-nav">
+        <li><a href="#haha">母の日</a></li>
+        <li><a href="#tanjobi">誕生日</a></li>
+        <li><a href="#kekkon">結婚祝い</a></li>
+        <li><a href="#christmas">クリスマス</a></li>
+        <li><a href="#budget-section">予算で選ぶ</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- ヒーロー -->
+  <!-- HERO -->
   <section class="hero">
-    <div>
-      <h1>大切な人に、<br><span>特別な贈り物を</span></h1>
-      <p>シーンに合わせた上質なギフトをご提案。<br>あなたの「ありがとう」を形にします。</p>
-      <a href="#categories" class="btn-primary">ギフトを探す</a>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- カテゴリ -->
-  <section class="section" id="categories">
-    <h2 class="section-title">贈る相手で選ぶ</h2>
-    <p class="section-sub">誰に贈りますか？</p>
-    <div class="cat-grid">
-      <div class="cat-card" data-filter="target:mother" onclick="setFilterFromCard(this)">
-        <div class="cat-icon">Mother</div>
-        <h3>お母さんへ</h3>
-        <p>母の日・誕生日・還暦祝い</p>
-      </div>
-      <div class="cat-card" data-filter="target:father" onclick="setFilterFromCard(this)">
-        <div class="cat-icon">Father</div>
-        <h3>お父さんへ</h3>
-        <p>父の日・誕生日・退職祝い</p>
-      </div>
-      <div class="cat-card" data-filter="target:kids" onclick="setFilterFromCard(this)">
-        <div class="cat-icon">Kids</div>
-        <h3>お子さまへ</h3>
-        <p>入学祝い・誕生日・クリスマス</p>
-      </div>
-      <div class="cat-card" data-filter="target:friends" onclick="setFilterFromCard(this)">
-        <div class="cat-icon">Friends</div>
-        <h3>友人へ</h3>
-        <p>誕生日・結婚祝い・出産祝い</p>
-      </div>
-      <div class="cat-card" data-filter="target:business" onclick="setFilterFromCard(this)">
-        <div class="cat-icon">Business</div>
-        <h3>ビジネス</h3>
-        <p>お中元・お歳暮・昇進祝い・手土産</p>
-      </div>
-      <div class="cat-card" data-filter="target:partner" onclick="setFilterFromCard(this)">
-        <div class="cat-icon">Partner</div>
-        <h3>パートナーへ</h3>
-        <p>記念日・誕生日・バレンタイン</p>
+    <div class="hero-content">
+      <h1>ギフト選びをもっとカンタンに
+        <span>シーン・予算・相手別でぴったりのプレゼントが見つかる</span>
+      </h1>
+      <p>母の日・誕生日・結婚祝い… 大切な人への贈り物をサポートします</p>
+      <div class="scene-btns">
+        <a href="#haha" class="scene-btn">🌸 母の日</a>
+        <a href="#chichi" class="scene-btn">👔 父の日</a>
+        <a href="#tanjobi" class="scene-btn">🎂 誕生日</a>
+        <a href="#kekkon" class="scene-btn">💍 結婚祝い</a>
+        <a href="#shussan" class="scene-btn">👶 出産祝い</a>
+        <a href="#christmas" class="scene-btn">🎄 クリスマス</a>
+        <a href="#nyugaku" class="scene-btn">🎒 入学祝い</a>
+        <a href="#ochugen" class="scene-btn">🍱 お中元・お歳暮</a>
       </div>
     </div>
   </section>
 
-  <hr class="divider">
+  <!-- AD SLOT 1 -->
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6327505164684489" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
-  <!-- ギフト一覧 -->
-  <section class="section" id="popular">
-    <h2 class="section-title">ギフトを探す</h2>
-    <p class="section-sub">条件を組み合わせて、ぴったりのギフトを見つけましょう</p>
+  <!-- FILTER BAR -->
+  <div class="filter-bar" id="budget-section">
+    <div class="filter-inner">
+      <span class="filter-label">予算</span>
+      <button class="filter-btn active" data-budget="all" onclick="filterBudget(this,'all')">すべて</button>
+      <button class="filter-btn" data-budget="under3k" onclick="filterBudget(this,'under3k')">〜3,000円</button>
+      <button class="filter-btn" data-budget="3k5k" onclick="filterBudget(this,'3k5k')">3,000〜5,000円</button>
+      <button class="filter-btn" data-budget="5k10k" onclick="filterBudget(this,'5k10k')">5,000〜10,000円</button>
+      <button class="filter-btn" data-budget="over10k" onclick="filterBudget(this,'over10k')">10,000円〜</button>
+      <div class="filter-sep"></div>
+      <span class="filter-label">相手</span>
+      <button class="filter-btn active" data-target="all" onclick="filterTarget(this,'all')">すべて</button>
+      <button class="filter-btn" data-target="female" onclick="filterTarget(this,'female')">女性へ</button>
+      <button class="filter-btn" data-target="male" onclick="filterTarget(this,'male')">男性へ</button>
+      <button class="filter-btn" data-target="child" onclick="filterTarget(this,'child')">子供へ</button>
+      <button class="filter-btn" data-target="parents" onclick="filterTarget(this,'parents')">両親へ</button>
+      <button class="filter-btn" data-target="boss" onclick="filterTarget(this,'boss')">上司へ</button>
+    </div>
+  </div>
 
-    <!-- 組み合わせフィルター -->
-    <div style="background:#fff; border:1px solid rgba(180,160,120,.15); border-radius:14px; padding:24px; margin-bottom:32px;">
-      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
-        <div style="flex:1; min-width:150px;">
-          <label style="font-size:.75rem; color:#999; display:block; margin-bottom:4px;">贈る相手</label>
-          <select id="filterTarget" onchange="applyFilters()" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; font-size:.9rem; color:#333;">
-            <option value="">すべて</option>
-            <option value="mother">お母さん</option>
-            <option value="father">お父さん</option>
-            <option value="kids">お子さま</option>
-            <option value="friends">友人</option>
-            <option value="business">ビジネス</option>
-            <option value="partner">パートナー</option>
-          </select>
-        </div>
-        <div style="flex:1; min-width:150px;">
-          <label style="font-size:.75rem; color:#999; display:block; margin-bottom:4px;">シーン</label>
-          <select id="filterScene" onchange="applyFilters()" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; font-size:.9rem; color:#333;">
-            <option value="">すべて</option>
-            <option value="birthday">誕生日</option>
-            <option value="mothers_day">母の日</option>
-            <option value="fathers_day">父の日</option>
-            <option value="wedding">結婚祝い</option>
-            <option value="school">入学・卒業祝い</option>
-            <option value="seasonal">お中元・お歳暮</option>
-            <option value="anniversary">記念日</option>
-            <option value="baby">出産祝い</option>
-          </select>
-        </div>
-        <div style="flex:1; min-width:150px;">
-          <label style="font-size:.75rem; color:#999; display:block; margin-bottom:4px;">予算</label>
-          <select id="filterBudget" onchange="applyFilters()" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; font-size:.9rem; color:#333;">
-            <option value="">すべて</option>
-            <option value="3000">〜3,000円</option>
-            <option value="5000">3,000〜5,000円</option>
-            <option value="10000">5,000〜10,000円</option>
-            <option value="99999">10,000円〜</option>
-          </select>
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- 母の日 -->
+    <section class="scene-section" data-scene="haha" id="haha">
+      <div class="scene-header">
+        <div class="scene-icon">🌸</div>
+        <div>
+          <h2>母の日のギフト</h2>
+          <p>5月第2日曜日 — 日頃の感謝を花と贈り物に込めて</p>
         </div>
       </div>
-      <div id="filterResult" style="font-size:.85rem; color:#8b6914;"></div>
-    </div>
-
-    <div class="product-grid" id="productGrid">
-      <p id="loadingMsg" style="text-align:center; color:#aaa; grid-column:1/-1;">読み込み中...</p>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- シーンで選ぶ -->
-  <section class="section" id="scene">
-    <h2 class="section-title">シーンで選ぶ</h2>
-    <p class="section-sub">どんな場面での贈り物ですか？</p>
-    <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-icon">Birthday</div>
-        <h3>誕生日</h3>
-        <p>年に一度の特別な日に</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">Mother</div>
-        <h3>母の日</h3>
-        <p>いつもありがとうの気持ちを</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">Father</div>
-        <h3>父の日</h3>
-        <p>お父さんへの感謝を形に</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">Wedding</div>
-        <h3>結婚祝い</h3>
-        <p>新しい門出を祝って</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">School</div>
-        <h3>入学・卒業祝い</h3>
-        <p>新たなスタートに</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">Season</div>
-        <h3>お中元・お歳暮</h3>
-        <p>季節のご挨拶に</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 予算で選ぶ -->
-  <section class="section" id="budget">
-    <h2 class="section-title">予算で選ぶ</h2>
-    <p class="section-sub">ご予算に合わせてお探しいただけます</p>
-    <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-icon">Casual</div>
-        <h3>〜3,000円</h3>
-        <p>ちょっとした感謝の気持ちに</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">Standard</div>
-        <h3>3,000〜5,000円</h3>
-        <p>定番の価格帯で選ぶ</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">Premium</div>
-        <h3>5,000〜10,000円</h3>
-        <p>少し贅沢な贈り物を</p>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">Luxury</div>
-        <h3>10,000円〜</h3>
-        <p>特別な日にふさわしい一品</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- コラム -->
-  <section class="section" id="blog">
-    <h2 class="section-title">ギフトコラム</h2>
-    <p class="section-sub">贈り物選びに役立つ情報をお届けします</p>
-    <div class="cat-grid">
-      <div class="cat-card" onclick="location.href='blog/mothers-day-2026.html'" style="text-align:left; padding:0; overflow:hidden;">
-        <img src="https://images.unsplash.com/photo-1462275646964-a0e3c11f18a6?w=400&h=200&fit=crop" alt="母の日" style="width:100%; height:140px; object-fit:cover;">
-        <div style="padding:16px;">
-          <h3 style="font-size:.9rem;">【2026年】母の日プレゼント15選</h3>
-          <p style="font-size:.75rem;">予算別おすすめギフト</p>
-        </div>
-      </div>
-      <div class="cat-card" onclick="location.href='blog/mothers-day-not-flowers.html'" style="text-align:left; padding:0; overflow:hidden;">
-        <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=400&h=200&fit=crop" alt="花以外" style="width:100%; height:140px; object-fit:cover;">
-        <div style="padding:16px;">
-          <h3 style="font-size:.9rem;">母の日に花以外のプレゼント10選</h3>
-          <p style="font-size:.75rem;">実用的で喜ばれるギフト</p>
-        </div>
-      </div>
-      <div class="cat-card" onclick="location.href='blog/gift-budget-3000.html'" style="text-align:left; padding:0; overflow:hidden;">
-        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238f069?w=400&h=200&fit=crop" alt="予算3000円" style="width:100%; height:140px; object-fit:cover;">
-        <div style="padding:16px;">
-          <h3 style="font-size:.9rem;">予算3,000円以下の高見えギフト12選</h3>
-          <p style="font-size:.75rem;">センスが光るプレゼント</p>
-        </div>
-      </div>
-    </div>
-    <div style="text-align:center; margin-top:24px;">
-      <a href="blog/" class="btn-primary" style="font-size:.85rem; padding:10px 28px;">コラム一覧を見る</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2026 Okurite. All rights reserved.</p>
-    <p style="margin-top:8px;">当サイトはアフィリエイトプログラムに参加しています。</p>
-  </footer>
-
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyAyfqJPXfSTVJ0XaUUt0v15HyWbAsHDYW4",
-      authDomain: "jobconnect-app-54a70.firebaseapp.com",
-      projectId: "jobconnect-app-54a70",
-    };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-
-    let allProducts = [];
-    const targetLabels = { mother:'お母さん', father:'お父さん', kids:'お子さま', friends:'友人', business:'ビジネス', partner:'パートナー' };
-    const sceneLabels = { birthday:'誕生日', mothers_day:'母の日', fathers_day:'父の日', wedding:'結婚祝い', school:'入学祝い', seasonal:'お中元・お歳暮', anniversary:'記念日', baby:'出産祝い' };
-
-    // Firestore読み込み
-    async function loadProducts() {
-      const snapshot = await db.collection('gifts').orderBy('createdAt', 'desc').get();
-      allProducts = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      applyFilters();
-    }
-
-    // フィルター適用
-    function applyFilters() {
-      const target = document.getElementById('filterTarget').value;
-      const scene = document.getElementById('filterScene').value;
-      const budget = document.getElementById('filterBudget').value;
-
-      let filtered = allProducts;
-
-      if (target) filtered = filtered.filter(p => p.targets && p.targets.includes(target));
-      if (scene) filtered = filtered.filter(p => p.scenes && p.scenes.includes(scene));
-      if (budget) {
-        const b = parseInt(budget);
-        if (b === 3000) filtered = filtered.filter(p => p.price <= 3000);
-        else if (b === 5000) filtered = filtered.filter(p => p.price > 3000 && p.price <= 5000);
-        else if (b === 10000) filtered = filtered.filter(p => p.price > 5000 && p.price <= 10000);
-        else if (b === 99999) filtered = filtered.filter(p => p.price > 10000);
-      }
-
-      const result = document.getElementById('filterResult');
-      result.textContent = filtered.length + ' 件のギフトが見つかりました';
-
-      renderProducts(filtered);
-    }
-
-    // 商品カード描画
-    function renderProducts(products) {
-      const grid = document.getElementById('productGrid');
-
-      if (products.length === 0) {
-        grid.innerHTML = '<p style="text-align:center; color:#aaa; grid-column:1/-1; padding:40px 0;">条件に合うギフトが見つかりませんでした。<br>管理ページから商品を登録してください。</p>';
-        return;
-      }
-
-      grid.innerHTML = products.map(p => {
-        const tags = [
-          ...(p.targets || []).map(t => targetLabels[t] || t),
-          ...(p.scenes || []).map(s => sceneLabels[s] || s),
-        ].slice(0, 4);
-
-        let buyLinks = '';
-        if (p.amazonUrl && p.rakutenUrl) {
-          buyLinks = `<a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-link">楽天市場で購入する</a><div class="buy-sub">Amazonでも購入できます → <a href="${p.amazonUrl}" target="_blank" rel="noopener">Amazon</a></div>`;
-        } else if (p.amazonUrl) {
-          buyLinks = `<a href="${p.amazonUrl}" target="_blank" rel="noopener" class="buy-link">Amazonで購入する</a>`;
-        } else if (p.rakutenUrl) {
-          buyLinks = `<a href="${p.rakutenUrl}" target="_blank" rel="noopener" class="buy-link">楽天市場で購入する</a>`;
-        }
-
-        return `
-          <div class="product-card">
-            <div class="product-img" ${p.image ? `style="background:url('${p.image}') center/cover; font-size:0;"` : ''}>${p.image ? '' : p.name.substring(0, 20)}</div>
-            <div class="product-info">
-              <div class="product-name">${p.name}</div>
-              <div class="product-desc">${p.desc}</div>
-              <div class="product-price">&yen;${p.price.toLocaleString()}</div>
-              <div class="product-tags">${tags.map(t => `<span class="product-tag">${t}</span>`).join('')}</div>
-              ${buyLinks}
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="3k5k" data-target="female parents">
+          <div class="gift-image">💐</div>
+          <div class="gift-body">
+            <h3>プレミアムフラワーギフト</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">カーネーションを中心とした季節の花束。母の日定番の感謝の贈り物。</p>
+            <div class="tag-row"><span class="tag">女性向け</span><span class="tag">両親へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
             </div>
           </div>
-        `;
-      }).join('');
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="female parents">
+          <div class="gift-image">💄</div>
+          <div class="gift-body">
+            <h3>コスメ・スキンケアセット</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">人気ブランドのハンドクリームや化粧水のギフトセット。喜ばれる定番品。</p>
+            <div class="tag-row"><span class="tag">女性向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%82%B3%E3%82%B9%E3%83%A1+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%82%B3%E3%82%B9%E3%83%A1%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="female parents">
+          <div class="gift-image">🍵</div>
+          <div class="gift-body">
+            <h3>高級お茶・紅茶セット</h3>
+            <p class="price">¥2,500〜¥4,000</p>
+            <p class="description">産地直送の上質な日本茶や紅茶の詰め合わせ。ゆっくり楽しんでもらえる。</p>
+            <div class="tag-row"><span class="tag">女性向け</span><span class="tag">両親へ</span><span class="tag">上司へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%81%8A%E8%8C%B6+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%81%8A%E8%8C%B6+%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="female parents">
+          <div class="gift-image">👘</div>
+          <div class="gift-body">
+            <h3>上質エプロン＆キッチングッズ</h3>
+            <p class="price">¥5,000〜¥8,000</p>
+            <p class="description">料理好きなお母さんへ。おしゃれなエプロンと便利なキッチングッズのセット。</p>
+            <div class="tag-row"><span class="tag">女性向け</span><span class="tag">両親へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%82%A8%E3%83%97%E3%83%AD%E3%83%B3+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%82%A8%E3%83%97%E3%83%AD%E3%83%B3%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="over10k" data-target="female parents">
+          <div class="gift-image">🎫</div>
+          <div class="gift-body">
+            <h3>体験ギフト（エステ・温泉）</h3>
+            <p class="price">¥10,000〜¥20,000</p>
+            <p class="description">モノより思い出。エステや温泉旅行などの体験型ギフト券。特別感のある贈り物。</p>
+            <div class="tag-row"><span class="tag">女性向け</span><span class="tag">両親へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E4%BD%93%E9%A8%93%E3%82%AE%E3%83%95%E3%83%88+%E6%AF%8D%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E4%BD%93%E9%A8%93%E3%82%AE%E3%83%95%E3%83%88+%E6%AF%8D%E3%81%AE%E6%97%A5/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 父の日 -->
+    <section class="scene-section" data-scene="chichi" id="chichi">
+      <div class="scene-header">
+        <div class="scene-icon">👔</div>
+        <div>
+          <h2>父の日のギフト</h2>
+          <p>6月第3日曜日 — お父さんの好きなものをプレゼント</p>
+        </div>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="3k5k" data-target="male parents">
+          <div class="gift-image">🍺</div>
+          <div class="gift-body">
+            <h3>クラフトビールセット</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">国産・輸入クラフトビールの詰め合わせ。ビール好きのお父さんに喜ばれる。</p>
+            <div class="tag-row"><span class="tag">男性向け</span><span class="tag">両親へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%88%B6%E3%81%AE%E6%97%A5+%E3%83%93%E3%83%BC%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%88%B6%E3%81%AE%E6%97%A5+%E3%83%93%E3%83%BC%E3%83%AB%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="male parents">
+          <div class="gift-image">👜</div>
+          <div class="gift-body">
+            <h3>本革レザー小物</h3>
+            <p class="price">¥5,000〜¥8,000</p>
+            <p class="description">財布・名刺入れ・キーケースなど。上質な本革製品は長く使ってもらえる。</p>
+            <div class="tag-row"><span class="tag">男性向け</span><span class="tag">上司へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%88%B6%E3%81%AE%E6%97%A5+%E9%9D%A9%E5%B0%8F%E7%89%A9+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%88%B6%E3%81%AE%E6%97%A5+%E9%9D%A9%E8%B2%A1%E5%B8%83%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="male parents">
+          <div class="gift-image">⛳</div>
+          <div class="gift-body">
+            <h3>ゴルフグッズ</h3>
+            <p class="price">¥3,000〜¥6,000</p>
+            <p class="description">ゴルフ好きなお父さんへ。ボールやグローブ、便利なアクセサリーセット。</p>
+            <div class="tag-row"><span class="tag">男性向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%88%B6%E3%81%AE%E6%97%A5+%E3%82%B4%E3%83%AB%E3%83%95+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%88%B6%E3%81%AE%E6%97%A5+%E3%82%B4%E3%83%AB%E3%83%95%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="over10k" data-target="male parents">
+          <div class="gift-image">💆</div>
+          <div class="gift-body">
+            <h3>マッサージクッション</h3>
+            <p class="price">¥8,000〜¥15,000</p>
+            <p class="description">毎日お疲れのお父さんへ。自宅で使えるコンパクトマッサージ機。</p>
+            <div class="tag-row"><span class="tag">男性向け</span><span class="tag">両親へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E3%82%AF%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E6%A9%9F+%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="male parents">
+          <div class="gift-image">🥩</div>
+          <div class="gift-body">
+            <h3>高級グルメ券・肉ギフト</h3>
+            <p class="price">¥5,000〜¥10,000</p>
+            <p class="description">A5和牛や高級焼肉店のギフト券。食べることが好きなお父さんに。</p>
+            <div class="tag-row"><span class="tag">男性向け</span><span class="tag">両親へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%88%B6%E3%81%AE%E6%97%A5+%E8%82%89+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%88%B6%E3%81%AE%E6%97%A5+%E8%82%89%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD SLOT 2 -->
+    <div style="text-align:center; margin-bottom:40px;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6327505164684489" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- 誕生日 -->
+    <section class="scene-section" data-scene="tanjobi" id="tanjobi">
+      <div class="scene-header">
+        <div class="scene-icon">🎂</div>
+        <div>
+          <h2>誕生日のギフト</h2>
+          <p>年に一度の特別な日に、心に残る贈り物を</p>
+        </div>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="5k10k" data-target="female">
+          <div class="gift-image">💎</div>
+          <div class="gift-body">
+            <h3>アクセサリー（ネックレス）</h3>
+            <p class="price">¥5,000〜¥10,000</p>
+            <p class="description">シンプルで使いやすいシルバー・ゴールドのネックレス。誕生日に定番の人気ギフト。</p>
+            <div class="tag-row"><span class="tag">女性向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="male female">
+          <div class="gift-image">👛</div>
+          <div class="gift-body">
+            <h3>ブランド財布</h3>
+            <p class="price">¥8,000〜¥15,000</p>
+            <p class="description">長財布・二つ折り財布。実用的で毎日使えるため喜ばれる定番ギフト。</p>
+            <div class="tag-row"><span class="tag">男性向け</span><span class="tag">女性向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E8%B2%A1%E5%B8%83+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E8%AA%95%E7%94%9F%E6%97%A5+%E8%B2%A1%E5%B8%83%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="over10k" data-target="male female">
+          <div class="gift-image">⌚</div>
+          <div class="gift-body">
+            <h3>腕時計</h3>
+            <p class="price">¥10,000〜¥30,000</p>
+            <p class="description">誕生日の特別感を演出。シンプルデザインで長く使える腕時計。</p>
+            <div class="tag-row"><span class="tag">男性向け</span><span class="tag">女性向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E8%85%95%E6%99%82%E8%A8%88+%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E8%AA%95%E7%94%9F%E6%97%A5+%E8%85%95%E6%99%82%E8%A8%88%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="over10k" data-target="male female parents">
+          <div class="gift-image">📋</div>
+          <div class="gift-body">
+            <h3>カタログギフト</h3>
+            <p class="price">¥5,000〜¥30,000</p>
+            <p class="description">相手が好きなものを選べる。好みがわからないときや年配の方への定番ギフト。</p>
+            <div class="tag-row"><span class="tag">全員向け</span><span class="tag">両親へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E8%AA%95%E7%94%9F%E6%97%A5+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="female male">
+          <div class="gift-image">🎫</div>
+          <div class="gift-body">
+            <h3>体験ギフト</h3>
+            <p class="price">¥8,000〜¥15,000</p>
+            <p class="description">旅行・グルメ・アクティビティなど体験型プレゼント。思い出に残る特別感。</p>
+            <div class="tag-row"><span class="tag">全員向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E4%BD%93%E9%A8%93%E3%82%AE%E3%83%95%E3%83%88+%E8%AA%95%E7%94%9F%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E4%BD%93%E9%A8%93%E3%82%AE%E3%83%95%E3%83%88+%E8%AA%95%E7%94%9F%E6%97%A5/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 結婚祝い -->
+    <section class="scene-section" data-scene="kekkon" id="kekkon">
+      <div class="scene-header">
+        <div class="scene-icon">💍</div>
+        <div>
+          <h2>結婚祝いのギフト</h2>
+          <p>新しい門出を祝う、二人への特別な贈り物</p>
+        </div>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="5k10k" data-target="female male">
+          <div class="gift-image">🥂</div>
+          <div class="gift-body">
+            <h3>ペアグラス・食器セット</h3>
+            <p class="price">¥5,000〜¥10,000</p>
+            <p class="description">二人で使えるペアグラスや高級食器セット。実用的で喜ばれる定番。</p>
+            <div class="tag-row"><span class="tag">ペアで</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E3%83%9A%E3%82%A2%E3%82%B0%E3%83%A9%E3%82%B9&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E3%83%9A%E3%82%A2%E3%82%B0%E3%83%A9%E3%82%B9/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="female male">
+          <div class="gift-image">🛁</div>
+          <div class="gift-body">
+            <h3>今治タオルセット</h3>
+            <p class="price">¥5,000〜¥8,000</p>
+            <p class="description">日本が誇る今治タオルの高級セット。新生活に実用的で縁起の良い贈り物。</p>
+            <div class="tag-row"><span class="tag">ペアで</span><span class="tag">実用的</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E4%BB%8A%E6%B2%BB%E3%82%BF%E3%82%AA%E3%83%AB&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E4%BB%8A%E6%B2%BB%E3%82%BF%E3%82%AA%E3%83%AB/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="over10k" data-target="female male">
+          <div class="gift-image">📋</div>
+          <div class="gift-body">
+            <h3>カタログギフト（高額）</h3>
+            <p class="price">¥10,000〜¥30,000</p>
+            <p class="description">二人で好きなものを選んでもらえる。予算に合わせて選べるカタログギフト。</p>
+            <div class="tag-row"><span class="tag">ペアで</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="over10k" data-target="female male">
+          <div class="gift-image">🏠</div>
+          <div class="gift-body">
+            <h3>家電ギフト（コーヒーメーカー等）</h3>
+            <p class="price">¥15,000〜¥30,000</p>
+            <p class="description">新生活に役立つ家電。コーヒーメーカーやホットプレートなど二人で使えるもの。</p>
+            <div class="tag-row"><span class="tag">ペアで</span><span class="tag">実用的</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E5%AE%B6%E9%9B%BB+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E5%AE%B6%E9%9B%BB%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 出産祝い -->
+    <section class="scene-section" data-scene="shussan" id="shussan">
+      <div class="scene-header">
+        <div class="scene-icon">👶</div>
+        <div>
+          <h2>出産祝いのギフト</h2>
+          <p>新しい命の誕生を祝う、ママ・赤ちゃんへの贈り物</p>
+        </div>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="3k5k" data-target="child female">
+          <div class="gift-image">👕</div>
+          <div class="gift-body">
+            <h3>ベビー服セット</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">肌に優しいオーガニックコットンのベビー服セット。実用的で喜ばれる。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">実用的</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%83%99%E3%83%93%E3%83%BC%E6%9C%8D+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%83%99%E3%83%93%E3%83%BC%E6%9C%8D/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="child female">
+          <div class="gift-image">🎂</div>
+          <div class="gift-body">
+            <h3>おむつケーキ</h3>
+            <p class="price">¥5,000〜¥8,000</p>
+            <p class="description">おむつをケーキ型に飾り付けたインスタ映えギフト。実用的でかわいい。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">見た目◎</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%81%8A%E3%82%80%E3%81%A4%E3%82%B1%E3%83%BC%E3%82%AD&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%81%8A%E3%82%80%E3%81%A4%E3%82%B1%E3%83%BC%E3%82%AD/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="child">
+          <div class="gift-image">📚</div>
+          <div class="gift-body">
+            <h3>絵本セット</h3>
+            <p class="price">¥2,000〜¥4,000</p>
+            <p class="description">0歳から楽しめる人気絵本のセット。長く使えて知育にもなる贈り物。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">知育</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E7%B5%B5%E6%9C%AC+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E7%B5%B5%E6%9C%AC%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="child female">
+          <div class="gift-image">🍴</div>
+          <div class="gift-body">
+            <h3>ベビー食器セット</h3>
+            <p class="price">¥5,000〜¥10,000</p>
+            <p class="description">離乳食時期に使えるお椀・スプーン・お皿のセット。名入れもできる。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">実用的</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%83%99%E3%83%93%E3%83%BC%E9%A3%9F%E5%99%A8+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%83%99%E3%83%93%E3%83%BC%E9%A3%9F%E5%99%A8/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- クリスマス -->
+    <section class="scene-section" data-scene="christmas" id="christmas">
+      <div class="scene-header">
+        <div class="scene-icon">🎄</div>
+        <div>
+          <h2>クリスマスのギフト</h2>
+          <p>12月25日 — ワクワクする特別な贈り物を</p>
+        </div>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="under3k" data-target="female">
+          <div class="gift-image">🧴</div>
+          <div class="gift-body">
+            <h3>ハンドクリームセット</h3>
+            <p class="price">¥1,500〜¥3,000</p>
+            <p class="description">乾燥する冬に喜ばれる人気ブランドのハンドクリームセット。ちょっとしたギフトに最適。</p>
+            <div class="tag-row"><span class="tag">女性向け</span><span class="tag">プチギフト</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="female">
+          <div class="gift-image">🕯️</div>
+          <div class="gift-body">
+            <h3>アロマ・キャンドルセット</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">冬の夜にぴったりのアロマキャンドルセット。インテリアにもなるおしゃれな贈り物。</p>
+            <div class="tag-row"><span class="tag">女性向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%82%A2%E3%83%AD%E3%83%9E+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="under3k" data-target="female male child">
+          <div class="gift-image">🍫</div>
+          <div class="gift-body">
+            <h3>お菓子詰め合わせ</h3>
+            <p class="price">¥1,500〜¥3,000</p>
+            <p class="description">クリスマス限定パッケージの高級チョコ・焼き菓子セット。子供にも喜ばれる。</p>
+            <div class="tag-row"><span class="tag">全員向け</span><span class="tag">子供へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%81%8A%E8%8F%93%E5%AD%90+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%81%8A%E8%8F%93%E5%AD%90%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="female male">
+          <div class="gift-image">🧣</div>
+          <div class="gift-body">
+            <h3>マフラー・ストール</h3>
+            <p class="price">¥3,000〜¥6,000</p>
+            <p class="description">冬のファッションに使えるマフラーやストール。シンプルデザインで使いやすい。</p>
+            <div class="tag-row"><span class="tag">男性向け</span><span class="tag">女性向け</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%83%9E%E3%83%95%E3%83%A9%E3%83%BC+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%83%9E%E3%83%95%E3%83%A9%E3%83%BC%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 入学祝い -->
+    <section class="scene-section" data-scene="nyugaku" id="nyugaku">
+      <div class="scene-header">
+        <div class="scene-icon">🎒</div>
+        <div>
+          <h2>入学祝いのギフト</h2>
+          <p>新しいスタートを応援する贈り物</p>
+        </div>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="under3k" data-target="child">
+          <div class="gift-image">✏️</div>
+          <div class="gift-body">
+            <h3>文房具セット</h3>
+            <p class="price">¥2,000〜¥3,000</p>
+            <p class="description">かわいいデザインの鉛筆・消しゴム・定規セット。小学校入学のお祝いに人気。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">実用的</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E6%96%87%E6%88%BF%E5%85%B7+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E6%96%87%E6%88%BF%E5%85%B7/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="child">
+          <div class="gift-image">📖</div>
+          <div class="gift-body">
+            <h3>子供向け図鑑・辞典</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">学習意欲を育てる図鑑や辞典セット。長く使える知育の贈り物。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">知育</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E5%9B%B3%E9%91%91+%E5%AD%90%E4%BE%9B&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E5%9B%B3%E9%91%91+%E5%AD%90%E4%BE%9B/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="child">
+          <div class="gift-image">🎮</div>
+          <div class="gift-body">
+            <h3>知育玩具・ゲーム</h3>
+            <p class="price">¥5,000〜¥8,000</p>
+            <p class="description">思考力を育てるボードゲームやパズル。家族で楽しめる知育玩具。</p>
+            <div class="tag-row"><span class="tag">子供へ</span><span class="tag">知育</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E7%9F%A5%E8%82%B2%E7%8E%A9%E5%85%B7&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E7%9F%A5%E8%82%B2%E7%8E%A9%E5%85%B7/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="child female male">
+          <div class="gift-image">💰</div>
+          <div class="gift-body">
+            <h3>お小遣い帳・貯金箱セット</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">お金の管理を学べるかわいいお小遣い帳と貯金箱セット。将来に役立つ。</p>
+            <div class="tag-row"><span class="tag">子供へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E8%B2%AF%E9%87%91%E7%AE%B1+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E8%B2%AF%E9%87%91%E7%AE%B1/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お中元・お歳暮 -->
+    <section class="scene-section" data-scene="ochugen" id="ochugen">
+      <div class="scene-header">
+        <div class="scene-icon">🍱</div>
+        <div>
+          <h2>お中元・お歳暮のギフト</h2>
+          <p>日頃の感謝を伝える、格式あるギフト</p>
+        </div>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card" data-budget="3k5k" data-target="parents boss">
+          <div class="gift-image">🍺</div>
+          <div class="gift-body">
+            <h3>ビール・お酒詰め合わせ</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">定番のビールセットや日本酒・焼酎の詰め合わせ。幅広い年代に喜ばれる。</p>
+            <div class="tag-row"><span class="tag">両親へ</span><span class="tag">上司へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%83%93%E3%83%BC%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%81%8A%E4%B8%AD%E5%85%83+%E3%83%93%E3%83%BC%E3%83%AB%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="parents boss">
+          <div class="gift-image">🍡</div>
+          <div class="gift-body">
+            <h3>和菓子・スイーツセット</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">老舗の和菓子や洋菓子の詰め合わせ。世代を問わず喜ばれる安定の人気品。</p>
+            <div class="tag-row"><span class="tag">両親へ</span><span class="tag">上司へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%81%8A%E6%AD%B3%E6%9A%AE+%E5%92%8C%E8%8F%93%E5%AD%90+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%81%8A%E6%AD%B3%E6%9A%AE+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="5k10k" data-target="parents boss">
+          <div class="gift-image">🫒</div>
+          <div class="gift-body">
+            <h3>高級食材・グルメセット</h3>
+            <p class="price">¥5,000〜¥10,000</p>
+            <p class="description">産地直送の海産物・肉・惣菜のグルメセット。目上の方への格式ある贈り物。</p>
+            <div class="tag-row"><span class="tag">両親へ</span><span class="tag">上司へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%82%B0%E3%83%AB%E3%83%A1+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%81%8A%E4%B8%AD%E5%85%83+%E3%82%B0%E3%83%AB%E3%83%A1%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card" data-budget="3k5k" data-target="parents boss">
+          <div class="gift-image">🛁</div>
+          <div class="gift-body">
+            <h3>高級石鹸・バスグッズ</h3>
+            <p class="price">¥3,000〜¥5,000</p>
+            <p class="description">消耗品なので相手に気を使わせない。上品な香りの高級石鹸やバスソルトセット。</p>
+            <div class="tag-row"><span class="tag">女性向け</span><span class="tag">上司へ</span></div>
+            <div class="affiliate-links">
+              <a href="https://www.amazon.co.jp/s?k=%E3%81%8A%E6%AD%B3%E6%9A%AE+%E7%9F%B3%E9%B9%B8+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+              <a href="https://search.rakuten.co.jp/search/mall/%E3%81%8A%E6%AD%B3%E6%9A%AE+%E7%9F%B3%E9%B9%B8%E3%82%AE%E3%83%95%E3%83%88/" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD SLOT 3 -->
+    <div style="text-align:center; margin-top:20px;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6327505164684489" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Okurite — シーン別ギフト・プレゼント検索</p>
+    <p style="margin-top:8px;"><a href="https://richend0913.github.io/">Richend Digital</a></p>
+  </footer>
+
+  <script>
+    let currentBudget = 'all';
+    let currentTarget = 'all';
+
+    function applyFilters() {
+      document.querySelectorAll('.gift-card').forEach(card => {
+        const budget = card.dataset.budget;
+        const target = card.dataset.target || '';
+        const budgetOk = currentBudget === 'all' || budget === currentBudget;
+        const targetOk = currentTarget === 'all' || target.includes(currentTarget);
+        card.style.display = (budgetOk && targetOk) ? 'flex' : 'none';
+      });
+      // Hide empty sections
+      document.querySelectorAll('.scene-section').forEach(section => {
+        const visible = Array.from(section.querySelectorAll('.gift-card')).some(c => c.style.display !== 'none');
+        section.classList.toggle('hidden', !visible);
+      });
     }
 
-    // カテゴリカードからフィルター設定
-    function setFilter(type, value) {
-      if (type === 'target') document.getElementById('filterTarget').value = value;
-      if (type === 'scene') document.getElementById('filterScene').value = value;
+    function filterBudget(btn, val) {
+      document.querySelectorAll('[data-budget].filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentBudget = val;
       applyFilters();
-      document.getElementById('popular')?.scrollIntoView({ behavior: 'smooth' });
     }
 
-    function setFilterFromCard(el) {
-      const filter = el.dataset.filter;
-      if (!filter) { scrollToSection('popular'); return; }
-      const [type, value] = filter.split(':');
-      // リセットしてからセット
-      document.getElementById('filterTarget').value = '';
-      document.getElementById('filterScene').value = '';
-      document.getElementById('filterBudget').value = '';
-      if (type === 'target') document.getElementById('filterTarget').value = value;
-      if (type === 'scene') document.getElementById('filterScene').value = value;
+    function filterTarget(btn, val) {
+      document.querySelectorAll('[data-target].filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentTarget = val;
       applyFilters();
-      document.getElementById('popular')?.scrollIntoView({ behavior: 'smooth' });
     }
-
-    function scrollToSection(id) {
-      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // 初期化
-    document.addEventListener('DOMContentLoaded', loadProducts);
   </script>
+
 </body>
 </html>
