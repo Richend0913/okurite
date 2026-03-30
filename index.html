@@ -215,6 +215,76 @@
     /* ===== AD SLOT ===== */
     .ad-slot { max-width: 1100px; margin: 0 auto 24px; padding: 0 20px; }
 
+    /* ===== スマホ用FABボタン ===== */
+    .filter-fab {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #ff6b9d, #c471ed);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 14px 24px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(255,107,157,0.4);
+      z-index: 100;
+      cursor: pointer;
+    }
+    .filter-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 199;
+    }
+    .filter-overlay.active { display: block; }
+    .filter-modal {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-radius: 20px 20px 0 0;
+      padding: 24px 20px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+      z-index: 200;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    .filter-modal.active { display: block; }
+    .filter-modal h3 { margin: 0 0 16px; font-size: 1.1rem; }
+    .filter-modal .filter-row { margin-bottom: 12px; }
+    .fbtn {
+      background: #f9fafb; border: 1px solid #e5e7eb; color: var(--muted);
+      padding: 5px 12px; border-radius: 20px; font-size: .8rem; font-weight: 500;
+      cursor: pointer; transition: all .15s; white-space: nowrap;
+    }
+    .fbtn:hover { border-color: var(--pink); color: var(--rose); }
+    .fbtn.active { background: var(--grad); border-color: transparent; color: #fff; }
+    .filter-apply-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #ff6b9d, #c471ed);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: 12px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .filter-bar {
+        position: static !important;
+        top: auto !important;
+      }
+      .filter-fab { display: flex; align-items: center; gap: 6px; }
+    }
+
     /* ===== FOOTER ===== */
     .footer {
       background: var(--text); color: rgba(255,255,255,.7);
@@ -717,6 +787,39 @@
 
     renderGrid();
   </script>
+
+  <button class="filter-fab" onclick="document.querySelector('.filter-modal').classList.add('active');document.querySelector('.filter-overlay').classList.add('active');">🔍 絞り込み</button>
+  <div class="filter-overlay" onclick="document.querySelector('.filter-modal').classList.remove('active');this.classList.remove('active');"></div>
+  <div class="filter-modal">
+    <h3>絞り込み</h3>
+    <div class="filter-row"><span class="filter-label">シーン</span>
+      <button class="fbtn" onclick="setScene('all')">すべて</button>
+      <button class="fbtn" onclick="setScene('mothers-day')">母の日</button>
+      <button class="fbtn" onclick="setScene('fathers-day')">父の日</button>
+      <button class="fbtn" onclick="setScene('birthday')">誕生日</button>
+      <button class="fbtn" onclick="setScene('wedding')">結婚祝い</button>
+      <button class="fbtn" onclick="setScene('baby')">出産祝い</button>
+      <button class="fbtn" onclick="setScene('christmas')">クリスマス</button>
+      <button class="fbtn" onclick="setScene('school')">入学祝い</button>
+      <button class="fbtn" onclick="setScene('summer')">お中元</button>
+    </div>
+    <div class="filter-row"><span class="filter-label">相手</span>
+      <button class="fbtn" onclick="setTarget('all')">すべて</button>
+      <button class="fbtn" onclick="setTarget('female')">女性</button>
+      <button class="fbtn" onclick="setTarget('male')">男性</button>
+      <button class="fbtn" onclick="setTarget('kids')">子供</button>
+      <button class="fbtn" onclick="setTarget('parents')">両親</button>
+      <button class="fbtn" onclick="setTarget('boss')">上司</button>
+    </div>
+    <div class="filter-row"><span class="filter-label">予算</span>
+      <button class="fbtn" onclick="setBudget('all')">すべて</button>
+      <button class="fbtn" onclick="setBudget('~3000')">〜3,000円</button>
+      <button class="fbtn" onclick="setBudget('3000~5000')">3,000〜5,000円</button>
+      <button class="fbtn" onclick="setBudget('5000~10000')">5,000〜10,000円</button>
+      <button class="fbtn" onclick="setBudget('10000~')">10,000円〜</button>
+    </div>
+    <button class="filter-apply-btn" onclick="document.querySelector('.filter-modal').classList.remove('active');document.querySelector('.filter-overlay').classList.remove('active');">適用する</button>
+  </div>
 
 </body>
 </html>
