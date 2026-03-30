@@ -59,7 +59,7 @@
     /* ===== HERO ===== */
     .hero {
       background: var(--grad);
-      padding: 80px 20px 60px;
+      padding: 60px 20px 30px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -104,11 +104,12 @@
     .ad-placeholder { background: #f3f4f6; border: 1px dashed #d1d5db; border-radius: 8px; padding: 20px; color: #9ca3af; font-size: .8rem; min-height: 90px; display: flex; align-items: center; justify-content: center; }
 
     /* ===== FILTER BAR ===== */
-    .filter-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 12px 20px; position: sticky; top: 60px; z-index: 90; }
-    .filter-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .filter-label { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; margin-right: 4px; }
+    .filter-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 10px 20px; position: sticky; top: 60px; z-index: 90; }
+    .filter-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 6px; }
+    .filter-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .filter-label { font-size: .82rem; font-weight: 700; color: var(--text); min-width: 88px; flex-shrink: 0; }
     .filter-btn {
-      padding: 5px 14px;
+      padding: 5px 12px;
       border-radius: 50px;
       border: 1px solid var(--border);
       background: #fff;
@@ -119,7 +120,7 @@
       transition: all .15s;
     }
     .filter-btn:hover, .filter-btn.active { background: var(--rose); color: #fff; border-color: var(--rose); }
-    .filter-sep { width: 1px; height: 20px; background: var(--border); margin: 0 4px; }
+    .result-count { max-width: 1100px; margin: 0 auto; padding: 8px 20px 0; font-size: .82rem; color: var(--text-muted); }
 
     /* ===== MAIN CONTENT ===== */
     .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px 80px; }
@@ -143,7 +144,7 @@
       transition: transform .2s, box-shadow .2s;
     }
     .gift-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(244,114,182,.15); }
-    .gift-card[data-budget][data-target] { display: flex; flex-direction: column; }
+    .gift-card { display: flex; flex-direction: column; }
 
     /* ===== 商品画像 ===== */
     .gift-image-link { display: block; }
@@ -184,7 +185,7 @@
     .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
     .tag { font-size: .65rem; padding: 2px 8px; border-radius: 50px; background: var(--light); color: var(--rose); font-weight: 500; }
 
-    .affiliate-links { display: flex; flex-direction: column; gap: 6px; }
+    .affiliate-links { display: flex; flex-direction: column; gap: 6px; margin-top: auto; }
     .btn-amazon {
       display: block; text-align: center; text-decoration: none;
       background: #ff9900; color: #fff;
@@ -290,14 +291,14 @@
       <p class="hero-subtitle">シーン・予算・相手別で<br>ぴったりのプレゼントが見つかる</p>
       <p class="hero-desc">母の日・誕生日・結婚祝い…<br>大切な人への贈り物をサポートします</p>
       <div class="scene-btns">
-        <a href="#haha" class="scene-btn">🌸 母の日</a>
-        <a href="#chichi" class="scene-btn">👔 父の日</a>
-        <a href="#tanjobi" class="scene-btn">🎂 誕生日</a>
-        <a href="#kekkon" class="scene-btn">💍 結婚祝い</a>
-        <a href="#shussan" class="scene-btn">👶 出産祝い</a>
-        <a href="#christmas" class="scene-btn">🎄 クリスマス</a>
-        <a href="#nyugaku" class="scene-btn">🎒 入学祝い</a>
-        <a href="#ochugen" class="scene-btn">🍱 お中元・お歳暮</a>
+        <button class="scene-btn" onclick="selectSceneFromHero('haha')">🌸 母の日</button>
+        <button class="scene-btn" onclick="selectSceneFromHero('chichi')">👔 父の日</button>
+        <button class="scene-btn" onclick="selectSceneFromHero('tanjobi')">🎂 誕生日</button>
+        <button class="scene-btn" onclick="selectSceneFromHero('kekkon')">💍 結婚祝い</button>
+        <button class="scene-btn" onclick="selectSceneFromHero('shussan')">👶 出産祝い</button>
+        <button class="scene-btn" onclick="selectSceneFromHero('christmas')">🎄 クリスマス</button>
+        <button class="scene-btn" onclick="selectSceneFromHero('nyugaku')">🎒 入学祝い</button>
+        <button class="scene-btn" onclick="selectSceneFromHero('ochugen')">🍱 お中元・お歳暮</button>
       </div>
     </div>
   </section>
@@ -311,22 +312,38 @@
   <!-- FILTER BAR -->
   <div class="filter-bar" id="budget-section">
     <div class="filter-inner">
-      <span class="filter-label">予算</span>
-      <button class="filter-btn active" data-budget="all" onclick="filterBudget(this,'all')">すべて</button>
-      <button class="filter-btn" data-budget="under3k" onclick="filterBudget(this,'under3k')">〜3,000円</button>
-      <button class="filter-btn" data-budget="3k5k" onclick="filterBudget(this,'3k5k')">3,000〜5,000円</button>
-      <button class="filter-btn" data-budget="5k10k" onclick="filterBudget(this,'5k10k')">5,000〜10,000円</button>
-      <button class="filter-btn" data-budget="over10k" onclick="filterBudget(this,'over10k')">10,000円〜</button>
-      <div class="filter-sep"></div>
-      <span class="filter-label">相手</span>
-      <button class="filter-btn active" data-target="all" onclick="filterTarget(this,'all')">すべて</button>
-      <button class="filter-btn" data-target="female" onclick="filterTarget(this,'female')">女性へ</button>
-      <button class="filter-btn" data-target="male" onclick="filterTarget(this,'male')">男性へ</button>
-      <button class="filter-btn" data-target="child" onclick="filterTarget(this,'child')">子供へ</button>
-      <button class="filter-btn" data-target="parents" onclick="filterTarget(this,'parents')">両親へ</button>
-      <button class="filter-btn" data-target="boss" onclick="filterTarget(this,'boss')">上司へ</button>
+      <div class="filter-row">
+        <span class="filter-label">シーンで選ぶ</span>
+        <button class="filter-btn active" data-scene-filter="all" onclick="filterScene(this,'all')">すべて</button>
+        <button class="filter-btn" data-scene-filter="haha" onclick="filterScene(this,'haha')">🌸 母の日</button>
+        <button class="filter-btn" data-scene-filter="chichi" onclick="filterScene(this,'chichi')">👔 父の日</button>
+        <button class="filter-btn" data-scene-filter="tanjobi" onclick="filterScene(this,'tanjobi')">🎂 誕生日</button>
+        <button class="filter-btn" data-scene-filter="kekkon" onclick="filterScene(this,'kekkon')">💍 結婚祝い</button>
+        <button class="filter-btn" data-scene-filter="shussan" onclick="filterScene(this,'shussan')">👶 出産祝い</button>
+        <button class="filter-btn" data-scene-filter="christmas" onclick="filterScene(this,'christmas')">🎄 クリスマス</button>
+        <button class="filter-btn" data-scene-filter="nyugaku" onclick="filterScene(this,'nyugaku')">🎒 入学祝い</button>
+        <button class="filter-btn" data-scene-filter="ochugen" onclick="filterScene(this,'ochugen')">🍱 お中元・お歳暮</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">相手で選ぶ</span>
+        <button class="filter-btn active" data-target-filter="all" onclick="filterTarget(this,'all')">すべて</button>
+        <button class="filter-btn" data-target-filter="female" onclick="filterTarget(this,'female')">女性</button>
+        <button class="filter-btn" data-target-filter="male" onclick="filterTarget(this,'male')">男性</button>
+        <button class="filter-btn" data-target-filter="child" onclick="filterTarget(this,'child')">子供</button>
+        <button class="filter-btn" data-target-filter="parents" onclick="filterTarget(this,'parents')">両親</button>
+        <button class="filter-btn" data-target-filter="boss" onclick="filterTarget(this,'boss')">上司</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">予算で選ぶ</span>
+        <button class="filter-btn active" data-budget-filter="all" onclick="filterBudget(this,'all')">すべて</button>
+        <button class="filter-btn" data-budget-filter="under3k" onclick="filterBudget(this,'under3k')">〜3,000円</button>
+        <button class="filter-btn" data-budget-filter="3k5k" onclick="filterBudget(this,'3k5k')">3,000〜5,000円</button>
+        <button class="filter-btn" data-budget-filter="5k10k" onclick="filterBudget(this,'5k10k')">5,000〜10,000円</button>
+        <button class="filter-btn" data-budget-filter="over10k" onclick="filterBudget(this,'over10k')">10,000円〜</button>
+      </div>
     </div>
   </div>
+  <div class="result-count"><span id="result-count"></span></div>
 
   <!-- MAIN -->
   <main class="container">
@@ -1117,35 +1134,64 @@
 
     let currentBudget = 'all';
     let currentTarget = 'all';
+    let currentScene = 'all';
 
     function applyFilters() {
+      let count = 0;
       document.querySelectorAll('.gift-card').forEach(card => {
         const budget = card.dataset.budget;
         const target = card.dataset.target || '';
+        const scene = card.dataset.scene || '';
         const budgetOk = currentBudget === 'all' || budget === currentBudget;
         const targetOk = currentTarget === 'all' || target.includes(currentTarget);
-        card.style.display = (budgetOk && targetOk) ? 'flex' : 'none';
+        const sceneOk = currentScene === 'all' || scene === currentScene;
+        const visible = budgetOk && targetOk && sceneOk;
+        card.style.display = visible ? 'flex' : 'none';
+        if (visible) count++;
       });
-      // Hide empty sections
       document.querySelectorAll('.scene-section').forEach(section => {
-        const visible = Array.from(section.querySelectorAll('.gift-card')).some(c => c.style.display !== 'none');
-        section.classList.toggle('hidden', !visible);
+        const hasVisible = Array.from(section.querySelectorAll('.gift-card')).some(c => c.style.display !== 'none');
+        section.classList.toggle('hidden', !hasVisible);
       });
+      const el = document.getElementById('result-count');
+      if (el) el.textContent = count + '件見つかりました';
     }
 
     function filterBudget(btn, val) {
-      document.querySelectorAll('[data-budget].filter-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('[data-budget-filter].filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentBudget = val;
       applyFilters();
     }
 
     function filterTarget(btn, val) {
-      document.querySelectorAll('[data-target].filter-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('[data-target-filter].filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentTarget = val;
       applyFilters();
     }
+
+    function filterScene(btn, val) {
+      document.querySelectorAll('[data-scene-filter].filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentScene = val;
+      applyFilters();
+    }
+
+    function selectSceneFromHero(val) {
+      const filterBtn = document.querySelector('[data-scene-filter="' + val + '"]');
+      if (filterBtn) filterScene(filterBtn, val);
+      document.querySelector('.filter-bar').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Init: assign data-scene to each card from parent section
+    document.querySelectorAll('.scene-section').forEach(function(section) {
+      const sceneVal = section.dataset.scene;
+      section.querySelectorAll('.gift-card').forEach(function(card) {
+        card.dataset.scene = sceneVal;
+      });
+    });
+    applyFilters();
   </script>
 
 </body>
