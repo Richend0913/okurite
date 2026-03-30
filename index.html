@@ -128,6 +128,17 @@
     }
     .filter-btn:hover { border-color: var(--pink); color: var(--rose); }
     .filter-btn.active { background: var(--grad); border-color: transparent; color: #fff; }
+    .filter-fab{display:none;position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#ff6b9d,#c471ed);color:#fff;border:none;border-radius:50px;padding:14px 24px;font-size:.95rem;font-weight:bold;box-shadow:0 4px 15px rgba(255,107,157,.4);z-index:100;cursor:pointer}
+    .filter-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199}
+    .filter-overlay.active{display:block}
+    .filter-modal{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-radius:20px 20px 0 0;padding:24px 20px;box-shadow:0 -4px 20px rgba(0,0,0,.15);z-index:200;max-height:70vh;overflow-y:auto}
+    .filter-modal.active{display:block}
+    .filter-modal .filter-row{margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+    .filter-modal .filter-label{font-weight:bold;min-width:50px;font-size:.85rem}
+    .filter-modal .fbtn{padding:6px 12px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem}
+    .filter-modal .fbtn.active{background:#ff6b9d;color:#fff;border-color:#ff6b9d}
+    .filter-apply-btn{width:100%;padding:14px;background:linear-gradient(135deg,#ff6b9d,#c471ed);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:bold;margin-top:12px;cursor:pointer}
+    @media(max-width:768px){.filter-bar{position:static!important}.filter-fab{display:flex;align-items:center;gap:6px}}
     .result-count {
       font-size: .8rem; color: var(--muted); margin-top: 4px; margin-bottom: 0;
     }
@@ -716,7 +727,71 @@
     }
 
     renderGrid();
+
+    // FAB modal helpers
+    function openFilterModal() {
+      document.getElementById('filter-overlay').classList.add('active');
+      document.getElementById('filter-modal').classList.add('active');
+      syncModalBtns();
+    }
+    function closeFilterModal() {
+      document.getElementById('filter-overlay').classList.remove('active');
+      document.getElementById('filter-modal').classList.remove('active');
+    }
+    function syncModalBtns() {
+      document.querySelectorAll('#filter-modal .fbtn[data-scene]').forEach(b => {
+        b.classList.toggle('active', b.dataset.scene === currentScene);
+      });
+      document.querySelectorAll('#filter-modal .fbtn[data-target]').forEach(b => {
+        b.classList.toggle('active', b.dataset.target === currentTarget);
+      });
+      document.querySelectorAll('#filter-modal .fbtn[data-budget]').forEach(b => {
+        b.classList.toggle('active', b.dataset.budget === currentBudget);
+      });
+    }
+    function modalSetScene(val) { currentScene = val; syncModalBtns(); }
+    function modalSetTarget(val) { currentTarget = val; syncModalBtns(); }
+    function modalSetBudget(val) { currentBudget = val; syncModalBtns(); }
+    function applyModalFilter() {
+      renderGrid();
+      closeFilterModal();
+    }
   </script>
+
+  <div class="filter-overlay" id="filter-overlay" onclick="closeFilterModal()"></div>
+  <div class="filter-modal" id="filter-modal">
+    <div class="filter-row">
+      <span class="filter-label">シーン</span>
+      <button class="fbtn" data-scene="all" onclick="modalSetScene('all')">すべて</button>
+      <button class="fbtn" data-scene="haha" onclick="modalSetScene('haha')">🌸 母の日</button>
+      <button class="fbtn" data-scene="chichi" onclick="modalSetScene('chichi')">👔 父の日</button>
+      <button class="fbtn" data-scene="tanjobi" onclick="modalSetScene('tanjobi')">🎂 誕生日</button>
+      <button class="fbtn" data-scene="kekkon" onclick="modalSetScene('kekkon')">💍 結婚祝い</button>
+      <button class="fbtn" data-scene="shussan" onclick="modalSetScene('shussan')">👶 出産祝い</button>
+      <button class="fbtn" data-scene="christmas" onclick="modalSetScene('christmas')">🎄 クリスマス</button>
+      <button class="fbtn" data-scene="nyugaku" onclick="modalSetScene('nyugaku')">🎒 入学祝い</button>
+      <button class="fbtn" data-scene="ochugen" onclick="modalSetScene('ochugen')">🍱 お中元・お歳暮</button>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">相手</span>
+      <button class="fbtn" data-target="all" onclick="modalSetTarget('all')">すべて</button>
+      <button class="fbtn" data-target="female" onclick="modalSetTarget('female')">女性</button>
+      <button class="fbtn" data-target="male" onclick="modalSetTarget('male')">男性</button>
+      <button class="fbtn" data-target="child" onclick="modalSetTarget('child')">子供</button>
+      <button class="fbtn" data-target="parents" onclick="modalSetTarget('parents')">両親</button>
+      <button class="fbtn" data-target="boss" onclick="modalSetTarget('boss')">上司</button>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">予算</span>
+      <button class="fbtn" data-budget="all" onclick="modalSetBudget('all')">すべて</button>
+      <button class="fbtn" data-budget="under3k" onclick="modalSetBudget('under3k')">〜3,000円</button>
+      <button class="fbtn" data-budget="3k5k" onclick="modalSetBudget('3k5k')">3,000〜5,000円</button>
+      <button class="fbtn" data-budget="5k10k" onclick="modalSetBudget('5k10k')">5,000〜10,000円</button>
+      <button class="fbtn" data-budget="over10k" onclick="modalSetBudget('over10k')">10,000円〜</button>
+    </div>
+    <button class="filter-apply-btn" onclick="applyModalFilter()">この条件で絞り込む</button>
+  </div>
+  <button class="filter-fab" onclick="openFilterModal()">🔍 絞り込む</button>
 
 </body>
 </html>
