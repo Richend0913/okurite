@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Okurite（おくりて）| シーン別ギフト・プレゼント検索【2026年版】</title>
-  <meta name="description" content="母の日、誕生日、結婚祝い…シーン別・予算別でぴったりのギフトが見つかる。Amazon・楽天の人気商品を厳選比較。">
-  <meta name="keywords" content="ギフト,プレゼント,贈り物,母の日,父の日,誕生日,結婚祝い,出産祝い,クリスマス,お中元,お歳暮">
+  <title>Okurite（おくりて）| 母の日ギフト おすすめ 2026 シーン別プレゼント検索</title>
+  <meta name="description" content="母の日ギフト おすすめ 2026・誕生日プレゼント 女性 人気・父の日ギフト特集。シーン別・予算別でぴったりのプレゼントが見つかる。Amazon・楽天の人気商品を厳選比較。">
+  <meta name="keywords" content="母の日,ギフト,プレゼント,2026,誕生日,父の日,結婚祝い,出産祝い,クリスマス,お中元,お歳暮,コスメ,スイーツ">
   <meta name="google-site-verification" content="GRXPtbHLxfl8zA96yG12Rml4YJ00PvNXt6lHKJOYQiE" />
-  <meta property="og:title" content="Okurite（おくりて）| シーン別ギフト・プレゼント検索">
-  <meta property="og:description" content="母の日、誕生日、結婚祝い…シーン別・予算別でぴったりのギフトが見つかる。Amazon・楽天の人気商品を厳選比較。">
+  <meta property="og:title" content="Okurite（おくりて）| 母の日ギフト・シーン別プレゼント検索 2026">
+  <meta property="og:description" content="母の日・誕生日・父の日など、シーン別・予算別でぴったりのギフトが見つかる。Amazon・楽天の人気商品を厳選比較。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://richend0913.github.io/okurite/">
   <meta property="og:image" content="https://richend0913.github.io/okurite/images/ogp.png">
   <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
@@ -20,778 +29,435 @@
 
   <style>
     :root {
-      --pink: #f472b6;
-      --coral: #fb7185;
-      --rose: #e11d48;
-      --light: #fff1f2;
-      --text: #1f1f2e;
-      --muted: #6b7280;
-      --border: #fce7f3;
-      --grad: linear-gradient(135deg, #f9a8d4 0%, #fb7185 50%, #f472b6 100%);
+      --beige:  #FFF8F0;
+      --beige2: #FFF0E6;
+      --beige3: #F5E6D3;
+      --coral:  #FF6B6B;
+      --gold:   #D4A574;
+      --mint:   #A8D8C8;
+      --text:   #3D2C2E;
+      --muted:  #8B7355;
+      --border: #EDD9C0;
+      --shadow: 0 2px 12px rgba(61,44,46,.08);
+      --shadow-hover: 0 8px 24px rgba(61,44,46,.15);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Noto Sans JP', sans-serif; color: var(--text); background: #fdf2f8; line-height: 1.7; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Noto Sans JP',sans-serif;color:var(--text);background:var(--beige);line-height:1.7}
 
-    /* ===== HEADER ===== */
-    .header {
-      background: rgba(255,255,255,.97);
-      backdrop-filter: blur(10px);
-      position: sticky; top: 0; z-index: 100;
-      border-bottom: 1px solid var(--border);
-    }
-    .header-inner {
-      max-width: 1100px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 60px; padding: 0 20px;
-    }
-    .logo {
-      font-family: 'Inter', sans-serif; font-weight: 900; font-size: 1.4rem;
-      background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      text-decoration: none;
-    }
-    .header-nav {
-      display: flex; gap: 16px; list-style: none;
-    }
-    .header-nav a {
-      text-decoration: none; color: var(--muted); font-size: .82rem; font-weight: 500;
-      transition: color .2s; white-space: nowrap;
-    }
-    .header-nav a:hover { color: var(--rose); }
-    .hamburger {
-      display: none; flex-direction: column; justify-content: space-between;
-      width: 24px; height: 18px; background: none; border: none; cursor: pointer; padding: 0;
-    }
-    .hamburger span {
-      display: block; height: 2px; background: var(--text);
-      transition: all .3s; transform-origin: center;
-    }
-    .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
-    @media (max-width: 768px) {
-      .hamburger { display: flex; }
-      .header-nav {
-        display: none; position: absolute; top: 60px; left: 0; right: 0;
-        background: #fff; flex-direction: column; gap: 0;
-        border-bottom: 1px solid var(--border);
-        box-shadow: 0 4px 12px rgba(0,0,0,.08);
-      }
-      .header-nav.open { display: flex; }
-      .header-nav a { padding: 14px 20px; border-top: 1px solid var(--border); font-size: .9rem; }
+    /* HEADER */
+    .header{background:rgba(255,248,240,.97);backdrop-filter:blur(12px);position:sticky;top:0;z-index:200;border-bottom:1px solid var(--border);box-shadow:0 1px 8px rgba(61,44,46,.06)}
+    .header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 20px}
+    .logo{font-family:'Inter',sans-serif;font-weight:900;font-size:1.4rem;background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none;letter-spacing:-.5px}
+    .logo-sub{font-size:.68rem;color:var(--muted);font-weight:400;display:block;margin-top:-4px;-webkit-text-fill-color:var(--muted)}
+    .header-nav{display:flex;gap:20px;list-style:none}
+    .header-nav a{text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:500;transition:color .2s;white-space:nowrap}
+    .header-nav a:hover{color:var(--coral)}
+    .hamburger{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:none;border:none;cursor:pointer;padding:0}
+    .hamburger span{display:block;height:2px;background:var(--text);transition:all .3s;transform-origin:center}
+    .hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .hamburger.open span:nth-child(2){opacity:0}
+    .hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    @media(max-width:768px){
+      .hamburger{display:flex}
+      .header-nav{display:none;position:absolute;top:60px;left:0;right:0;background:var(--beige);flex-direction:column;gap:0;border-bottom:1px solid var(--border);box-shadow:var(--shadow)}
+      .header-nav.open{display:flex}
+      .header-nav a{padding:14px 20px;border-top:1px solid var(--border);font-size:.9rem}
     }
 
-    /* ===== HERO ===== */
-    .hero {
-      background: var(--grad);
-      padding: 48px 20px 40px;
-      text-align: center;
-      position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Ccircle cx='30' cy='30' r='20' fill='%23ffffff' fill-opacity='0.06'/%3E%3C/g%3E%3C/svg%3E") repeat;
-    }
-    .hero-content { position: relative; z-index: 1; }
-    .hero h1 { font-size: 2.4rem; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 12px; }
-    .hero-sub { color: rgba(255,255,255,.9); font-size: 1.05rem; }
-    .sp-only { display: none; }
-    @media (max-width: 768px) {
-      .hero { padding: 36px 20px 32px; }
-      .hero h1 { font-size: 1.75rem; }
-      .hero-sub { font-size: .95rem; }
-      .sp-only { display: inline; }
-    }
+    /* HERO */
+    .hero{background:linear-gradient(135deg,#FFE4E1 0%,#FFB3BA 35%,#FFC8A2 65%,#FFD4A3 100%);padding:56px 20px 48px;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(255,255,255,.3) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(255,255,255,.2) 0%,transparent 40%)}
+    .hero-badge{display:inline-block;background:var(--coral);color:#fff;font-size:.8rem;font-weight:700;padding:4px 14px;border-radius:20px;margin-bottom:16px;letter-spacing:.05em;position:relative;z-index:1;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+    .hero-content{position:relative;z-index:1;max-width:700px;margin:0 auto}
+    .hero h1{font-size:2.2rem;font-weight:700;color:var(--text);line-height:1.3;margin-bottom:10px}
+    .hero h1 span{color:var(--coral)}
+    .hero-sub{color:var(--muted);font-size:1rem;margin-bottom:28px}
+    .hero-steps{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+    .step-item{background:rgba(255,255,255,.8);border-radius:12px;padding:8px 16px;font-size:.82rem;font-weight:700;color:var(--text);display:flex;align-items:center;gap:6px}
+    .step-num{background:var(--coral);color:#fff;border-radius:50%;width:20px;height:20px;font-size:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .step-arrow{color:var(--coral);font-size:1.2rem}
 
-    /* ===== FILTER BAR ===== */
-    .filter-bar {
-      position: sticky; top: 60px; z-index: 90;
-      background: #fff; border-bottom: 1px solid var(--border);
-      padding: 12px 20px 8px;
-    }
-    .filter-inner { max-width: 1100px; margin: 0 auto; }
-    .filter-row {
-      display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
-      margin-bottom: 8px;
-    }
-    .filter-label {
-      font-size: .75rem; font-weight: 700; color: var(--muted);
-      min-width: 36px; flex-shrink: 0;
-    }
-    .filter-btns { display: flex; flex-wrap: wrap; gap: 6px; }
-    .filter-btn {
-      background: #f9fafb; border: 1px solid #e5e7eb; color: var(--muted);
-      padding: 5px 12px; border-radius: 20px; font-size: .8rem; font-weight: 500;
-      cursor: pointer; transition: all .15s; white-space: nowrap;
-    }
-    .filter-btn:hover { border-color: var(--pink); color: var(--rose); }
-    .filter-btn.active { background: var(--grad); border-color: transparent; color: #fff; }
-    .filter-fab{display:none;position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#ff6b9d,#c471ed);color:#fff;border:none;border-radius:50px;padding:14px 24px;font-size:.95rem;font-weight:bold;box-shadow:0 4px 15px rgba(255,107,157,.4);z-index:100;cursor:pointer}
-    .filter-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199}
-    .filter-overlay.active{display:block}
-    .filter-modal{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-radius:20px 20px 0 0;padding:24px 20px;box-shadow:0 -4px 20px rgba(0,0,0,.15);z-index:200;max-height:70vh;overflow-y:auto}
-    .filter-modal.active{display:block}
-    .filter-modal .filter-row{margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-    .filter-modal .filter-label{font-weight:bold;min-width:50px;font-size:.85rem}
-    .filter-modal .fbtn{padding:6px 12px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem}
-    .filter-modal .fbtn.active{background:#ff6b9d;color:#fff;border-color:#ff6b9d}
-    .filter-apply-btn{width:100%;padding:14px;background:linear-gradient(135deg,#ff6b9d,#c471ed);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:bold;margin-top:12px;cursor:pointer}
-    @media(max-width:768px){.filter-bar{position:static!important}.filter-fab{display:flex;align-items:center;gap:6px}}
-    .result-count {
-      font-size: .8rem; color: var(--muted); margin-top: 4px; margin-bottom: 0;
-    }
+    /* SEASONAL */
+    .seasonal{background:linear-gradient(135deg,#FFF0F5 0%,#FFF5F0 100%);border-top:3px solid var(--coral);padding:32px 20px}
+    .seasonal-inner{max-width:1100px;margin:0 auto}
+    .seasonal h2{font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:8px}
+    .seasonal-desc{color:var(--muted);font-size:.9rem;margin-bottom:20px}
+    .seasonal-picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+    .seasonal-card{background:#fff;border-radius:12px;padding:14px;box-shadow:var(--shadow);cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid var(--border)}
+    .seasonal-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .seasonal-card-emoji{font-size:2rem;display:block;margin-bottom:6px}
+    .seasonal-card-name{font-size:.8rem;font-weight:700;color:var(--text);margin-bottom:4px;line-height:1.3}
+    .seasonal-card-price{font-size:.78rem;color:var(--coral);font-weight:700}
 
-    /* ===== MAIN / GRID ===== */
-    .container {
-      max-width: 1100px; margin: 0 auto;
-      padding: 24px 20px 48px;
-    }
-    .gift-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-    @media (max-width: 768px) {
-      .gift-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    }
-    @media (max-width: 480px) {
-      .gift-grid { grid-template-columns: 1fr; gap: 12px; }
-    }
+    /* AD */
+    .ad-slot{max-width:1100px;margin:12px auto;padding:0 20px}
 
-    /* ===== CARD ===== */
-    .gift-card {
-      display: flex; flex-direction: column;
-      background: #fff; border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,.07);
-      overflow: hidden; transition: transform .2s, box-shadow .2s;
-    }
-    .gift-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.12); }
-    .gift-img-link { display: block; overflow: hidden; }
-    .gift-img {
-      width: 100%; height: 190px; object-fit: cover; display: block;
-      transition: transform .3s;
-    }
-    .gift-img-link:hover .gift-img { transform: scale(1.04); }
-    .gift-body {
-      display: flex; flex-direction: column; flex: 1;
-      padding: 14px 14px 14px;
-    }
-    .gift-scene {
-      font-size: .7rem; color: var(--rose); font-weight: 700;
-      margin-bottom: 4px; display: block;
-    }
-    .gift-title {
-      font-size: .9rem; font-weight: 700; line-height: 1.4;
-      margin-bottom: 6px; color: var(--text);
-    }
-    .price {
-      font-size: 1rem; color: var(--rose); font-weight: 700; margin-bottom: 6px;
-    }
-    .desc {
-      font-size: .78rem; color: var(--muted); line-height: 1.5;
-      margin-bottom: 8px; flex-grow: 1;
-    }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
-    .tag {
-      background: var(--light); color: var(--rose);
-      font-size: .68rem; padding: 2px 8px; border-radius: 10px; font-weight: 500;
-    }
-    .affiliate-links { display: flex; flex-direction: column; gap: 6px; margin-top: auto; }
-    .btn-amazon, .btn-rakuten {
-      display: block; text-align: center; text-decoration: none;
-      padding: 8px 12px; border-radius: 6px; font-size: .8rem; font-weight: 700;
-      transition: opacity .15s;
-    }
-    .btn-amazon { background: #ff9900; color: #fff; }
-    .btn-rakuten { background: #bf0000; color: #fff; }
-    .btn-amazon:hover, .btn-rakuten:hover { opacity: .85; }
+    /* FILTER BAR */
+    .filter-wrap{background:rgba(255,248,240,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);position:sticky;top:60px;z-index:100;box-shadow:0 2px 8px rgba(61,44,46,.05)}
+    .filter-inner{max-width:1100px;margin:0 auto;padding:12px 20px}
+    .filter-row{display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+    .filter-row:last-of-type{margin-bottom:0}
+    .filter-label{font-size:.72rem;font-weight:700;color:var(--muted);white-space:nowrap;padding-top:6px;min-width:52px}
+    .filter-btns{display:flex;flex-wrap:wrap;gap:6px}
+    .filter-btn{background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.78rem;font-weight:500;color:var(--text);cursor:pointer;transition:all .15s;white-space:nowrap}
+    .filter-btn:hover{border-color:var(--coral);color:var(--coral)}
+    .filter-btn.active{background:var(--coral);border-color:var(--coral);color:#fff;font-weight:700}
+    .result-count{font-size:.78rem;color:var(--muted);padding:4px 0;margin-top:4px}
+    @media(max-width:768px){.filter-wrap{display:none}}
 
-    /* ===== LOAD MORE ===== */
-    .load-more-wrap { text-align: center; margin-top: 32px; }
-    .load-more-btn {
-      background: var(--grad); color: #fff; border: none;
-      padding: 14px 40px; border-radius: 30px; font-size: .95rem; font-weight: 700;
-      cursor: pointer; transition: opacity .2s, transform .2s;
-    }
-    .load-more-btn:hover { opacity: .88; transform: translateY(-2px); }
+    /* CONTAINER */
+    .container{max-width:1100px;margin:0 auto;padding:24px 20px 48px}
 
-    /* ===== EMPTY STATE ===== */
-    .empty-state {
-      grid-column: 1 / -1; text-align: center; padding: 60px 20px;
-      color: var(--muted); font-size: 1rem;
-    }
+    /* GRID */
+    .gift-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+    @media(max-width:600px){.gift-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
 
-    /* ===== AD SLOT ===== */
-    .ad-slot { max-width: 1100px; margin: 0 auto 24px; padding: 0 20px; }
+    /* CARD */
+    .gift-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;border:1px solid var(--border);cursor:pointer}
+    .gift-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+    .gift-img-wrap{position:relative;height:200px;overflow:hidden;background:var(--beige2)}
+    @media(max-width:600px){.gift-img-wrap{height:140px}}
+    .gift-img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+    .gift-card:hover .gift-img{transform:scale(1.04)}
+    .gift-img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,var(--beige2),var(--beige3))}
+    .gift-img-placeholder small{font-size:.7rem;color:var(--muted);margin-top:4px}
+    .gift-ribbon{position:absolute;top:10px;left:10px;background:var(--coral);color:#fff;font-size:.65rem;font-weight:700;padding:3px 10px;border-radius:12px}
+    .gift-body{padding:14px;display:flex;flex-direction:column;flex:1}
+    .gift-category{font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+    .gift-title{font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:4px;line-height:1.4}
+    @media(max-width:600px){.gift-title{font-size:.78rem}}
+    .gift-target{font-size:.7rem;color:var(--muted);margin-bottom:6px;font-style:italic}
+    .gift-price{font-size:1rem;font-weight:700;color:var(--coral);margin-bottom:6px}
+    .gift-desc{font-size:.78rem;color:var(--muted);margin-bottom:8px;line-height:1.6;flex:1}
+    .gift-reason{font-size:.72rem;color:var(--text);background:var(--beige2);border-radius:8px;padding:6px 10px;margin-bottom:10px}
+    .gift-reason strong{color:var(--coral)}
+    .gift-stars{display:flex;gap:10px;margin-bottom:10px}
+    .star-item{display:flex;flex-direction:column;align-items:center;gap:1px;font-size:.6rem;color:var(--muted)}
+    .star-row{display:flex;gap:1px}
+    .star-row .s{color:#DDD;font-size:.7rem}
+    .star-row .s.on{color:#FFB800}
+    .tag-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+    .tag{background:var(--beige3);color:var(--muted);font-size:.65rem;padding:2px 8px;border-radius:10px}
+    .affiliate-links{display:flex;gap:6px;margin-top:auto}
+    .btn-amazon,.btn-rakuten{flex:1;padding:8px 4px;border-radius:8px;border:none;cursor:pointer;font-size:.75rem;font-weight:700;text-align:center;text-decoration:none;transition:opacity .2s,transform .15s;display:block}
+    .btn-amazon{background:#FF9900;color:#fff}
+    .btn-rakuten{background:#BF0000;color:#fff}
+    .btn-amazon:hover,.btn-rakuten:hover{opacity:.85;transform:scale(1.02)}
 
-    /* ===== FOOTER ===== */
-    .footer {
-      background: var(--text); color: rgba(255,255,255,.7);
-      text-align: center; padding: 28px 20px; font-size: .85rem;
-    }
-    .footer a { color: var(--pink); text-decoration: none; }
+    /* LOAD MORE */
+    .load-more-wrap{text-align:center;margin-top:32px}
+    .load-more-btn{background:linear-gradient(135deg,var(--coral),var(--gold));color:#fff;border:none;border-radius:28px;padding:14px 40px;font-size:.95rem;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 16px rgba(255,107,107,.3)}
+    .load-more-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,107,107,.4)}
+
+    /* EMPTY */
+    .empty-state{text-align:center;padding:60px 20px;color:var(--muted);grid-column:1/-1}
+    .empty-state .e{font-size:3rem;display:block;margin-bottom:12px}
+
+    /* FAB */
+    .fab-filter-btn{display:none;position:fixed;bottom:24px;right:24px;background:var(--coral);color:#fff;border:none;border-radius:28px;padding:14px 22px;font-size:.9rem;font-weight:700;cursor:pointer;z-index:300;box-shadow:0 4px 20px rgba(255,107,107,.45);align-items:center;gap:8px;transition:transform .2s}
+    .fab-filter-btn:hover{transform:scale(1.05)}
+    @media(max-width:768px){.fab-filter-btn{display:flex}}
+
+    /* FILTER MODAL */
+    .filter-modal-overlay{display:none;position:fixed;inset:0;background:rgba(61,44,46,.45);z-index:400;backdrop-filter:blur(4px)}
+    .filter-modal-overlay.open{display:flex;align-items:flex-end}
+    .filter-modal{background:var(--beige);width:100%;border-radius:20px 20px 0 0;padding:24px 20px 40px;max-height:85vh;overflow-y:auto}
+    .filter-modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .filter-modal-title{font-size:1.1rem;font-weight:700}
+    .filter-modal-close{background:var(--beige3);border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center}
+    .filter-modal-section{margin-bottom:20px}
+    .filter-modal-section-title{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:10px}
+    .filter-modal-btns{display:flex;flex-wrap:wrap;gap:8px}
+    .filter-modal-btn{background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:7px 16px;font-size:.82rem;font-weight:500;color:var(--text);cursor:pointer;transition:all .15s}
+    .filter-modal-btn.active{background:var(--coral);border-color:var(--coral);color:#fff;font-weight:700}
+    .filter-modal-apply{width:100%;padding:14px;background:linear-gradient(135deg,var(--coral),var(--gold));color:#fff;border:none;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:8px}
+
+    /* MOBILE RESULT */
+    .mobile-result-count{display:none;font-size:.78rem;color:var(--muted);padding:8px 20px;background:var(--beige2);border-bottom:1px solid var(--border);text-align:center}
+    @media(max-width:768px){.mobile-result-count{display:block}}
+
+    /* FOOTER */
+    .footer{background:var(--text);color:rgba(255,255,255,.7);text-align:center;padding:24px 20px;font-size:.82rem}
+    .footer a{color:rgba(255,255,255,.7);text-decoration:none}
+    .footer a:hover{color:#fff}
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a class="logo" href="#" onclick="setScene('all');return false;">Okurite</a>
-      <nav class="header-nav" id="header-nav">
-        <a href="#" onclick="setScene('haha');closeNav();return false;">🌸 母の日</a>
-        <a href="#" onclick="setScene('chichi');closeNav();return false;">👔 父の日</a>
-        <a href="#" onclick="setScene('tanjobi');closeNav();return false;">🎂 誕生日</a>
-        <a href="#" onclick="setScene('kekkon');closeNav();return false;">💍 結婚祝い</a>
-        <a href="#" onclick="setScene('shussan');closeNav();return false;">👶 出産祝い</a>
-        <a href="#" onclick="setScene('christmas');closeNav();return false;">🎄 クリスマス</a>
-        <a href="#" onclick="setScene('nyugaku');closeNav();return false;">🎒 入学祝い</a>
-        <a href="#" onclick="setScene('ochugen');closeNav();return false;">🍱 お中元</a>
-      </nav>
-      <button class="hamburger" id="hamburger" onclick="toggleNav()">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo">Okurite<span class="logo-sub">おくりて — シーン別ギフト検索</span></a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="メニュー"><span></span><span></span><span></span></button>
+    <ul class="header-nav" id="main-nav">
+      <li><a href="#" onclick="setScene('mothers-day');closeMenu()">母の日</a></li>
+      <li><a href="#" onclick="setScene('birthday');closeMenu()">誕生日</a></li>
+      <li><a href="#" onclick="setScene('fathers-day');closeMenu()">父の日</a></li>
+      <li><a href="blog/">コラム</a></li>
+    </ul>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>ギフト選びを<br class="sp-only">もっとカンタンに</h1>
-      <p class="hero-sub">シーン・予算・相手別で<br class="sp-only">ぴったりのプレゼントが見つかる</p>
-    </div>
-  </section>
-
-  <!-- FILTER BAR -->
-  <div class="filter-bar">
-    <div class="filter-inner">
-      <div class="filter-row">
-        <span class="filter-label">シーン</span>
-        <div class="filter-btns" id="scene-btns">
-          <button class="filter-btn active" onclick="setScene('all')">すべて</button>
-          <button class="filter-btn" onclick="setScene('haha')">🌸 母の日</button>
-          <button class="filter-btn" onclick="setScene('chichi')">👔 父の日</button>
-          <button class="filter-btn" onclick="setScene('tanjobi')">🎂 誕生日</button>
-          <button class="filter-btn" onclick="setScene('kekkon')">💍 結婚祝い</button>
-          <button class="filter-btn" onclick="setScene('shussan')">👶 出産祝い</button>
-          <button class="filter-btn" onclick="setScene('christmas')">🎄 クリスマス</button>
-          <button class="filter-btn" onclick="setScene('nyugaku')">🎒 入学祝い</button>
-          <button class="filter-btn" onclick="setScene('ochugen')">🍱 お中元・お歳暮</button>
-        </div>
-      </div>
-      <div class="filter-row">
-        <span class="filter-label">相手</span>
-        <div class="filter-btns" id="target-btns">
-          <button class="filter-btn active" onclick="setTarget('all')">すべて</button>
-          <button class="filter-btn" onclick="setTarget('female')">女性</button>
-          <button class="filter-btn" onclick="setTarget('male')">男性</button>
-          <button class="filter-btn" onclick="setTarget('child')">子供</button>
-          <button class="filter-btn" onclick="setTarget('parents')">両親</button>
-          <button class="filter-btn" onclick="setTarget('boss')">上司</button>
-        </div>
-      </div>
-      <div class="filter-row">
-        <span class="filter-label">予算</span>
-        <div class="filter-btns" id="budget-btns">
-          <button class="filter-btn active" onclick="setBudget('all')">すべて</button>
-          <button class="filter-btn" onclick="setBudget('under3k')">〜3,000円</button>
-          <button class="filter-btn" onclick="setBudget('3k5k')">3,000〜5,000円</button>
-          <button class="filter-btn" onclick="setBudget('5k10k')">5,000〜10,000円</button>
-          <button class="filter-btn" onclick="setBudget('over10k')">10,000円〜</button>
-        </div>
-      </div>
-      <p class="result-count" id="result-count">40件のギフトが見つかりました</p>
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🌸 母の日ギフト特集 2026</div>
+    <h1>ぴったりの<span>ギフト</span>が、<br>かならず見つかる</h1>
+    <p class="hero-sub">200商品以上から、相手・シーン・予算で絞り込み</p>
+    <div class="hero-steps">
+      <div class="step-item"><span class="step-num">①</span>相手を選ぶ</div>
+      <span class="step-arrow">→</span>
+      <div class="step-item"><span class="step-num">②</span>シーンを選ぶ</div>
+      <span class="step-arrow">→</span>
+      <div class="step-item"><span class="step-num">③</span>ぴったりが見つかる</div>
     </div>
   </div>
+</section>
 
-  <!-- AD SLOT -->
-  <div class="ad-slot">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6327505164684489" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<section class="seasonal">
+  <div class="seasonal-inner">
+    <h2>🌸 母の日ギフト特集 2026</h2>
+    <p class="seasonal-desc">5月11日（日）は母の日。日頃の感謝を込めた特別なギフトで、お母さんの笑顔を引き出しましょう。</p>
+    <div class="seasonal-picks" id="seasonal-picks"></div>
   </div>
+</section>
 
-  <!-- MAIN -->
-  <main class="container">
-    <div id="gift-grid" class="gift-grid"></div>
-    <div class="load-more-wrap" id="load-more-wrap" style="display:none;">
-      <button class="load-more-btn" onclick="loadMore()">もっと見る（残り<span id="remaining-count">0</span>件）</button>
+<div class="ad-slot">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6327505164684489" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class="filter-wrap" id="filter-bar">
+  <div class="filter-inner">
+    <div class="filter-row">
+      <span class="filter-label">🎁 シーン</span>
+      <div class="filter-btns" id="scene-btns">
+        <button class="filter-btn active" onclick="setScene('all')">すべて</button>
+        <button class="filter-btn" onclick="setScene('mothers-day')">🌸 母の日</button>
+        <button class="filter-btn" onclick="setScene('fathers-day')">👔 父の日</button>
+        <button class="filter-btn" onclick="setScene('birthday')">🎂 誕生日</button>
+        <button class="filter-btn" onclick="setScene('wedding')">💍 結婚祝い</button>
+        <button class="filter-btn" onclick="setScene('birth')">👶 出産祝い</button>
+        <button class="filter-btn" onclick="setScene('christmas')">🎄 クリスマス</button>
+        <button class="filter-btn" onclick="setScene('enrollment')">🎒 入学祝い</button>
+        <button class="filter-btn" onclick="setScene('gift-season')">🍱 お中元・お歳暮</button>
+      </div>
     </div>
-  </main>
+    <div class="filter-row">
+      <span class="filter-label">👤 相手</span>
+      <div class="filter-btns" id="target-btns">
+        <button class="filter-btn active" onclick="setTarget('all')">すべて</button>
+        <button class="filter-btn" onclick="setTarget('female')">👩 女性</button>
+        <button class="filter-btn" onclick="setTarget('male')">👨 男性</button>
+        <button class="filter-btn" onclick="setTarget('child')">🧒 子供</button>
+        <button class="filter-btn" onclick="setTarget('parents')">👴 両親</button>
+        <button class="filter-btn" onclick="setTarget('boss')">💼 上司・同僚</button>
+      </div>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">💴 予算</span>
+      <div class="filter-btns" id="budget-btns">
+        <button class="filter-btn active" onclick="setBudget('all')">すべて</button>
+        <button class="filter-btn" onclick="setBudget('under3k')">〜3,000円</button>
+        <button class="filter-btn" onclick="setBudget('3k-5k')">3,000〜5,000円</button>
+        <button class="filter-btn" onclick="setBudget('5k-10k')">5,000〜10,000円</button>
+        <button class="filter-btn" onclick="setBudget('10k+')">10,000円〜</button>
+      </div>
+    </div>
+    <p class="result-count" id="result-count">読み込み中...</p>
+  </div>
+</div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2026 Okurite — シーン別ギフト・プレゼント検索</p>
-    <p style="margin-top:8px;"><a href="https://richend0913.github.io/">Richend Digital</a></p>
-  </footer>
+<div class="mobile-result-count" id="mobile-result-count">読み込み中...</div>
 
-  <script>
-    const SCENE_LABELS = {
-      haha:'🌸 母の日', chichi:'👔 父の日', tanjobi:'🎂 誕生日',
-      kekkon:'💍 結婚祝い', shussan:'👶 出産祝い', christmas:'🎄 クリスマス',
-      nyugaku:'🎒 入学祝い', ochugen:'🍱 お中元・お歳暮'
-    };
-    const TARGET_LABELS = {
-      female:'女性向け', male:'男性向け', child:'子供へ', parents:'両親へ', boss:'上司へ'
-    };
+<main class="container">
+  <div id="gift-grid" class="gift-grid"></div>
+  <div class="load-more-wrap" id="load-more-wrap" style="display:none;">
+    <button class="load-more-btn" onclick="loadMore()">もっと見る（残り<span id="remaining-count">0</span>件）</button>
+  </div>
+</main>
 
-    const GIFTS = [
-      // 母の日
-      {scene:'haha', budget:'3k5k', targets:['female','parents'],
-       title:'高麗橋吉兆 栗ぜんざいギフト 4個入',
-       price:'¥3,754（送料無料）',
-       desc:'老舗料亭・高麗橋吉兆の本格的な栗ぜんざい4個入。上品な甘さと高級感で日頃の感謝を伝えます。',
-       img:'https://tshop.r10s.jp/buriruby/cabinet/12797424/41429072_1.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E9%AB%98%E9%BA%97%E6%A9%8B%E5%90%89%E5%85%86+%E6%A0%97%E3%81%9C%E3%82%93%E3%81%96%E3%81%84+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/buriruby/xzvbbxrdxputkmepoy57noo3ke/'},
-      {scene:'haha', budget:'5k10k', targets:['female','parents'],
-       title:'カーネーション花鉢＋ヴィタメール焼き菓子セット',
-       price:'¥7,300（送料無料）',
-       desc:'生花のカーネーション鉢とベルギー王室御用達ヴィタメールの焼き菓子5個入。花とスイーツの豪華セット。',
-       img:'https://tshop.r10s.jp/jmei3rd/cabinet/eat01/b/se_10-01.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E6%AF%8D%E3%81%AE%E6%97%A5+%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3+%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84+%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/jmei3rd/fgift-389/'},
-      {scene:'haha', budget:'under3k', targets:['female'],
-       title:'THE SAEM 選べるハンドクリーム 5個セット',
-       price:'¥2,000（送料無料）',
-       desc:'25種類から好きな香りを選べる人気コスメブランドSAEMのハンドクリーム5個セット。',
-       img:'https://tshop.r10s.jp/skindesign/cabinet/cosme/thesaem/perfumedhandcream/main5_00.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=THE+SAEM+%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/skindesign/perfumed-hand-cream5set/'},
-      {scene:'haha', budget:'under3k', targets:['female','parents'],
-       title:'日本製 ガーゼハンカチ＋ハンドクリームセット',
-       price:'¥1,900（送料無料）',
-       desc:'上品なガーゼハンカチとホワイトティーの香りのハンドクリームの日本製ギフトセット。',
-       img:'https://tshop.r10s.jp/bridgehappy/cabinet/zakka1/kj/hkc/kj03_top.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81+%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88+%E6%97%A5%E6%9C%AC%E8%A3%BD&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/bridgehappy/kj03/'},
-      {scene:'haha', budget:'under3k', targets:['female'],
-       title:'金木犀 ハンドクリーム プチギフト 日本製',
-       price:'¥2,000（送料無料）',
-       desc:'上品な金木犀の香りの日本製ハンドクリーム。ラッピング無料で手軽に贈れる人気ギフト。',
-       img:'https://tshop.r10s.jp/bridgehappy/cabinet/zakka1/cl/cl18_top.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+%E9%87%91%E6%9C%A8%E6%A0%96+%E3%82%AE%E3%83%95%E3%83%88+%E6%97%A5%E6%9C%AC%E8%A3%BD&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/bridgehappy/cl0018/'},
-      // 父の日
-      {scene:'chichi', budget:'under3k', targets:['male','parents'],
-       title:'伊勢角屋麦酒 クラフトビール ペールエール 瓶セット',
-       price:'¥1,835〜（価格+送料）',
-       desc:'三重・伊勢の老舗クラフトビール醸造所のペールエール瓶セット。フルーティーな香りが特徴。',
-       img:'https://tshop.r10s.jp/isekadoyabeer/cabinet/biiino/item/s-image-3/imgrc0084774386.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E4%BC%8A%E5%8B%A2%E8%A7%92%E5%B1%8B%E9%BA%A6%E9%85%92+%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%83%93%E3%83%BC%E3%83%AB+%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/isekadoyabeer/paleale-b-1p/'},
-      {scene:'chichi', budget:'under3k', targets:['male','parents'],
-       title:'城崎温泉 地ビール ギフトセット（330ml）',
-       price:'¥2,090（価格+送料）',
-       desc:'温泉地・城崎の地元直送クラフトビール。産地直送の新鮮さが自慢のギフトセット。',
-       img:'https://tshop.r10s.jp/arumama/cabinet/shohin/sake/beer/gu-330-1.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%9F%8E%E5%B4%8E%E6%B8%A9%E6%B3%89+%E5%9C%B0%E3%83%93%E3%83%BC%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/arumama/gu-330-1/'},
-      {scene:'chichi', budget:'3k5k', targets:['male','parents'],
-       title:'国産旬彩 干物セット（サバ・ニシン等）',
-       price:'¥3,000（送料無料）',
-       desc:'職人が丁寧に仕上げた国産魚の旬彩干物セット。お酒好きのお父さんへ本格的な贈り物。',
-       img:'https://tshop.r10s.jp/yamaichi-himono/cabinet/04735669/sab1nis1kam2koa3.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%9B%BD%E7%94%A3+%E5%B9%B2%E7%89%A9%E3%82%BB%E3%83%83%E3%83%88+%E3%82%AE%E3%83%95%E3%83%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/yamaichi-himono/s-himono-1/'},
-      {scene:'chichi', budget:'3k5k', targets:['male','female','parents'],
-       title:'北海道 カウベルアイスクリーム 詰め合わせ 12個',
-       price:'¥3,980（送料無料）',
-       desc:'北海道産の濃厚アイスクリーム12個詰め合わせ。夏の父の日にぴったりの冷たいギフト。',
-       img:'https://tshop.r10s.jp/hokkaido-gourmation/cabinet/syouhin/cbell/26cbell_sg001rt.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%8C%97%E6%B5%B7%E9%81%93+%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/hokkaido-gourmation/fax-089-ice12/'},
-      {scene:'chichi', budget:'3k5k', targets:['male','parents'],
-       title:'仙台牛 低温調理ユッケ 2個セット',
-       price:'¥3,120〜（価格+送料）',
-       desc:'最高級A5仙台牛の低温調理ユッケ2個セット。特別な日にふさわしい高級感ある肉ギフト。',
-       img:'https://tshop.r10s.jp/hisarekomafu/cabinet/compass1689051895.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E4%BB%99%E5%8F%B0%E7%89%9B+%E3%83%A6%E3%83%83%E3%82%B1+%E9%AB%98%E7%B4%9A+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/hisarekomafu/compass1640161685/'},
-      // 誕生日
-      {scene:'tanjobi', budget:'under3k', targets:['female'],
-       title:'チーズファクトリー 厳選スイーツセット',
-       price:'¥2,000（送料無料）',
-       desc:'チーズを使った濃厚スイーツの詰め合わせ。誕生日の贈り物に喜ばれるお菓子ギフト。',
-       img:'https://tshop.r10s.jp/monmiya/cabinet/m3/70005926_0620.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/monmiya/70005926/'},
-      {scene:'tanjobi', budget:'under3k', targets:['female','male'],
-       title:'ジュレパフェ 6個セット フルーツゼリー',
-       price:'¥2,200（送料無料）',
-       desc:'見た目も華やかなフルーツゼリーのジュレパフェ6個セット。誕生日に華を添える洋菓子ギフト。',
-       img:'https://tshop.r10s.jp/watch-me/cabinet/syokuhin/syokuhin2/imgrc0108459948.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E3%82%BC%E3%83%AA%E3%83%BC+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88+%E8%AA%95%E7%94%9F%E6%97%A5&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/watch-me/t-11-035/'},
-      {scene:'tanjobi', budget:'under3k', targets:['female'],
-       title:'天然石 誕生石ブレスレット ギフト',
-       price:'¥3,160（価格+送料）',
-       desc:'天然石パワーストーンを使った誕生石ブレスレット。数秘・運命数鑑定付きで特別感のあるギフト。',
-       img:'https://tshop.r10s.jp/i-wish/cabinet/number/nu21100501-1.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88+%E5%A4%A9%E7%84%B6%E7%9F%B3+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/i-wish/nu21100501c/'},
-      {scene:'tanjobi', budget:'5k10k', targets:['male','female'],
-       title:'トミーヒルフィガー 二つ折り財布 メンズ',
-       price:'¥9,980（価格+送料）',
-       desc:'ヨーロッパ輸入モデルの二つ折り財布。実用的で毎日使えるため男女問わず喜ばれる定番ギフト。',
-       img:'https://tshop.r10s.jp/alevel/cabinet/tommy/12766-bds.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E8%AA%95%E7%94%9F%E6%97%A5+%E8%B2%A1%E5%B8%83+%E3%82%AE%E3%83%95%E3%83%88+%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/alevel/12766-bds/'},
-      {scene:'tanjobi', budget:'over10k', targets:['male','female'],
-       title:'リンベル スマートギフト カタログギフト',
-       price:'¥6,600〜（送料無料）',
-       desc:'旅行・グルメ・スパなど体験型も選べる豪華カタログギフト。楽天1位受賞の特別感ある誕生日ギフト。',
-       img:'https://tshop.r10s.jp/ringbellshop/cabinet/catalog/smartgift/cgsmartgift_2.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E4%BD%93%E9%A8%93%E3%82%AE%E3%83%95%E3%83%88+%E8%AA%95%E7%94%9F%E6%97%A5+%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/ringbellshop/r809-015/'},
-      // 結婚祝い
-      {scene:'kekkon', budget:'3k5k', targets:['female','male'],
-       title:'カタログギフト 3,740円コース（ネコポス便）',
-       price:'¥3,000（送料無料）',
-       desc:'グルメ・旅行・日用品など豊富なラインナップから選べるカタログギフト。結婚祝いの定番。',
-       img:'https://tshop.r10s.jp/giftman/cabinet/new_catalogue/harmonick-v/3740.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88+3000%E5%86%86&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/giftman/neko-sh-be/'},
-      {scene:'kekkon', budget:'3k5k', targets:['female','male'],
-       title:'グランチョイスギフト カタログ 2,900円コース',
-       price:'¥3,000（送料無料）',
-       desc:'楽天評価★4.75の高評価カタログギフト。豊富なジャンルから二人で選んでもらえる人気商品。',
-       img:'https://tshop.r10s.jp/rambbit/cabinet/ikou_20100223/c001.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88+%E4%BA%BA%E6%B0%97&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/rambbit/649933/'},
-      {scene:'kekkon', budget:'3k5k', targets:['female','male'],
-       title:'ハートフルセレクション カタログギフト（カードタイプ）',
-       price:'¥3,080〜（送料無料）',
-       desc:'コンシェルジュ対応のカードタイプカタログギフト。WEB選択可でスマートに贈れる。',
-       img:'https://tshop.r10s.jp/toolandmeal/cabinet/item/12592352/concierge_card_th_02.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88+%E3%82%AB%E3%83%BC%E3%83%89%E3%82%BF%E3%82%A4%E3%83%97+%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/toolandmeal/105069450/'},
-      {scene:'kekkon', budget:'3k5k', targets:['female','male'],
-       title:'山崎実業 tower WEBカタログギフト',
-       price:'¥3,630〜（価格+送料）',
-       desc:'人気ブランド山崎実業「タワー」のインテリア雑貨などが選べるウェブカタログギフト。',
-       img:'https://tshop.r10s.jp/bellevie-harima/cabinet/0330/gift/cat-tower-003_s1.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%B1%B1%E5%B4%8E%E5%AE%9F%E6%A5%AD+%E3%82%BF%E3%83%AF%E3%83%BC+%E3%82%AE%E3%83%95%E3%83%88+%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/bellevie-harima/cat-tower-003/'},
-      {scene:'kekkon', budget:'over10k', targets:['female','male'],
-       title:'今治タオル 木箱入り ギフトセット',
-       price:'¥11,000（送料無料）',
-       desc:'日本が誇る今治タオルの高級セット（バスタオル2枚・フェイスタオル2枚）。新生活に実用的で縁起の良い贈り物。',
-       img:'https://tshop.r10s.jp/balloon-cube/cabinet/item/towel/kk/kk79100.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E7%B5%90%E5%A9%9A%E7%A5%9D%E3%81%84+%E4%BB%8A%E6%B2%BB%E3%82%BF%E3%82%AA%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/balloon-cube/s_kk79100/'},
-      // 出産祝い
-      {scene:'shussan', budget:'3k5k', targets:['child','female'],
-       title:'名入れ 乳歯ケース 木製 記念品',
-       price:'¥3,000（送料無料）',
-       desc:'子供の大切な乳歯を保管できる木製の名入れ乳歯ケース。出産祝いの記念品として人気。',
-       img:'https://tshop.r10s.jp/gift-bmcjapan/cabinet/toothcase/thntb3.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E4%B9%B3%E6%AD%AF%E3%82%B1%E3%83%BC%E3%82%B9+%E5%90%8D%E5%85%A5%E3%82%8C&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/gift-bmcjapan/o20211030/'},
-      {scene:'shussan', budget:'3k5k', targets:['child','female'],
-       title:'fika 木製 歯固め＋ホルダーセット',
-       price:'¥3,025（価格+送料）',
-       desc:'厚生労働省認定機関検査合格のオーガニック素材。赤ちゃんに安心な木製歯固めとホルダーセット。',
-       img:'https://tshop.r10s.jp/fika/cabinet/08062032/holder_wood_001/set002_re/set002_re.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E6%AD%AF%E5%9B%BA%E3%82%81+%E6%9C%A8%E8%A3%BD+%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/fika/set002/'},
-      {scene:'shussan', budget:'3k5k', targets:['child','female'],
-       title:'ネオママイズム 柄おくるみ オーガニックコットン',
-       price:'¥3,080（送料無料）',
-       desc:'コットン100%のふんわりモスリンおくるみ。出産祝いの定番として人気のベビーブランケット。',
-       img:'https://tshop.r10s.jp/neomamaism/cabinet/biiino/item/main-image/nm21swd001.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%81%8A%E3%81%8F%E3%82%8B%E3%81%BF+%E3%82%AA%E3%83%BC%E3%82%AC%E3%83%8B%E3%83%83%E3%82%AF&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/neomamaism/nm21swd001/'},
-      {scene:'shussan', budget:'3k5k', targets:['child','female'],
-       title:'今治タオル コンテックス ビブ（スタイ）セット',
-       price:'¥3,080（価格+送料）',
-       desc:'日本が誇る今治タオルブランドのビブ（よだれかけ）セット。肌触り抜群で実用的な出産祝い。',
-       img:'https://tshop.r10s.jp/omutsufactory/cabinet/11013756/imgrc0096174926.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E4%BB%8A%E6%B2%BB%E3%82%BF%E3%82%AA%E3%83%AB+%E3%82%B9%E3%82%BF%E3%82%A4&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/omutsufactory/kontex-buraburabib/'},
-      {scene:'shussan', budget:'5k10k', targets:['child','female'],
-       title:'おむつケーキ オーガニック 2段 名入れ無料',
-       price:'¥5,300（送料無料）',
-       desc:'おむつをケーキ型に飾り付けた人気ギフト。オーガニック素材・名入れ刺繍無料で実用的かつインスタ映え。',
-       img:'https://tshop.r10s.jp/hatty-narku/cabinet/03709856/imgrc0178418785.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%87%BA%E7%94%A3%E7%A5%9D%E3%81%84+%E3%81%8A%E3%82%80%E3%81%A4%E3%82%B1%E3%83%BC%E3%82%AD+%E4%BA%BA%E6%B0%97&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/hatty-narku/name-toll/'},
-      // クリスマス
-      {scene:'christmas', budget:'under3k', targets:['child'],
-       title:'子供用 お医者さん・大工ごっこ 知育おもちゃ',
-       price:'¥2,180（送料無料）',
-       desc:'ごっこ遊びができる知育おもちゃセット。男の子も女の子も楽しめるクリスマスプレゼント。',
-       img:'https://tshop.r10s.jp/k999/cabinet/item/05992753/360011-sam202112.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%AD%90%E4%BE%9B+%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88+%E7%9F%A5%E8%82%B2%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/k999/360011/'},
-      {scene:'christmas', budget:'under3k', targets:['child'],
-       title:'バランスボード ゆらゆら 体幹トレーニング',
-       price:'¥2,180〜（送料無料）',
-       desc:'遊びながら体幹を鍛えられるバランスボード。楽天40冠達成の人気クリスマスプレゼント。',
-       img:'https://tshop.r10s.jp/lifetips/cabinet/08454712/08673425/08944100/imgrc0098953092.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%9C%E3%83%BC%E3%83%89+%E5%AD%90%E4%BE%9B+%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/lifetips/life-30114/'},
-      {scene:'christmas', budget:'under3k', targets:['female','male','child'],
-       title:'フーシェ アマンド・ロワ 焼き菓子詰め合わせ',
-       price:'¥1,080（送料無料）',
-       desc:'クリスマス限定パッケージの高級焼き菓子セット。大人にも子供にも喜ばれる定番スイーツギフト。',
-       img:'https://tshop.r10s.jp/matsukazeya-ec/cabinet/foucher/amanderois/ar-10_0304u.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%81%8A%E8%8F%93%E5%AD%90+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/matsukazeya-ec/ar-10/'},
-      {scene:'christmas', budget:'3k5k', targets:['female'],
-       title:'アロマキャンドル クリスマスギフト イギリス正規輸入品',
-       price:'¥4,180（価格+送料）',
-       desc:'冬の夜にぴったりのイギリス産アロマキャンドル。インテリアにもなるおしゃれな大人へのギフト。',
-       img:'https://tshop.r10s.jp/howmoreliving/cabinet/06943964/olor/olor-027.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9+%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/howmoreliving/olor-027/'},
-      {scene:'christmas', budget:'under3k', targets:['child'],
-       title:'UNO カードゲーム ファミリーパーティー',
-       price:'¥1,310（価格+送料）',
-       desc:'家族みんなで楽しめる定番カードゲームUNO。子供への知育プレゼントとしても人気。',
-       img:'https://tshop.r10s.jp/houjou-kyouzai/cabinet/reku/uno1.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=UNO+%E3%82%AB%E3%83%BC%E3%83%89%E3%82%B2%E3%83%BC%E3%83%A0+%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/houjou-kyouzai/uno/'},
-      // 入学祝い
-      {scene:'nyugaku', budget:'under3k', targets:['child'],
-       title:'両面 ソフトペンケース 小学生 入学準備',
-       price:'¥2,026（送料無料）',
-       desc:'かわいいデザインの両面両開きソフトペンケース。小学校入学準備の定番プレゼント。',
-       img:'https://tshop.r10s.jp/backyard/cabinet/main07/softpencase5.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E3%83%9A%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%B9+%E5%B0%8F%E5%AD%A6%E7%94%9F+%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/backyard/softpencase5/'},
-      {scene:'nyugaku', budget:'under3k', targets:['child'],
-       title:'子供用 アナログ腕時計 入学祝い',
-       price:'¥2,129（送料無料）',
-       desc:'男の子・女の子両対応のおしゃれなアナログ腕時計。入学祝いに時間の管理を学べる贈り物。',
-       img:'https://tshop.r10s.jp/lucky13/cabinet/main03/sfkidswatch.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E5%AD%90%E4%BE%9B+%E8%85%95%E6%99%82%E8%A8%88+%E3%82%AD%E3%83%83%E3%82%BA&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/lucky13/sfkidswatch/'},
-      {scene:'nyugaku', budget:'under3k', targets:['child'],
-       title:'名入れ 鉛筆セット 入学祝い',
-       price:'¥690〜（送料無料）',
-       desc:'子供の名前を入れた特別な鉛筆12本セット。日本製でお手頃な入学祝いの定番プレゼント。',
-       img:'https://tshop.r10s.jp/lapiz/cabinet/original/lpmg/lpmg-s1_2.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E5%90%8D%E5%85%A5%E3%82%8C+%E9%89%9B%E7%AD%86+%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/lapiz/lpmg/'},
-      {scene:'nyugaku', budget:'5k10k', targets:['child'],
-       title:'ThinkFun ローラーコースターチャレンジ',
-       price:'¥5,940（送料無料）',
-       desc:'物理的思考力を育む立体パズルゲーム。日本語説明書付きで入学祝いにぴったりの知育玩具。',
-       img:'https://tshop.r10s.jp/gekiyasu-kagu/cabinet/2022/4001046.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E7%9F%A5%E8%82%B2%E7%8E%A9%E5%85%B7+%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B2%E3%83%BC%E3%83%A0&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/gekiyasu-kagu/10011176/'},
-      {scene:'nyugaku', budget:'under3k', targets:['child'],
-       title:'ソニック うかサポ 筆箱 入学準備',
-       price:'¥1,579（送料無料）',
-       desc:'整理・取り出しやすい設計の人気ソニック筆箱。2026年度入学の小学生にぴったりのギフト。',
-       img:'https://tshop.r10s.jp/erikaland/cabinet/07746014/08564067/09631264/erem4756-1.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E5%85%A5%E5%AD%A6%E7%A5%9D%E3%81%84+%E7%AD%86%E7%AE%B1+%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF+%E5%B0%8F%E5%AD%A6%E7%94%9F&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/erikaland/erem4756/'},
-      // お中元・お歳暮
-      {scene:'ochugen', budget:'under3k', targets:['parents','boss'],
-       title:'千葉県産 いも豚 3点ハムセット',
-       price:'¥2,140〜（送料無料）',
-       desc:'千葉県産のいも豚を使った本格ハムの詰め合わせ3点セット。おつまみにもなる贈り物。',
-       img:'https://tshop.r10s.jp/imobuta/cabinet/11151275/11151277/imgrc0102419392.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%83%8F%E3%83%A0%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88+%E5%9B%BD%E7%94%A3&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/imobuta/0041/'},
-      {scene:'ochugen', budget:'under3k', targets:['parents','boss','female'],
-       title:'Hitotoe ジュレパフェ 6個セット フルーツゼリー',
-       price:'¥2,200（送料無料）',
-       desc:'中島大祥堂のブランド「Hitotoe」のフルーツゼリーパフェ6個詰め合わせ。見た目も美しい。',
-       img:'https://tshop.r10s.jp/watch-me/cabinet/syokuhin/syokuhin2/imgrc0108459948.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%82%BC%E3%83%AA%E3%83%BC+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/watch-me/t-11-035/'},
-      {scene:'ochugen', budget:'3k5k', targets:['parents','boss'],
-       title:'ベアレンビール ギフト 5種10本セット',
-       price:'¥5,300（送料無料）',
-       desc:'岩手・盛岡のクラフトビール5種10本ギフトBOX入り。定番ビールセットや日本酒好きへの王道ギフト。',
-       img:'https://tshop.r10s.jp/baeren/cabinet/bin/08898732/gift/imgrc0150289738.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%83%93%E3%83%BC%E3%83%AB+%E3%82%AE%E3%83%95%E3%83%88+%E4%BA%BA%E6%B0%97&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/baeren/bss-10bc/'},
-      {scene:'ochugen', budget:'5k10k', targets:['parents','boss'],
-       title:'北海道 海鮮6点 島の人セレクション',
-       price:'¥5,990（送料無料）',
-       desc:'北海道直送の海鮮6点詰め合わせ。産地直送の新鮮さが自慢の高級グルメギフトセット。',
-       img:'https://tshop.r10s.jp/rebun/cabinet/2507sele600.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E3%82%B0%E3%83%AB%E3%83%A1+%E3%82%AE%E3%83%95%E3%83%88+%E9%AB%98%E7%B4%9A&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/rebun/shimanohito-selection/'},
-      {scene:'ochugen', budget:'under3k', targets:['parents','boss'],
-       title:'揖保乃糸 そうめん 特級品 黒帯 古ひね',
-       price:'¥2,298〜（送料無料）',
-       desc:'1年熟成の高級素麺・揖保乃糸特級品（黒帯）。夏のお中元・お歳暮に定番の上質なギフト。',
-       img:'https://tshop.r10s.jp/japangift/cabinet/pointex/20260328pup/iz-30shi-30.jpg',
-       amazon:'https://www.amazon.co.jp/s?k=%E3%81%8A%E4%B8%AD%E5%85%83+%E6%8F%96%E4%BF%9D%E4%B9%83%E7%B3%B8+%E3%81%9D%E3%81%86%E3%82%81%E3%82%93+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22',
-       rakuten:'https://item.rakuten.co.jp/japangift/zz-iz-30w/'}
-    ];
+<footer class="footer">
+  <p>&copy; 2026 Okurite — シーン別ギフト・プレゼント検索</p>
+  <p style="margin-top:8px"><a href="https://richend0913.github.io/">Richend Digital</a> ｜ <a href="blog/">コラム</a></p>
+  <p style="margin-top:8px;font-size:.72rem">本サイトはAmazon・楽天アフィリエイトプログラムに参加しています。</p>
+</footer>
 
-    let currentScene = 'all';
-    let currentTarget = 'all';
-    let currentBudget = 'all';
-    let displayCount = 12;
+<button class="fab-filter-btn" onclick="openFilterModal()" aria-label="フィルター">
+  <span>🔍</span> 絞り込む
+</button>
 
-    function getFiltered() {
-      return GIFTS.filter(g => {
-        const sceneOk = currentScene === 'all' || g.scene === currentScene;
-        const targetOk = currentTarget === 'all' || g.targets.includes(currentTarget);
-        const budgetOk = currentBudget === 'all' || g.budget === currentBudget;
-        return sceneOk && targetOk && budgetOk;
-      });
-    }
+<div class="filter-modal-overlay" id="filter-modal-overlay" onclick="closeFilterModal(event)">
+  <div class="filter-modal" onclick="event.stopPropagation()">
+    <div class="filter-modal-header">
+      <span class="filter-modal-title">ギフトを絞り込む</span>
+      <button class="filter-modal-close" onclick="closeFilterModal()">✕</button>
+    </div>
+    <div class="filter-modal-section">
+      <div class="filter-modal-section-title">🎁 シーン</div>
+      <div class="filter-modal-btns" id="modal-scene-btns">
+        <button class="filter-modal-btn active" onclick="setSceneModal('all',this)">すべて</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('mothers-day',this)">🌸 母の日</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('fathers-day',this)">👔 父の日</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('birthday',this)">🎂 誕生日</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('wedding',this)">💍 結婚祝い</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('birth',this)">👶 出産祝い</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('christmas',this)">🎄 クリスマス</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('enrollment',this)">🎒 入学祝い</button>
+        <button class="filter-modal-btn" onclick="setSceneModal('gift-season',this)">🍱 お中元・お歳暮</button>
+      </div>
+    </div>
+    <div class="filter-modal-section">
+      <div class="filter-modal-section-title">👤 相手</div>
+      <div class="filter-modal-btns" id="modal-target-btns">
+        <button class="filter-modal-btn active" onclick="setTargetModal('all',this)">すべて</button>
+        <button class="filter-modal-btn" onclick="setTargetModal('female',this)">👩 女性</button>
+        <button class="filter-modal-btn" onclick="setTargetModal('male',this)">👨 男性</button>
+        <button class="filter-modal-btn" onclick="setTargetModal('child',this)">🧒 子供</button>
+        <button class="filter-modal-btn" onclick="setTargetModal('parents',this)">👴 両親</button>
+        <button class="filter-modal-btn" onclick="setTargetModal('boss',this)">💼 上司・同僚</button>
+      </div>
+    </div>
+    <div class="filter-modal-section">
+      <div class="filter-modal-section-title">💴 予算</div>
+      <div class="filter-modal-btns" id="modal-budget-btns">
+        <button class="filter-modal-btn active" onclick="setBudgetModal('all',this)">すべて</button>
+        <button class="filter-modal-btn" onclick="setBudgetModal('under3k',this)">〜3,000円</button>
+        <button class="filter-modal-btn" onclick="setBudgetModal('3k-5k',this)">3,000〜5,000円</button>
+        <button class="filter-modal-btn" onclick="setBudgetModal('5k-10k',this)">5,000〜10,000円</button>
+        <button class="filter-modal-btn" onclick="setBudgetModal('10k+',this)">10,000円〜</button>
+      </div>
+    </div>
+    <button class="filter-modal-apply" onclick="applyFilterModal()">この条件で絞り込む</button>
+  </div>
+</div>
 
-    function renderGrid() {
-      const filtered = getFiltered();
-      const visible = filtered.slice(0, displayCount);
-      const grid = document.getElementById('gift-grid');
+<script>
+const EMOJI = {'コスメ':'💄','アクセサリー':'💎','スイーツ':'🍰','グルメ':'🍱','フラワー':'🌸','バッグ':'👜','リラクゼーション':'🛁','体験':'🎟️','お酒':'🍶','ファッション':'👗','ガジェット':'📱','趣味':'⚽','おもちゃ':'🧸','知育':'📚','ベビー':'👶','キッズファッション':'👟','カタログ':'📋','旅行':'✈️','健康':'💊','文具':'✒️','タオル':'🛁','飲料':'☕','テーブルウェア':'🍽️','雑貨':'🎨','家電':'🔌'};
+const SCENE_L = {'mothers-day':'🌸 母の日','fathers-day':'👔 父の日','birthday':'🎂 誕生日','wedding':'💍 結婚祝い','birth':'👶 出産祝い','christmas':'🎄 クリスマス','enrollment':'🎒 入学祝い','gift-season':'🍱 お中元・お歳暮'};
+const SCENES_ORDER = ['all','mothers-day','fathers-day','birthday','wedding','birth','christmas','enrollment','gift-season'];
+const TARGETS_ORDER = ['all','female','male','child','parents','boss'];
+const BUDGETS_ORDER = ['all','under3k','3k-5k','5k-10k','10k+'];
 
-      if (filtered.length === 0) {
-        grid.innerHTML = '<div class="empty-state">該当するギフトが見つかりませんでした。<br>フィルターを変えてお試しください。</div>';
-        document.getElementById('load-more-wrap').style.display = 'none';
-        document.getElementById('result-count').textContent = '0件のギフトが見つかりました';
-        return;
-      }
+let GIFTS = [], currentScene='all', currentTarget='all', currentBudget='all', displayCount=12;
+let pendingScene='all', pendingTarget='all', pendingBudget='all';
 
-      grid.innerHTML = visible.map(g => `
-        <div class="gift-card">
-          <a href="${g.rakuten}" target="_blank" rel="noopener" class="gift-img-link">
-            <img src="${g.img}" alt="${g.title}" loading="lazy" class="gift-img">
-          </a>
-          <div class="gift-body">
-            <span class="gift-scene">${SCENE_LABELS[g.scene]}</span>
-            <h3 class="gift-title">${g.title}</h3>
-            <p class="price">${g.price}</p>
-            <p class="desc">${g.desc}</p>
-            <div class="tag-row">${g.targets.map(t => `<span class="tag">${TARGET_LABELS[t]}</span>`).join('')}</div>
-            <div class="affiliate-links">
-              <a href="${g.amazon}" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
-              <a href="${g.rakuten}" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
-            </div>
-          </div>
+fetch('gifts.json').then(r=>r.json()).then(d=>{GIFTS=d;renderSeasonal();renderGrid();}).catch(()=>{
+  document.getElementById('gift-grid').innerHTML='<div class="empty-state"><span class="e">⚠️</span>データの読み込みに失敗しました。再読み込みしてください。</div>';
+});
+
+function getFiltered(){
+  return GIFTS.filter(g=>{
+    const sc=Array.isArray(g.scenes)?g.scenes:[g.scene];
+    const tg=Array.isArray(g.targets)?g.targets:[];
+    return (currentScene==='all'||sc.includes(currentScene))&&
+           (currentTarget==='all'||tg.includes(currentTarget))&&
+           (currentBudget==='all'||g.budget===currentBudget);
+  });
+}
+
+function stars(n){let s='';for(let i=1;i<=5;i++)s+=`<span class="s${i<=n?' on':''}">\u2605</span>`;return s;}
+
+function renderGrid(){
+  const f=getFiltered(), v=f.slice(0,displayCount);
+  const g=document.getElementById('gift-grid');
+  const ct=`${f.length}件のギフトが見つかりました`;
+  document.getElementById('result-count').textContent=ct;
+  document.getElementById('mobile-result-count').textContent=ct;
+  if(!f.length){
+    g.innerHTML='<div class="empty-state"><span class="e">🎁</span>該当するギフトが見つかりませんでした。<br>フィルターを変えてお試しください。</div>';
+    document.getElementById('load-more-wrap').style.display='none';
+    return;
+  }
+  g.innerHTML=v.map(item=>{
+    const em=EMOJI[item.category]||'🎁';
+    const sc=Array.isArray(item.scenes)?item.scenes:[item.scene];
+    const sl=SCENE_L[sc[0]]||'';
+    const st=item.stars||{};
+    const imgH=item.img?`<img src="${item.img}" alt="${item.name}" loading="lazy" class="gift-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`:'';
+    const phStyle=item.img?'style="display:none"':'';
+    return `<article class="gift-card" onclick="window.open('${item.rakutenUrl}','_blank','noopener')">
+      <div class="gift-img-wrap">
+        ${imgH}
+        <div class="gift-img-placeholder" ${phStyle}>${em}<small>${item.category||''}</small></div>
+        ${sl?`<span class="gift-ribbon">${sl}</span>`:''}
+      </div>
+      <div class="gift-body">
+        <div class="gift-category">${item.category||''}</div>
+        <h3 class="gift-title">${item.name}</h3>
+        ${item.target_detail?`<div class="gift-target">✦ ${item.target_detail}</div>`:''}
+        <div class="gift-price">${item.price}</div>
+        <p class="gift-desc">${item.desc}</p>
+        ${item.reason?`<div class="gift-reason"><strong>おすすめ：</strong>${item.reason}</div>`:''}
+        ${st.practical!=null?`<div class="gift-stars">
+          <div class="star-item"><div class="star-row">${stars(st.practical)}</div>実用性</div>
+          <div class="star-item"><div class="star-row">${stars(st.surprise)}</div>サプライズ</div>
+          <div class="star-item"><div class="star-row">${stars(st.looks)}</div>見た目</div>
+        </div>`:''}
+        <div class="affiliate-links" onclick="event.stopPropagation()">
+          <a href="${item.amazonUrl}" target="_blank" rel="noopener" class="btn-amazon">Amazonで見る</a>
+          <a href="${item.rakutenUrl}" target="_blank" rel="noopener" class="btn-rakuten">楽天で見る</a>
         </div>
-      `).join('');
+      </div>
+    </article>`;
+  }).join('');
+  const rem=f.length-displayCount, w=document.getElementById('load-more-wrap');
+  if(rem>0){document.getElementById('remaining-count').textContent=rem;w.style.display='block';}
+  else w.style.display='none';
+}
 
-      const remaining = filtered.length - displayCount;
-      const wrap = document.getElementById('load-more-wrap');
-      if (remaining > 0) {
-        document.getElementById('remaining-count').textContent = remaining;
-        wrap.style.display = 'block';
-      } else {
-        wrap.style.display = 'none';
-      }
+function renderSeasonal(){
+  const picks=GIFTS.filter(g=>{const sc=Array.isArray(g.scenes)?g.scenes:[g.scene];return sc.includes('mothers-day');}).slice(0,5);
+  document.getElementById('seasonal-picks').innerHTML=picks.map(g=>`<div class="seasonal-card" onclick="window.open('${g.rakutenUrl}','_blank','noopener')">
+    <span class="seasonal-card-emoji">${EMOJI[g.category]||'🎁'}</span>
+    <div class="seasonal-card-name">${g.name.length>22?g.name.slice(0,22)+'…':g.name}</div>
+    <div class="seasonal-card-price">${g.price}</div>
+  </div>`).join('');
+}
 
-      document.getElementById('result-count').textContent = `${filtered.length}件のギフトが見つかりました`;
-    }
+function loadMore(){displayCount+=12;renderGrid();}
 
-    function setScene(val) {
-      currentScene = val;
-      displayCount = 12;
-      document.querySelectorAll('#scene-btns .filter-btn').forEach(b => b.classList.remove('active'));
-      const idx = ['all','haha','chichi','tanjobi','kekkon','shussan','christmas','nyugaku','ochugen'].indexOf(val);
-      if (idx >= 0) document.querySelectorAll('#scene-btns .filter-btn')[idx].classList.add('active');
-      renderGrid();
-    }
+function setScene(v){
+  currentScene=v;displayCount=12;
+  document.querySelectorAll('#scene-btns .filter-btn').forEach(b=>b.classList.remove('active'));
+  const i=SCENES_ORDER.indexOf(v);if(i>=0)document.querySelectorAll('#scene-btns .filter-btn')[i].classList.add('active');
+  renderGrid();
+}
+function setTarget(v){
+  currentTarget=v;displayCount=12;
+  document.querySelectorAll('#target-btns .filter-btn').forEach(b=>b.classList.remove('active'));
+  const i=TARGETS_ORDER.indexOf(v);if(i>=0)document.querySelectorAll('#target-btns .filter-btn')[i].classList.add('active');
+  renderGrid();
+}
+function setBudget(v){
+  currentBudget=v;displayCount=12;
+  document.querySelectorAll('#budget-btns .filter-btn').forEach(b=>b.classList.remove('active'));
+  const i=BUDGETS_ORDER.indexOf(v);if(i>=0)document.querySelectorAll('#budget-btns .filter-btn')[i].classList.add('active');
+  renderGrid();
+}
 
-    function setTarget(val) {
-      currentTarget = val;
-      displayCount = 12;
-      document.querySelectorAll('#target-btns .filter-btn').forEach(b => b.classList.remove('active'));
-      const idx = ['all','female','male','child','parents','boss'].indexOf(val);
-      if (idx >= 0) document.querySelectorAll('#target-btns .filter-btn')[idx].classList.add('active');
-      renderGrid();
-    }
+function openFilterModal(){
+  pendingScene=currentScene;pendingTarget=currentTarget;pendingBudget=currentBudget;
+  syncModal();document.getElementById('filter-modal-overlay').classList.add('open');document.body.style.overflow='hidden';
+}
+function closeFilterModal(e){
+  if(e&&e.currentTarget!==e.target)return;
+  document.getElementById('filter-modal-overlay').classList.remove('open');document.body.style.overflow='';
+}
+function syncModal(){
+  [['modal-scene-btns',SCENES_ORDER,pendingScene],['modal-target-btns',TARGETS_ORDER,pendingTarget],['modal-budget-btns',BUDGETS_ORDER,pendingBudget]].forEach(([id,arr,val])=>{
+    const btns=document.querySelectorAll(`#${id} .filter-modal-btn`);
+    btns.forEach(b=>b.classList.remove('active'));
+    const i=arr.indexOf(val);if(i>=0&&btns[i])btns[i].classList.add('active');
+  });
+}
+function setSceneModal(v,b){pendingScene=v;document.querySelectorAll('#modal-scene-btns .filter-modal-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');}
+function setTargetModal(v,b){pendingTarget=v;document.querySelectorAll('#modal-target-btns .filter-modal-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');}
+function setBudgetModal(v,b){pendingBudget=v;document.querySelectorAll('#modal-budget-btns .filter-modal-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');}
+function applyFilterModal(){currentScene=pendingScene;currentTarget=pendingTarget;currentBudget=pendingBudget;displayCount=12;setScene(currentScene);setTarget(currentTarget);setBudget(currentBudget);closeFilterModal();window.scrollTo({top:0,behavior:'smooth'});}
 
-    function setBudget(val) {
-      currentBudget = val;
-      displayCount = 12;
-      document.querySelectorAll('#budget-btns .filter-btn').forEach(b => b.classList.remove('active'));
-      const idx = ['all','under3k','3k5k','5k10k','over10k'].indexOf(val);
-      if (idx >= 0) document.querySelectorAll('#budget-btns .filter-btn')[idx].classList.add('active');
-      renderGrid();
-    }
-
-    function loadMore() {
-      displayCount += 12;
-      renderGrid();
-    }
-
-    function toggleNav() {
-      document.getElementById('header-nav').classList.toggle('open');
-      document.getElementById('hamburger').classList.toggle('open');
-    }
-
-    function closeNav() {
-      document.getElementById('header-nav').classList.remove('open');
-      document.getElementById('hamburger').classList.remove('open');
-    }
-
-    renderGrid();
-
-    // FAB modal helpers
-    function openFilterModal() {
-      document.getElementById('filter-overlay').classList.add('active');
-      document.getElementById('filter-modal').classList.add('active');
-      syncModalBtns();
-    }
-    function closeFilterModal() {
-      document.getElementById('filter-overlay').classList.remove('active');
-      document.getElementById('filter-modal').classList.remove('active');
-    }
-    function syncModalBtns() {
-      document.querySelectorAll('#filter-modal .fbtn[data-scene]').forEach(b => {
-        b.classList.toggle('active', b.dataset.scene === currentScene);
-      });
-      document.querySelectorAll('#filter-modal .fbtn[data-target]').forEach(b => {
-        b.classList.toggle('active', b.dataset.target === currentTarget);
-      });
-      document.querySelectorAll('#filter-modal .fbtn[data-budget]').forEach(b => {
-        b.classList.toggle('active', b.dataset.budget === currentBudget);
-      });
-    }
-    function modalSetScene(val) { currentScene = val; syncModalBtns(); }
-    function modalSetTarget(val) { currentTarget = val; syncModalBtns(); }
-    function modalSetBudget(val) { currentBudget = val; syncModalBtns(); }
-    function applyModalFilter() {
-      renderGrid();
-      closeFilterModal();
-    }
-  </script>
-
-  <div class="filter-overlay" id="filter-overlay" onclick="closeFilterModal()"></div>
-  <div class="filter-modal" id="filter-modal">
-    <div class="filter-row">
-      <span class="filter-label">シーン</span>
-      <button class="fbtn" data-scene="all" onclick="modalSetScene('all')">すべて</button>
-      <button class="fbtn" data-scene="haha" onclick="modalSetScene('haha')">🌸 母の日</button>
-      <button class="fbtn" data-scene="chichi" onclick="modalSetScene('chichi')">👔 父の日</button>
-      <button class="fbtn" data-scene="tanjobi" onclick="modalSetScene('tanjobi')">🎂 誕生日</button>
-      <button class="fbtn" data-scene="kekkon" onclick="modalSetScene('kekkon')">💍 結婚祝い</button>
-      <button class="fbtn" data-scene="shussan" onclick="modalSetScene('shussan')">👶 出産祝い</button>
-      <button class="fbtn" data-scene="christmas" onclick="modalSetScene('christmas')">🎄 クリスマス</button>
-      <button class="fbtn" data-scene="nyugaku" onclick="modalSetScene('nyugaku')">🎒 入学祝い</button>
-      <button class="fbtn" data-scene="ochugen" onclick="modalSetScene('ochugen')">🍱 お中元・お歳暮</button>
-    </div>
-    <div class="filter-row">
-      <span class="filter-label">相手</span>
-      <button class="fbtn" data-target="all" onclick="modalSetTarget('all')">すべて</button>
-      <button class="fbtn" data-target="female" onclick="modalSetTarget('female')">女性</button>
-      <button class="fbtn" data-target="male" onclick="modalSetTarget('male')">男性</button>
-      <button class="fbtn" data-target="child" onclick="modalSetTarget('child')">子供</button>
-      <button class="fbtn" data-target="parents" onclick="modalSetTarget('parents')">両親</button>
-      <button class="fbtn" data-target="boss" onclick="modalSetTarget('boss')">上司</button>
-    </div>
-    <div class="filter-row">
-      <span class="filter-label">予算</span>
-      <button class="fbtn" data-budget="all" onclick="modalSetBudget('all')">すべて</button>
-      <button class="fbtn" data-budget="under3k" onclick="modalSetBudget('under3k')">〜3,000円</button>
-      <button class="fbtn" data-budget="3k5k" onclick="modalSetBudget('3k5k')">3,000〜5,000円</button>
-      <button class="fbtn" data-budget="5k10k" onclick="modalSetBudget('5k10k')">5,000〜10,000円</button>
-      <button class="fbtn" data-budget="over10k" onclick="modalSetBudget('over10k')">10,000円〜</button>
-    </div>
-    <button class="filter-apply-btn" onclick="applyModalFilter()">この条件で絞り込む</button>
-  </div>
-  <button class="filter-fab" onclick="openFilterModal()">🔍 絞り込む</button>
-
+function toggleMenu(){const n=document.getElementById('main-nav'),b=document.querySelector('.hamburger');n.classList.toggle('open');b.classList.toggle('open');}
+function closeMenu(){document.getElementById('main-nav').classList.remove('open');document.querySelector('.hamburger').classList.remove('open');}
+</script>
 </body>
 </html>

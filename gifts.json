@@ -1,0 +1,5315 @@
+[
+  {
+    "id": 1,
+    "name": "SK-II フェイシャルトリートメントエッセンス 75ml",
+    "price": "¥11,990",
+    "budget": "10k+",
+    "desc": "世界中で愛される美容液。肌の透明感が増すと評判のロングセラー。",
+    "target_detail": "30代以上のスキンケアにこだわる女性へ",
+    "reason": "90%以上が天然成分のピテラ配合。毎日使うたびに肌が輝く",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/skii/sk2-essence-75/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=SK-II+エッセンス&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 2,
+    "name": "ジルスチュアート ボディミルク ホワイトフローラル 250ml",
+    "price": "¥4,180",
+    "budget": "3k-5k",
+    "desc": "甘くやさしいホワイトフローラルの香り。女性らしい気分になれるボディケア。",
+    "target_detail": "20〜40代のフェミニンな香りが好きな女性へ",
+    "reason": "フローラルの上品な香りが長時間続く。日常のご褒美に",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/jillstuart/jsbm-wf-250/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ジルスチュアート+ボディミルク&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 3,
+    "name": "ロクシタン シア バター ハンドクリーム 150ml",
+    "price": "¥3,080",
+    "budget": "3k-5k",
+    "desc": "プロヴァンス産シア脂20%配合の濃厚ハンドクリーム。乾燥した手をしっとり保湿。",
+    "target_detail": "手荒れが気になる働く女性・主婦へ",
+    "reason": "シア脂20%配合で保湿力抜群。南フランスの香りが癒しをプラス",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/loccitane/cabinet/shea/23120025.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/loccitane/23120025/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ロクシタン+ハンドクリーム+150ml&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 4,
+    "name": "THREE バランシング スチーム クレンザー",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "天然・オーガニック成分にこだわったスチームクレンザー。毛穴ケアに。",
+    "target_detail": "自然派コスメが好きな30代女性へ",
+    "reason": "96%自然由来成分。スチームで毛穴を開いて丁寧な洗顔を実現",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/THREE%20%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0%20%E3%82%B9%E3%83%81%E3%83%BC%E3%83%A0%20%E3%82%AF%E3%83%AC%E3%83%B3%E3%82%B6%E3%83%BC/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=THREE%20%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0%20%E3%82%B9%E3%83%81%E3%83%BC%E3%83%A0%20%E3%82%AF%E3%83%AC%E3%83%B3%E3%82%B6%E3%83%BC&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 5,
+    "name": "イソップ レスレクション ハンドバーム 75ml",
+    "price": "¥3,630",
+    "budget": "3k-5k",
+    "desc": "都会的で洗練された香りのハンドクリーム。センスあるギフトとして定番。",
+    "target_detail": "おしゃれな女性・こだわりのある友人へ",
+    "reason": "マンダリン・シダーウッドの複雑な香り。贈ってセンスが光る",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/aesop-japan/aesop-hand-balm-75/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=イソップ+ハンドバーム&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 6,
+    "name": "SABON ボディスクラブ ジャスミン&コリアンダー 320g",
+    "price": "¥5,280",
+    "budget": "5k-10k",
+    "desc": "イスラエル発の高級ボディケアブランド。デッドシーソルトで肌がすべすべに。",
+    "target_detail": "スパやバスタイムを楽しむ女性へ",
+    "reason": "デッドシーソルト配合でザラつき肌をなめらかに。パッケージも豪華",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/sabon-japan/body-scrub-j/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=SABON+ボディスクラブ&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 7,
+    "name": "シロ サボン ハンドクリーム 50g",
+    "price": "¥2,750",
+    "budget": "under3k",
+    "desc": "日本生まれの自然派コスメ。石鹸の香りで清潔感あるハンドケア。",
+    "target_detail": "ナチュラルコスメが好きな女性へ",
+    "reason": "天然由来成分主体。清楚な石鹸の香りが幅広い世代に愛される",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%83%AD%20%E3%82%B5%E3%83%9C%E3%83%B3%20%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%2050g/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B7%E3%83%AD%20%E3%82%B5%E3%83%9C%E3%83%B3%20%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%2050g&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 8,
+    "name": "ディオール ミス ディオール ブルーミング ブーケ 50ml",
+    "price": "¥12,650",
+    "budget": "10k+",
+    "desc": "ディオールの人気フレグランス。華やかなピオニーの香り。",
+    "target_detail": "華やかな香りが好きな20〜40代女性へ",
+    "reason": "世界的人気フレグランス。特別な日の贈り物に最高の格上げ",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/dior-beauty/miss-dior-bb-50/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ディオール+ミスディオール+50ml&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 9,
+    "name": "ランコム ジェニフィック アドバンスト N 50ml",
+    "price": "¥14,300",
+    "budget": "10k+",
+    "desc": "肌の奥から輝かせる美容液。ランコムのベストセラー。",
+    "target_detail": "エイジングケアを始めたい30代後半〜の女性へ",
+    "reason": "プロバイオティクス配合で肌のバリア機能をサポート",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%A9%E3%83%B3%E3%82%B3%E3%83%A0%20%E3%82%B8%E3%82%A7%E3%83%8B%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%20%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%88%20N%2050ml/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%A9%E3%83%B3%E3%82%B3%E3%83%A0%20%E3%82%B8%E3%82%A7%E3%83%8B%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%20%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%88%20N%2050ml&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 10,
+    "name": "クリニーク モイスチャーサージ 100Hオートリプレニッシング ハイドレーター 75ml",
+    "price": "¥6,930",
+    "budget": "5k-10k",
+    "desc": "72時間うるおいが続くと話題の保湿ジェル。敏感肌にも優しい。",
+    "target_detail": "乾燥肌・敏感肌の女性へ",
+    "reason": "アレルギーテスト済み。香料フリーで肌に優しく、毎日使いやすい",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%BC%E3%82%AF%20%E3%83%A2%E3%82%A4%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B5%E3%83%BC%E3%82%B8%20100H%E3%82%AA%E3%83%BC%E3%83%88%E3%83%AA%E3%83%97%E3%83%AC%E3%83%8B%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%20%E3%83%8F%E3%82%A4%E3%83%89%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC%2075ml/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%BC%E3%82%AF%20%E3%83%A2%E3%82%A4%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B5%E3%83%BC%E3%82%B8%20100H%E3%82%AA%E3%83%BC%E3%83%88%E3%83%AA%E3%83%97%E3%83%AC%E3%83%8B%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%20%E3%83%8F%E3%82%A4%E3%83%89%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC%2075ml&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 11,
+    "name": "THE SAEM 選べるハンドクリーム 5個セット",
+    "price": "¥2,000",
+    "budget": "under3k",
+    "desc": "25種類から好きな香りを選べる人気コスメブランドSAEMのハンドクリーム5個セット。",
+    "target_detail": "友人・同僚へのプチギフトに",
+    "reason": "25種類の香りから選べる楽しさ。コンパクトで持ち歩きにも便利",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/skindesign/cabinet/cosme/thesaem/perfumedhandcream/main5_00.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/skindesign/perfumed-hand-cream5set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=THE+SAEM+ハンドクリーム+セット&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 12,
+    "name": "金木犀 ハンドクリーム 日本製 プチギフト",
+    "price": "¥2,000",
+    "budget": "under3k",
+    "desc": "上品な金木犀の香りの日本製ハンドクリーム。ラッピング無料。",
+    "target_detail": "ほのかな和の香りが好きな女性へ",
+    "reason": "金木犀の甘くさわやかな香りは年齢問わず愛される定番",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/bridgehappy/cabinet/zakka1/cl/cl18_top.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/bridgehappy/cl0018/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=金木犀+ハンドクリーム+ギフト&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 13,
+    "name": "ガーゼハンカチ＋ハンドクリームセット 日本製",
+    "price": "¥1,900",
+    "budget": "under3k",
+    "desc": "上品なガーゼハンカチとホワイトティーの香りのハンドクリームの日本製ギフトセット。",
+    "target_detail": "日本製品にこだわる女性・目上の方へ",
+    "reason": "国産素材使用で安心感がある。実用的で誰にでも喜ばれる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "mothers-day",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/bridgehappy/cabinet/zakka1/kj/hkc/kj03_top.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/bridgehappy/kj03/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ハンカチ+ハンドクリーム+セット+日本製&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 14,
+    "name": "ティファニー オープンハート ネックレス シルバー",
+    "price": "¥27,500",
+    "budget": "10k+",
+    "desc": "世界的ジュエリーブランド・ティファニーの定番ネックレス。",
+    "target_detail": "大切な人への特別なプレゼントに",
+    "reason": "ティファニーブルーのボックス付き。一生ものの価値がある",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/tiffany/open-heart-necklace/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ティファニー+オープンハート+ネックレス&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 15,
+    "name": "4℃ シルバー フープピアス",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "日本女性に人気の4℃のシルプルなフープピアス。普段使いしやすい。",
+    "target_detail": "シンプルなアクセサリーが好きな女性へ",
+    "reason": "派手すぎず使いやすいデザイン。オフィスカジュアルにも合う",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/4-degrees/sv-hoop-earring/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=4℃+ピアス+シルバー&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 16,
+    "name": "agete K10 ダイヤモンド リング",
+    "price": "¥22,000",
+    "budget": "10k+",
+    "desc": "アガットの繊細なダイヤモンドリング。K10ゴールドで上品な輝き。",
+    "target_detail": "ジュエリー好きな30代女性へ",
+    "reason": "小粒ダイヤが上品な輝き。重ね付けしても映えるデザイン",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/agete%20K10%20%E3%83%80%E3%82%A4%E3%83%A4%E3%83%A2%E3%83%B3%E3%83%89%20%E3%83%AA%E3%83%B3%E3%82%B0/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=agete%20K10%20%E3%83%80%E3%82%A4%E3%83%A4%E3%83%A2%E3%83%B3%E3%83%89%20%E3%83%AA%E3%83%B3%E3%82%B0&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 17,
+    "name": "スワロフスキー クリスタル ネックレス",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "オーストリア・スワロフスキーのキラキラクリスタルネックレス。",
+    "target_detail": "華やかなアクセサリーが好きな女性へ",
+    "reason": "クリスタルの輝きが上品。フォーマルにもカジュアルにも映える",
+    "stars": {
+      "practical": 2,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%AF%E3%83%AD%E3%83%95%E3%82%B9%E3%82%AD%E3%83%BC%20%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%AB%20%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%AF%E3%83%AD%E3%83%95%E3%82%B9%E3%82%AD%E3%83%BC%20%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%AB%20%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 18,
+    "name": "ete K10 一粒ダイヤ ネックレス",
+    "price": "¥11,000",
+    "budget": "10k+",
+    "desc": "ete（エテ）の細いチェーンに一粒ダイヤが光るシンプルネックレス。",
+    "target_detail": "シンプルで上質なものが好きな女性へ",
+    "reason": "毎日つけやすいシンプルデザイン。重ね付けもおすすめ",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/ete%20K10%20%E4%B8%80%E7%B2%92%E3%83%80%E3%82%A4%E3%83%A4%20%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ete%20K10%20%E4%B8%80%E7%B2%92%E3%83%80%E3%82%A4%E3%83%A4%20%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 19,
+    "name": "Canal 4℃ パール ネックレス",
+    "price": "¥7,700",
+    "budget": "5k-10k",
+    "desc": "カナル4℃の上品なパールネックレス。冠婚葬祭にも使える万能アイテム。",
+    "target_detail": "20〜40代の幅広い女性に",
+    "reason": "パールは世代を問わず愛される定番。実用性も高い",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/Canal%204%E2%84%83%20%E3%83%91%E3%83%BC%E3%83%AB%20%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Canal%204%E2%84%83%20%E3%83%91%E3%83%BC%E3%83%AB%20%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 20,
+    "name": "AHKAH ダイヤ フラワー リング",
+    "price": "¥19,800",
+    "budget": "10k+",
+    "desc": "アーカーのフラワーモチーフダイヤリング。繊細で可憐な輝き。",
+    "target_detail": "ロマンチックなデザインが好きな女性へ",
+    "reason": "繊細なフラワーモチーフが女性らしさを引き立てる",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/AHKAH%20%E3%83%80%E3%82%A4%E3%83%A4%20%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%20%E3%83%AA%E3%83%B3%E3%82%B0/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=AHKAH%20%E3%83%80%E3%82%A4%E3%83%A4%20%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%20%E3%83%AA%E3%83%B3%E3%82%B0&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 21,
+    "name": "天然石 誕生石ブレスレット",
+    "price": "¥3,160",
+    "budget": "3k-5k",
+    "desc": "天然石パワーストーンを使った誕生石ブレスレット。数秘鑑定付き。",
+    "target_detail": "スピリチュアルなものが好きな女性・パワーストーン好きへ",
+    "reason": "誕生月の石を使うことで特別感UP。数秘鑑定付きで話のネタにも",
+    "stars": {
+      "practical": 2,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/i-wish/cabinet/number/nu21100501-1.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/i-wish/nu21100501c/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=誕生石+ブレスレット+天然石&tag=okuritegift-22",
+    "category": "アクセサリー"
+  },
+  {
+    "id": 22,
+    "name": "ゴディバ チョコレート アソートメント 18粒",
+    "price": "¥3,780",
+    "budget": "3k-5k",
+    "desc": "ベルギー王室御用達ゴディバの人気チョコアソート。",
+    "target_detail": "チョコレート好きな女性・目上の方へ",
+    "reason": "世界的ブランドの安心感。豪華なボックスがギフト感を演出",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/godiva/gold-collection-18pc/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ゴディバ+チョコ+18粒&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 23,
+    "name": "ピエール・エルメ マカロン 12個セット",
+    "price": "¥4,752",
+    "budget": "3k-5k",
+    "desc": "パリの伝説的パティシエ、ピエール・エルメのマカロン詰め合わせ。",
+    "target_detail": "スイーツ好きなおしゃれな女性へ",
+    "reason": "フランス菓子の最高峰。日本では手に入りにくい特別感がある",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%94%E3%82%A8%E3%83%BC%E3%83%AB%E3%83%BB%E3%82%A8%E3%83%AB%E3%83%A1%20%E3%83%9E%E3%82%AB%E3%83%AD%E3%83%B3%2012%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%94%E3%82%A8%E3%83%BC%E3%83%AB%E3%83%BB%E3%82%A8%E3%83%AB%E3%83%A1%20%E3%83%9E%E3%82%AB%E3%83%AD%E3%83%B3%2012%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 24,
+    "name": "千疋屋 フルーツゼリー 詰め合わせ 8個",
+    "price": "¥5,400",
+    "budget": "5k-10k",
+    "desc": "日本橋千疋屋の高級フルーツゼリー。上品な甘さと果実感が際立つ。",
+    "target_detail": "目上の方・フルーツが好きな方への高級ギフトに",
+    "reason": "150年の歴史ある老舗の信頼感。季節のフルーツを丸ごと楽しめる",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "parents",
+      "boss",
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/sembikiya/fruit-jelly-8/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=千疋屋+フルーツゼリー&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 25,
+    "name": "ヨックモック シガール 60枚缶",
+    "price": "¥3,456",
+    "budget": "3k-5k",
+    "desc": "サクサク食感が人気のヨックモック・シガール大缶。贈り物の定番。",
+    "target_detail": "甘いものが好きな方・お中元お歳暮に",
+    "reason": "サクサクとした独特の食感で一度食べたら忘れられない",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/yoku-moku/cigare-60/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ヨックモック+シガール&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 26,
+    "name": "ガトーフェスタハラダ ラスク グーテ・デ・ロワ",
+    "price": "¥2,160",
+    "budget": "under3k",
+    "desc": "群馬発の人気ラスク。サクサク食感とバターの豊かな風味。",
+    "target_detail": "洋菓子好きな方への手軽なギフトに",
+    "reason": "行列のできる人気店の逸品。もらって嬉しいコスパ最高のギフト",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/harada/rusk-gdl/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ガトーフェスタハラダ+ラスク&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 27,
+    "name": "ダロワイヨ マカロン アソート 9個",
+    "price": "¥3,996",
+    "budget": "3k-5k",
+    "desc": "1802年創業のパリ老舗・ダロワイヨのマカロン9個セット。",
+    "target_detail": "フランス菓子が好きなおしゃれな女性へ",
+    "reason": "パリの伝統菓子の上品な甘さ。ギフトボックスが美しい",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%80%E3%83%AD%E3%83%AF%E3%82%A4%E3%83%A8%20%E3%83%9E%E3%82%AB%E3%83%AD%E3%83%B3%20%E3%82%A2%E3%82%BD%E3%83%BC%E3%83%88%209%E5%80%8B/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%80%E3%83%AD%E3%83%AF%E3%82%A4%E3%83%A8%20%E3%83%9E%E3%82%AB%E3%83%AD%E3%83%B3%20%E3%82%A2%E3%82%BD%E3%83%BC%E3%83%88%209%E5%80%8B&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 28,
+    "name": "パティスリーキハチ 焼き菓子アソート",
+    "price": "¥3,240",
+    "budget": "3k-5k",
+    "desc": "キハチの厳選焼き菓子アソート。サブレ・マドレーヌ・ガレット等。",
+    "target_detail": "焼き菓子好きな方への定番ギフト",
+    "reason": "洗練された味と包装。手土産・ギフトに最適",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%83%86%E3%82%A3%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%8F%E3%83%81%20%E7%84%BC%E3%81%8D%E8%8F%93%E5%AD%90%E3%82%A2%E3%82%BD%E3%83%BC%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%86%E3%82%A3%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%AD%E3%83%8F%E3%83%81%20%E7%84%BC%E3%81%8D%E8%8F%93%E5%AD%90%E3%82%A2%E3%82%BD%E3%83%BC%E3%83%88&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 29,
+    "name": "高麗橋吉兆 栗ぜんざいギフト 4個入",
+    "price": "¥3,754",
+    "budget": "3k-5k",
+    "desc": "老舗料亭・高麗橋吉兆の本格的な栗ぜんざい4個入。",
+    "target_detail": "和菓子好きな目上の方・両親へ",
+    "reason": "料亭仕込みの上品な甘さ。和を感じる贈り物",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "mothers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/buriruby/cabinet/12797424/41429072_1.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/buriruby/xzvbbxrdxputkmepoy57noo3ke/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=高麗橋吉兆+栗ぜんざい+ギフト&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 30,
+    "name": "とらや 羊羹 5本入り小箱",
+    "price": "¥3,240",
+    "budget": "3k-5k",
+    "desc": "日本を代表する和菓子ブランド・虎屋の羊羹セット。",
+    "target_detail": "和菓子好きな方・目上の方への贈り物に",
+    "reason": "室町時代から続く老舗の味。品格あるギフトとして最上の選択",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/toraya/yokan-5/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=とらや+羊羹+5本+ギフト&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 31,
+    "name": "銀座千疋屋 プリン 6個セット",
+    "price": "¥3,780",
+    "budget": "3k-5k",
+    "desc": "銀座千疋屋の濃厚プリン6個セット。新鮮なミルクと卵の風味。",
+    "target_detail": "プリン好きの方へのこだわりギフト",
+    "reason": "なめらかで濃厚な味わい。「千疋屋」のブランド力が喜ばれる",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/ginzasembikiya/pudding-6/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=銀座千疋屋+プリン+ギフト&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 32,
+    "name": "帝国ホテル クッキー缶 20枚",
+    "price": "¥2,700",
+    "budget": "under3k",
+    "desc": "帝国ホテルの伝統のクッキー。格調高いデザイン缶入り。",
+    "target_detail": "格式を大切にする方・上司へのギフトに",
+    "reason": "帝国ホテルブランドの安心感と格式。缶が再利用できるのも嬉しい",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%B8%9D%E5%9B%BD%E3%83%9B%E3%83%86%E3%83%AB%20%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E7%BC%B6%2020%E6%9E%9A/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%B8%9D%E5%9B%BD%E3%83%9B%E3%83%86%E3%83%AB%20%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E7%BC%B6%2020%E6%9E%9A&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 33,
+    "name": "カーネーション花鉢＋ヴィタメール焼き菓子セット",
+    "price": "¥7,300",
+    "budget": "5k-10k",
+    "desc": "生花のカーネーション鉢とベルギー王室御用達ヴィタメールの焼き菓子5個入。",
+    "target_detail": "花とスイーツを一緒に贈りたい方へ",
+    "reason": "見た目のインパクト大。花と食の豪華コラボで特別感UP",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day"
+    ],
+    "img": "https://tshop.r10s.jp/jmei3rd/cabinet/eat01/b/se_10-01.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/jmei3rd/fgift-389/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=母の日+カーネーション+スイーツ+セット&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 34,
+    "name": "チーズファクトリー 厳選スイーツセット",
+    "price": "¥2,000",
+    "budget": "under3k",
+    "desc": "チーズを使った濃厚スイーツの詰め合わせ。",
+    "target_detail": "スイーツ好きの女性・友人へのお手軽ギフト",
+    "reason": "チーズを使ったスイーツは珍しく話題になる。コスパも◎",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/monmiya/cabinet/m3/70005926_0620.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/monmiya/70005926/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=チーズスイーツ+ギフトセット&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 35,
+    "name": "ジュレパフェ フルーツゼリー 6個セット",
+    "price": "¥2,200",
+    "budget": "under3k",
+    "desc": "見た目も華やかなフルーツゼリーのジュレパフェ6個セット。",
+    "target_detail": "幅広い年代に贈れる安定の人気商品",
+    "reason": "透明感のある見た目が映える。フルーツの酸味と甘さが絶妙",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss",
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season",
+      "mothers-day"
+    ],
+    "img": "https://tshop.r10s.jp/watch-me/cabinet/syokuhin/syokuhin2/imgrc0108459948.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/watch-me/t-11-035/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=フルーツゼリー+ジュレパフェ+ギフト&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 36,
+    "name": "北海道 カウベルアイスクリーム 詰め合わせ 12個",
+    "price": "¥3,980",
+    "budget": "3k-5k",
+    "desc": "北海道産の濃厚アイスクリーム12個詰め合わせ。",
+    "target_detail": "夏の贈り物に。アイス好きの方へ",
+    "reason": "北海道産ミルクの濃厚さが段違い。夏の暑い日に喜ばれる",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/hokkaido-gourmation/cabinet/syouhin/cbell/26cbell_sg001rt.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/hokkaido-gourmation/fax-089-ice12/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=北海道+アイスクリーム+詰め合わせ&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 37,
+    "name": "揖保乃糸 そうめん 特級品 黒帯 古ひね",
+    "price": "¥2,298",
+    "budget": "under3k",
+    "desc": "1年熟成の高級素麺・揖保乃糸特級品（黒帯）。夏の定番ギフト。",
+    "target_detail": "食にこだわりのある方・実用的なものを好む方へ",
+    "reason": "老舗ブランドの品質。熟成により滑らかな喉越しが楽しめる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/japangift/cabinet/pointex/20260328pup/iz-30shi-30.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/japangift/zz-iz-30w/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=揖保乃糸+特級+そうめん&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 38,
+    "name": "プリザーブドフラワー アレンジメント ボックス",
+    "price": "¥4,980",
+    "budget": "3k-5k",
+    "desc": "枯れないお花・プリザーブドフラワーの高級ボックスアレンジ。",
+    "target_detail": "花が好きな女性・長く飾れるプレゼントに",
+    "reason": "生花と違い水やり不要で長期間楽しめる。部屋に飾れる上品さ",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/hanadonya/preserved-box-s/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=プリザーブドフラワー+ボックス+ギフト&tag=okuritegift-22",
+    "category": "フラワー"
+  },
+  {
+    "id": 39,
+    "name": "ハーバリウム ボトル ギフトセット",
+    "price": "¥3,800",
+    "budget": "3k-5k",
+    "desc": "植物標本のようなボトルオブジェ。インテリアとして飾れる。",
+    "target_detail": "インテリアに興味がある女性へ",
+    "reason": "光が当たると幻想的な美しさ。生花が苦手な方にもおすすめ",
+    "stars": {
+      "practical": 2,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/fleur-garden/herbarium-gift/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ハーバリウム+ギフト&tag=okuritegift-22",
+    "category": "フラワー"
+  },
+  {
+    "id": 40,
+    "name": "フラワーアレンジメント 生花 母の日スペシャル",
+    "price": "¥6,500",
+    "budget": "5k-10k",
+    "desc": "季節の花をたっぷり使ったフラワーアレンジメント。翌日配送対応。",
+    "target_detail": "感謝の気持ちをダイレクトに伝えたい方へ",
+    "reason": "生花の瑞々しさは別格。メッセージカード無料添付可",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/a-elma/flower-mothers-special/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=母の日+フラワーアレンジメント+送料無料&tag=okuritegift-22",
+    "category": "フラワー"
+  },
+  {
+    "id": 41,
+    "name": "ソープフラワー ギフトボックス バラ",
+    "price": "¥3,500",
+    "budget": "3k-5k",
+    "desc": "石鹸素材で作られた枯れないバラのソープフラワー。",
+    "target_detail": "見た目に華やかなプレゼントを贈りたい方へ",
+    "reason": "枯れないのに本物そっくり。優しい香りも長持ちする",
+    "stars": {
+      "practical": 2,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/soap-flower/rose-box-gift/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ソープフラワー+バラ+ギフト&tag=okuritegift-22",
+    "category": "フラワー"
+  },
+  {
+    "id": 42,
+    "name": "カーネーション プリザーブドフラワー 母の日",
+    "price": "¥4,320",
+    "budget": "3k-5k",
+    "desc": "母の日の定番・カーネーションのプリザーブドフラワー。永遠に咲き続ける花。",
+    "target_detail": "毎年同じ花束は飽きた方・記念に残るものを",
+    "reason": "枯れないカーネーションで毎年飾れる。特別な年の記念にも",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/e-carnation/preserved-carnation/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=カーネーション+プリザーブド+母の日&tag=okuritegift-22",
+    "category": "フラワー"
+  },
+  {
+    "id": 43,
+    "name": "ケイトスペード ミニショルダーバッグ",
+    "price": "¥28,600",
+    "budget": "10k+",
+    "desc": "NYブランド・ケイトスペードのスクエアミニバッグ。",
+    "target_detail": "おしゃれな20〜30代女性への特別ギフト",
+    "reason": "機能的でかわいいデザイン。ブランドロゴが主張しすぎず品がある",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/kate-spade-japan/mini-shoulder/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ケイトスペード+ミニバッグ&tag=okuritegift-22",
+    "category": "バッグ"
+  },
+  {
+    "id": 44,
+    "name": "コーチ 二つ折り財布 レディース",
+    "price": "¥25,300",
+    "budget": "10k+",
+    "desc": "アメリカ発の高級ブランド・コーチのシンプルな二つ折り財布。",
+    "target_detail": "財布をプレゼントしたい女性へ",
+    "reason": "品質の高い本革で長く使える。シグネチャー柄が上品",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/coach-japan/ladies-wallet/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=コーチ+財布+レディース&tag=okuritegift-22",
+    "category": "バッグ"
+  },
+  {
+    "id": 45,
+    "name": "フルラ トートバッグ メトロポリス",
+    "price": "¥29,700",
+    "budget": "10k+",
+    "desc": "イタリア発のフルラ・メトロポリスシリーズの定番トートバッグ。",
+    "target_detail": "イタリアンブランドが好きな女性へ",
+    "reason": "イタリアンレザーの質感が高級感を演出。A4サイズ収納可",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%95%E3%83%AB%E3%83%A9%20%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%20%E3%83%A1%E3%83%88%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%B9/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%95%E3%83%AB%E3%83%A9%20%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%20%E3%83%A1%E3%83%88%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%B9&tag=okuritegift-22",
+    "category": "バッグ"
+  },
+  {
+    "id": 46,
+    "name": "マイケルコース チェーンショルダーバッグ",
+    "price": "¥18,700",
+    "budget": "10k+",
+    "desc": "NYファッションブランド・マイケルコースの人気チェーンバッグ。",
+    "target_detail": "ブランドバッグをプレゼントしたい方へ",
+    "reason": "高級感があり日常使いしやすいサイズ感",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%82%A4%E3%82%B1%E3%83%AB%E3%82%B3%E3%83%BC%E3%82%B9%20%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%A4%E3%82%B1%E3%83%AB%E3%82%B3%E3%83%BC%E3%82%B9%20%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0&tag=okuritegift-22",
+    "category": "バッグ"
+  },
+  {
+    "id": 47,
+    "name": "ポーター フラットポーチ レディース",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "日本の名門バッグブランド・吉田カバン「PORTER」のポーチ。",
+    "target_detail": "機能的でおしゃれなポーチを探している女性へ",
+    "reason": "国産の高い品質。多機能ポーチとして長く使える",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/porter/flat-pouch-ladies/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ポーター+ポーチ+レディース&tag=okuritegift-22",
+    "category": "バッグ"
+  },
+  {
+    "id": 48,
+    "name": "クナイプ バスソルト ギフトセット 6種",
+    "price": "¥3,240",
+    "budget": "3k-5k",
+    "desc": "ドイツ発クナイプのバスソルト6種アソート。アロマバスでリラックス。",
+    "target_detail": "バスタイムを大切にしている女性へ",
+    "reason": "6種の香りで毎日違うバスタイムが楽しめる。疲れを癒す湯船",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/kneipp-japan/bath-salt-6set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=クナイプ+バスソルト+ギフトセット&tag=okuritegift-22",
+    "category": "リラクゼーション"
+  },
+  {
+    "id": 49,
+    "name": "アロマキャンドル ギフトセット YANKEE CANDLE",
+    "price": "¥4,500",
+    "budget": "3k-5k",
+    "desc": "アメリカ発ヤンキーキャンドルのギフトセット。人気の香り3種。",
+    "target_detail": "アロマが好きな方・リラックスタイムを大切にする女性へ",
+    "reason": "部屋に灯すだけで上質な空間を演出。豊富な香りから選べる",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%89%E3%83%AB%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88%20YANKEE%20CANDLE/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%89%E3%83%AB%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88%20YANKEE%20CANDLE&tag=okuritegift-22",
+    "category": "リラクゼーション"
+  },
+  {
+    "id": 50,
+    "name": "マッサージオイル ギフトセット L'OCCITANE",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "ロクシタンのアロマティックボディオイルとハンドクリームのセット。",
+    "target_detail": "疲れた体を癒したい女性・お母さんへ",
+    "reason": "南フランスの植物由来成分でボディケア。香りで南仏気分に",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/loccitane/massage-oil-gift/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ロクシタン+マッサージオイル+ギフト&tag=okuritegift-22",
+    "category": "リラクゼーション"
+  },
+  {
+    "id": 51,
+    "name": "温泉入浴剤 高級セット 日本製",
+    "price": "¥3,500",
+    "budget": "3k-5k",
+    "desc": "全国の名湯を自宅で楽しめる入浴剤ギフトセット。",
+    "target_detail": "温泉好き・疲れを取りたい方へ",
+    "reason": "実家に送っても喜ばれる実用的な一品。温泉気分で心と体を癒す",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/onsen-gift/nyuyokuzai-set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=温泉入浴剤+高級+ギフトセット&tag=okuritegift-22",
+    "category": "リラクゼーション"
+  },
+  {
+    "id": 52,
+    "name": "アフタヌーンティー体験券 ホテルニューオータニ",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "一流ホテルのアフタヌーンティーを楽しめる体験チケット。",
+    "target_detail": "特別な時間を贈りたい女性へ",
+    "reason": "ホテルの非日常感と豪華な紅茶・スコーン体験",
+    "stars": {
+      "practical": 1,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/hotel-gift/afternoon-tea/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=アフタヌーンティー+ギフト+ホテル&tag=okuritegift-22",
+    "category": "体験"
+  },
+  {
+    "id": 53,
+    "name": "エステサロン 体験チケット 60分コース",
+    "price": "¥8,000",
+    "budget": "5k-10k",
+    "desc": "プロのエステで60分のボディ&フェイシャルケア体験チケット。",
+    "target_detail": "日頃の疲れをとらせてあげたいお母さん・女性へ",
+    "reason": "プロの手によるケアで心身ともにリフレッシュ",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 3
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/esthe-ticket/body-face-60min/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=エステ+体験チケット+ギフト&tag=okuritegift-22",
+    "category": "体験"
+  },
+  {
+    "id": 54,
+    "name": "リンベル スマートギフト カタログ 体験版",
+    "price": "¥6,600",
+    "budget": "5k-10k",
+    "desc": "旅行・グルメ・スパなど体験型も選べる豪華カタログギフト。",
+    "target_detail": "何を贈ればいいか迷っている方へ",
+    "reason": "受け取った人が自由に選べる。体験から食まで幅広いラインナップ",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "wedding"
+    ],
+    "img": "https://tshop.r10s.jp/ringbellshop/cabinet/catalog/smartgift/cgsmartgift_2.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/ringbellshop/r809-015/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=体験ギフト+カタログ+旅行&tag=okuritegift-22",
+    "category": "体験"
+  },
+  {
+    "id": 55,
+    "name": "星野リゾート ギフト券 15,000円分",
+    "price": "¥15,000",
+    "budget": "10k+",
+    "desc": "日本を代表するリゾートブランド・星野リゾートのギフト券。",
+    "target_detail": "旅行好きなご両親・大切な人への特別ギフト",
+    "reason": "日本全国の星野リゾート施設で使える。思い出に残る旅をプレゼント",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 3
+    },
+    "targets": [
+      "parents",
+      "female",
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/hoshinoresorts/gift-coupon-15000/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=星野リゾート+ギフト券&tag=okuritegift-22",
+    "category": "体験"
+  },
+  {
+    "id": 56,
+    "name": "獺祭 純米大吟醸 磨き二割三分 720ml",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "世界が認める山口の日本酒・獺祭の最高峰。",
+    "target_detail": "日本酒好きな男性へ。特別な日のプレゼントに",
+    "reason": "世界中で高評価。洗練された味わいと美しいボトルが一級品",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/dassai/dassai-23-720/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=獺祭+純米大吟醸+720ml&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 57,
+    "name": "久保田 千寿 吟醸 720ml",
+    "price": "¥1,540",
+    "budget": "under3k",
+    "desc": "新潟を代表する日本酒・久保田千寿。スッキリとした飲み口。",
+    "target_detail": "日本酒入門〜中級者の男性へ",
+    "reason": "スッキリした辛口で食事に合わせやすい。新潟の名酒として知名度抜群",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/sakenomikurabe/kubota-senju-720/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=久保田+千寿+720ml&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 58,
+    "name": "山崎 12年 シングルモルトウイスキー 700ml",
+    "price": "¥18,000",
+    "budget": "10k+",
+    "desc": "サントリーの世界最高賞受賞ウイスキー・山崎12年。",
+    "target_detail": "ウイスキー好きな男性への最高の贈り物",
+    "reason": "世界中のバーテンダーが認める逸品。プレミアム感が圧倒的",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/suntory-shop/yamazaki-12/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=山崎+12年+ウイスキー&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 59,
+    "name": "響 JAPANESE HARMONY 700ml",
+    "price": "¥7,700",
+    "budget": "5k-10k",
+    "desc": "サントリーブレンデッドウイスキー・響の定番商品。",
+    "target_detail": "ウイスキー初心者〜中級者の男性へ",
+    "reason": "華やかで飲みやすいブレンデッド。ボトルデザインも美しい",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/suntory-shop/hibiki-harmony/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=響+ジャパニーズハーモニー&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 60,
+    "name": "バランタイン 17年 700ml",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "スコッチウイスキーの名門・バランタイン17年。",
+    "target_detail": "スコッチ好きな男性・上司への贈り物",
+    "reason": "滑らかで複雑な味わい。17年熟成の深みが特別感を演出",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "boss"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/whisky-shop/ballantine-17/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=バランタイン+17年+700ml&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 61,
+    "name": "プレミアムモルツ 6缶セット 包装付き",
+    "price": "¥1,980",
+    "budget": "under3k",
+    "desc": "サントリー・ザ・プレミアム・モルツの6缶ギフトセット。",
+    "target_detail": "ビール好きな男性へのプチギフト",
+    "reason": "「マイスターズドリーム」など上位ランクも選べる。包装で高見え",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/suntory-shop/premium-malts-6can/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=プレミアムモルツ+ギフト+6缶&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 62,
+    "name": "ベアレンビール クラフトビール 5種10本セット",
+    "price": "¥5,300",
+    "budget": "5k-10k",
+    "desc": "岩手・盛岡のクラフトビール5種10本ギフトBOX入り。",
+    "target_detail": "クラフトビールに興味がある男性へ",
+    "reason": "個性豊かな5種類を飲み比べる楽しさ。産地直送の新鮮さ",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/baeren/cabinet/bin/08898732/gift/imgrc0150289738.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/baeren/bss-10bc/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ベアレン+クラフトビール+ギフトセット&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 63,
+    "name": "伊勢角屋麦酒 クラフトビール ペールエール 瓶セット",
+    "price": "¥1,835",
+    "budget": "under3k",
+    "desc": "三重・伊勢の老舗クラフトビール醸造所のペールエール瓶セット。",
+    "target_detail": "クラフトビールを試してみたい男性へ",
+    "reason": "フルーティーな香りと豊かな風味。地ビール好きに間違いなし",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/isekadoyabeer/cabinet/biiino/item/s-image-3/imgrc0084774386.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/isekadoyabeer/paleale-b-1p/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=伊勢角屋麦酒+クラフトビール&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 64,
+    "name": "城崎温泉 地ビール ギフトセット",
+    "price": "¥2,090",
+    "budget": "under3k",
+    "desc": "温泉地・城崎の地元直送クラフトビール。",
+    "target_detail": "旅行好きな父・地ビールが好きな男性へ",
+    "reason": "産地直送の新鮮な地ビール。旅行の思い出を味で伝える",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/arumama/cabinet/shohin/sake/beer/gu-330-1.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/arumama/gu-330-1/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=城崎温泉+地ビール+ギフト&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 65,
+    "name": "高級ワイン 赤ワイン フランス ボルドー",
+    "price": "¥6,600",
+    "budget": "5k-10k",
+    "desc": "フランス・ボルドー産の高品質赤ワイン。贈り物として格調高い。",
+    "target_detail": "ワイン好きな男性・女性へ",
+    "reason": "フランスの格付けワインは贈り物として格調がある",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/wine-shop/bordeaux-red/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ボルドー+高級ワイン+ギフト&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 66,
+    "name": "シャンパン モエ・エ・シャンドン ミニボトル 200ml",
+    "price": "¥2,750",
+    "budget": "under3k",
+    "desc": "世界的シャンパン・モエ&シャンドンのかわいいミニボトル。",
+    "target_detail": "お祝い事・ちょっと特別な贈り物に",
+    "reason": "有名ブランドのシャンパンが手軽なサイズで贈れる。お祝いムードを演出",
+    "stars": {
+      "practical": 2,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "wedding"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/wine-shop/moet-mini-200/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=モエシャンドン+ミニボトル&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 67,
+    "name": "松阪牛 A5 焼き肉セット 400g",
+    "price": "¥12,960",
+    "budget": "10k+",
+    "desc": "日本三大和牛の一つ・松阪牛のA5ランク焼き肉セット。",
+    "target_detail": "肉好きな男性・贅沢な食事を楽しんでほしい方へ",
+    "reason": "日本最高峰の牛肉。脂の甘みとろける食感は別格",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/matsusakameat/a5-yakiniku-400/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=松阪牛+A5+焼肉+ギフト&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 68,
+    "name": "仙台牛 A5 低温調理ユッケ 2個セット",
+    "price": "¥3,120",
+    "budget": "3k-5k",
+    "desc": "最高級A5仙台牛の低温調理ユッケ2個セット。",
+    "target_detail": "肉好きな男性・贅沢なつまみを求める方へ",
+    "reason": "低温調理で柔らかく安心・安全。日本酒やビールのお供に最高",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/hisarekomafu/cabinet/compass1689051895.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/hisarekomafu/compass1640161685/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=仙台牛+ユッケ+ギフト&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 69,
+    "name": "国産 特上うなぎ 蒲焼き 2尾",
+    "price": "¥5,940",
+    "budget": "5k-10k",
+    "desc": "国産天然うなぎの特上蒲焼き2尾。丁寧なタレがご飯に合う。",
+    "target_detail": "うなぎが好きな父・贅沢な食事を楽しんでほしい方へ",
+    "reason": "国産うなぎの希少性と旨み。蒲焼きの香ばしい香りで食欲増進",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/unagi-shop/special-2tail/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=国産うなぎ+蒲焼き+ギフト&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 70,
+    "name": "北海道 ズワイガニ 姿 1kg",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "北海道産の贅沢なズワイガニ姿1kg。ギフトに最適な高級食材。",
+    "target_detail": "蟹が好きな両親・特別なお祝いに",
+    "reason": "ズワイガニの甘みと旨みが濃厚。豪華な食卓を演出",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/hokkaido-seafood/zuwai-1kg/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ズワイガニ+北海道+ギフト&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 71,
+    "name": "北海道 海鮮6点 島の人セレクション",
+    "price": "¥5,990",
+    "budget": "5k-10k",
+    "desc": "北海道直送の海鮮6点詰め合わせ。産地直送の新鮮さ。",
+    "target_detail": "海鮮好きな方・グルメな方への豪華ギフト",
+    "reason": "北海道の豊かな海の幸を6種楽しめる。産地直送の新鮮さが自慢",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/rebun/cabinet/2507sele600.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/rebun/shimanohito-selection/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=北海道+海鮮+詰め合わせ+ギフト&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 72,
+    "name": "国産旬彩 干物セット",
+    "price": "¥3,000",
+    "budget": "3k-5k",
+    "desc": "職人が丁寧に仕上げた国産魚の干物セット。",
+    "target_detail": "お酒好きのお父さん・和食派の方へ",
+    "reason": "旬の魚を一夜干しで旨みを凝縮。お酒との相性抜群",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/yamaichi-himono/cabinet/04735669/sab1nis1kam2koa3.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/yamaichi-himono/s-himono-1/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=干物セット+ギフト+国産&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 73,
+    "name": "高級カレー ギフトセット 銀座カリー",
+    "price": "¥4,800",
+    "budget": "3k-5k",
+    "desc": "銀座カリーの高級ビーフカレー6缶セット。",
+    "target_detail": "カレー好きな男性・実用的なギフトに",
+    "reason": "老舗の本格カレー。家にストックできて実用性が高い",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "fathers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/ginza-curry/gift-6can/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=銀座カリー+ギフトセット&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 74,
+    "name": "燻製セット おつまみ5種詰め合わせ",
+    "price": "¥3,800",
+    "budget": "3k-5k",
+    "desc": "本格燻製のおつまみ5種詰め合わせ。チーズ・ナッツ・ベーコンなど。",
+    "target_detail": "お酒好きな男性への珍しいギフトに",
+    "reason": "手作り感のある本格燻製。お酒のつまみに最高で話のネタにも",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/smoked-gifts/kumsei-5set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=燻製+おつまみ+ギフト+セット&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 75,
+    "name": "特選 宮崎牛 すき焼き肉 500g",
+    "price": "¥9,500",
+    "budget": "5k-10k",
+    "desc": "宮崎牛のやわらかいすき焼き用スライス肉500g。",
+    "target_detail": "肉好きな父・特別なお祝いに贈る家族への贈り物",
+    "reason": "甘みのある脂とやわらかな赤身。すき焼きで家族の食卓が華やかに",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/miyazaki-beef/sukiyaki-500/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=宮崎牛+すき焼き+ギフト&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 76,
+    "name": "ステーキ黒毛和牛 ヒレ 200g×2枚",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "最上級の黒毛和牛ヒレステーキ。柔らかく脂が少なく食べやすい。",
+    "target_detail": "少し上質な食事を楽しんでほしい男性・父へ",
+    "reason": "ヒレは和牛の中でも最も柔らかい部位。特別な夜の一品に",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/wagyu-shop/fillet-200g2/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=黒毛和牛+ヒレステーキ+ギフト&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 77,
+    "name": "ポーター タンカー 二つ折り財布",
+    "price": "¥16,500",
+    "budget": "10k+",
+    "desc": "吉田カバン「PORTER」のベストセラー財布。メンズへの定番ギフト。",
+    "target_detail": "実用的でおしゃれな財布を探している男性へ",
+    "reason": "国産の丁寧な縫製と機能性。ポーターは男性へのブランドギフト定番",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/porter/tanker-wallet/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ポーター+タンカー+財布&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 78,
+    "name": "タケオキクチ ビジネスベルト",
+    "price": "¥5,280",
+    "budget": "5k-10k",
+    "desc": "日本を代表するメンズブランド・タケオキクチのレザーベルト。",
+    "target_detail": "ビジネスマンの男性へのセンスあるギフト",
+    "reason": "スーツに合うシンプルなデザイン。日本製本革で長く使える",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/takeokikuchi/belt-business/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=タケオキクチ+ベルト&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 79,
+    "name": "ポールスミス ネクタイ ストライプ",
+    "price": "¥9,350",
+    "budget": "5k-10k",
+    "desc": "英国発ポールスミスのカラフルなストライプネクタイ。",
+    "target_detail": "おしゃれなネクタイを探しているビジネスマンへ",
+    "reason": "遊び心あるデザインで存在感を発揮。スーツに差し色を添える",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/paul-smith/stripe-tie/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ポールスミス+ネクタイ+ストライプ&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 80,
+    "name": "バーバリー ネクタイ チェック柄",
+    "price": "¥16,500",
+    "budget": "10k+",
+    "desc": "英国の名門バーバリーの定番チェック柄ネクタイ。",
+    "target_detail": "格式のある贈り物をしたい方・上司へ",
+    "reason": "バーバリーチェックは格調高く、ビジネスシーンで映える",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "boss"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/burberry/check-tie/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=バーバリー+ネクタイ&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 81,
+    "name": "トミーヒルフィガー 二つ折り財布 メンズ",
+    "price": "¥9,980",
+    "budget": "5k-10k",
+    "desc": "ヨーロッパ輸入モデルのメンズ二つ折り財布。",
+    "target_detail": "ブランド財布を贈りたい方・定番ギフトに",
+    "reason": "スタイリッシュなデザインで毎日使いやすい。コスパ感も◎",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "fathers-day"
+    ],
+    "img": "https://tshop.r10s.jp/alevel/cabinet/tommy/12766-bds.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/alevel/12766-bds/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=トミーヒルフィガー+財布+メンズ&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 82,
+    "name": "Apple AirPods 第4世代",
+    "price": "¥23,800",
+    "budget": "10k+",
+    "desc": "Appleのワイヤレスイヤフォン最新世代。ノイズキャンセリング搭載。",
+    "target_detail": "ガジェット好きな男性・音楽好きの方へ",
+    "reason": "アクティブノイズキャンセリングで通勤・運動中も快適に",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/apple/airpods-gen4/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=AirPods+第4世代&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 83,
+    "name": "Anker モバイルバッテリー 20000mAh",
+    "price": "¥4,990",
+    "budget": "3k-5k",
+    "desc": "世界的人気のAnker製大容量モバイルバッテリー。",
+    "target_detail": "スマホをよく使う男性・旅行好きな方へ",
+    "reason": "20000mAhの大容量でスマホを数回充電可能。急速充電対応",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/ankerdirect/powerbank-20000/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Anker+モバイルバッテリー+20000mAh&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 84,
+    "name": "Qi2 ワイヤレス充電スタンド",
+    "price": "¥4,480",
+    "budget": "3k-5k",
+    "desc": "最新規格Qi2対応のワイヤレス充電スタンド。iPhoneを置くだけ。",
+    "target_detail": "iPhone使用者・デスク周りを整理したい方へ",
+    "reason": "ケーブル不要でスマートにスマホを充電。デスクがスッキリ",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/gadget-shop/qi2-stand/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Qi2+ワイヤレス充電スタンド&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 85,
+    "name": "Garmin スマートウォッチ Forerunner 55",
+    "price": "¥28,600",
+    "budget": "10k+",
+    "desc": "ガーミンのランニング特化スマートウォッチ。GPSと健康管理機能付き。",
+    "target_detail": "ランニング・スポーツ好きな男性へ",
+    "reason": "GPS精度と心拍計が高精度。トレーニングデータを管理できる",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/garmin/forerunner-55/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Garmin+Forerunner+55&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 86,
+    "name": "JBL Bluetoothスピーカー CLIP4",
+    "price": "¥6,490",
+    "budget": "5k-10k",
+    "desc": "JBLの防水・軽量Bluetoothスピーカー。どこでも持ち運べる。",
+    "target_detail": "アウトドア・音楽好きな男性へ",
+    "reason": "IP67防水防塵。カラビナで鞄に付けて持ち運べる便利さ",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/jbl/clip4/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=JBL+CLIP4+Bluetooth&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 87,
+    "name": "タイトリスト ProV1 ゴルフボール 12個入",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "ゴルファーが最も信頼するゴルフボール・タイトリストProV1。",
+    "target_detail": "ゴルフが好きな父・男性へ",
+    "reason": "プロも使用する最高品質ボール。贈るとゴルフへの本気度が伝わる",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "boss"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/titleist/prov1-12/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=タイトリスト+ProV1+12個&tag=okuritegift-22",
+    "category": "趣味"
+  },
+  {
+    "id": 88,
+    "name": "ダイワ 釣り竿 カーボンスピニングロッド",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "日本の釣り具メーカー・ダイワの汎用スピニングロッド。",
+    "target_detail": "釣り好きな父・男性へ",
+    "reason": "高品質カーボン素材で軽くて強い。初心者から上級者まで満足",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/daiwa/spinning-rod/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ダイワ+スピニングロッド&tag=okuritegift-22",
+    "category": "趣味"
+  },
+  {
+    "id": 89,
+    "name": "スノーピーク チタンシングルマグ 300ml",
+    "price": "¥3,520",
+    "budget": "3k-5k",
+    "desc": "アウトドア界の名品・スノーピークのチタン製マグカップ。",
+    "target_detail": "キャンプ・アウトドア好きな男性へ",
+    "reason": "軽量・丈夫なチタン製。直火にもかけられる万能マグ",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/snowpeak/titanium-mug-300/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=スノーピーク+チタンマグ+300ml&tag=okuritegift-22",
+    "category": "趣味"
+  },
+  {
+    "id": 90,
+    "name": "コールマン キャンプ用品 ランタン LED",
+    "price": "¥4,400",
+    "budget": "3k-5k",
+    "desc": "キャンプの定番・コールマンのLEDランタン。",
+    "target_detail": "キャンプ・アウトドア好きな方へ",
+    "reason": "夜のキャンプサイトを明るく照らす。電池交換が簡単で便利",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/coleman/led-lantern/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=コールマン+LEDランタン&tag=okuritegift-22",
+    "category": "趣味"
+  },
+  {
+    "id": 91,
+    "name": "レゴ クラシック 黄色のアイデアボックス 10696",
+    "price": "¥3,520",
+    "budget": "3k-5k",
+    "desc": "自由に組み合わせできるレゴクラシック。想像力を育む定番おもちゃ。",
+    "target_detail": "4〜12歳の子供へ・入学祝いにも",
+    "reason": "子供の創造力を育む。完成後も解体して何度も遊べる",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "enrollment",
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/lego-shop/10696/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=レゴ+クラシック+10696&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 92,
+    "name": "プラレール 新幹線 はやぶさセット",
+    "price": "¥5,280",
+    "budget": "5k-10k",
+    "desc": "子供が大好きな新幹線・はやぶさのプラレールセット。",
+    "target_detail": "3〜8歳の男の子へ",
+    "reason": "電車好きの子に定番中の定番。拡張しながら遊べる",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/plarail/hayabusa-set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=プラレール+はやぶさ+セット&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 93,
+    "name": "シルバニアファミリー うさぎのふたごちゃんセット",
+    "price": "¥2,750",
+    "budget": "under3k",
+    "desc": "シルバニアファミリーの人気キャラクター、うさぎのふたごちゃん。",
+    "target_detail": "3〜9歳の女の子へ",
+    "reason": "可愛いうさぎの双子ちゃん。シルバニアのコレクションに追加しやすい",
+    "stars": {
+      "practical": 2,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/sylvanian/rabbit-twin/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=シルバニアファミリー+うさぎ+ふたご&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 94,
+    "name": "木製 ままごとセット 野菜切り遊び",
+    "price": "¥3,980",
+    "budget": "3k-5k",
+    "desc": "木製のカラフルな野菜おもちゃセット。ままごと遊びの定番。",
+    "target_detail": "2〜6歳の子供・特に女の子へ",
+    "reason": "木の温かみのある素材が安心。ままごと遊びで想像力が育まれる",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "birth",
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/wooden-toys/vegetable-set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=木製+ままごとセット+野菜&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 95,
+    "name": "ニンテンドースイッチ ソフト マリオ",
+    "price": "¥5,978",
+    "budget": "5k-10k",
+    "desc": "子供から大人まで楽しめるニンテンドースイッチ用マリオゲーム。",
+    "target_detail": "5歳以上の子供・ゲーム好きの方へ",
+    "reason": "世界中で人気のマリオシリーズ。家族みんなで楽しめる",
+    "stars": {
+      "practical": 4,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "child",
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/nintendo/mario-switch/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ニンテンドースイッチ+マリオ&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 96,
+    "name": "バンダイ 組み立てガンプラ 初心者向け RX-78-2",
+    "price": "¥1,760",
+    "budget": "under3k",
+    "desc": "機動戦士ガンダムの主役機・ガンプラ初心者キット。",
+    "target_detail": "小学生〜中学生の男の子へ",
+    "reason": "ガンプラの入門モデル。組み立てる達成感と完成品への愛着",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "child",
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/bandai/gunpla-rx78/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ガンプラ+RX-78-2+初心者&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 97,
+    "name": "学研 科学と学習 図鑑 宇宙",
+    "price": "¥1,980",
+    "budget": "under3k",
+    "desc": "宇宙の不思議を豊富な写真と図解で解説する子供向け図鑑。",
+    "target_detail": "知的好奇心旺盛な小学生へ",
+    "reason": "写真が豊富で読むだけで宇宙旅行気分。大人も楽しめる内容",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/gakken/space-zukan/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=学研+図鑑+宇宙+子供&tag=okuritegift-22",
+    "category": "知育"
+  },
+  {
+    "id": 98,
+    "name": "くもん 知育パズル 世界地図 50ピース",
+    "price": "¥2,200",
+    "budget": "under3k",
+    "desc": "公文の世界地図パズル。遊びながら地理が学べる。",
+    "target_detail": "5〜10歳の知識欲旺盛な子供へ",
+    "reason": "ピースが大きくて扱いやすい。繰り返し遊んで地理を覚える",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "enrollment",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/kumon/world-puzzle-50/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=くもん+パズル+世界地図&tag=okuritegift-22",
+    "category": "知育"
+  },
+  {
+    "id": 99,
+    "name": "アーテックブロック 100ピース セット",
+    "price": "¥3,300",
+    "budget": "3k-5k",
+    "desc": "柔らかく繋げやすいブロック玩具。レゴより安全で低年齢から。",
+    "target_detail": "2〜8歳の子供へ",
+    "reason": "柔らかいポリエチレン製で安全。組み合わせ自由で創造力を刺激",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/artec/block-100/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=アーテックブロック+100ピース&tag=okuritegift-22",
+    "category": "知育"
+  },
+  {
+    "id": 100,
+    "name": "スクラッチ プログラミング入門 こども向け参考書",
+    "price": "¥1,650",
+    "budget": "under3k",
+    "desc": "子供向けビジュアルプログラミング言語Scratchの入門書。",
+    "target_detail": "プログラミングに興味ある小学生へ",
+    "reason": "ゲームを作りながらプログラミングの基礎が身につく",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "enrollment",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/book-shop/scratch-kids-book/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Scratch+プログラミング+子供+入門書&tag=okuritegift-22",
+    "category": "知育"
+  },
+  {
+    "id": 101,
+    "name": "おむつケーキ 3段 豪華セット",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "おむつをケーキ型に飾った出産祝いの定番ギフト。豪華3段タイプ。",
+    "target_detail": "出産祝いに迷ったら外せない定番",
+    "reason": "見た目のインパクト大。実用的なおむつが消えていくのも魅力",
+    "stars": {
+      "practical": 4,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/diaper-cake/3stage-set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=おむつケーキ+3段+出産祝い&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 102,
+    "name": "ミキハウス ベビー プレゼントセット",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "日本の子供服ブランド・ミキハウスのベビー肌着&小物セット。",
+    "target_detail": "新生児が生まれたご家族へ",
+    "reason": "安心の日本製。ブランド力があり贈った側の気持ちも伝わる",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/mikihouse/baby-gift-set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ミキハウス+ベビー+出産祝い&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 103,
+    "name": "ベビー食器セット 名入れ 木製",
+    "price": "¥4,400",
+    "budget": "3k-5k",
+    "desc": "名前を入れられる木製ベビー食器セット。離乳食から使える。",
+    "target_detail": "離乳食期を迎えるご家族へ",
+    "reason": "記念になる名入れが特別感を演出。天然木で安心・安全",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/baby-shop/wood-dishes-set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ベビー食器セット+名入れ+木製&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 104,
+    "name": "名入れ 乳歯ケース 木製",
+    "price": "¥3,000",
+    "budget": "3k-5k",
+    "desc": "子供の大切な乳歯を保管できる木製の名入れ乳歯ケース。",
+    "target_detail": "出産お祝い・子供の記念に",
+    "reason": "乳歯は一生の記念。名前を入れることで世界に一つだけの贈り物に",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth",
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/gift-bmcjapan/cabinet/toothcase/thntb3.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/gift-bmcjapan/o20211030/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=乳歯ケース+名入れ+出産祝い&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 105,
+    "name": "木製 歯固め＋ホルダーセット オーガニック",
+    "price": "¥3,025",
+    "budget": "3k-5k",
+    "desc": "厚生労働省認定機関検査合格のオーガニック素材歯固め。",
+    "target_detail": "新生児が生まれたご家族へ",
+    "reason": "赤ちゃんの口に入れても安心のオーガニック素材。おしゃれなデザイン",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth"
+    ],
+    "img": "https://tshop.r10s.jp/fika/cabinet/08062032/holder_wood_001/set002_re/set002_re.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/fika/set002/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=木製+歯固め+オーガニック+セット&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 106,
+    "name": "プレシャスメモリー アルバム 出産記念",
+    "price": "¥3,850",
+    "budget": "3k-5k",
+    "desc": "生まれた瞬間から成長を記録できる高品質なベビーアルバム。",
+    "target_detail": "新しいご家族の誕生をお祝いしたい方へ",
+    "reason": "写真の一枚一枚が宝物に。コメントを書けるスペースが充実",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/memory-album/baby-album/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ベビーアルバム+出産祝い+高品質&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 107,
+    "name": "ニューバランス キッズスニーカー 313",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "子供に人気のニューバランスキッズシューズ。",
+    "target_detail": "小学生の子供へ",
+    "reason": "大人と同じブランドのスニーカーに子供が喜ぶ。軽くて履きやすい",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "enrollment",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/newbalance/kids-313/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ニューバランス+キッズ+313&tag=okuritegift-22",
+    "category": "キッズファッション"
+  },
+  {
+    "id": 108,
+    "name": "無印良品 キッズ 有機綿 長袖Tシャツ",
+    "price": "¥1,290",
+    "budget": "under3k",
+    "desc": "無印良品のオーガニックコットン100%キッズTシャツ。",
+    "target_detail": "安心素材の子供服を贈りたい方へ",
+    "reason": "肌触りがやさしいオーガニックコットン。シンプルで着回しやすい",
+    "stars": {
+      "practical": 5,
+      "surprise": 1,
+      "looks": 3
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "enrollment",
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/muji/kids-organic-tshirt/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=無印良品+キッズ+オーガニック+Tシャツ&tag=okuritegift-22",
+    "category": "キッズファッション"
+  },
+  {
+    "id": 109,
+    "name": "ランドセル 女の子 クラリーノ ピンク",
+    "price": "¥38,500",
+    "budget": "10k+",
+    "desc": "軽くて丈夫なクラリーノ素材の女の子向けランドセル。",
+    "target_detail": "小学校入学を迎える女の子へ",
+    "reason": "軽量で6年間丈夫に使える。可愛らしいピンクが人気",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/randoseru/clarino-pink/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ランドセル+女の子+クラリーノ+ピンク&tag=okuritegift-22",
+    "category": "キッズファッション"
+  },
+  {
+    "id": 110,
+    "name": "カタログギフト ハーモニック 3,740円コース",
+    "price": "¥3,000",
+    "budget": "3k-5k",
+    "desc": "グルメ・旅行・日用品など豊富なラインナップから選べるカタログギフト。",
+    "target_detail": "何を贈ればいいか迷っている方へ",
+    "reason": "受け取った人が自由に選べる安心感。定番の高評価カタログ",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/giftman/cabinet/new_catalogue/harmonick-v/3740.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/giftman/neko-sh-be/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=カタログギフト+ハーモニック+3000円&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 111,
+    "name": "グランチョイスギフト カタログ 2,900円コース",
+    "price": "¥3,000",
+    "budget": "3k-5k",
+    "desc": "楽天評価★4.75の高評価カタログギフト。豊富なジャンルから選べる。",
+    "target_detail": "迷わず喜ばれるものを贈りたい方へ",
+    "reason": "豊富なジャンルで必ず欲しいものが見つかる",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/rambbit/cabinet/ikou_20100223/c001.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/rambbit/649933/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=グランチョイス+カタログギフト&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 112,
+    "name": "リンベル カタログギフト 幸福の黄金鳥 5,500円",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "旅行・グルメ・ファッションなど豪華ラインナップのカタログギフト。",
+    "target_detail": "少し豪華な贈り物をしたい方へ",
+    "reason": "旅行体験も選べる充実のラインナップ。贈答品の王道",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "wedding",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/ringbellshop/koufuku-5500/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=リンベル+カタログギフト+旅行&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 113,
+    "name": "体験ギフト おとなの遠足 東京版",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "料理教室・陶芸・茶道など東京の体験が選べるギフト。",
+    "target_detail": "新しい体験をしてほしい大切な人へ",
+    "reason": "普通のギフトとは違う体験の記憶が残る贈り物",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/experience-gift/tokyo-adult/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=体験ギフト+東京+カタログ&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 114,
+    "name": "ハートフルセレクション カタログギフト カードタイプ",
+    "price": "¥3,080",
+    "budget": "3k-5k",
+    "desc": "コンシェルジュ対応のカードタイプカタログギフト。WEB選択可。",
+    "target_detail": "スマートにデジタルで選んでほしい方へ",
+    "reason": "カードタイプで場所を取らず、WEBで選べて便利",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/toolandmeal/cabinet/item/12592352/concierge_card_th_02.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/toolandmeal/105069450/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ハートフルセレクション+カタログギフト&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 115,
+    "name": "全国旅行券 JTBギフトカード 10,000円",
+    "price": "¥10,000",
+    "budget": "10k+",
+    "desc": "JTBで使えるギフトカード。旅行・ホテル・アクティビティに使える。",
+    "target_detail": "旅行好きなご両親・パートナーへ",
+    "reason": "旅行の行き先を自由に選んでもらえる。思い出に残るプレゼント",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 3
+    },
+    "targets": [
+      "parents",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/jtb/gift-card-10000/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=JTB+ギフトカード+旅行券&tag=okuritegift-22",
+    "category": "旅行"
+  },
+  {
+    "id": 116,
+    "name": "温泉宿泊券 箱根 一泊二食付き",
+    "price": "¥22,000",
+    "budget": "10k+",
+    "desc": "人気温泉地・箱根の高級旅館の一泊二食付き宿泊券。",
+    "target_detail": "ゆっくり休んでほしいご両親へ",
+    "reason": "日本を代表する温泉地・箱根で心身を癒す贈り物",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "fathers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/hakone-ryokan/one-night-dinner/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=箱根+温泉旅館+宿泊券+ギフト&tag=okuritegift-22",
+    "category": "旅行"
+  },
+  {
+    "id": 117,
+    "name": "高級米 魚沼産コシヒカリ 5kg",
+    "price": "¥3,500",
+    "budget": "3k-5k",
+    "desc": "日本一の産地・魚沼産コシヒカリ5kg。贈答用化粧箱入り。",
+    "target_detail": "毎日ご飯を食べるご両親・実用的なものを好む方へ",
+    "reason": "日本最高峰の米。化粧箱入りで贈答品としての格が高い",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "mothers-day",
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/uonuma-rice/koshihikari-5kg/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=魚沼産コシヒカリ+5kg+贈答&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 118,
+    "name": "マッサージクッション ルルド Lourdes",
+    "price": "¥6,600",
+    "budget": "5k-10k",
+    "desc": "首・肩・腰をもみほぐすルルドのマッサージクッション。",
+    "target_detail": "肩こり・腰痛に悩む方・ご両親へ",
+    "reason": "テレビを見ながら楽にマッサージ。家族みんなで使えて実用性高い",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "parents",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/lourdes/massage-cushion/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ルルド+マッサージクッション&tag=okuritegift-22",
+    "category": "健康"
+  },
+  {
+    "id": 119,
+    "name": "オムロン 上腕式血圧計",
+    "price": "¥4,950",
+    "budget": "3k-5k",
+    "desc": "信頼のオムロン製・家庭用上腕式血圧計。記録機能付き。",
+    "target_detail": "健康を気にかけているご両親へ",
+    "reason": "毎日の血圧管理で健康状態を把握。医療機器メーカーの安心感",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "fathers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/omron/blood-pressure-arm/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=オムロン+上腕式血圧計&tag=okuritegift-22",
+    "category": "健康"
+  },
+  {
+    "id": 120,
+    "name": "健康茶 ギフトセット 有機栽培 8種",
+    "price": "¥3,800",
+    "budget": "3k-5k",
+    "desc": "有機栽培の健康茶8種類のギフトセット。むくみ・美肌ケアに。",
+    "target_detail": "健康意識が高い女性・ご両親へ",
+    "reason": "化学農薬不使用の有機茶。毎日のお茶時間が豊かになる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "female",
+      "boss"
+    ],
+    "scenes": [
+      "mothers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/organic-tea/health-tea-8set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=有機健康茶+ギフトセット+8種&tag=okuritegift-22",
+    "category": "健康"
+  },
+  {
+    "id": 121,
+    "name": "ペアマグカップ 名入れ 波佐見焼",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "長崎・波佐見焼の名入れペアマグカップ。夫婦・カップルへの定番ギフト。",
+    "target_detail": "仲の良いご両親・カップルへ",
+    "reason": "名前を入れることで世界に一つだけのペアアイテムに",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "parents",
+      "female"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/hasami-mug/pair-name/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ペアマグカップ+名入れ+波佐見焼&tag=okuritegift-22",
+    "category": "健康"
+  },
+  {
+    "id": 122,
+    "name": "ペアパジャマ SHIPS ルームウェア",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "SHIPSブランドのペアパジャマ。カップル・夫婦に人気。",
+    "target_detail": "ゆっくり家で過ごしてほしいご両親・カップルへ",
+    "reason": "上質な綿素材でふっくらやわらか。おそろいで喜ばれる",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "parents"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/ships/pair-pajama/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ペアパジャマ+SHIPS+プレゼント&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 123,
+    "name": "カタログギフト 旅行 ワールドセレクション",
+    "price": "¥11,000",
+    "budget": "10k+",
+    "desc": "国内外の旅行が選べる旅行専門カタログギフト。",
+    "target_detail": "旅行が大好きなご両親へ",
+    "reason": "好きな旅行先・旅行スタイルを自由に選べる。思い出に残るギフト",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/travel-catalog/world-selection/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=旅行カタログギフト+国内外&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 124,
+    "name": "パーカー ジョッター ボールペン",
+    "price": "¥2,200",
+    "budget": "under3k",
+    "desc": "英国の伝統的文具ブランド・パーカーのジョッターボールペン。",
+    "target_detail": "ビジネスパーソンへの洗練されたギフト",
+    "reason": "何十年も変わらないロングセラーデザイン。贈って格が上がる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "boss",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/parker/jotter-ballpen/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=パーカー+ジョッター+ボールペン&tag=okuritegift-22",
+    "category": "文具"
+  },
+  {
+    "id": 125,
+    "name": "モンブラン ボールペン マイスターシュテュック",
+    "price": "¥38,500",
+    "budget": "10k+",
+    "desc": "文具の最高峰・モンブランのマイスターシュテュック。",
+    "target_detail": "特別な上司・大切な方への最上の贈り物",
+    "reason": "一生ものの文具。会議でさりげなく使うと存在感が際立つ",
+    "stars": {
+      "practical": 4,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "male"
+    ],
+    "scenes": [
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/montblanc/meisterstuck-bp/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=モンブラン+マイスターシュテュック+ボールペン&tag=okuritegift-22",
+    "category": "文具"
+  },
+  {
+    "id": 126,
+    "name": "今治タオル ギフトセット バスタオル2枚",
+    "price": "¥4,400",
+    "budget": "3k-5k",
+    "desc": "日本が誇る今治タオルのバスタオル2枚セット。",
+    "target_detail": "実用的なものを好む方・清潔感のある贈り物に",
+    "reason": "日本最高峰の品質タオル。毎日使う消耗品だから常に喜ばれる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "boss",
+      "female",
+      "male"
+    ],
+    "scenes": [
+      "wedding",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/imabari-towel/bath-2set/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=今治タオル+バスタオル+ギフトセット&tag=okuritegift-22",
+    "category": "タオル"
+  },
+  {
+    "id": 127,
+    "name": "今治タオル 木箱入り 高級ギフトセット",
+    "price": "¥11,000",
+    "budget": "10k+",
+    "desc": "日本が誇る今治タオルの高級セット。木箱入りで格調高い。",
+    "target_detail": "結婚祝い・特別な方へのご挨拶に",
+    "reason": "木箱入りで格調高い。バスタオル2枚・フェイスタオル2枚のセット",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "wedding",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "https://tshop.r10s.jp/balloon-cube/cabinet/item/towel/kk/kk79100.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/balloon-cube/s_kk79100/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=今治タオル+木箱+高級ギフト&tag=okuritegift-22",
+    "category": "タオル"
+  },
+  {
+    "id": 128,
+    "name": "ヒポポタマス タオル ギフトセット",
+    "price": "¥4,400",
+    "budget": "3k-5k",
+    "desc": "カラフルで可愛いヒポポタマスタオルのギフトセット。",
+    "target_detail": "センスの良い贈り物をしたい方へ",
+    "reason": "鮮やかなカラーが可愛い。肌触りも良く実用性も高い",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/hippopotamus/towel-gift/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ヒポポタマス+タオル+ギフト&tag=okuritegift-22",
+    "category": "タオル"
+  },
+  {
+    "id": 129,
+    "name": "スターバックス コーヒー ギフトセット",
+    "price": "¥3,500",
+    "budget": "3k-5k",
+    "desc": "スターバックスのコーヒーギフトセット。ドリップコーヒー10袋。",
+    "target_detail": "コーヒー好きな方・職場への贈り物に",
+    "reason": "スタバのブランド力で受け取った人が嬉しい。毎朝楽しんでもらえる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "boss",
+      "male",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/starbucks/coffee-gift/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=スターバックス+ドリップコーヒー+ギフト&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 130,
+    "name": "ネスプレッソ コーヒーカプセル アソート 40個",
+    "price": "¥4,800",
+    "budget": "3k-5k",
+    "desc": "ネスプレッソのコーヒーカプセル40個詰め合わせ。",
+    "target_detail": "ネスプレッソを持っているコーヒー好きな方へ",
+    "reason": "毎日飲む消耗品だから必ず喜ばれる。様々な味が楽しめる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "boss",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/nespresso/capsule-40-assort/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ネスプレッソ+カプセル+40個+ギフト&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 131,
+    "name": "フォートナム&メイソン 紅茶 ギフトセット",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "英国王室御用達フォートナム&メイソンの高級紅茶セット。",
+    "target_detail": "紅茶好きな方・上品な贈り物に",
+    "reason": "英国の歴史ある老舗ブランド。华やかな缶が飾りたくなる美しさ",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/fortnum/tea-gift/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=フォートナム&メイソン+紅茶+ギフト&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 132,
+    "name": "山崎実業 tower カタログギフト",
+    "price": "¥3,630",
+    "budget": "3k-5k",
+    "desc": "人気ブランド山崎実業「タワー」のインテリア雑貨が選べるカタログ。",
+    "target_detail": "新居に引っ越した方・インテリア好きな方へ",
+    "reason": "機能的でスタイリッシュなキッチン・バス用品が充実",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "https://tshop.r10s.jp/bellevie-harima/cabinet/0330/gift/cat-tower-003_s1.jpg",
+    "rakutenUrl": "https://item.rakuten.co.jp/bellevie-harima/cat-tower-003/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=山崎実業+タワー+ギフト+カタログ&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 133,
+    "name": "ペアグラス バカラ クリスタル",
+    "price": "¥15,400",
+    "budget": "10k+",
+    "desc": "フランス発の高級クリスタルブランド・バカラのペアグラス。",
+    "target_detail": "結婚・新居祝いに最高の贈り物",
+    "reason": "バカラのクリスタルはグラスの最高峰。特別な乾杯をプレゼント",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "male"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/baccarat/pair-glass/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=バカラ+ペアグラス+結婚祝い&tag=okuritegift-22",
+    "category": "テーブルウェア"
+  },
+  {
+    "id": 134,
+    "name": "ダイソン コードレス掃除機 V8",
+    "price": "¥44,000",
+    "budget": "10k+",
+    "desc": "ダイソンの人気コードレス掃除機。新生活・結婚祝いに。",
+    "target_detail": "新居に引っ越したカップルへ",
+    "reason": "吸引力は変わらない。コードレスで場所を選ばず便利",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/dyson/v8/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ダイソン+コードレス掃除機+V8&tag=okuritegift-22",
+    "category": "家電"
+  },
+  {
+    "id": 135,
+    "name": "ベビーモニター パナソニック ワイヤレス",
+    "price": "¥11,000",
+    "budget": "10k+",
+    "desc": "パナソニックの安心ベビーモニター。赤ちゃんの様子をカメラで確認。",
+    "target_detail": "新米パパ・ママへの実用的なプレゼント",
+    "reason": "夜中の様子確認に大活躍。スマホと連携で外出中も確認できる",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 3
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/panasonic/baby-monitor/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=パナソニック+ベビーモニター&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 136,
+    "name": "スリングバッグ 抱っこひも コンパクト",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "コンパクトに畳めて持ち運びやすいスリング型抱っこひも。",
+    "target_detail": "新しいパパ・ママへ",
+    "reason": "軽量で持ち運びやすい。赤ちゃんも密着して安心感がある",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "child",
+      "female"
+    ],
+    "scenes": [
+      "birth"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/baby-shop/sling-compact/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=スリング+抱っこひも+コンパクト&tag=okuritegift-22",
+    "category": "ベビー"
+  },
+  {
+    "id": 137,
+    "name": "ディズニー クリスマス オーナメントセット",
+    "price": "¥3,980",
+    "budget": "3k-5k",
+    "desc": "ディズニーキャラクターのクリスマスツリー用オーナメントセット。",
+    "target_detail": "ディズニー好きな女性・子供へ",
+    "reason": "クリスマスツリーが一気に華やかに。毎年飾れる思い出のオーナメント",
+    "stars": {
+      "practical": 2,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "child"
+    ],
+    "scenes": [
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/disney/christmas-ornament/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ディズニー+クリスマス+オーナメント&tag=okuritegift-22",
+    "category": "雑貨"
+  },
+  {
+    "id": 138,
+    "name": "ナイトロコーヒー コーヒーギフト クリスマス",
+    "price": "¥4,200",
+    "budget": "3k-5k",
+    "desc": "窒素充填のコーヒー缶セット。クリスマス限定パッケージ。",
+    "target_detail": "コーヒー好きな方へのクリスマスギフト",
+    "reason": "缶入りで日持ちする。限定パッケージが特別感を演出",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "male",
+      "female",
+      "boss"
+    ],
+    "scenes": [
+      "christmas",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://item.rakuten.co.jp/coffee-shop/nitro-christmas/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=ナイトロコーヒー+クリスマス+ギフト&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 139,
+    "name": "コーセー雪肌精 化粧水 140ml",
+    "price": "¥5,280",
+    "budget": "5k-10k",
+    "desc": "日本を代表する和漢美容水・雪肌精。",
+    "target_detail": "透明感のある肌を目指す女性へ",
+    "reason": "和漢植物エキス配合で透明感と潤いをもたらす上品な化粧水",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B3%E3%83%BC%E3%82%BB%E3%83%BC%E9%9B%AA%E8%82%8C%E7%B2%BE%20%E5%8C%96%E7%B2%A7%E6%B0%B4%20140ml/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B3%E3%83%BC%E3%82%BB%E3%83%BC%E9%9B%AA%E8%82%8C%E7%B2%BE%20%E5%8C%96%E7%B2%A7%E6%B0%B4%20140ml&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 140,
+    "name": "資生堂 エリクシール 潤いスキンケアセット",
+    "price": "¥6,600",
+    "budget": "5k-10k",
+    "desc": "資生堂エリクシールの化粧水・乳液のセット。",
+    "target_detail": "30代以上の女性へのスキンケアギフト",
+    "reason": "日本の老舗ブランドの安心感。毎日のスキンケアが豊かになる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E8%B3%87%E7%94%9F%E5%A0%82%20%E3%82%A8%E3%83%AA%E3%82%AF%E3%82%B7%E3%83%BC%E3%83%AB%20%E6%BD%A4%E3%81%84%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E8%B3%87%E7%94%9F%E5%A0%82%20%E3%82%A8%E3%83%AA%E3%82%AF%E3%82%B7%E3%83%BC%E3%83%AB%20%E6%BD%A4%E3%81%84%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 141,
+    "name": "ナリス化粧品 美白クリーム",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "老舗コスメブランドのしっとり美白クリーム。",
+    "target_detail": "美白ケアに関心のある女性・お母さんへ",
+    "reason": "長年愛されるナリスの美白ライン。しっとり感が長続きする",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%8A%E3%83%AA%E3%82%B9%E5%8C%96%E7%B2%A7%E5%93%81%20%E7%BE%8E%E7%99%BD%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%8A%E3%83%AA%E3%82%B9%E5%8C%96%E7%B2%A7%E5%93%81%20%E7%BE%8E%E7%99%BD%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 142,
+    "name": "バスロマン 薬用入浴剤 詰め合わせ",
+    "price": "¥2,500",
+    "budget": "under3k",
+    "desc": "ロングセラーのバスロマン薬用入浴剤のギフトセット。",
+    "target_detail": "疲れをとらせてあげたい方へ",
+    "reason": "薬用成分配合で疲労回復をサポート。様々な香りを楽しめる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%90%E3%82%B9%E3%83%AD%E3%83%9E%E3%83%B3%20%E8%96%AC%E7%94%A8%E5%85%A5%E6%B5%B4%E5%89%A4%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%90%E3%82%B9%E3%83%AD%E3%83%9E%E3%83%B3%20%E8%96%AC%E7%94%A8%E5%85%A5%E6%B5%B4%E5%89%A4%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=okuritegift-22",
+    "category": "リラクゼーション"
+  },
+  {
+    "id": 143,
+    "name": "ムーミン アロマディフューザー セット",
+    "price": "¥4,980",
+    "budget": "3k-5k",
+    "desc": "ムーミンデザインのアロマディフューザーとオイルのセット。",
+    "target_detail": "北欧デザイン好きの女性へ",
+    "reason": "かわいいデザインが部屋に溶け込む。アロマで癒しの空間を演出",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%A0%E3%83%BC%E3%83%9F%E3%83%B3%20%E3%82%A2%E3%83%AD%E3%83%9E%E3%83%87%E3%82%A3%E3%83%95%E3%83%A5%E3%83%BC%E3%82%B6%E3%83%BC%20%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%A0%E3%83%BC%E3%83%9F%E3%83%B3%20%E3%82%A2%E3%83%AD%E3%83%9E%E3%83%87%E3%82%A3%E3%83%95%E3%83%A5%E3%83%BC%E3%82%B6%E3%83%BC%20%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "リラクゼーション"
+  },
+  {
+    "id": 144,
+    "name": "資生堂パーラー バラ型クッキー 20枚",
+    "price": "¥2,700",
+    "budget": "under3k",
+    "desc": "資生堂パーラーのバラ型クッキー詰め合わせ。銀座ブランドの品格。",
+    "target_detail": "見た目にこだわった贈り物をしたい方へ",
+    "reason": "バラの形のクッキーが美しい。食べるのがもったいないほど上品",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "boss",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E8%B3%87%E7%94%9F%E5%A0%82%E3%83%91%E3%83%BC%E3%83%A9%E3%83%BC%20%E3%83%90%E3%83%A9%E5%9E%8B%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%2020%E6%9E%9A/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E8%B3%87%E7%94%9F%E5%A0%82%E3%83%91%E3%83%BC%E3%83%A9%E3%83%BC%20%E3%83%90%E3%83%A9%E5%9E%8B%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%2020%E6%9E%9A&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 145,
+    "name": "マリベル ニューヨーク チョコレート",
+    "price": "¥3,300",
+    "budget": "3k-5k",
+    "desc": "NYの芸術的チョコブランド・マリベルのチョコレートセット。",
+    "target_detail": "チョコ好きなおしゃれな方へ",
+    "reason": "一粒一粒がアートのような美しさ。味も食べ物の概念を超えた逸品",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%83%AA%E3%83%99%E3%83%AB%20%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%20%E3%83%81%E3%83%A7%E3%82%B3%E3%83%AC%E3%83%BC%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%83%AA%E3%83%99%E3%83%AB%20%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%20%E3%83%81%E3%83%A7%E3%82%B3%E3%83%AC%E3%83%BC%E3%83%88&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 146,
+    "name": "白い恋人 25枚入り 北海道銘菓",
+    "price": "¥2,376",
+    "budget": "under3k",
+    "desc": "北海道を代表するお菓子・白い恋人のホワイトチョコサンドクッキー。",
+    "target_detail": "北海道みやげ・幅広い方へのギフトに",
+    "reason": "全国に知られる北海道銘菓。サクサク生地に濃厚ホワイトチョコ",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E7%99%BD%E3%81%84%E6%81%8B%E4%BA%BA%2025%E6%9E%9A%E5%85%A5%E3%82%8A%20%E5%8C%97%E6%B5%B7%E9%81%93%E9%8A%98%E8%8F%93/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E7%99%BD%E3%81%84%E6%81%8B%E4%BA%BA%2025%E6%9E%9A%E5%85%A5%E3%82%8A%20%E5%8C%97%E6%B5%B7%E9%81%93%E9%8A%98%E8%8F%93&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 147,
+    "name": "東京バナナ 8個入り",
+    "price": "¥1,188",
+    "budget": "under3k",
+    "desc": "東京を代表する銘菓・東京バナナ。しっとりカスタードクリーム。",
+    "target_detail": "東京みやげ・甘いものが好きな方へ",
+    "reason": "全国にファンがいる定番スイーツ。食べて幸せになれる逸品",
+    "stars": {
+      "practical": 3,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents",
+      "boss",
+      "male"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E6%9D%B1%E4%BA%AC%E3%83%90%E3%83%8A%E3%83%8A%208%E5%80%8B%E5%85%A5%E3%82%8A/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%9D%B1%E4%BA%AC%E3%83%90%E3%83%8A%E3%83%8A%208%E5%80%8B%E5%85%A5%E3%82%8A&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 148,
+    "name": "伊藤久右衛門 宇治抹茶スイーツセット",
+    "price": "¥3,996",
+    "budget": "3k-5k",
+    "desc": "京都・宇治の老舗茶舗の抹茶スイーツ詰め合わせ。",
+    "target_detail": "抹茶好き・和菓子好きな方へ",
+    "reason": "本物の宇治抹茶を使った上質なスイーツ。京都の雅を感じる味",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "parents",
+      "female"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E4%BC%8A%E8%97%A4%E4%B9%85%E5%8F%B3%E8%A1%9B%E9%96%80%20%E5%AE%87%E6%B2%BB%E6%8A%B9%E8%8C%B6%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%BC%8A%E8%97%A4%E4%B9%85%E5%8F%B3%E8%A1%9B%E9%96%80%20%E5%AE%87%E6%B2%BB%E6%8A%B9%E8%8C%B6%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 149,
+    "name": "パブロ チーズタルト ギフトボックス",
+    "price": "¥3,024",
+    "budget": "3k-5k",
+    "desc": "大阪発のチーズタルト専門店・パブロのギフトセット。",
+    "target_detail": "チーズ好き・スイーツが好きな女性へ",
+    "reason": "とろけるような食感が話題。一度食べたらやみつきになる",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%83%96%E3%83%AD%20%E3%83%81%E3%83%BC%E3%82%BA%E3%82%BF%E3%83%AB%E3%83%88%20%E3%82%AE%E3%83%95%E3%83%88%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%96%E3%83%AD%20%E3%83%81%E3%83%BC%E3%82%BA%E3%82%BF%E3%83%AB%E3%83%88%20%E3%82%AE%E3%83%95%E3%83%88%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 150,
+    "name": "俵屋吉富 雲龍 和菓子詰め合わせ",
+    "price": "¥3,240",
+    "budget": "3k-5k",
+    "desc": "京都の老舗和菓子店の雲龍詰め合わせ。",
+    "target_detail": "格式ある和菓子を贈りたい方へ",
+    "reason": "江戸時代創業の老舗の品格ある和菓子。正式な贈り物に最適",
+    "stars": {
+      "practical": 3,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E4%BF%B5%E5%B1%8B%E5%90%89%E5%AF%8C%20%E9%9B%B2%E9%BE%8D%20%E5%92%8C%E8%8F%93%E5%AD%90%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%BF%B5%E5%B1%8B%E5%90%89%E5%AF%8C%20%E9%9B%B2%E9%BE%8D%20%E5%92%8C%E8%8F%93%E5%AD%90%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 151,
+    "name": "明太子 ふくや 博多ギフトセット",
+    "price": "¥3,500",
+    "budget": "3k-5k",
+    "desc": "博多・ふくやの本場明太子ギフトセット。",
+    "target_detail": "明太子好きな方・九州ゆかりの方へ",
+    "reason": "本場博多の本格明太子。食べたら違いがわかる上質な味",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E6%98%8E%E5%A4%AA%E5%AD%90%20%E3%81%B5%E3%81%8F%E3%82%84%20%E5%8D%9A%E5%A4%9A%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%98%8E%E5%A4%AA%E5%AD%90%20%E3%81%B5%E3%81%8F%E3%82%84%20%E5%8D%9A%E5%A4%9A%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 152,
+    "name": "ニッカウヰスキー 竹鶴ピュアモルト 700ml",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "日本のウイスキーの父・竹鶴政孝が手がけたピュアモルト。",
+    "target_detail": "日本の歴史あるウイスキーが好きな男性へ",
+    "reason": "フルーティーで深みのある味わい。ドラマで話題のブランド",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%8B%E3%83%83%E3%82%AB%E3%82%A6%E3%83%B0%E3%82%B9%E3%82%AD%E3%83%BC%20%E7%AB%B9%E9%B6%B4%E3%83%94%E3%83%A5%E3%82%A2%E3%83%A2%E3%83%AB%E3%83%88%20700ml/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%8B%E3%83%83%E3%82%AB%E3%82%A6%E3%83%B0%E3%82%B9%E3%82%AD%E3%83%BC%20%E7%AB%B9%E9%B6%B4%E3%83%94%E3%83%A5%E3%82%A2%E3%83%A2%E3%83%AB%E3%83%88%20700ml&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 153,
+    "name": "白鶴 純米大吟醸 720ml",
+    "price": "¥2,200",
+    "budget": "under3k",
+    "desc": "兵庫・神戸の老舗酒造・白鶴の純米大吟醸。",
+    "target_detail": "日本酒好きな方への手軽な贈り物に",
+    "reason": "コスパの良い高品質日本酒。すっきりとした飲み口が好評",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E7%99%BD%E9%B6%B4%20%E7%B4%94%E7%B1%B3%E5%A4%A7%E5%90%9F%E9%86%B8%20720ml/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E7%99%BD%E9%B6%B4%20%E7%B4%94%E7%B1%B3%E5%A4%A7%E5%90%9F%E9%86%B8%20720ml&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 154,
+    "name": "電動ワインオープナー ソムリエセット",
+    "price": "¥3,980",
+    "budget": "3k-5k",
+    "desc": "電動の高級ワインオープナーとポアラーセット。",
+    "target_detail": "ワイン好きな男性へのちょっと変わったギフト",
+    "reason": "電動で簡単にコルクを抜ける。ワインライフが豊かになる道具",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E9%9B%BB%E5%8B%95%E3%83%AF%E3%82%A4%E3%83%B3%E3%82%AA%E3%83%BC%E3%83%97%E3%83%8A%E3%83%BC%20%E3%82%BD%E3%83%A0%E3%83%AA%E3%82%A8%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95%E3%83%AF%E3%82%A4%E3%83%B3%E3%82%AA%E3%83%BC%E3%83%97%E3%83%8A%E3%83%BC%20%E3%82%BD%E3%83%A0%E3%83%AA%E3%82%A8%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 155,
+    "name": "家庭用ビールサーバー 本格泡立て",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "家庭でプロのような生ビールが楽しめるビールサーバー。",
+    "target_detail": "ビール好きな男性へのサプライズギフト",
+    "reason": "泡のきめ細やかさが段違い。家でも居酒屋気分が味わえる",
+    "stars": {
+      "practical": 4,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%AE%B6%E5%BA%AD%E7%94%A8%E3%83%93%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%20%E6%9C%AC%E6%A0%BC%E6%B3%A1%E7%AB%8B%E3%81%A6/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%AE%B6%E5%BA%AD%E7%94%A8%E3%83%93%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%20%E6%9C%AC%E6%A0%BC%E6%B3%A1%E7%AB%8B%E3%81%A6&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 156,
+    "name": "スポーツサングラス OAKLEY オークリー",
+    "price": "¥18,700",
+    "budget": "10k+",
+    "desc": "スポーツ用高機能サングラス・オークリー UV400カット。",
+    "target_detail": "スポーツ好き・アウトドア派の男性へ",
+    "reason": "プロアスリートも愛用。機能性とスタイルを両立した一品",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%B5%E3%83%B3%E3%82%B0%E3%83%A9%E3%82%B9%20OAKLEY%20%E3%82%AA%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%B5%E3%83%B3%E3%82%B0%E3%83%A9%E3%82%B9%20OAKLEY%20%E3%82%AA%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC&tag=okuritegift-22",
+    "category": "趣味"
+  },
+  {
+    "id": 157,
+    "name": "Kindle Paperwhite 防水 8GB",
+    "price": "¥17,980",
+    "budget": "10k+",
+    "desc": "Amazon Kindleの防水読書端末。お風呂でも本が読める。",
+    "target_detail": "読書好きな方・通勤時間に本を読む方へ",
+    "reason": "防水機能でお風呂読書が可能。数百冊を1台で持ち歩ける",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/Kindle%20Paperwhite%20%E9%98%B2%E6%B0%B4%208GB/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=Kindle%20Paperwhite%20%E9%98%B2%E6%B0%B4%208GB&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 158,
+    "name": "パナソニック 電動シェーバー 5枚刃",
+    "price": "¥12,100",
+    "budget": "10k+",
+    "desc": "パナソニックの高性能5枚刃電動シェーバー。",
+    "target_detail": "毎朝シェービングする男性へ",
+    "reason": "5枚刃で素早く綺麗に剃れる。防水で洗いやすいのも嬉しい",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%20%E9%9B%BB%E5%8B%95%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%90%E3%83%BC%205%E6%9E%9A%E5%88%83/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%20%E9%9B%BB%E5%8B%95%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%90%E3%83%BC%205%E6%9E%9A%E5%88%83&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 159,
+    "name": "大阪 551蓬莱 豚まんセット 8個",
+    "price": "¥2,500",
+    "budget": "under3k",
+    "desc": "大阪名物・551蓬莱の人気豚まん8個セット。",
+    "target_detail": "大阪土産・グルメな方へ",
+    "reason": "大阪人のソウルフード。本場の味をプレゼントできる贈り物",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%A4%A7%E9%98%AA%20551%E8%93%AC%E8%8E%B1%20%E8%B1%9A%E3%81%BE%E3%82%93%E3%82%BB%E3%83%83%E3%83%88%208%E5%80%8B/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%A4%A7%E9%98%AA%20551%E8%93%AC%E8%8E%B1%20%E8%B1%9A%E3%81%BE%E3%82%93%E3%82%BB%E3%83%83%E3%83%88%208%E5%80%8B&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 160,
+    "name": "LaQ ハマクロン 知育ブロック",
+    "price": "¥3,850",
+    "budget": "3k-5k",
+    "desc": "日本製の独創的なラキューブロック。複雑な立体形状が作れる。",
+    "target_detail": "5〜12歳の工作・ブロックが好きな子供へ",
+    "reason": "日本オリジナルの知育ブロック。創造力と空間認識力を育む",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/LaQ%20%E3%83%8F%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%B3%20%E7%9F%A5%E8%82%B2%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=LaQ%20%E3%83%8F%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%B3%20%E7%9F%A5%E8%82%B2%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF&tag=okuritegift-22",
+    "category": "知育"
+  },
+  {
+    "id": 161,
+    "name": "アクアビーズ 300ビーズセット",
+    "price": "¥2,800",
+    "budget": "under3k",
+    "desc": "水で固まるアクアビーズで絵を作るクリエイティブキット。",
+    "target_detail": "5〜10歳の女の子・創作好きな子供へ",
+    "reason": "水で固めるだけでカラフルな作品が完成。集中力も育む",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%93%E3%83%BC%E3%82%BA%20300%E3%83%93%E3%83%BC%E3%82%BA%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%93%E3%83%BC%E3%82%BA%20300%E3%83%93%E3%83%BC%E3%82%BA%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 162,
+    "name": "レゴ ハリーポッター ホグワーツ城",
+    "price": "¥6,980",
+    "budget": "5k-10k",
+    "desc": "大人気映画ハリポタのホグワーツ城レゴセット。",
+    "target_detail": "ハリーポッターが好きな子供〜大人へ",
+    "reason": "映画の世界を再現できる喜び。組み立て後のインテリアにも",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "child",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%AC%E3%82%B4%20%E3%83%8F%E3%83%AA%E3%83%BC%E3%83%9D%E3%83%83%E3%82%BF%E3%83%BC%20%E3%83%9B%E3%82%B0%E3%83%AF%E3%83%BC%E3%83%84%E5%9F%8E/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%AC%E3%82%B4%20%E3%83%8F%E3%83%AA%E3%83%BC%E3%83%9D%E3%83%83%E3%82%BF%E3%83%BC%20%E3%83%9B%E3%82%B0%E3%83%AF%E3%83%BC%E3%83%84%E5%9F%8E&tag=okuritegift-22",
+    "category": "おもちゃ"
+  },
+  {
+    "id": 163,
+    "name": "鍵盤ハーモニカ スズキ キッズ用",
+    "price": "¥4,950",
+    "budget": "3k-5k",
+    "desc": "小学校でも使える定番の鍵盤ハーモニカ・スズキ製。",
+    "target_detail": "音楽好きな子供・入学前のお子さんへ",
+    "reason": "学校でも使えて実用的。音楽の楽しさを体で覚える",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "enrollment",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E9%8D%B5%E7%9B%A4%E3%83%8F%E3%83%BC%E3%83%A2%E3%83%8B%E3%82%AB%20%E3%82%B9%E3%82%BA%E3%82%AD%20%E3%82%AD%E3%83%83%E3%82%BA%E7%94%A8/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E9%8D%B5%E7%9B%A4%E3%83%8F%E3%83%BC%E3%83%A2%E3%83%8B%E3%82%AB%20%E3%82%B9%E3%82%BA%E3%82%AD%20%E3%82%AD%E3%83%83%E3%82%BA%E7%94%A8&tag=okuritegift-22",
+    "category": "知育"
+  },
+  {
+    "id": 164,
+    "name": "子供用 キッズカメラ 防水 トイカメラ",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "子供でも扱いやすい防水設計のキッズ向けカメラ。",
+    "target_detail": "写真・動画に興味がある子供へ",
+    "reason": "落としても大丈夫な頑丈設計。子供の視点で撮った写真が可愛い",
+    "stars": {
+      "practical": 4,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%AD%90%E4%BE%9B%E7%94%A8%20%E3%82%AD%E3%83%83%E3%82%BA%E3%82%AB%E3%83%A1%E3%83%A9%20%E9%98%B2%E6%B0%B4%20%E3%83%88%E3%82%A4%E3%82%AB%E3%83%A1%E3%83%A9/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%AD%90%E4%BE%9B%E7%94%A8%20%E3%82%AD%E3%83%83%E3%82%BA%E3%82%AB%E3%83%A1%E3%83%A9%20%E9%98%B2%E6%B0%B4%20%E3%83%88%E3%82%A4%E3%82%AB%E3%83%A1%E3%83%A9&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 165,
+    "name": "ベネッセ こどもちゃれんじ 1ヶ月ギフト",
+    "price": "¥2,515",
+    "budget": "under3k",
+    "desc": "ベネッセの人気幼児教育教材・こどもちゃれんじのギフト券。",
+    "target_detail": "0〜6歳の子供のいるご家族へ",
+    "reason": "毎月届く知育の喜び。子供の成長に合わせたコンテンツが充実",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 3
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birth",
+      "birthday",
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%99%E3%83%8D%E3%83%83%E3%82%BB%20%E3%81%93%E3%81%A9%E3%82%82%E3%81%A1%E3%82%83%E3%82%8C%E3%82%93%E3%81%98%201%E3%83%B6%E6%9C%88%E3%82%AE%E3%83%95%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%99%E3%83%8D%E3%83%83%E3%82%BB%20%E3%81%93%E3%81%A9%E3%82%82%E3%81%A1%E3%82%83%E3%82%8C%E3%82%93%E3%81%98%201%E3%83%B6%E6%9C%88%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22",
+    "category": "知育"
+  },
+  {
+    "id": 166,
+    "name": "子供用自転車 16インチ 補助輪付き",
+    "price": "¥14,300",
+    "budget": "10k+",
+    "desc": "安全設計の子供用補助輪付き自転車16インチ。",
+    "target_detail": "3〜6歳の子供へのビッグプレゼント",
+    "reason": "体を動かす楽しさを体験。バランス感覚と体力づくりに最適",
+    "stars": {
+      "practical": 4,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "enrollment",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%AD%90%E4%BE%9B%E7%94%A8%E8%87%AA%E8%BB%A2%E8%BB%8A%2016%E3%82%A4%E3%83%B3%E3%83%81%20%E8%A3%9C%E5%8A%A9%E8%BC%AA%E4%BB%98%E3%81%8D/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%AD%90%E4%BE%9B%E7%94%A8%E8%87%AA%E8%BB%A2%E8%BB%8A%2016%E3%82%A4%E3%83%B3%E3%83%81%20%E8%A3%9C%E5%8A%A9%E8%BC%AA%E4%BB%98%E3%81%8D&tag=okuritegift-22",
+    "category": "キッズファッション"
+  },
+  {
+    "id": 167,
+    "name": "マッサージチェア フジ医療器 コンパクト",
+    "price": "¥49,800",
+    "budget": "10k+",
+    "desc": "リビングに置けるコンパクトタイプのマッサージチェア。",
+    "target_detail": "肩こり・腰痛に悩むご両親へ",
+    "reason": "フルボディマッサージで日々の疲れを癒す。毎日使える実用性",
+    "stars": {
+      "practical": 5,
+      "surprise": 5,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "male"
+    ],
+    "scenes": [
+      "fathers-day",
+      "mothers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E3%83%81%E3%82%A7%E3%82%A2%20%E3%83%95%E3%82%B8%E5%8C%BB%E7%99%82%E5%99%A8%20%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E3%83%81%E3%82%A7%E3%82%A2%20%E3%83%95%E3%82%B8%E5%8C%BB%E7%99%82%E5%99%A8%20%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88&tag=okuritegift-22",
+    "category": "健康"
+  },
+  {
+    "id": 168,
+    "name": "ウォーキングシューズ ニューバランス 574",
+    "price": "¥9,900",
+    "budget": "5k-10k",
+    "desc": "毎日の歩行を快適にするニューバランスの人気スニーカー。",
+    "target_detail": "健康のためによく歩くご両親へ",
+    "reason": "クッション性が高く長時間歩いても疲れにくい。N字ロゴが上品",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "fathers-day",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA%20%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B9%20574/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA%20%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B9%20574&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 169,
+    "name": "全自動コーヒーメーカー シロカ",
+    "price": "¥14,800",
+    "budget": "10k+",
+    "desc": "豆から全自動で挽きたてコーヒーを楽しめるコーヒーメーカー。",
+    "target_detail": "毎朝コーヒーを飲む方へのプレミアムギフト",
+    "reason": "豆を入れるだけで挽きたてコーヒーが完成。カフェの味が自宅で",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "fathers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%85%A8%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%20%E3%82%B7%E3%83%AD%E3%82%AB/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%85%A8%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%20%E3%82%B7%E3%83%AD%E3%82%AB&tag=okuritegift-22",
+    "category": "家電"
+  },
+  {
+    "id": 170,
+    "name": "千疋屋 旬の高級フルーツ詰め合わせ",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "日本橋千疋屋の厳選フルーツ詰め合わせ。旬の果物を贈る。",
+    "target_detail": "フルーツが好きな方・健康を気にかけている方へ",
+    "reason": "老舗の厳選フルーツは品質が別格。見た目も豪華で喜ばれる",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "parents",
+      "boss",
+      "female"
+    ],
+    "scenes": [
+      "mothers-day",
+      "fathers-day",
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%8D%83%E7%96%8B%E5%B1%8B%20%E6%97%AC%E3%81%AE%E9%AB%98%E7%B4%9A%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%8D%83%E7%96%8B%E5%B1%8B%20%E6%97%AC%E3%81%AE%E9%AB%98%E7%B4%9A%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 171,
+    "name": "グルコサミン コンドロイチン サプリ 3ヶ月分",
+    "price": "¥3,800",
+    "budget": "3k-5k",
+    "desc": "関節ケアに定評のあるグルコサミン&コンドロイチンのサプリ。",
+    "target_detail": "膝や腰の痛みが気になるご両親へ",
+    "reason": "継続的に摂取することで関節の動きをサポート。健康への投資",
+    "stars": {
+      "practical": 5,
+      "surprise": 1,
+      "looks": 2
+    },
+    "targets": [
+      "parents"
+    ],
+    "scenes": [
+      "fathers-day",
+      "mothers-day",
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B0%E3%83%AB%E3%82%B3%E3%82%B5%E3%83%9F%E3%83%B3%20%E3%82%B3%E3%83%B3%E3%83%89%E3%83%AD%E3%82%A4%E3%83%81%E3%83%B3%20%E3%82%B5%E3%83%97%E3%83%AA%203%E3%83%B6%E6%9C%88%E5%88%86/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B0%E3%83%AB%E3%82%B3%E3%82%B5%E3%83%9F%E3%83%B3%20%E3%82%B3%E3%83%B3%E3%83%89%E3%83%AD%E3%82%A4%E3%83%81%E3%83%B3%20%E3%82%B5%E3%83%97%E3%83%AA%203%E3%83%B6%E6%9C%88%E5%88%86&tag=okuritegift-22",
+    "category": "健康"
+  },
+  {
+    "id": 172,
+    "name": "サーモス 真空断熱タンブラー ペアセット",
+    "price": "¥4,400",
+    "budget": "3k-5k",
+    "desc": "サーモスの定番真空断熱タンブラー2個ペアセット。",
+    "target_detail": "日常使いしてほしい実用的なギフトに",
+    "reason": "長時間温かさ・冷たさをキープ。毎日使えて確実に喜ばれる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B5%E3%83%BC%E3%83%A2%E3%82%B9%20%E7%9C%9F%E7%A9%BA%E6%96%AD%E7%86%B1%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC%20%E3%83%9A%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B5%E3%83%BC%E3%83%A2%E3%82%B9%20%E7%9C%9F%E7%A9%BA%E6%96%AD%E7%86%B1%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC%20%E3%83%9A%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "テーブルウェア"
+  },
+  {
+    "id": 173,
+    "name": "伊東屋 ROMEO 万年筆",
+    "price": "¥8,800",
+    "budget": "5k-10k",
+    "desc": "銀座伊東屋オリジナルブランドROMEOの万年筆。",
+    "target_detail": "文具にこだわりのある上司・男性へ",
+    "reason": "銀座の老舗文具店のオリジナル。書き心地と存在感が上品",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E4%BC%8A%E6%9D%B1%E5%B1%8B%20ROMEO%20%E4%B8%87%E5%B9%B4%E7%AD%86/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E4%BC%8A%E6%9D%B1%E5%B1%8B%20ROMEO%20%E4%B8%87%E5%B9%B4%E7%AD%86&tag=okuritegift-22",
+    "category": "文具"
+  },
+  {
+    "id": 174,
+    "name": "スターバックス コーヒーギフトセット",
+    "price": "¥3,500",
+    "budget": "3k-5k",
+    "desc": "スターバックスのドリップコーヒー10袋ギフトセット。",
+    "target_detail": "コーヒー好きな方・職場への贈り物に",
+    "reason": "スタバのブランド力でもらって嬉しい。毎朝楽しんでもらえる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "boss",
+      "male",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 175,
+    "name": "フォートナム&メイソン 高級紅茶セット",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "英国王室御用達フォートナム&メイソンの高級紅茶セット。",
+    "target_detail": "紅茶好きな方・上品な贈り物に",
+    "reason": "英国の歴史ある老舗ブランド。美しい缶が飾りたくなる",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%88%E3%83%8A%E3%83%A0%26%E3%83%A1%E3%82%A4%E3%82%BD%E3%83%B3%20%E9%AB%98%E7%B4%9A%E7%B4%85%E8%8C%B6%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%95%E3%82%A9%E3%83%BC%E3%83%88%E3%83%8A%E3%83%A0%26%E3%83%A1%E3%82%A4%E3%82%BD%E3%83%B3%20%E9%AB%98%E7%B4%9A%E7%B4%85%E8%8C%B6%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 176,
+    "name": "ネスプレッソ カプセル アソート 40個",
+    "price": "¥4,800",
+    "budget": "3k-5k",
+    "desc": "ネスプレッソのコーヒーカプセル40個詰め合わせ。",
+    "target_detail": "ネスプレッソを持っているコーヒー好きの方へ",
+    "reason": "毎日飲む消耗品だから必ず喜ばれる。様々な味が楽しめる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "boss",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%8D%E3%82%B9%E3%83%97%E3%83%AC%E3%83%83%E3%82%BD%20%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB%20%E3%82%A2%E3%82%BD%E3%83%BC%E3%83%88%2040%E5%80%8B/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%8D%E3%82%B9%E3%83%97%E3%83%AC%E3%83%83%E3%82%BD%20%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB%20%E3%82%A2%E3%82%BD%E3%83%BC%E3%83%88%2040%E5%80%8B&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 177,
+    "name": "ヒポポタマス タオル ギフトセット",
+    "price": "¥4,400",
+    "budget": "3k-5k",
+    "desc": "カラフルで可愛いヒポポタマスタオルのギフトセット。",
+    "target_detail": "センスの良い贈り物をしたい方へ",
+    "reason": "鮮やかなカラーが可愛い。肌触りも良く実用性も高い",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%92%E3%83%9D%E3%83%9D%E3%82%BF%E3%83%9E%E3%82%B9%20%E3%82%BF%E3%82%AA%E3%83%AB%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%92%E3%83%9D%E3%83%9D%E3%82%BF%E3%83%9E%E3%82%B9%20%E3%82%BF%E3%82%AA%E3%83%AB%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "タオル"
+  },
+  {
+    "id": 178,
+    "name": "光触媒 観葉植物 インテリア フェイクグリーン",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "水やり不要の高品質光触媒観葉植物。オフィスに置ける。",
+    "target_detail": "オフィスに置けるギフトを探している方へ",
+    "reason": "枯れる心配がなくメンテナンスフリー。リアルに見えるフェイクグリーン",
+    "stars": {
+      "practical": 4,
+      "surprise": 3,
+      "looks": 5
+    },
+    "targets": [
+      "boss",
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E5%85%89%E8%A7%A6%E5%AA%92%20%E8%A6%B3%E8%91%89%E6%A4%8D%E7%89%A9%20%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2%20%E3%83%95%E3%82%A7%E3%82%A4%E3%82%AF%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E5%85%89%E8%A7%A6%E5%AA%92%20%E8%A6%B3%E8%91%89%E6%A4%8D%E7%89%A9%20%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2%20%E3%83%95%E3%82%A7%E3%82%A4%E3%82%AF%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3&tag=okuritegift-22",
+    "category": "雑貨"
+  },
+  {
+    "id": 179,
+    "name": "ル・クルーゼ ホーロー鍋 20cm",
+    "price": "¥30,800",
+    "budget": "10k+",
+    "desc": "フランスの名門鋳物ホーロー鍋・ル・クルーゼ 20cm。",
+    "target_detail": "料理好きなカップル・新婚さんへ",
+    "reason": "一生使えるル・クルーゼ。料理の味と気分が格段に上がる",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "male"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%AB%E3%83%BB%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BC%20%E3%83%9B%E3%83%BC%E3%83%AD%E3%83%BC%E9%8D%8B%2020cm/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%AB%E3%83%BB%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BC%20%E3%83%9B%E3%83%BC%E3%83%AD%E3%83%BC%E9%8D%8B%2020cm&tag=okuritegift-22",
+    "category": "テーブルウェア"
+  },
+  {
+    "id": 180,
+    "name": "バルミューダ スチームトースター",
+    "price": "¥24,200",
+    "budget": "10k+",
+    "desc": "スチームで焼くバルミューダのプレミアムトースター。",
+    "target_detail": "料理・食にこだわりがあるカップルへ",
+    "reason": "スチーム技術でパンが驚くほど美味しく焼ける。デザインも秀逸",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "male"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%90%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%83%80%20%E3%82%B9%E3%83%81%E3%83%BC%E3%83%A0%E3%83%88%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%90%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%83%80%20%E3%82%B9%E3%83%81%E3%83%BC%E3%83%A0%E3%83%88%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC&tag=okuritegift-22",
+    "category": "家電"
+  },
+  {
+    "id": 181,
+    "name": "ウェッジウッド ペアカップ&ソーサー",
+    "price": "¥11,000",
+    "budget": "10k+",
+    "desc": "英国王室御用達ウェッジウッドのペアカップ&ソーサーセット。",
+    "target_detail": "上品な贈り物をしたい新婚カップルへ",
+    "reason": "王室御用達の格式とエレガンス。特別な時間のお茶を格上げする",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%A6%E3%82%A7%E3%83%83%E3%82%B8%E3%82%A6%E3%83%83%E3%83%89%20%E3%83%9A%E3%82%A2%E3%82%AB%E3%83%83%E3%83%97%26%E3%82%BD%E3%83%BC%E3%82%B5%E3%83%BC/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%A6%E3%82%A7%E3%83%83%E3%82%B8%E3%82%A6%E3%83%83%E3%83%89%20%E3%83%9A%E3%82%A2%E3%82%AB%E3%83%83%E3%83%97%26%E3%82%BD%E3%83%BC%E3%82%B5%E3%83%BC&tag=okuritegift-22",
+    "category": "テーブルウェア"
+  },
+  {
+    "id": 182,
+    "name": "バカラ ペアグラス クリスタル",
+    "price": "¥15,400",
+    "budget": "10k+",
+    "desc": "フランス発の高級クリスタルブランド・バカラのペアグラス。",
+    "target_detail": "結婚・新居祝いへの最高の贈り物",
+    "reason": "バカラのクリスタルはグラスの最高峰。乾杯を特別な体験に",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "male"
+    ],
+    "scenes": [
+      "wedding",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%90%E3%82%AB%E3%83%A9%20%E3%83%9A%E3%82%A2%E3%82%B0%E3%83%A9%E3%82%B9%20%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%AB/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%90%E3%82%AB%E3%83%A9%20%E3%83%9A%E3%82%A2%E3%82%B0%E3%83%A9%E3%82%B9%20%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%AB&tag=okuritegift-22",
+    "category": "テーブルウェア"
+  },
+  {
+    "id": 183,
+    "name": "ランドセル 男の子 牛革 ブラック",
+    "price": "¥42,900",
+    "budget": "10k+",
+    "desc": "牛革の丈夫で高品質なランドセル（男の子向け）。",
+    "target_detail": "小学校入学を迎える男の子へ",
+    "reason": "牛革の上質な素材感で6年間丈夫に使える。黒が定番で飽きない",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "enrollment"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%A9%E3%83%B3%E3%83%89%E3%82%BB%E3%83%AB%20%E7%94%B7%E3%81%AE%E5%AD%90%20%E7%89%9B%E9%9D%A9%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%A9%E3%83%B3%E3%83%89%E3%82%BB%E3%83%AB%20%E7%94%B7%E3%81%AE%E5%AD%90%20%E7%89%9B%E9%9D%A9%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF&tag=okuritegift-22",
+    "category": "キッズファッション"
+  },
+  {
+    "id": 184,
+    "name": "キッズ腕時計 チプカシ G-SHOCK mini",
+    "price": "¥4,400",
+    "budget": "3k-5k",
+    "desc": "G-SHOCKの子供向けモデル。丈夫で防水。",
+    "target_detail": "小学生の男の子・スポーツ好きな子供へ",
+    "reason": "G-SHOCKの安心感と丈夫さ。自分で時間管理できるようになる",
+    "stars": {
+      "practical": 5,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "child"
+    ],
+    "scenes": [
+      "enrollment",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%AD%E3%83%83%E3%82%BA%E8%85%95%E6%99%82%E8%A8%88%20%E3%83%81%E3%83%97%E3%82%AB%E3%82%B7%20G-SHOCK%20mini/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%83%E3%82%BA%E8%85%95%E6%99%82%E8%A8%88%20%E3%83%81%E3%83%97%E3%82%AB%E3%82%B7%20G-SHOCK%20mini&tag=okuritegift-22",
+    "category": "ガジェット"
+  },
+  {
+    "id": 185,
+    "name": "サントリー プレミアムモルツ 350ml 24本",
+    "price": "¥5,700",
+    "budget": "5k-10k",
+    "desc": "サントリーのプレミアムビール・ザ・プレミアム・モルツ24本ケース。",
+    "target_detail": "ビール好きな方への大人気ギフト",
+    "reason": "24本の大容量で長く楽しめる。プレミアムな味わいが喜ばれる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "fathers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B5%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC%20%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%A2%E3%83%AB%E3%83%84%20350ml%2024%E6%9C%AC/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B5%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC%20%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0%E3%83%A2%E3%83%AB%E3%83%84%20350ml%2024%E6%9C%AC&tag=okuritegift-22",
+    "category": "お酒"
+  },
+  {
+    "id": 186,
+    "name": "高島屋 グルメカタログギフト",
+    "price": "¥5,500",
+    "budget": "5k-10k",
+    "desc": "高島屋選定のグルメカタログギフト。全国の名産品から選べる。",
+    "target_detail": "食にこだわりのある方・目上の方へ",
+    "reason": "高島屋のブランド力で贈答として格が高い",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 5
+    },
+    "targets": [
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E9%AB%98%E5%B3%B6%E5%B1%8B%20%E3%82%B0%E3%83%AB%E3%83%A1%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E9%AB%98%E5%B3%B6%E5%B1%8B%20%E3%82%B0%E3%83%AB%E3%83%A1%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 187,
+    "name": "お茶 玉露 高級ギフトセット",
+    "price": "¥3,800",
+    "budget": "3k-5k",
+    "desc": "最高級の玉露を含む緑茶ギフトセット。茶の名産地直送。",
+    "target_detail": "お茶好きな方・落ち着いた贈り物に",
+    "reason": "深い甘みとまろやかさが特徴の玉露。贈る側の品の良さが伝わる",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "boss",
+      "parents"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%81%8A%E8%8C%B6%20%E7%8E%89%E9%9C%B2%20%E9%AB%98%E7%B4%9A%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%81%8A%E8%8C%B6%20%E7%8E%89%E9%9C%B2%20%E9%AB%98%E7%B4%9A%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "飲料"
+  },
+  {
+    "id": 188,
+    "name": "ゴルフウェア adidas ポロシャツ",
+    "price": "14080",
+    "budget": "10k+",
+    "desc": "アディダスゴルフの機能的ポロシャツ。",
+    "target_detail": "ゴルフが好きなお父さん・男性へ",
+    "reason": "吸汗速乾素材でプレー中も快適。スタイリッシュなデザイン",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "male",
+      "boss"
+    ],
+    "scenes": [
+      "fathers-day",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B4%E3%83%AB%E3%83%95%E3%82%A6%E3%82%A7%E3%82%A2%20adidas%20%E3%83%9D%E3%83%AD%E3%82%B7%E3%83%A3%E3%83%84/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B4%E3%83%AB%E3%83%95%E3%82%A6%E3%82%A7%E3%82%A2%20adidas%20%E3%83%9D%E3%83%AD%E3%82%B7%E3%83%A3%E3%83%84&tag=okuritegift-22",
+    "category": "ファッション"
+  },
+  {
+    "id": 189,
+    "name": "パナソニック ドライヤー ナノケア",
+    "price": "19800",
+    "budget": "10k+",
+    "desc": "髪のダメージを抑えるナノイー搭載の高性能ドライヤー。",
+    "target_detail": "髪のケアに気を使う女性へ",
+    "reason": "ナノイーで乾かすだけで潤いのある髪に。美容師も推奨",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "mothers-day",
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%20%E3%83%89%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC%20%E3%83%8A%E3%83%8E%E3%82%B1%E3%82%A2/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%20%E3%83%89%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC%20%E3%83%8A%E3%83%8E%E3%82%B1%E3%82%A2&tag=okuritegift-22",
+    "category": "家電"
+  },
+  {
+    "id": 190,
+    "name": "BALMUDA バルミューダ 扇風機",
+    "price": "32780",
+    "budget": "10k+",
+    "desc": "バルミューダデザインの美しい扇風機。自然な風を再現。",
+    "target_detail": "デザインにこだわる方への夏ギフト",
+    "reason": "見た目が美しいのに涼しい。インテリアとしても優れた扇風機",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "male",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/BALMUDA%20%E3%83%90%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%83%80%20%E6%89%87%E9%A2%A8%E6%A9%9F/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=BALMUDA%20%E3%83%90%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%83%80%20%E6%89%87%E9%A2%A8%E6%A9%9F&tag=okuritegift-22",
+    "category": "家電"
+  },
+  {
+    "id": 191,
+    "name": "香水 CHANEL No.5 オードトワレ 50ml",
+    "price": "15400",
+    "budget": "10k+",
+    "desc": "世界で最も有名な香水・シャネルNo.5の定番。",
+    "target_detail": "香水が好きな特別な女性へ",
+    "reason": "100年以上愛され続ける伝説の香水。特別な日の贈り物に最高",
+    "stars": {
+      "practical": 2,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "mothers-day"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E9%A6%99%E6%B0%B4%20CHANEL%20No.5%20%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%2050ml/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E9%A6%99%E6%B0%B4%20CHANEL%20No.5%20%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%2050ml&tag=okuritegift-22",
+    "category": "コスメ"
+  },
+  {
+    "id": 192,
+    "name": "オリジナルフォトブック A4 30ページ",
+    "price": "5500",
+    "budget": "5k-10k",
+    "desc": "思い出の写真で作るオリジナルフォトブック A4サイズ30ページ。",
+    "target_detail": "大切な思い出をプレゼントしたい方へ",
+    "reason": "世界に一つの贈り物。写真とメッセージで特別な感動を",
+    "stars": {
+      "practical": 3,
+      "surprise": 5,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "parents",
+      "male"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%20A4%2030%E3%83%9A%E3%83%BC%E3%82%B8/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%20A4%2030%E3%83%9A%E3%83%BC%E3%82%B8&tag=okuritegift-22",
+    "category": "雑貨"
+  },
+  {
+    "id": 193,
+    "name": "アロマ ルームスプレー ByREDO",
+    "price": "4950",
+    "budget": "3k-5k",
+    "desc": "スウェーデン発の高級フレグランスブランドの室内用スプレー。",
+    "target_detail": "部屋の雰囲気を変えたい女性へ",
+    "reason": "上質な香りが部屋を包む。センスが光るギフト",
+    "stars": {
+      "practical": 4,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%A2%E3%83%AD%E3%83%9E%20%E3%83%AB%E3%83%BC%E3%83%A0%E3%82%B9%E3%83%97%E3%83%AC%E3%83%BC%20ByREDO/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%AD%E3%83%9E%20%E3%83%AB%E3%83%BC%E3%83%A0%E3%82%B9%E3%83%97%E3%83%AC%E3%83%BC%20ByREDO&tag=okuritegift-22",
+    "category": "リラクゼーション"
+  },
+  {
+    "id": 194,
+    "name": "シャルボネル・エ・ウォーカー チョコトリュフ",
+    "price": "4500",
+    "budget": "3k-5k",
+    "desc": "英国王室御用達のチョコレートブランドのトリュフ詰め合わせ。",
+    "target_detail": "高級チョコが好きな方への贈り物",
+    "reason": "英国王室御用達の格式。独特の風味とトリュフの濃厚さ",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "boss",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%9C%E3%83%8D%E3%83%AB%E3%83%BB%E3%82%A8%E3%83%BB%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AB%E3%83%BC%20%E3%83%81%E3%83%A7%E3%82%B3%E3%83%88%E3%83%AA%E3%83%A5%E3%83%95/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%9C%E3%83%8D%E3%83%AB%E3%83%BB%E3%82%A8%E3%83%BB%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AB%E3%83%BC%20%E3%83%81%E3%83%A7%E3%82%B3%E3%83%88%E3%83%AA%E3%83%A5%E3%83%95&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 195,
+    "name": "ホールフーズ オーガニックオイル セット",
+    "price": "3850",
+    "budget": "3k-5k",
+    "desc": "有機認証を受けたオリーブ&ナッツオイルのギフトセット。",
+    "target_detail": "健康意識が高い方・料理好きな方へ",
+    "reason": "有機認証オイルで毎日の料理をヘルシーに格上げ",
+    "stars": {
+      "practical": 5,
+      "surprise": 3,
+      "looks": 4
+    },
+    "targets": [
+      "female",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%95%E3%83%BC%E3%82%BA%20%E3%82%AA%E3%83%BC%E3%82%AC%E3%83%8B%E3%83%83%E3%82%AF%E3%82%AA%E3%82%A4%E3%83%AB%20%E3%82%BB%E3%83%83%E3%83%88/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%95%E3%83%BC%E3%82%BA%20%E3%82%AA%E3%83%BC%E3%82%AC%E3%83%8B%E3%83%83%E3%82%AF%E3%82%AA%E3%82%A4%E3%83%AB%20%E3%82%BB%E3%83%83%E3%83%88&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 196,
+    "name": "新米 令和7年産 魚沼コシヒカリ 2kg",
+    "price": "2800",
+    "budget": "under3k",
+    "desc": "魚沼産コシヒカリの新米 2kg化粧箱入り。",
+    "target_detail": "実用的な贈り物を求める方・食にこだわりがある方へ",
+    "reason": "日本一の産地の新米。毎日のご飯が楽しみになる",
+    "stars": {
+      "practical": 5,
+      "surprise": 2,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "boss"
+    ],
+    "scenes": [
+      "gift-season",
+      "birthday"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E6%96%B0%E7%B1%B3%20%E4%BB%A4%E5%92%8C7%E5%B9%B4%E7%94%A3%20%E9%AD%9A%E6%B2%BC%E3%82%B3%E3%82%B7%E3%83%92%E3%82%AB%E3%83%AA%202kg/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E6%96%B0%E7%B1%B3%20%E4%BB%A4%E5%92%8C7%E5%B9%B4%E7%94%A3%20%E9%AD%9A%E6%B2%BC%E3%82%B3%E3%82%B7%E3%83%92%E3%82%AB%E3%83%AA%202kg&tag=okuritegift-22",
+    "category": "グルメ"
+  },
+  {
+    "id": 197,
+    "name": "ユニクロ ギフトカード 5000円",
+    "price": "5000",
+    "budget": "5k-10k",
+    "desc": "ユニクロで使えるギフトカード5000円分。",
+    "target_detail": "衣類を贈りたいが好みがわからない方へ",
+    "reason": "ユニクロなら必ず使える。サイズも自分で選べる安心感",
+    "stars": {
+      "practical": 5,
+      "surprise": 1,
+      "looks": 3
+    },
+    "targets": [
+      "male",
+      "female",
+      "parents",
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%A6%E3%83%8B%E3%82%AF%E3%83%AD%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%205000%E5%86%86/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%A6%E3%83%8B%E3%82%AF%E3%83%AD%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%205000%E5%86%86&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 198,
+    "name": "リンベル カタログギフト 旅行版 10000円",
+    "price": "11000",
+    "budget": "10k+",
+    "desc": "国内外の旅行体験が選べるリンベルの旅行専門カタログギフト。",
+    "target_detail": "旅行が大好きなご両親・大切な方へ",
+    "reason": "好きな旅行先を自由に選べる。思い出に残るプレゼント",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 4
+    },
+    "targets": [
+      "parents",
+      "male",
+      "female"
+    ],
+    "scenes": [
+      "birthday",
+      "mothers-day",
+      "fathers-day",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%AA%E3%83%B3%E3%83%99%E3%83%AB%20%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88%20%E6%97%85%E8%A1%8C%E7%89%88%2010000%E5%86%86/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%AA%E3%83%B3%E3%83%99%E3%83%AB%20%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88%20%E6%97%85%E8%A1%8C%E7%89%88%2010000%E5%86%86&tag=okuritegift-22",
+    "category": "カタログ"
+  },
+  {
+    "id": 199,
+    "name": "パパブブレ キャンディ 詰め合わせ",
+    "price": "3240",
+    "budget": "3k-5k",
+    "desc": "バルセロナ発のアート系キャンディブランド・パパブブレのセット。",
+    "target_detail": "個性的でオシャレな贈り物をしたい方へ",
+    "reason": "カラフルで可愛いキャンディ。見た目から楽しめるギフト",
+    "stars": {
+      "practical": 3,
+      "surprise": 4,
+      "looks": 5
+    },
+    "targets": [
+      "female",
+      "child"
+    ],
+    "scenes": [
+      "birthday",
+      "christmas"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%83%91%E3%83%96%E3%83%96%E3%83%AC%20%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%91%E3%83%96%E3%83%96%E3%83%AC%20%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%20%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=okuritegift-22",
+    "category": "スイーツ"
+  },
+  {
+    "id": 200,
+    "name": "ミスタードーナツ ギフトカード 3000円",
+    "price": "3000",
+    "budget": "3k-5k",
+    "desc": "ミスタードーナツで使えるギフトカード3000円分。",
+    "target_detail": "甘いものが好きな方への気軽なプレゼントに",
+    "reason": "好きなドーナツを自由に選べる楽しさ。子供から大人まで喜ぶ",
+    "stars": {
+      "practical": 4,
+      "surprise": 2,
+      "looks": 3
+    },
+    "targets": [
+      "female",
+      "child",
+      "parents"
+    ],
+    "scenes": [
+      "birthday",
+      "gift-season"
+    ],
+    "img": "",
+    "rakutenUrl": "https://search.rakuten.co.jp/search/mall/%E3%83%9F%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%89%E3%83%BC%E3%83%8A%E3%83%84%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%203000%E5%86%86/",
+    "amazonUrl": "https://www.amazon.co.jp/s?k=%E3%83%9F%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%89%E3%83%BC%E3%83%8A%E3%83%84%20%E3%82%AE%E3%83%95%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%203000%E5%86%86&tag=okuritegift-22",
+    "category": "スイーツ"
+  }
+]
