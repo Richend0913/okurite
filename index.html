@@ -140,7 +140,8 @@
     .gift-image-link { display: block; }
     .gift-img {
       width: 100%;
-      height: 200px;
+      height: auto;
+      max-height: 200px;
       object-fit: contain;
       background: #f8f8f8;
       border-radius: 8px 8px 0 0;
@@ -149,9 +150,27 @@
     .gift-image-link:hover .gift-img { opacity: .9; }
 
     .gift-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
-    .gift-body h3 { font-size: .9rem; font-weight: 700; margin-bottom: 4px; }
-    .price { font-size: .82rem; color: var(--rose); font-weight: 700; margin-bottom: 6px; }
-    .description { font-size: .78rem; color: var(--text-muted); flex: 1; margin-bottom: 12px; line-height: 1.5; }
+    .gift-body h3 {
+      font-size: .95rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 2.66em;
+    }
+    .price { font-size: 1.1rem; color: var(--rose); font-weight: 700; margin: 8px 0; }
+    .description {
+      font-size: .8rem;
+      color: var(--text-muted);
+      flex: 1;
+      margin-bottom: 12px;
+      line-height: 1.6;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
 
     .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
     .tag { font-size: .65rem; padding: 2px 8px; border-radius: 50px; background: var(--light); color: var(--rose); font-weight: 500; }
@@ -178,16 +197,61 @@
     .footer { background: var(--text); color: #9ca3af; text-align: center; padding: 32px 20px; font-size: .75rem; }
     .footer a { color: #9ca3af; text-decoration: none; }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 640px) {
-      .header-nav { display: none; }
-      .hero { padding: 60px 16px 40px; }
-      .gift-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .gift-body { padding: 12px; }
-      .filter-bar { padding: 10px 12px; }
+    /* ===== ハンバーガーメニュー ===== */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      flex-direction: column;
+      gap: 5px;
     }
-    @media (max-width: 400px) {
-      .gift-grid { grid-template-columns: 1fr; }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--rose);
+      border-radius: 2px;
+      transition: all .25s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+      .header-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,.07);
+        z-index: 99;
+      }
+      .header-nav.open { display: flex; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero h1 span { font-size: 1.1rem; }
+      .scene-section { padding: 0; }
+      .gift-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .affiliate-links { flex-direction: column; gap: 8px; }
+      .affiliate-links a { width: 100%; text-align: center; padding: 10px; }
+      .filter-inner { flex-wrap: wrap; gap: 6px; }
+      .filter-btn { font-size: .78rem; padding: 5px 10px; }
+      .filter-bar { padding: 10px 12px; }
+      .gift-body { padding: 12px; }
+    }
+    @media (max-width: 480px) {
+      .gift-grid { grid-template-columns: 1fr; gap: 16px; }
+      .gift-card { max-width: 100%; }
+      .gift-img { max-height: 250px; }
     }
   </style>
 </head>
@@ -197,12 +261,15 @@
   <header class="header">
     <div class="header-inner">
       <div class="logo">Okurite</div>
-      <ul class="header-nav">
-        <li><a href="#haha">母の日</a></li>
-        <li><a href="#tanjobi">誕生日</a></li>
-        <li><a href="#kekkon">結婚祝い</a></li>
-        <li><a href="#christmas">クリスマス</a></li>
-        <li><a href="#budget-section">予算で選ぶ</a></li>
+      <button class="hamburger" id="hamburger" aria-label="メニュー" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="header-nav" id="header-nav">
+        <li><a href="#haha" onclick="closeNav()">母の日</a></li>
+        <li><a href="#tanjobi" onclick="closeNav()">誕生日</a></li>
+        <li><a href="#kekkon" onclick="closeNav()">結婚祝い</a></li>
+        <li><a href="#christmas" onclick="closeNav()">クリスマス</a></li>
+        <li><a href="#budget-section" onclick="closeNav()">予算で選ぶ</a></li>
       </ul>
     </div>
   </header>
@@ -1029,6 +1096,17 @@
   </footer>
 
   <script>
+    function toggleNav() {
+      const nav = document.getElementById('header-nav');
+      const btn = document.getElementById('hamburger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+    }
+    function closeNav() {
+      document.getElementById('header-nav').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    }
+
     let currentBudget = 'all';
     let currentTarget = 'all';
 
