@@ -25,8 +25,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6327505164684489" crossorigin="anonymous"></script>
-
   <style>
     :root {
       --beige: #f5efe6;
@@ -125,8 +123,6 @@
     .card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     /* ===== AD BANNER ===== */
-    .ad-banner { max-width: 1100px; margin: 20px auto; padding: 0 20px; text-align: center; }
-    .ad-banner ins { display: block; }
 
     /* ===== FILTER BAR (Desktop) ===== */
     .filter-section {
@@ -312,10 +308,6 @@
   </div>
 </section>
 
-<div class="ad-banner">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6327505164684489"
-    data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
-</div>
 
 <div class="main" style="padding-bottom:0">
   <div class="feature-section" id="mothers-day">
@@ -418,10 +410,6 @@
   </div>
 </main>
 
-<div class="ad-banner">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6327505164684489"
-    data-ad-slot="YYYYYYYYYY" data-ad-format="auto" data-full-width-responsive="true"></ins>
-</div>
 
 <footer class="footer">
   <span class="footer-logo">Okurite</span>
@@ -554,7 +542,6 @@ fetch('gifts.json')
   .then(data => {
     allGifts = data;
     applyFilter();
-    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
   })
   .catch(() => {
     document.getElementById('gift-grid').innerHTML = '<div class="empty-state"><div class="icon">❌</div><p>データの読み込みに失敗しました。</p></div>';
