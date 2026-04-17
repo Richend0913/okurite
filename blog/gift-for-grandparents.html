@@ -22,40 +22,51 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&h=400&fit=crop">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&h=400&fit=crop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .article { max-width: 720px; margin: 0 auto; padding: 100px 24px 60px; }
-    .article h1 { font-size: 1.5rem; font-weight: 400; color: #3a3a3a; line-height: 1.8; margin-bottom: 16px; }
-    .article-meta { font-size: .8rem; color: #aaa; margin-bottom: 32px; }
-    .article-hero { width: 100%; height: 300px; object-fit: cover; border-radius: 14px; margin-bottom: 32px; }
-    .article h2 { font-size: 1.2rem; font-weight: 400; color: #8b6914; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(180,160,120,.2); }
-    .article h3 { font-size: 1rem; font-weight: 600; color: #3a3a3a; margin: 24px 0 12px; }
+        .article { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
+    .article h1 { font-size: 1.5rem; font-weight: 700; color: #2d2a26; line-height: 1.7; margin-bottom: 12px; }
+    .article-meta { font-size: .8rem; color: #999; margin-bottom: 28px; }
+    .article-hero { width: 100%; height: 320px; object-fit: cover; border-radius: 14px; margin-bottom: 32px; }
+    .article h2 { font-size: 1.2rem; font-weight: 700; color: #8b6914; margin: 40px 0 16px; padding-bottom: 10px; border-bottom: 2px solid rgba(139,105,20,.06); }
+    .article h3 { font-size: 1rem; font-weight: 700; color: #2d2a26; margin: 28px 0 12px; }
     .article p { font-size: .9rem; line-height: 2; color: #555; margin-bottom: 16px; }
     .article ul, .article ol { margin: 0 0 16px 24px; }
     .article li { font-size: .9rem; line-height: 2; color: #555; margin-bottom: 4px; }
-    .gift-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
-    .gift-card-img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; }
-    .gift-card-title { font-size: .95rem; font-weight: 600; color: #3a3a3a; margin-bottom: 4px; }
-    .gift-card-price { font-size: .85rem; color: #c62828; font-weight: 600; margin-bottom: 8px; }
-    .gift-card-desc { font-size: .85rem; color: #777; line-height: 1.8; margin-bottom: 12px; }
-    .gift-card-link { display: inline-block; padding: 8px 20px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 6px; font-size: .8rem; transition: opacity .2s; }
-    .gift-card-link:hover { opacity: .85; color: #fff; }
-    .gift-card-sub { font-size: .75rem; color: #999; margin-top: 6px; }
+    .gift-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 14px; padding: 24px; margin-bottom: 20px; transition: box-shadow .3s; }
+    .gift-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .gift-card-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 16px; }
+    .gift-card-title { font-size: 1rem; font-weight: 700; color: #2d2a26; margin-bottom: 4px; }
+    .gift-card-price { font-size: .9rem; color: #c62828; font-weight: 700; margin-bottom: 10px; }
+    .gift-card-desc { font-size: .85rem; color: #666; line-height: 1.8; margin-bottom: 16px; }
+    .gift-card-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+    .gift-card-link { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 24px; background: #ff9900; color: #fff; border-radius: 8px; font-size: .85rem; font-weight: 600; transition: all .2s; text-decoration: none; flex: 1; min-width: 140px; text-align: center; }
+    .gift-card-link:hover { opacity: .9; color: #fff; transform: translateY(-1px); }
+    .gift-card-link.rakuten { background: #bf0000; }
+    .gift-card-link.rakuten:hover { background: #a00; }
+    .gift-card-sub { font-size: .75rem; color: #999; margin-top: 8px; }
     .gift-card-sub a { color: #8b6914; }
-    .toc { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; }
-    .toc-title { font-size: .9rem; font-weight: 600; color: #8b6914; margin-bottom: 12px; }
-    .toc a { font-size: .85rem; color: #555; line-height: 2; display: block; }
-    .toc a:hover { color: #8b6914; }
+    .toc { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 14px; padding: 20px 24px; margin-bottom: 32px; }
+    .toc-title { font-size: .9rem; font-weight: 700; color: #8b6914; margin-bottom: 12px; }
+    .toc a { font-size: .85rem; color: #555; line-height: 2.2; display: block; padding-left: 16px; border-left: 2px solid transparent; transition: all .2s; }
+    .toc a:hover { color: #8b6914; border-left-color: #8b6914; padding-left: 20px; }
     .breadcrumb { font-size: .8rem; color: #999; margin-bottom: 16px; }
     .breadcrumb a { color: #8b6914; }
-    .cta-box { background: linear-gradient(135deg, #faf8f5, #f5efe5); border: 1px solid rgba(180,160,120,.2); border-radius: 14px; padding: 28px; text-align: center; margin: 40px 0; }
+    .cta-box { background: linear-gradient(135deg, #faf8f5, #f0ebe2); border: 1px solid rgba(180,160,120,.15); border-radius: 20px; padding: 32px; text-align: center; margin: 40px 0; }
     .cta-box p { font-size: .95rem; color: #555; margin-bottom: 16px; }
-    .cta-btn { display: inline-block; padding: 14px 36px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 40px; font-size: .9rem; transition: all .2s; }
+    .cta-btn { display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 999px; font-size: .95rem; font-weight: 600; transition: all .2s; text-decoration: none; }
     .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(139,105,20,.25); color: #fff; }
-    .related-articles { margin-top: 40px; }
-    .related-articles h2 { font-size: 1.1rem; }
-    .related-link { display: block; font-size: .85rem; color: #8b6914; line-height: 2; }
-    .related-link:hover { text-decoration: underline; }
+    .related-articles { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 14px; padding: 24px; margin: 40px 0; }
+    .related-articles h3 { font-size: 1rem; font-weight: 700; color: #8b6914; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(180,160,120,.15); }
+    .related-articles ul { list-style: none; margin: 0; padding: 0; }
+    .related-articles li { padding: 10px 0; border-bottom: 1px solid rgba(180,160,120,.08); margin-bottom: 0; }
+    .related-articles li:last-child { border-bottom: none; }
+    .related-articles a { font-size: .88rem; color: #555; display: flex; align-items: center; gap: 8px; }
+    .related-articles a::before { content: ''; width: 6px; height: 6px; background: #c49b1a; border-radius: 50%; flex-shrink: 0; }
+    .related-articles a:hover { color: #8b6914; }
+    @media (max-width: 768px) { .article { padding: 72px 16px 48px; } .article-hero { height: 200px; } .gift-card-buttons { flex-direction: column; } .gift-card-link { width: 100%; justify-content: center; } }
   </style>
   <script type="application/ld+json">
   {
@@ -68,6 +79,17 @@
     "publisher": {"@type": "Organization", "name": "Okurite"}
   }
   </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://richend0913.github.io/okurite/"},
+      {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://richend0913.github.io/okurite/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "<a href="./">コラム</a> &gt; 祖父母へのプレゼント", "item": "https://richend0913.github.io/okurite/blog/gift-for-grandparents.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -75,8 +97,8 @@
       <a href="../" class="logo" style="text-decoration:none;">Okurite</a>
       <button class="hamburger" onclick="document.querySelector('.nav').classList.toggle('open')">&#9776;</button>
       <ul class="nav">
-        <li><a href="../#gifts">カテゴリ</a></li>
-        <li><a href="../#gifts">人気ギフト</a></li>
+        <li><a href="../">TOP</a></li>
+        <li><a href="../#gifts">ギフト検索</a></li>
         <li><a href="./">コラム</a></li>
       </ul>
     </div>
@@ -109,8 +131,10 @@
       <div class="gift-card-title">1. 名入れステンレスタンブラー</div>
       <div class="gift-card-price">¥3,000〜¥8,000</div>
       <div class="gift-card-desc">毎日のお茶やコーヒーに使えるステンレスタンブラーは、実用性の高さで人気の定番ギフトです。真空断熱構造で保温・保冷に優れ、夏は冷たい麦茶、冬は温かいほうじ茶と一年中活躍します。名前や簡単なメッセージを刻印すれば、世界にひとつだけの特別な贈り物になります。サーモスや象印など信頼あるブランドを選ぶのがおすすめです。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E5%90%8D%E5%85%A5%E3%82%8C+%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9+%E7%A5%96%E7%88%B6&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E5%2590%258D%25E5%2585%25A5%25E3%2582%258C+%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25BC+%25E7%25A5%2596%25E7%2588%25B6%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E5%90%8D%E5%85%A5%E3%82%8C+%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9+%E7%A5%96%E7%88%B6&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E5%2590%258D%25E5%2585%25A5%25E3%2582%258C+%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25BC+%25E7%25A5%2596%25E7%2588%25B6%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -118,8 +142,10 @@
       <div class="gift-card-title">2. 日本酒・焼酎の飲み比べセット</div>
       <div class="gift-card-price">¥3,000〜¥10,000</div>
       <div class="gift-card-desc">晩酌を楽しむおじいちゃんには、普段は手が出にくい銘柄を集めた飲み比べセットが鉄板です。獺祭や久保田、八海山など人気銘柄の小瓶セットなら、いろいろな味を少しずつ楽しんでもらえます。焼酎派なら芋・麦・米の飲み比べもあり。のし対応や化粧箱入りの商品を選べば、贈り物としての見栄えも十分です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E6%97%A5%E6%9C%AC%E9%85%92+%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9+%E3%82%BB%E3%83%83%E3%83%88+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%2597%25A5%25E6%259C%25AC%25E9%2585%2592+%25E9%25A3%25B2%25E3%2581%25BF%25E6%25AF%2594%25E3%2581%25B9+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E6%97%A5%E6%9C%AC%E9%85%92+%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9+%E3%82%BB%E3%83%83%E3%83%88+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%2597%25A5%25E6%259C%25AC%25E9%2585%2592+%25E9%25A3%25B2%25E3%2581%25BF%25E6%25AF%2594%25E3%2581%25B9+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -127,8 +153,10 @@
       <div class="gift-card-title">3. 軽量ウォーキングシューズ</div>
       <div class="gift-card-price">¥5,000〜¥15,000</div>
       <div class="gift-card-desc">散歩が日課のおじいちゃんには、足に優しい軽量ウォーキングシューズが喜ばれます。ミズノのLD40やアシックスのペダラは、クッション性と安定感に優れたシニア向けモデルとして定評があります。脱ぎ履きしやすいファスナー付きやスリッポンタイプを選ぶと、毎日のお出かけがより快適になります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA+%E3%82%B7%E3%83%8B%E3%82%A2+%E8%BB%BD%E9%87%8F+%E7%94%B7%E6%80%A7&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25BA+%25E3%2582%25B7%25E3%2583%258B%25E3%2582%25A2+%25E8%25BB%25BD%25E9%2587%258F%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA+%E3%82%B7%E3%83%8B%E3%82%A2+%E8%BB%BD%E9%87%8F+%E7%94%B7%E6%80%A7&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25BA+%25E3%2582%25B7%25E3%2583%258B%25E3%2582%25A2+%25E8%25BB%25BD%25E9%2587%258F%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -136,8 +164,10 @@
       <div class="gift-card-title">4. ルーペ付き読書スタンド・大活字本</div>
       <div class="gift-card-price">¥2,000〜¥8,000</div>
       <div class="gift-card-desc">読書好きのおじいちゃんには、快適な読書環境を整えるグッズが重宝されます。角度調整ができる読書スタンドにLEDライトやルーペが付いたモデルは、長時間の読書でも疲れにくいと好評です。好きな作家の大活字本を一緒に添えれば、より一層喜んでもらえるでしょう。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E8%AA%AD%E6%9B%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89+%E3%83%AB%E3%83%BC%E3%83%9A+LED+%E3%82%B7%E3%83%8B%E3%82%A2&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%25AA%25AD%25E6%259B%25B8%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2589+%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%259A+LED%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E8%AA%AD%E6%9B%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89+%E3%83%AB%E3%83%BC%E3%83%9A+LED+%E3%82%B7%E3%83%8B%E3%82%A2&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%25AA%25AD%25E6%259B%25B8%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2589+%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%259A+LED%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -145,8 +175,10 @@
       <div class="gift-card-title">5. 上質な甚平・作務衣</div>
       <div class="gift-card-price">¥4,000〜¥12,000</div>
       <div class="gift-card-desc">家でくつろぐ時間が多いおじいちゃんには、肌触りの良い綿100%の甚平や作務衣がおすすめです。久留米織や近江ちぢみなど日本製の生地は、通気性に優れて夏でも快適。部屋着としてだけでなく、ちょっとした外出にも着ていける上品なデザインのものを選べば、愛用してもらえます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E4%BD%9C%E5%8B%99%E8%A1%A3+%E7%94%B7%E6%80%A7+%E7%B6%BF+%E6%97%A5%E6%9C%AC%E8%A3%BD+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E4%25BD%259C%25E5%258B%2599%25E8%25A1%25A3+%25E7%2594%25B7%25E6%2580%25A7+%25E7%25B6%25BF+%25E6%2597%25A5%25E6%259C%25AC%25E8%25A3%25BD%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E4%BD%9C%E5%8B%99%E8%A1%A3+%E7%94%B7%E6%80%A7+%E7%B6%BF+%E6%97%A5%E6%9C%AC%E8%A3%BD+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E4%25BD%259C%25E5%258B%2599%25E8%25A1%25A3+%25E7%2594%25B7%25E6%2580%25A7+%25E7%25B6%25BF+%25E6%2597%25A5%25E6%259C%25AC%25E8%25A3%25BD%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="grandma">おばあちゃん向けプレゼント5選</h2>
@@ -157,8 +189,10 @@
       <div class="gift-card-title">6. 高級ハンドクリーム・ボディケアセット</div>
       <div class="gift-card-price">¥2,000〜¥6,000</div>
       <div class="gift-card-desc">ロクシタンやジルスチュアートのハンドクリームセットは、見た目の可愛らしさと実用性を兼ね備えた定番ギフトです。手肌が乾燥しやすいシニア世代にとって、保湿力の高いハンドクリームは毎日使える嬉しいアイテム。化粧箱入りのギフトセットはそのまま渡せるので手間もかかりません。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88+%E5%A5%B3%E6%80%A7+%E9%AB%98%E7%B4%9A&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%258F%25E3%2583%25B3%25E3%2583%2589%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%25A0+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588+%25E9%25AB%2598%25E7%25B4%259A%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88+%E5%A5%B3%E6%80%A7+%E9%AB%98%E7%B4%9A&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%258F%25E3%2583%25B3%25E3%2583%2589%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%25A0+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588+%25E9%25AB%2598%25E7%25B4%259A%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -166,8 +200,10 @@
       <div class="gift-card-title">7. プリザーブドフラワー・ハーバリウム</div>
       <div class="gift-card-price">¥3,000〜¥8,000</div>
       <div class="gift-card-desc">お花好きのおばあちゃんには、水やりの手間がいらないプリザーブドフラワーやハーバリウムがぴったりです。ガラスドームに入ったアレンジやボトルに閉じ込めたハーバリウムは、そのままインテリアとして飾れます。生花と違い数年間美しさが続くので、贈った日の思い出を長く楽しんでもらえるのが魅力です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%97%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%96%E3%83%89%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC+%E6%95%AC%E8%80%81%E3%81%AE%E6%97%A5+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B6%25E3%2583%25BC%25E3%2583%2596%25E3%2583%2589%25E3%2583%2595%25E3%2583%25A9%25E3%2583%25AF%25E3%2583%25BC+%25E6%2595%25AC%25E8%2580%2581%25E3%2581%25AE%25E6%2597%25A5%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%97%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%96%E3%83%89%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC+%E6%95%AC%E8%80%81%E3%81%AE%E6%97%A5+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B6%25E3%2583%25BC%25E3%2583%2596%25E3%2583%2589%25E3%2583%2595%25E3%2583%25A9%25E3%2583%25AF%25E3%2583%25BC+%25E6%2595%25AC%25E8%2580%2581%25E3%2581%25AE%25E6%2597%25A5%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -175,8 +211,10 @@
       <div class="gift-card-title">8. カシミヤストール・ひざ掛け</div>
       <div class="gift-card-price">¥5,000〜¥15,000</div>
       <div class="gift-card-desc">冷え性のおばあちゃんには、上質なカシミヤのストールやひざ掛けを贈りましょう。肩にかければストールとして、ひざにかければブランケットとして使える2WAYタイプが便利です。軽くて暖かいカシミヤ素材は、エアコンの冷えが気になる季節にも重宝します。落ち着いた色合いのものを選べばどんな服装にも合わせやすいです。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%AB%E3%82%B7%E3%83%9F%E3%83%A4+%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB+%E5%A5%B3%E6%80%A7+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AB%25E3%2582%25B7%25E3%2583%259F%25E3%2583%25A4+%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BC%25E3%2583%25AB+%25E5%25A5%25B3%25E6%2580%25A7+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%AB%E3%82%B7%E3%83%9F%E3%83%A4+%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB+%E5%A5%B3%E6%80%A7+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AB%25E3%2582%25B7%25E3%2583%259F%25E3%2583%25A4+%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BC%25E3%2583%25AB+%25E5%25A5%25B3%25E6%2580%25A7+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -184,8 +222,10 @@
       <div class="gift-card-title">9. 老舗の高級和菓子詰め合わせ</div>
       <div class="gift-card-price">¥2,000〜¥5,000</div>
       <div class="gift-card-desc">甘いもの好きのおばあちゃんには、とらやの羊羹や鶴屋吉信の京菓子など、老舗の和菓子詰め合わせが間違いありません。自分ではなかなか買わない上品な和菓子は、お茶の時間がより豊かになります。個包装のものを選べば少しずつ楽しんでもらえますし、日持ちする商品なら慌てて食べなくて済むので安心です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E5%92%8C%E8%8F%93%E5%AD%90+%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E5%2592%258C%25E8%258F%2593%25E5%25AD%2590+%25E8%25A9%25B0%25E3%2582%2581%25E5%2590%2588%25E3%2582%258F%25E3%2581%259B+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E5%92%8C%E8%8F%93%E5%AD%90+%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E5%2592%258C%25E8%258F%2593%25E5%25AD%2590+%25E8%25A9%25B0%25E3%2582%2581%25E5%2590%2588%25E3%2582%258F%25E3%2581%259B+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -193,8 +233,10 @@
       <div class="gift-card-title">10. パールブローチ・ペンダント</div>
       <div class="gift-card-price">¥3,000〜¥15,000</div>
       <div class="gift-card-desc">おしゃれなおばあちゃんには、さりげなく華やかさを添えるパールのブローチやペンダントを。カーディガンやストールに留めるだけで上品な印象になるブローチは、シニア世代にとって実用的なアクセサリーです。淡水パールなら手の届きやすい価格帯でも品のある輝きがあり、普段使いにもフォーマルにも対応できます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%BC%E3%83%AB+%E3%83%96%E3%83%AD%E3%83%BC%E3%83%81+%E3%82%AE%E3%83%95%E3%83%88+%E5%A5%B3%E6%80%A7&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2591%25E3%2583%25BC%25E3%2583%25AB+%25E3%2583%2596%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2581+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%BC%E3%83%AB+%E3%83%96%E3%83%AD%E3%83%BC%E3%83%81+%E3%82%AE%E3%83%95%E3%83%88+%E5%A5%B3%E6%80%A7&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2591%25E3%2583%25BC%25E3%2583%25AB+%25E3%2583%2596%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2581+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="pair">ペアギフト5選</h2>
@@ -205,8 +247,10 @@
       <div class="gift-card-title">11. 名入れペア湯呑み・ペアマグカップ</div>
       <div class="gift-card-price">¥3,000〜¥10,000</div>
       <div class="gift-card-desc">毎日のお茶の時間に使えるペア湯呑みは、祖父母へのプレゼントの王道です。有田焼や九谷焼のペア湯呑みは色違いで揃えられ、食卓に華を添えます。名前や感謝のメッセージを入れれば特別感もたっぷり。マグカップ派のご夫婦には、ペアのマグカップを選ぶのも良いでしょう。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%9A%E3%82%A2+%E6%B9%AF%E5%91%91%E3%81%BF+%E5%90%8D%E5%85%A5%E3%82%8C+%E6%95%AC%E8%80%81%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259A%25E3%2582%25A2+%25E6%25B9%25AF%25E5%2591%2591%25E3%2581%25BF+%25E5%2590%258D%25E5%2585%25A5%25E3%2582%258C+%25E6%2595%25AC%25E8%2580%2581%25E3%2581%25AE%25E6%2597%25A5%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%9A%E3%82%A2+%E6%B9%AF%E5%91%91%E3%81%BF+%E5%90%8D%E5%85%A5%E3%82%8C+%E6%95%AC%E8%80%81%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259A%25E3%2582%25A2+%25E6%25B9%25AF%25E5%2591%2591%25E3%2581%25BF+%25E5%2590%258D%25E5%2585%25A5%25E3%2582%258C+%25E6%2595%25AC%25E8%2580%2581%25E3%2581%25AE%25E6%2597%25A5%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -214,8 +258,10 @@
       <div class="gift-card-title">12. 温泉旅行カタログギフト</div>
       <div class="gift-card-price">¥10,000〜¥50,000</div>
       <div class="gift-card-desc">モノより思い出を贈りたいなら、温泉旅行のカタログギフトがおすすめです。エグゼタイムやリンベルの体験型カタログは、全国の温泉宿から好きな場所を選んでもらえるのが魅力。日程も相手の都合に合わせられるので、押し付けにならないのがポイントです。2人で過ごすゆったりした時間は、何よりの贈り物になります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E6%B8%A9%E6%B3%89+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88+%E3%83%9A%E3%82%A2+%E4%BD%93%E9%A8%93&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%25B8%25A9%25E6%25B3%2589+%25E3%2582%25AB%25E3%2582%25BF%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E3%2583%259A%25E3%2582%25A2%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E6%B8%A9%E6%B3%89+%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%E3%82%AE%E3%83%95%E3%83%88+%E3%83%9A%E3%82%A2+%E4%BD%93%E9%A8%93&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%25B8%25A9%25E6%25B3%2589+%25E3%2582%25AB%25E3%2582%25BF%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E3%2583%259A%25E3%2582%25A2%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -223,8 +269,10 @@
       <div class="gift-card-title">13. 似顔絵ギフト・名前詩（ネームポエム）</div>
       <div class="gift-card-price">¥5,000〜¥20,000</div>
       <div class="gift-card-desc">世界にひとつだけの贈り物なら、プロの作家による似顔絵ギフトや名前詩がおすすめです。写真を送るだけで温かみのある似顔絵を仕上げてもらえ、額装した状態で届くのでそのまま飾れます。2人の名前を使った詩を添えれば、感謝の気持ちを形に残せる特別な一品になります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E4%BC%BC%E9%A1%94%E7%B5%B5+%E3%82%AE%E3%83%95%E3%83%88+%E7%A5%96%E7%88%B6%E6%AF%8D+%E6%95%AC%E8%80%81%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E4%25BC%25BC%25E9%25A1%2594%25E7%25B5%25B5+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E7%25A5%2596%25E7%2588%25B6%25E6%25AF%258D%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E4%BC%BC%E9%A1%94%E7%B5%B5+%E3%82%AE%E3%83%95%E3%83%88+%E7%A5%96%E7%88%B6%E6%AF%8D+%E6%95%AC%E8%80%81%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E4%25BC%25BC%25E9%25A1%2594%25E7%25B5%25B5+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E7%25A5%2596%25E7%2588%25B6%25E6%25AF%258D%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -232,8 +280,10 @@
       <div class="gift-card-title">14. 高級日本茶・紅茶ギフトセット</div>
       <div class="gift-card-price">¥2,000〜¥8,000</div>
       <div class="gift-card-desc">毎日の暮らしに寄り添うお茶のギフトは、どんな祖父母にも喜ばれる万能アイテムです。京都の一保堂や静岡の丸七製茶など、産地にこだわった上質な日本茶は自分では買わないちょっとした贅沢品。ティーバッグタイプなら急須がなくても手軽に楽しめます。紅茶派のご夫婦にはルピシアやマリアージュフレールのセットもおすすめです。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E6%97%A5%E6%9C%AC%E8%8C%B6+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88+%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E6%2597%25A5%25E6%259C%25AC%25E8%258C%25B6+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E6%97%A5%E6%9C%AC%E8%8C%B6+%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88+%E8%A9%B0%E3%82%81%E5%90%88%E3%82%8F%E3%81%9B&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E6%2597%25A5%25E6%259C%25AC%25E8%258C%25B6+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -241,8 +291,10 @@
       <div class="gift-card-title">15. デジタルフォトフレーム</div>
       <div class="gift-card-price">¥5,000〜¥15,000</div>
       <div class="gift-card-desc">離れて暮らす祖父母に、家族の写真を届けられるデジタルフォトフレームは近年人気が急上昇しています。Wi-Fi対応モデルなら、スマホから写真を送るだけで自動的にフレームに表示されるため、機械が苦手な方でも安心です。孫の写真やイベントの思い出を日替わりで楽しんでもらえる、実用的で温かみのある贈り物です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%95%E3%82%A9%E3%83%88%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0+WiFi+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%25E3%2583%2595%25E3%2582%25A9%25E3%2583%2588%25E3%2583%2595%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25A0+WiFi%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%95%E3%82%A9%E3%83%88%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0+WiFi+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%25E3%2583%2595%25E3%2582%25A9%25E3%2583%2588%25E3%2583%2595%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25A0+WiFi%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="tips">祖父母へのプレゼントの選び方</h2>
@@ -280,9 +332,40 @@
     </div>
   </article>
 
-  <footer class="footer">
-    <p>&copy; 2026 Okurite. All rights reserved.</p>
-    <p style="margin-top:8px;">当サイトはアフィリエイトプログラムに参加しています。</p>
+    <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Okurite</span>
+          <p>シーン別ギフト・プレゼント検索サービス。<br>あらゆるシーンのギフト選びをサポートします。</p>
+        </div>
+        <div class="footer-col">
+          <h4>シーン別</h4>
+          <ul>
+            <li><a href="mothers-day-2026.html">母の日</a></li>
+            <li><a href="fathers-day-2026.html">父の日</a></li>
+            <li><a href="birthday-gift-women.html">誕生日</a></li>
+            <li><a href="wedding-gift-guide.html">結婚祝い</a></li>
+            <li><a href="baby-shower-gift.html">出産祝い</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>予算別</h4>
+          <ul>
+            <li><a href="budget-500-gift.html">500円以下</a></li>
+            <li><a href="gift-exchange-1000.html">1,000円</a></li>
+            <li><a href="gift-budget-3000.html">3,000円</a></li>
+            <li><a href="budget-5000-gift.html">5,000円</a></li>
+            <li><a href="budget-10000-gift.html">10,000円</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。</p>
+        <p style="margin-top:8px;"><a href="../">TOP</a> | <a href="./">コラム</a></p>
+        <p style="margin-top:8px;">&copy; 2026 Okurite. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

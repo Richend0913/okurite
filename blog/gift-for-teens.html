@@ -22,36 +22,51 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=800&h=400&fit=crop">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=800&h=400&fit=crop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .article { max-width: 720px; margin: 0 auto; padding: 100px 24px 60px; }
-    .article h1 { font-size: 1.5rem; font-weight: 400; color: #3a3a3a; line-height: 1.8; margin-bottom: 16px; }
-    .article-meta { font-size: .8rem; color: #aaa; margin-bottom: 32px; }
-    .article-hero { width: 100%; height: 300px; object-fit: cover; border-radius: 14px; margin-bottom: 32px; }
-    .article h2 { font-size: 1.2rem; font-weight: 400; color: #8b6914; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(180,160,120,.2); }
-    .article h3 { font-size: 1rem; font-weight: 600; color: #3a3a3a; margin: 24px 0 12px; }
+        .article { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
+    .article h1 { font-size: 1.5rem; font-weight: 700; color: #2d2a26; line-height: 1.7; margin-bottom: 12px; }
+    .article-meta { font-size: .8rem; color: #999; margin-bottom: 28px; }
+    .article-hero { width: 100%; height: 320px; object-fit: cover; border-radius: 14px; margin-bottom: 32px; }
+    .article h2 { font-size: 1.2rem; font-weight: 700; color: #8b6914; margin: 40px 0 16px; padding-bottom: 10px; border-bottom: 2px solid rgba(139,105,20,.06); }
+    .article h3 { font-size: 1rem; font-weight: 700; color: #2d2a26; margin: 28px 0 12px; }
     .article p { font-size: .9rem; line-height: 2; color: #555; margin-bottom: 16px; }
     .article ul, .article ol { margin: 0 0 16px 24px; }
     .article li { font-size: .9rem; line-height: 2; color: #555; margin-bottom: 4px; }
-    .gift-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
-    .gift-card-img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; }
-    .gift-card-title { font-size: .95rem; font-weight: 600; color: #3a3a3a; margin-bottom: 4px; }
-    .gift-card-price { font-size: .85rem; color: #c62828; font-weight: 600; margin-bottom: 8px; }
-    .gift-card-desc { font-size: .85rem; color: #777; line-height: 1.8; margin-bottom: 12px; }
-    .gift-card-link { display: inline-block; padding: 8px 20px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 6px; font-size: .8rem; transition: opacity .2s; }
-    .gift-card-link:hover { opacity: .85; color: #fff; }
-    .gift-card-sub { font-size: .75rem; color: #999; margin-top: 6px; }
+    .gift-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 14px; padding: 24px; margin-bottom: 20px; transition: box-shadow .3s; }
+    .gift-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .gift-card-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 16px; }
+    .gift-card-title { font-size: 1rem; font-weight: 700; color: #2d2a26; margin-bottom: 4px; }
+    .gift-card-price { font-size: .9rem; color: #c62828; font-weight: 700; margin-bottom: 10px; }
+    .gift-card-desc { font-size: .85rem; color: #666; line-height: 1.8; margin-bottom: 16px; }
+    .gift-card-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+    .gift-card-link { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 24px; background: #ff9900; color: #fff; border-radius: 8px; font-size: .85rem; font-weight: 600; transition: all .2s; text-decoration: none; flex: 1; min-width: 140px; text-align: center; }
+    .gift-card-link:hover { opacity: .9; color: #fff; transform: translateY(-1px); }
+    .gift-card-link.rakuten { background: #bf0000; }
+    .gift-card-link.rakuten:hover { background: #a00; }
+    .gift-card-sub { font-size: .75rem; color: #999; margin-top: 8px; }
     .gift-card-sub a { color: #8b6914; }
-    .toc { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; }
-    .toc-title { font-size: .9rem; font-weight: 600; color: #8b6914; margin-bottom: 12px; }
-    .toc a { font-size: .85rem; color: #555; line-height: 2; display: block; }
-    .toc a:hover { color: #8b6914; }
+    .toc { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 14px; padding: 20px 24px; margin-bottom: 32px; }
+    .toc-title { font-size: .9rem; font-weight: 700; color: #8b6914; margin-bottom: 12px; }
+    .toc a { font-size: .85rem; color: #555; line-height: 2.2; display: block; padding-left: 16px; border-left: 2px solid transparent; transition: all .2s; }
+    .toc a:hover { color: #8b6914; border-left-color: #8b6914; padding-left: 20px; }
     .breadcrumb { font-size: .8rem; color: #999; margin-bottom: 16px; }
     .breadcrumb a { color: #8b6914; }
-    .cta-box { background: linear-gradient(135deg, #faf8f5, #f5efe5); border: 1px solid rgba(180,160,120,.2); border-radius: 14px; padding: 28px; text-align: center; margin: 40px 0; }
+    .cta-box { background: linear-gradient(135deg, #faf8f5, #f0ebe2); border: 1px solid rgba(180,160,120,.15); border-radius: 20px; padding: 32px; text-align: center; margin: 40px 0; }
     .cta-box p { font-size: .95rem; color: #555; margin-bottom: 16px; }
-    .cta-btn { display: inline-block; padding: 14px 36px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 40px; font-size: .9rem; transition: all .2s; }
+    .cta-btn { display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 999px; font-size: .95rem; font-weight: 600; transition: all .2s; text-decoration: none; }
     .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(139,105,20,.25); color: #fff; }
+    .related-articles { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 14px; padding: 24px; margin: 40px 0; }
+    .related-articles h3 { font-size: 1rem; font-weight: 700; color: #8b6914; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(180,160,120,.15); }
+    .related-articles ul { list-style: none; margin: 0; padding: 0; }
+    .related-articles li { padding: 10px 0; border-bottom: 1px solid rgba(180,160,120,.08); margin-bottom: 0; }
+    .related-articles li:last-child { border-bottom: none; }
+    .related-articles a { font-size: .88rem; color: #555; display: flex; align-items: center; gap: 8px; }
+    .related-articles a::before { content: ''; width: 6px; height: 6px; background: #c49b1a; border-radius: 50%; flex-shrink: 0; }
+    .related-articles a:hover { color: #8b6914; }
+    @media (max-width: 768px) { .article { padding: 72px 16px 48px; } .article-hero { height: 200px; } .gift-card-buttons { flex-direction: column; } .gift-card-link { width: 100%; justify-content: center; } }
   </style>
   <script type="application/ld+json">
   {
@@ -64,6 +79,17 @@
     "publisher": {"@type": "Organization", "name": "Okurite"}
   }
   </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://richend0913.github.io/okurite/"},
+      {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://richend0913.github.io/okurite/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "<a href="./">コラム</a> &gt; 中学生・高校生のプレゼント", "item": "https://richend0913.github.io/okurite/blog/gift-for-teens.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -71,8 +97,8 @@
       <a href="../" class="logo" style="text-decoration:none;">Okurite</a>
       <button class="hamburger" onclick="document.querySelector('.nav').classList.toggle('open')">&#9776;</button>
       <ul class="nav">
-        <li><a href="../#gifts">カテゴリ</a></li>
-        <li><a href="../#gifts">人気ギフト</a></li>
+        <li><a href="../">TOP</a></li>
+        <li><a href="../#gifts">ギフト検索</a></li>
         <li><a href="./">コラム</a></li>
       </ul>
     </div>
@@ -105,8 +131,10 @@
       <div class="gift-card-title">1. コスメギフトセット（CANMAKE・excel・rom&nd）</div>
       <div class="gift-card-price">&#165;1,500～&#165;5,000</div>
       <div class="gift-card-desc">高校生を中心に、初めてのメイクに挑戦する10代女子にはプチプラコスメのギフトセットが鉄板。CANMAKEのリップ＆チークセット、excelのアイシャドウパレット、韓国コスメのrom&ndは10代の支持率が非常に高いブランドです。肌に優しい処方のものを選べば、メイク初心者でも安心して使えます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%B3%E3%82%B9%E3%83%A1+%E3%82%AE%E3%83%95%E3%83%88+%E9%AB%98%E6%A0%A1%E7%94%9F+%E5%A5%B3%E5%AD%90&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B3%25E3%2582%25B9%25E3%2583%25A1+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E9%25AB%2598%25E6%25A0%25A1%25E7%2594%259F%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%B3%E3%82%B9%E3%83%A1+%E3%82%AE%E3%83%95%E3%83%88+%E9%AB%98%E6%A0%A1%E7%94%9F+%E5%A5%B3%E5%AD%90&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B3%25E3%2582%25B9%25E3%2583%25A1+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E9%25AB%2598%25E6%25A0%25A1%25E7%2594%259F%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -114,8 +142,10 @@
       <div class="gift-card-title">2. アクセサリー（ete・4℃ プチプラライン）</div>
       <div class="gift-card-price">&#165;3,000～&#165;8,000</div>
       <div class="gift-card-desc">華奢なネックレスやブレスレットは10代女子の憧れアイテム。eteやCanal4℃のプチプララインなら、上品なデザインを手ごろな価格で手に入れられます。シンプルな一粒ストーンやイニシャルモチーフは制服にもなじみ、校則が厳しくても休日に楽しめます。ギフトボックス入りで特別感もたっぷりです。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC+%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9+%E9%AB%98%E6%A0%A1%E7%94%9F+%E5%A5%B3%E5%AD%90&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B5%25E3%2583%25AA%25E3%2583%25BC+%25E3%2583%258D%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25AC%25E3%2582%25B9+10%25E4%25BB%25A3%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC+%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9+%E9%AB%98%E6%A0%A1%E7%94%9F+%E5%A5%B3%E5%AD%90&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B5%25E3%2583%25AA%25E3%2583%25BC+%25E3%2583%258D%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25AC%25E3%2582%25B9+10%25E4%25BB%25A3%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -123,8 +153,10 @@
       <div class="gift-card-title">3. ミニショルダーバッグ・ポーチ（WEGO・GRL・SHEIN）</div>
       <div class="gift-card-price">&#165;2,000～&#165;5,000</div>
       <div class="gift-card-desc">休日のお出かけに使えるミニショルダーバッグや、学校に持っていけるかわいいポーチは実用性の高い贈り物。WEGOやGRLなど10代に人気のブランドから選べば、トレンド感もばっちりです。推し活用のクリア仕様や、スマホがちょうど入るサイズ感のものが特に人気があります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%8B+%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0+%E5%A5%B3%E5%AD%90+%E4%B8%AD%E5%AD%A6%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259F%25E3%2583%258B+%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25AB%25E3%2583%2580%25E3%2583%25BC%25E3%2583%2590%25E3%2583%2583%25E3%2582%25B0+%25E5%25A5%25B3%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%8B+%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0+%E5%A5%B3%E5%AD%90+%E4%B8%AD%E5%AD%A6%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259F%25E3%2583%258B+%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25AB%25E3%2583%2580%25E3%2583%25BC%25E3%2583%2590%25E3%2583%2583%25E3%2582%25B0+%25E5%25A5%25B3%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -132,8 +164,10 @@
       <div class="gift-card-title">4. ヘアケア・ボディケアセット（&honey・BOTANIST）</div>
       <div class="gift-card-price">&#165;2,000～&#165;4,000</div>
       <div class="gift-card-desc">おしゃれに気を使い始めた10代女子には、ちょっといいヘアケアやボディケアのギフトセットが喜ばれます。&honeyやBOTANISTは見た目もおしゃれでSNS映えするパッケージ。いい香りのシャンプーやボディクリームは自分ではなかなか買わない「ちょうどいい贅沢」として最適です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%98%E3%82%A2%E3%82%B1%E3%82%A2+%E3%82%AE%E3%83%95%E3%83%88+%E5%A5%B3%E5%AD%90+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2598%25E3%2582%25A2%25E3%2582%25B1%25E3%2582%25A2+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E5%25A5%25B3%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%98%E3%82%A2%E3%82%B1%E3%82%A2+%E3%82%AE%E3%83%95%E3%83%88+%E5%A5%B3%E5%AD%90+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2598%25E3%2582%25A2%25E3%2582%25B1%25E3%2582%25A2+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E5%25A5%25B3%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -141,8 +175,10 @@
       <div class="gift-card-title">5. 推し活グッズ（アクスタケース・チェキアルバム・デコグッズ）</div>
       <div class="gift-card-price">&#165;1,000～&#165;3,000</div>
       <div class="gift-card-desc">アイドルやアニメキャラの「推し」がいる10代女子には、推し活を充実させるグッズが間違いなく刺さります。アクスタケースやチェキアルバム、トレカデコ用のシールやリボンセットなど、推しを飾るためのアイテムは種類が豊富。推しの名前やカラーに合わせて選べばセンスの良い贈り物になります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E6%8E%A8%E3%81%97%E6%B4%BB+%E3%82%B0%E3%83%83%E3%82%BA+%E3%82%A2%E3%82%AF%E3%82%B9%E3%82%BF%E3%82%B1%E3%83%BC%E3%82%B9&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%258E%25A8%25E3%2581%2597%25E6%25B4%25BB+%25E3%2582%25B0%25E3%2583%2583%25E3%2582%25BA%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E6%8E%A8%E3%81%97%E6%B4%BB+%E3%82%B0%E3%83%83%E3%82%BA+%E3%82%A2%E3%82%AF%E3%82%B9%E3%82%BF%E3%82%B1%E3%83%BC%E3%82%B9&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%258E%25A8%25E3%2581%2597%25E6%25B4%25BB+%25E3%2582%25B0%25E3%2583%2583%25E3%2582%25BA%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="boys">男子向けプレゼント5選</h2>
@@ -153,8 +189,10 @@
       <div class="gift-card-title">6. ワイヤレスイヤホン（JBL・Anker Soundcore・SONY）</div>
       <div class="gift-card-price">&#165;3,000～&#165;10,000</div>
       <div class="gift-card-desc">通学中の音楽や動画視聴に欠かせないワイヤレスイヤホンは、10代男子が最も欲しがるアイテムの一つ。JBL Tune Budsは重低音に定評があり、Anker Soundcoreシリーズはコスパ抜群。予算に余裕があればSONYのWF-C700Nはノイズキャンセリング搭載で勉強の集中力も高まります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25AC%25E3%2582%25B9%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%259B%25E3%2583%25B3+%25E5%25AD%25A6%25E7%2594%259F%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25AC%25E3%2582%25B9%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%259B%25E3%2583%25B3+%25E5%25AD%25A6%25E7%2594%259F%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -162,8 +200,10 @@
       <div class="gift-card-title">7. スニーカー（NIKE・adidas・New Balance）</div>
       <div class="gift-card-price">&#165;5,000～&#165;15,000</div>
       <div class="gift-card-desc">おしゃれに目覚めた10代男子にとって、足元は最大のこだわりポイント。NIKEのエアフォース1やダンクロー、adidasのスタンスミス、New Balance 574など定番モデルは制服にも私服にも合わせやすく長く履けます。サイズ選びが不安な場合はギフトカードにするのも一つの手です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC+%E9%AB%98%E6%A0%A1%E7%94%9F+%E7%94%B7%E5%AD%90+%E4%BA%BA%E6%B0%97&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B9%25E3%2583%258B%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC+%25E9%25AB%2598%25E6%25A0%25A1%25E7%2594%259F+%25E7%2594%25B7%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC+%E9%AB%98%E6%A0%A1%E7%94%9F+%E7%94%B7%E5%AD%90+%E4%BA%BA%E6%B0%97&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B9%25E3%2583%258B%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC+%25E9%25AB%2598%25E6%25A0%25A1%25E7%2594%259F+%25E7%2594%25B7%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -171,8 +211,10 @@
       <div class="gift-card-title">8. ゲーミングデバイス（コントローラー・ヘッドセット・マウス）</div>
       <div class="gift-card-price">&#165;3,000～&#165;10,000</div>
       <div class="gift-card-desc">ゲーム好きの10代男子には、ワンランク上のゲーミングデバイスが最高のプレゼント。Logicool Gシリーズのゲーミングマウスやヘッドセット、Switch用のProコントローラーなど、標準付属品からのアップグレードは感動が大きいものです。友達とのオンラインプレイがさらに楽しくなります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0+%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0+%25E3%2583%2587%25E3%2583%2590%25E3%2582%25A4%25E3%2582%25B9%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0+%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0+%25E3%2583%2587%25E3%2583%2590%25E3%2582%25A4%25E3%2582%25B9%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -180,8 +222,10 @@
       <div class="gift-card-title">9. スポーツブランドのリュック（THE NORTH FACE・NIKE・adidas）</div>
       <div class="gift-card-price">&#165;5,000～&#165;12,000</div>
       <div class="gift-card-desc">通学や部活に毎日使うリュックは実用性抜群の贈り物。THE NORTH FACEのヒューズボックスは中高生の間で圧倒的な人気を誇り、NIKEやadidasのスポーツリュックも根強い支持があります。容量30L前後で教科書も部活道具もしっかり入るサイズ感が使いやすく、長く愛用してもらえます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%AA%E3%83%A5%E3%83%83%E3%82%AF+%E9%AB%98%E6%A0%A1%E7%94%9F+%E7%94%B7%E5%AD%90+%E4%BA%BA%E6%B0%97+%E9%80%9A%E5%AD%A6&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AA%25E3%2583%25A5%25E3%2583%2583%25E3%2582%25AF+%25E9%25AB%2598%25E6%25A0%25A1%25E7%2594%259F+%25E7%2594%25B7%25E5%25AD%2590+%25E9%2580%259A%25E5%25AD%25A6%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%AA%E3%83%A5%E3%83%83%E3%82%AF+%E9%AB%98%E6%A0%A1%E7%94%9F+%E7%94%B7%E5%AD%90+%E4%BA%BA%E6%B0%97+%E9%80%9A%E5%AD%A6&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AA%25E3%2583%25A5%25E3%2583%2583%25E3%2582%25AF+%25E9%25AB%2598%25E6%25A0%25A1%25E7%2594%259F+%25E7%2594%25B7%25E5%25AD%2590+%25E9%2580%259A%25E5%25AD%25A6%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -189,8 +233,10 @@
       <div class="gift-card-title">10. 腕時計（G-SHOCK・CASIO・TIMEX）</div>
       <div class="gift-card-price">&#165;5,000～&#165;15,000</div>
       <div class="gift-card-desc">スマホで時間を確認する時代だからこそ、腕時計は「大人の仲間入り」を感じさせる特別な贈り物になります。CASIOのG-SHOCKは耐久性が高く部活にも最適。シンプルなTIMEXやCASIOスタンダードは勉強のときも邪魔にならず、テストのときにも活躍します。初めての腕時計として記念に残るプレゼントです。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E8%85%95%E6%99%82%E8%A8%88+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F+%E7%94%B7%E5%AD%90&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2585%2595%25E6%2599%2582%25E8%25A8%2588+%25E4%25B8%25AD%25E5%25AD%25A6%25E7%2594%259F+%25E7%2594%25B7%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E8%85%95%E6%99%82%E8%A8%88+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F+%E7%94%B7%E5%AD%90&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2585%2595%25E6%2599%2582%25E8%25A8%2588+%25E4%25B8%25AD%25E5%25AD%25A6%25E7%2594%259F+%25E7%2594%25B7%25E5%25AD%2590%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="unisex">ユニセックスプレゼント5選</h2>
@@ -201,8 +247,10 @@
       <div class="gift-card-title">11. 図書カード・話題の書籍セット</div>
       <div class="gift-card-price">&#165;2,000～&#165;5,000</div>
       <div class="gift-card-desc">読書好きな10代にはもちろん、好みがわからない場合にも図書カードは万能な選択肢。本屋で好きな本を選ぶ体験自体が楽しいプレゼントになります。もし趣味を知っているなら、話題のライトノベルや小説を直接贈るのもアリ。受験生には参考書代として使えるのも隠れたメリットです。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E5%9B%B3%E6%9B%B8%E3%82%AB%E3%83%BC%E3%83%89+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E5%259B%25B3%25E6%259B%25B8%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E5%9B%B3%E6%9B%B8%E3%82%AB%E3%83%BC%E3%83%89+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E5%259B%25B3%25E6%259B%25B8%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -210,8 +258,10 @@
       <div class="gift-card-title">12. モバイルバッテリー（Anker・CIO・cheero）</div>
       <div class="gift-card-price">&#165;2,000～&#165;5,000</div>
       <div class="gift-card-desc">スマホが生活の中心にある10代にとって、外出先でのバッテリー切れは死活問題。Anker PowerCore 10000やCIOのコンパクトモデルは軽量で持ち運びやすく、通学カバンに入れても負担になりません。10000mAh以上あればスマホを2回以上フル充電でき、修学旅行や遠征試合のときにも大活躍します。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC+%E8%BB%BD%E9%87%8F+%E5%AD%A6%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC+%25E8%25BB%25BD%25E9%2587%258F%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC+%E8%BB%BD%E9%87%8F+%E5%AD%A6%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC+%25E8%25BB%25BD%25E9%2587%258F%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -219,8 +269,10 @@
       <div class="gift-card-title">13. 高機能文房具セット（ジェットストリーム・クルトガ・スマッシュ）</div>
       <div class="gift-card-price">&#165;1,500～&#165;4,000</div>
       <div class="gift-card-desc">毎日の勉強に使う文房具は、いくつあっても困らない鉄板ギフト。三菱のジェットストリーム多機能ペンやクルトガ、ぺんてるのスマッシュなど、書き心地にこだわった筆記具は10代の間でも人気が高いアイテム。限定カラーやギフトボックス入りを選べば、普段使いのものとは一味違う特別感を演出できます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E6%96%87%E6%88%BF%E5%85%B7+%E3%82%AE%E3%83%95%E3%83%88+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%2596%2587%25E6%2588%25BF%25E5%2585%25B7+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E5%25AD%25A6%25E7%2594%259F%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E6%96%87%E6%88%BF%E5%85%B7+%E3%82%AE%E3%83%95%E3%83%88+%E4%B8%AD%E5%AD%A6%E7%94%9F+%E9%AB%98%E6%A0%A1%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%2596%2587%25E6%2588%25BF%25E5%2585%25B7+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588+%25E5%25AD%25A6%25E7%2594%259F%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -228,8 +280,10 @@
       <div class="gift-card-title">14. Bluetoothスピーカー（JBL GO・Anker Soundcore Mini）</div>
       <div class="gift-card-price">&#165;3,000～&#165;7,000</div>
       <div class="gift-card-desc">自分の部屋で好きな音楽を楽しみたい10代には、コンパクトなBluetoothスピーカーがぴったり。JBL GO 4は手のひらサイズながらパワフルな音質で防水仕様。Anker Soundcore Miniもコスパ重視派に支持されています。友達が遊びに来たときにも活躍し、部屋の雰囲気がぐっとおしゃれになります。</div>
-      <a href="https://www.amazon.co.jp/s?k=Bluetooth+%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AB%E3%83%BC+%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88+%E5%AD%A6%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBluetooth+%25E3%2582%25B9%25E3%2583%2594%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC+%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2591%25E3%2582%25AF%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=Bluetooth+%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AB%E3%83%BC+%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88+%E5%AD%A6%E7%94%9F&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBluetooth+%25E3%2582%25B9%25E3%2583%2594%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC+%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2591%25E3%2582%25AF%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -237,8 +291,10 @@
       <div class="gift-card-title">15. ブランドスポーツタオル・ステンレス水筒（サーモス・タイガー）</div>
       <div class="gift-card-price">&#165;2,000～&#165;5,000</div>
       <div class="gift-card-desc">部活動をしている10代には、ブランドのスポーツタオルや保冷力の高いステンレス水筒が実用的で喜ばれます。サーモスやタイガーの真空断熱ボトルは夏場でも冷たさをキープ。NIKEやadidasのスポーツタオルに名入れ刺繍を入れれば、世界に一つだけのオリジナルギフトになります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%BF%E3%82%AA%E3%83%AB+%E5%90%8D%E5%85%A5%E3%82%8C+%E9%83%A8%E6%B4%BB&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B9%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2584%25E3%2582%25BF%25E3%2582%25AA%25E3%2583%25AB+%25E5%2590%258D%25E5%2585%25A5%25E3%2582%258C%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%BF%E3%82%AA%E3%83%AB+%E5%90%8D%E5%85%A5%E3%82%8C+%E9%83%A8%E6%B4%BB&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B9%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2584%25E3%2582%25BF%25E3%2582%25AA%25E3%2583%25AB+%25E5%2590%258D%25E5%2585%25A5%25E3%2582%258C%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="tips">中学生・高校生へのプレゼント選びのコツ</h2>
@@ -265,9 +321,40 @@
     <p>10代にとって、自分のことを考えて選んでくれたプレゼントは金額以上に嬉しいもの。この記事を参考に、相手の笑顔を思い浮かべながらプレゼントを選んでみてください。</p>
   </article>
 
-  <footer class="footer">
-    <p>&copy; 2026 Okurite. All rights reserved.</p>
-    <p style="margin-top:8px;">当サイトはアフィリエイトプログラムに参加しています。</p>
+    <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Okurite</span>
+          <p>シーン別ギフト・プレゼント検索サービス。<br>あらゆるシーンのギフト選びをサポートします。</p>
+        </div>
+        <div class="footer-col">
+          <h4>シーン別</h4>
+          <ul>
+            <li><a href="mothers-day-2026.html">母の日</a></li>
+            <li><a href="fathers-day-2026.html">父の日</a></li>
+            <li><a href="birthday-gift-women.html">誕生日</a></li>
+            <li><a href="wedding-gift-guide.html">結婚祝い</a></li>
+            <li><a href="baby-shower-gift.html">出産祝い</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>予算別</h4>
+          <ul>
+            <li><a href="budget-500-gift.html">500円以下</a></li>
+            <li><a href="gift-exchange-1000.html">1,000円</a></li>
+            <li><a href="gift-budget-3000.html">3,000円</a></li>
+            <li><a href="budget-5000-gift.html">5,000円</a></li>
+            <li><a href="budget-10000-gift.html">10,000円</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。</p>
+        <p style="margin-top:8px;"><a href="../">TOP</a> | <a href="./">コラム</a></p>
+        <p style="margin-top:8px;">&copy; 2026 Okurite. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

@@ -22,36 +22,51 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .article { max-width: 720px; margin: 0 auto; padding: 100px 24px 60px; }
-    .article h1 { font-size: 1.5rem; font-weight: 400; color: #3a3a3a; line-height: 1.8; margin-bottom: 16px; }
-    .article-meta { font-size: .8rem; color: #aaa; margin-bottom: 32px; }
-    .article-hero { width: 100%; height: 300px; object-fit: cover; border-radius: 14px; margin-bottom: 32px; }
-    .article h2 { font-size: 1.2rem; font-weight: 400; color: #8b6914; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(180,160,120,.2); }
-    .article h3 { font-size: 1rem; font-weight: 600; color: #3a3a3a; margin: 24px 0 12px; }
+        .article { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
+    .article h1 { font-size: 1.5rem; font-weight: 700; color: #2d2a26; line-height: 1.7; margin-bottom: 12px; }
+    .article-meta { font-size: .8rem; color: #999; margin-bottom: 28px; }
+    .article-hero { width: 100%; height: 320px; object-fit: cover; border-radius: 14px; margin-bottom: 32px; }
+    .article h2 { font-size: 1.2rem; font-weight: 700; color: #8b6914; margin: 40px 0 16px; padding-bottom: 10px; border-bottom: 2px solid rgba(139,105,20,.06); }
+    .article h3 { font-size: 1rem; font-weight: 700; color: #2d2a26; margin: 28px 0 12px; }
     .article p { font-size: .9rem; line-height: 2; color: #555; margin-bottom: 16px; }
     .article ul, .article ol { margin: 0 0 16px 24px; }
     .article li { font-size: .9rem; line-height: 2; color: #555; margin-bottom: 4px; }
-    .gift-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
-    .gift-card-img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; }
-    .gift-card-title { font-size: .95rem; font-weight: 600; color: #3a3a3a; margin-bottom: 4px; }
-    .gift-card-price { font-size: .85rem; color: #c62828; font-weight: 600; margin-bottom: 8px; }
-    .gift-card-desc { font-size: .85rem; color: #777; line-height: 1.8; margin-bottom: 12px; }
-    .gift-card-link { display: inline-block; padding: 8px 20px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 6px; font-size: .8rem; transition: opacity .2s; }
-    .gift-card-link:hover { opacity: .85; color: #fff; }
-    .gift-card-sub { font-size: .75rem; color: #999; margin-top: 6px; }
+    .gift-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 14px; padding: 24px; margin-bottom: 20px; transition: box-shadow .3s; }
+    .gift-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .gift-card-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 16px; }
+    .gift-card-title { font-size: 1rem; font-weight: 700; color: #2d2a26; margin-bottom: 4px; }
+    .gift-card-price { font-size: .9rem; color: #c62828; font-weight: 700; margin-bottom: 10px; }
+    .gift-card-desc { font-size: .85rem; color: #666; line-height: 1.8; margin-bottom: 16px; }
+    .gift-card-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+    .gift-card-link { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 24px; background: #ff9900; color: #fff; border-radius: 8px; font-size: .85rem; font-weight: 600; transition: all .2s; text-decoration: none; flex: 1; min-width: 140px; text-align: center; }
+    .gift-card-link:hover { opacity: .9; color: #fff; transform: translateY(-1px); }
+    .gift-card-link.rakuten { background: #bf0000; }
+    .gift-card-link.rakuten:hover { background: #a00; }
+    .gift-card-sub { font-size: .75rem; color: #999; margin-top: 8px; }
     .gift-card-sub a { color: #8b6914; }
-    .toc { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; }
-    .toc-title { font-size: .9rem; font-weight: 600; color: #8b6914; margin-bottom: 12px; }
-    .toc a { font-size: .85rem; color: #555; line-height: 2; display: block; }
-    .toc a:hover { color: #8b6914; }
+    .toc { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 14px; padding: 20px 24px; margin-bottom: 32px; }
+    .toc-title { font-size: .9rem; font-weight: 700; color: #8b6914; margin-bottom: 12px; }
+    .toc a { font-size: .85rem; color: #555; line-height: 2.2; display: block; padding-left: 16px; border-left: 2px solid transparent; transition: all .2s; }
+    .toc a:hover { color: #8b6914; border-left-color: #8b6914; padding-left: 20px; }
     .breadcrumb { font-size: .8rem; color: #999; margin-bottom: 16px; }
     .breadcrumb a { color: #8b6914; }
-    .cta-box { background: linear-gradient(135deg, #faf8f5, #f5efe5); border: 1px solid rgba(180,160,120,.2); border-radius: 14px; padding: 28px; text-align: center; margin: 40px 0; }
+    .cta-box { background: linear-gradient(135deg, #faf8f5, #f0ebe2); border: 1px solid rgba(180,160,120,.15); border-radius: 20px; padding: 32px; text-align: center; margin: 40px 0; }
     .cta-box p { font-size: .95rem; color: #555; margin-bottom: 16px; }
-    .cta-btn { display: inline-block; padding: 14px 36px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 40px; font-size: .9rem; transition: all .2s; }
+    .cta-btn { display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 999px; font-size: .95rem; font-weight: 600; transition: all .2s; text-decoration: none; }
     .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(139,105,20,.25); color: #fff; }
+    .related-articles { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 14px; padding: 24px; margin: 40px 0; }
+    .related-articles h3 { font-size: 1rem; font-weight: 700; color: #8b6914; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(180,160,120,.15); }
+    .related-articles ul { list-style: none; margin: 0; padding: 0; }
+    .related-articles li { padding: 10px 0; border-bottom: 1px solid rgba(180,160,120,.08); margin-bottom: 0; }
+    .related-articles li:last-child { border-bottom: none; }
+    .related-articles a { font-size: .88rem; color: #555; display: flex; align-items: center; gap: 8px; }
+    .related-articles a::before { content: ''; width: 6px; height: 6px; background: #c49b1a; border-radius: 50%; flex-shrink: 0; }
+    .related-articles a:hover { color: #8b6914; }
+    @media (max-width: 768px) { .article { padding: 72px 16px 48px; } .article-hero { height: 200px; } .gift-card-buttons { flex-direction: column; } .gift-card-link { width: 100%; justify-content: center; } }
   </style>
   <script type="application/ld+json">
   {
@@ -64,6 +79,17 @@
     "publisher": {"@type": "Organization", "name": "Okurite"}
   }
   </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://richend0913.github.io/okurite/"},
+      {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://richend0913.github.io/okurite/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "<a href="./">コラム</a> &gt; 父の日プレゼント2026", "item": "https://richend0913.github.io/okurite/blog/fathers-day-2026.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -71,8 +97,8 @@
       <a href="../" class="logo" style="text-decoration:none;">Okurite</a>
       <button class="hamburger" onclick="document.querySelector('.nav').classList.toggle('open')">&#9776;</button>
       <ul class="nav">
-        <li><a href="../#gifts">カテゴリ</a></li>
-        <li><a href="../#gifts">人気ギフト</a></li>
+        <li><a href="../">TOP</a></li>
+        <li><a href="../#gifts">ギフト検索</a></li>
         <li><a href="./">コラム</a></li>
       </ul>
     </div>
@@ -106,8 +132,10 @@
       <div class="gift-card-title">1. クラフトビール飲み比べセット</div>
       <div class="gift-card-price">¥2,000〜¥3,000</div>
       <div class="gift-card-desc">ビール好きのお父さんに鉄板のチョイス。よなよなエール・銀河高原ビール・伊勢角屋麦酒など全国の地ビールを4〜6本セットで贈れば、毎晩の晩酌が楽しみに変わります。プレミアムな缶デザインで見た目も特別感あり。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%83%93%E3%83%BC%E3%83%AB+%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%2595%25E3%2583%2588%25E3%2583%2593%25E3%2583%25BC%25E3%2583%25AB+%25E9%25A3%25B2%25E3%2581%25BF%25E6%25AF%2594%25E3%2581%25B9+%25E7%2588%25B6%25E3%2581%25AE%25E6%2597%25A5%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%83%93%E3%83%BC%E3%83%AB+%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%2595%25E3%2583%2588%25E3%2583%2593%25E3%2583%25BC%25E3%2583%25AB+%25E9%25A3%25B2%25E3%2581%25BF%25E6%25AF%2594%25E3%2581%25B9+%25E7%2588%25B6%25E3%2581%25AE%25E6%2597%25A5%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -115,8 +143,10 @@
       <div class="gift-card-title">2. スペシャルティコーヒー豆セット</div>
       <div class="gift-card-price">¥1,800〜¥2,800</div>
       <div class="gift-card-desc">毎朝コーヒーを飲むお父さんには、普段のスーパーでは買わない高品質な豆を。猿田彦珈琲・丸山珈琲・LIGHT UP COFFEEなどの飲み比べセットなら、新しい味との出会いもプレゼントできます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%86%E3%82%A3%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B9%25E3%2583%259A%25E3%2582%25B7%25E3%2583%25A3%25E3%2583%25AB%25E3%2583%2586%25E3%2582%25A3%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2592%25E3%2583%25BC+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%86%E3%82%A3%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B9%25E3%2583%259A%25E3%2582%25B7%25E3%2583%25A3%25E3%2583%25AB%25E3%2583%2586%25E3%2582%25A3%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2592%25E3%2583%25BC+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -124,8 +154,10 @@
       <div class="gift-card-title">3. 高級柿の種・おつまみ詰め合わせ</div>
       <div class="gift-card-price">¥1,500〜¥2,500</div>
       <div class="gift-card-desc">お酒のお供に喜ばれるのが、ちょっと贅沢なおつまみセット。亀田の柿の種プレミアムや、缶詰の高級つまみ（オイルサーディン、燻製など）を詰め合わせると晩酌が華やぎます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E3%81%8A%E3%81%A4%E3%81%BE%E3%81%BF+%E3%82%AE%E3%83%95%E3%83%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E3%2581%258A%25E3%2581%25A4%25E3%2581%25BE%25E3%2581%25BF+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E3%81%8A%E3%81%A4%E3%81%BE%E3%81%BF+%E3%82%AE%E3%83%95%E3%83%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E3%2581%258A%25E3%2581%25A4%25E3%2581%25BE%25E3%2581%25BF+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -133,8 +165,10 @@
       <div class="gift-card-title">4. ハンカチ・タオルハンカチ（今治）</div>
       <div class="gift-card-price">¥1,500〜¥3,000</div>
       <div class="gift-card-desc">毎日使うハンカチは何枚あっても困らない実用品。ポール・スミスやポロ・ラルフローレンなどブランドの今治タオルハンカチを2〜3枚セットにすれば、品の良いギフトになります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E4%BB%8A%E6%B2%BB%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81+%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89+%E7%94%B7%E6%80%A7&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E4%25BB%258A%25E6%25B2%25BB%25E3%2583%258F%25E3%2583%25B3%25E3%2582%25AB%25E3%2583%2581+%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25B3%25E3%2583%2589+%25E7%2594%25B7%25E6%2580%25A7%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E4%BB%8A%E6%B2%BB%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81+%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89+%E7%94%B7%E6%80%A7&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E4%25BB%258A%25E6%25B2%25BB%25E3%2583%258F%25E3%2583%25B3%25E3%2582%25AB%25E3%2583%2581+%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25B3%25E3%2583%2589+%25E7%2594%25B7%25E6%2580%25A7%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="budget2">予算3,000〜5,000円のプレゼント</h2>
@@ -145,8 +179,10 @@
       <div class="gift-card-title">5. 日本酒・焼酎の飲み比べセット</div>
       <div class="gift-card-price">¥3,500〜¥5,000</div>
       <div class="gift-card-desc">日本酒派・焼酎派のお父さんには、全国の銘酒を集めた飲み比べセットがおすすめ。300ml瓶が4〜6本入ったセットなら、場所も取らず色んな味を楽しんでもらえます。獺祭や久保田などの有名銘柄入りなら間違いなし。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E6%97%A5%E6%9C%AC%E9%85%92+%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9+%E3%82%BB%E3%83%83%E3%83%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%2597%25A5%25E6%259C%25AC%25E9%2585%2592+%25E9%25A3%25B2%25E3%2581%25BF%25E6%25AF%2594%25E3%2581%25B9+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E6%97%A5%E6%9C%AC%E9%85%92+%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9+%E3%82%BB%E3%83%83%E3%83%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%2597%25A5%25E6%259C%25AC%25E9%2585%2592+%25E9%25A3%25B2%25E3%2581%25BF%25E6%25AF%2594%25E3%2581%25B9+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -154,8 +190,10 @@
       <div class="gift-card-title">6. 真空断熱タンブラー（サーモス・スタンレー）</div>
       <div class="gift-card-price">¥3,000〜¥4,500</div>
       <div class="gift-card-desc">ビールも焼酎ハイボールも、最後の一口まで冷たい温度をキープしてくれる真空タンブラー。サーモスやスタンレーのシリーズは保冷力が段違い。「もう普通のグラスには戻れない」と必ず言われます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E7%9C%9F%E7%A9%BA%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC+%E3%82%B5%E3%83%BC%E3%83%A2%E3%82%B9+%E3%83%93%E3%83%BC%E3%83%AB&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E7%259C%259F%25E7%25A9%25BA%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25BC+%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%25A2%25E3%2582%25B9%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E7%9C%9F%E7%A9%BA%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC+%E3%82%B5%E3%83%BC%E3%83%A2%E3%82%B9+%E3%83%93%E3%83%BC%E3%83%AB&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E7%259C%259F%25E7%25A9%25BA%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25BC+%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%25A2%25E3%2582%25B9%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -163,8 +201,10 @@
       <div class="gift-card-title">7. ポロシャツ（ラコステ・フレッドペリー）</div>
       <div class="gift-card-price">¥4,000〜¥5,000</div>
       <div class="gift-card-desc">夏に向けてポロシャツは何枚あっても重宝するアイテム。ラコステやフレッドペリーなど定番ブランドを選べば、年代問わず似合うのがポイント。サイズが分かれば失敗しないギフトです。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%A9%E3%82%B3%E3%82%B9%E3%83%86+%E3%83%9D%E3%83%AD%E3%82%B7%E3%83%A3%E3%83%84+%E3%83%A1%E3%83%B3%E3%82%BA&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25A9%25E3%2582%25B3%25E3%2582%25B9%25E3%2583%2586+%25E3%2583%259D%25E3%2583%25AD%25E3%2582%25B7%25E3%2583%25A3%25E3%2583%2584%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%A9%E3%82%B3%E3%82%B9%E3%83%86+%E3%83%9D%E3%83%AD%E3%82%B7%E3%83%A3%E3%83%84+%E3%83%A1%E3%83%B3%E3%82%BA&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25A9%25E3%2582%25B3%25E3%2582%25B9%25E3%2583%2586+%25E3%2583%259D%25E3%2583%25AD%25E3%2582%25B7%25E3%2583%25A3%25E3%2583%2584%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -172,8 +212,10 @@
       <div class="gift-card-title">8. グルメ缶詰・高級レトルトギフト</div>
       <div class="gift-card-price">¥3,500〜¥5,000</div>
       <div class="gift-card-desc">明治屋・国分・成城石井などのプレミアム缶詰やレトルト食品の詰め合わせ。フォアグラ・キャビア・松坂牛のしぐれ煮など、自分では買わないけど食べてみたいグルメ缶詰は晩酌に最高のお供です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E7%BC%B6%E8%A9%B0+%E3%82%AE%E3%83%95%E3%83%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E7%25BC%25B6%25E8%25A9%25B0+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E9%AB%98%E7%B4%9A+%E7%BC%B6%E8%A9%B0+%E3%82%AE%E3%83%95%E3%83%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%25AB%2598%25E7%25B4%259A+%25E7%25BC%25B6%25E8%25A9%25B0+%25E3%2582%25AE%25E3%2583%2595%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="budget3">予算5,000〜10,000円のプレゼント</h2>
@@ -184,8 +226,10 @@
       <div class="gift-card-title">9. レザーベルト・革小物（ホワイトハウスコックス・ガンゾ）</div>
       <div class="gift-card-price">¥6,000〜¥10,000</div>
       <div class="gift-card-desc">スーツでも普段着でも使えるレザーベルトは、品質の良いものを長く使う実用品。ホワイトハウスコックスやガンゾなどの本格レザーブランドは、経年変化も楽しめて一生もののギフトになります。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%AC%E3%82%B6%E3%83%BC%E3%83%99%E3%83%AB%E3%83%88+%E3%83%A1%E3%83%B3%E3%82%BA+%E9%AB%98%E7%B4%9A&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AC%25E3%2582%25B6%25E3%2583%25BC%25E3%2583%2599%25E3%2583%25AB%25E3%2583%2588+%25E7%2594%25B7%25E6%2580%25A7%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%AC%E3%82%B6%E3%83%BC%E3%83%99%E3%83%AB%E3%83%88+%E3%83%A1%E3%83%B3%E3%82%BA+%E9%AB%98%E7%B4%9A&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AC%25E3%2582%25B6%25E3%2583%25BC%25E3%2583%2599%25E3%2583%25AB%25E3%2583%2588+%25E7%2594%25B7%25E6%2580%25A7%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -193,8 +237,10 @@
       <div class="gift-card-title">10. 電気シェーバー（ブラウン・パナソニック）</div>
       <div class="gift-card-price">¥7,000〜¥10,000</div>
       <div class="gift-card-desc">毎朝使うシェーバーは、性能の良いものに替えるとQOLが激変する実用品。ブラウンのシリーズ7やパナソニックのラムダッシュ3枚刃なら、肌への負担も軽減。「これは本当に良い」と必ず感謝されます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E6%B0%97%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%90%E3%83%BC+%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%259B%25BB%25E6%25B0%2597%25E3%2582%25B7%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E6%B0%97%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%90%E3%83%BC+%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E9%259B%25BB%25E6%25B0%2597%25E3%2582%25B7%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -202,8 +248,10 @@
       <div class="gift-card-title">11. プレミアムウイスキー（山崎・響・マッカラン）</div>
       <div class="gift-card-price">¥6,000〜¥10,000</div>
       <div class="gift-card-desc">ウイスキー好きのお父さんには、特別な1本を。サントリー山崎・響、ニッカ余市、マッカラン12年などは父の日の鉄板。ハイボール用にも、ロックでじっくり味わうのにも最高です。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%A6%E3%82%A4%E3%82%B9%E3%82%AD%E3%83%BC+%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A6%25E3%2582%25A4%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25BC+%25E3%2583%2597%25E3%2583%25AC%25E3%2583%259F%25E3%2582%25A2%25E3%2583%25A0%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%A6%E3%82%A4%E3%82%B9%E3%82%AD%E3%83%BC+%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A6%25E3%2582%25A4%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25BC+%25E3%2583%2597%25E3%2583%25AC%25E3%2583%259F%25E3%2582%25A2%25E3%2583%25A0%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -211,8 +259,10 @@
       <div class="gift-card-title">12. ゴルフボール・アクセサリー（タイトリスト・ブリヂストン）</div>
       <div class="gift-card-price">¥5,000〜¥8,000</div>
       <div class="gift-card-desc">ゴルフが趣味のお父さんには鉄板。タイトリストPro V1やブリヂストンTOURBの1ダースセットは、消耗品なので何個もらっても嬉しいギフト。マーカーやティーとセットにすれば見栄えも◎。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%B4%E3%83%AB%E3%83%95%E3%83%9C%E3%83%BC%E3%83%AB+%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B4%25E3%2583%25AB%25E3%2583%2595%25E3%2583%259C%25E3%2583%25BC%25E3%2583%25AB+%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25B9%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%B4%E3%83%AB%E3%83%95%E3%83%9C%E3%83%BC%E3%83%AB+%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88+%E3%82%AE%E3%83%95%E3%83%88&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B4%25E3%2583%25AB%25E3%2583%2595%25E3%2583%259C%25E3%2583%25BC%25E3%2583%25AB+%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25B9%25E3%2583%2588%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="budget4">予算10,000円以上の特別なプレゼント</h2>
@@ -223,8 +273,10 @@
       <div class="gift-card-title">13. マッサージガン・ネックマッサージャー</div>
       <div class="gift-card-price">¥10,000〜¥20,000</div>
       <div class="gift-card-desc">肩こり・腰痛に悩むお父さんには、健康家電が大ヒット。マッサージガン（HYPERVOLTやTHERAGUN系）やパナソニックのネックマッサージャーなら、毎日のセルフケアが楽になります。在宅ワーク世代の父にも刺さる実用品。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E3%82%AC%E3%83%B3+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259E%25E3%2583%2583%25E3%2582%25B5%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25AC%25E3%2583%25B3%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E3%82%AC%E3%83%B3+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259E%25E3%2583%2583%25E3%2582%25B5%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25AC%25E3%2583%25B3%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -232,8 +284,10 @@
       <div class="gift-card-title">14. ワイヤレスイヤホン（SONY・Bose）</div>
       <div class="gift-card-price">¥15,000〜¥30,000</div>
       <div class="gift-card-desc">通勤やお散歩のお供に、ノイズキャンセリング付きワイヤレスイヤホンは大ヒット商品。SONY WF-1000XM5やBose QuietComfort Earbudsなら、音質も装着感も最高クラス。「世界が変わった」と必ず感動されます。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3+SONY+%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25AC%25E3%2582%25B9%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%259B%25E3%2583%25B3+SONY%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3+SONY+%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25AC%25E3%2582%25B9%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%259B%25E3%2583%25B3+SONY%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <div class="gift-card">
@@ -241,8 +295,10 @@
       <div class="gift-card-title">15. 高級腕時計（シチズン・セイコー）</div>
       <div class="gift-card-price">¥20,000〜¥50,000</div>
       <div class="gift-card-desc">節目の父の日や還暦祝いには、長く使える腕時計を。シチズンのアテッサやセイコーのプレザージュは、スーツにも普段着にも合うデザイン。電波ソーラーなら時刻合わせ・電池交換不要で実用性も抜群。</div>
-      <a href="https://www.amazon.co.jp/s?k=%E3%82%B7%E3%83%81%E3%82%BA%E3%83%B3+%E3%82%A2%E3%83%86%E3%83%83%E3%82%B5+%E8%85%95%E6%99%82%E8%A8%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener" class="gift-card-link">Amazonで探す</a>
-      <div class="gift-card-sub"><a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B7%25E3%2583%2581%25E3%2582%25BA%25E3%2583%25B3+%25E3%2582%25A2%25E3%2583%2586%25E3%2583%2583%25E3%2582%25B5%2F&link_type=hybrid_url" target="_blank" rel="noopener">楽天市場でも探す</a></div>
+      <div class="gift-card-buttons">
+        <a href="https://www.amazon.co.jp/s?k=%E3%82%B7%E3%83%81%E3%82%BA%E3%83%B3+%E3%82%A2%E3%83%86%E3%83%83%E3%82%B5+%E8%85%95%E6%99%82%E8%A8%88+%E7%88%B6%E3%81%AE%E6%97%A5&tag=okuritegift-22" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで探す</a>
+        <a href="https://hb.afl.rakuten.co.jp/ichiba/522e40a0.f2dc4208.522e40a1.385f875e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25B7%25E3%2583%2581%25E3%2582%25BA%25E3%2583%25B3+%25E3%2582%25A2%25E3%2583%2586%25E3%2583%2583%25E3%2582%25B5%2F&link_type=hybrid_url" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で探す</a>
+      </div>
     </div>
 
     <h2 id="tips">父の日ギフトの選び方のコツ</h2>
@@ -271,19 +327,47 @@
     <p>父の日のプレゼントは、金額よりも「お父さんのことを思って選んだ」という気持ちが何より大切です。この記事で紹介した15個のギフトを参考に、お父さんにぴったりの一品を見つけてください。</p>
     <p>2026年の父の日は<strong>6月21日（日）</strong>。配送が混み合う時期なので、1〜2週間前には注文を済ませておくと安心です。今年の父の日は、お父さんを笑顔にする1日にしましょう。</p>
 
-    <div class="card" style="background:#faf8f5;border:1px solid rgba(180,160,120,.15);border-radius:12px;padding:20px;margin:32px 0;">
-      <h3 style="font-size:.95rem;color:#8b6914;margin-bottom:12px;">関連記事</h3>
-      <ul style="list-style:none;margin:0;padding:0;">
-        <li style="margin-bottom:8px;"><a href="gift-for-boss.html" style="font-size:.85rem;">上司へのプレゼントおすすめ15選｜誕生日・昇進・異動・お礼に</a></li>
-        <li style="margin-bottom:8px;"><a href="budget-5000-gift.html" style="font-size:.85rem;">予算5,000円で贈るセンスのいいプレゼント12選｜男女別おすすめ</a></li>
-        <li style="margin-bottom:8px;"><a href="kanreki-gift.html" style="font-size:.85rem;">【2026年】還暦祝いに喜ばれるプレゼント15選｜男性・女性別おすすめギフト</a></li>
-      </ul>
-    </div>
+    <div class="related-articles"><h3>関連記事</h3><ul>
+        <li><a href="gift-for-boss.html">上司へのプレゼントおすすめ15選｜誕生日・昇進・異動・お礼に</a></li>
+        <li><a href="budget-5000-gift.html">予算5,000円で贈るセンスのいいプレゼント12選｜男女別おすすめ</a></li>
+        <li><a href="kanreki-gift.html">【2026年】還暦祝いに喜ばれるプレゼント15選｜男性・女性別おすすめギフト</a></li>
+      </ul></div>
   </article>
 
-  <footer class="footer">
-    <p>&copy; 2026 Okurite. All rights reserved.</p>
-    <p style="margin-top:8px;">当サイトはアフィリエイトプログラムに参加しています。</p>
+    <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Okurite</span>
+          <p>シーン別ギフト・プレゼント検索サービス。<br>あらゆるシーンのギフト選びをサポートします。</p>
+        </div>
+        <div class="footer-col">
+          <h4>シーン別</h4>
+          <ul>
+            <li><a href="mothers-day-2026.html">母の日</a></li>
+            <li><a href="fathers-day-2026.html">父の日</a></li>
+            <li><a href="birthday-gift-women.html">誕生日</a></li>
+            <li><a href="wedding-gift-guide.html">結婚祝い</a></li>
+            <li><a href="baby-shower-gift.html">出産祝い</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>予算別</h4>
+          <ul>
+            <li><a href="budget-500-gift.html">500円以下</a></li>
+            <li><a href="gift-exchange-1000.html">1,000円</a></li>
+            <li><a href="gift-budget-3000.html">3,000円</a></li>
+            <li><a href="budget-5000-gift.html">5,000円</a></li>
+            <li><a href="budget-10000-gift.html">10,000円</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。</p>
+        <p style="margin-top:8px;"><a href="../">TOP</a> | <a href="./">コラム</a></p>
+        <p style="margin-top:8px;">&copy; 2026 Okurite. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

@@ -22,7 +22,18 @@
   <meta property="og:url" content="https://richend0913.github.io/okurite/">
   <meta property="og:image" content="https://richend0913.github.io/okurite/images/ogp.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://richend0913.github.io/okurite/images/ogp.png"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="twitter:image" content="https://richend0913.github.io/okurite/images/ogp.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Okurite",
+    "url": "https://richend0913.github.io/okurite/",
+    "description": "シーン別・予算別でぴったりのギフトが見つかるプレゼント検索サービス",
+    "publisher": {"@type": "Organization", "name": "Okurite"}
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -258,14 +269,40 @@
     .feature-section p { font-size: .88rem; color: #7a4055; }
 
     /* ===== FOOTER ===== */
-    .footer { background: #2d2320; color: #a89590; text-align: center; padding: 40px 20px; font-size: .82rem; line-height: 2; }
-    .footer a { color: #c9a89a; text-decoration: none; }
+    .footer { background: #2d2320; color: #a89590; padding: 48px 20px 32px; font-size: .82rem; line-height: 1.8; }
+    .footer a { color: #c9a89a; text-decoration: none; transition: color .2s; }
     .footer a:hover { color: var(--blush); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+    .footer-brand p { font-size: .78rem; line-height: 1.8; margin-top: 8px; }
+    .footer-col h4 { font-size: .78rem; font-weight: 700; color: #ddd; margin-bottom: 10px; letter-spacing: .05em; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 5px; }
+    .footer-col a { font-size: .78rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 20px; text-align: center; font-size: .72rem; color: #777; }
     .footer-logo {
       font-family: 'Inter', sans-serif; font-weight: 900; font-size: 1.3rem;
       background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text; display: block; margin-bottom: 12px;
+      background-clip: text; display: block; margin-bottom: 4px;
     }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 20px; } }
+    @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+
+    /* ===== POPULAR ARTICLES ===== */
+    .popular-section { background: #fff; border-radius: 20px; padding: 28px 24px; margin-bottom: 0; box-shadow: var(--shadow); }
+    .popular-section h2 { font-size: 1.1rem; font-weight: 700; color: var(--rose-dark); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .popular-section h2::before { content: ''; width: 4px; height: 1.1rem; background: var(--rose); border-radius: 2px; flex-shrink: 0; }
+    .popular-list { list-style: none; }
+    .popular-list li { border-bottom: 1px solid var(--border); }
+    .popular-list li:last-child { border-bottom: none; }
+    .popular-list a { display: flex; align-items: center; gap: 12px; padding: 12px 0; text-decoration: none; color: var(--text); transition: color .2s; }
+    .popular-list a:hover { color: var(--rose); }
+    .popular-rank { font-size: 1.1rem; font-weight: 900; color: var(--rose); min-width: 28px; text-align: center; font-family: 'Inter', sans-serif; }
+    .popular-list li:nth-child(1) .popular-rank { color: #f59e0b; }
+    .popular-list li:nth-child(2) .popular-rank { color: #94a3b8; }
+    .popular-list li:nth-child(3) .popular-rank { color: #b45309; }
+    .popular-title { font-size: .82rem; font-weight: 500; line-height: 1.5; }
+    .popular-tag { font-size: .68rem; color: var(--text-muted); }
   </style>
 </head>
 <body>
@@ -428,14 +465,68 @@
 </main>
 
 
+<!-- Popular Articles -->
+<div class="main" style="padding-top:0;">
+  <div class="popular-section">
+    <h2>人気コラム記事</h2>
+    <ul class="popular-list">
+      <li><a href="blog/mothers-day-2026.html"><span class="popular-rank">1</span><div><div class="popular-title">【2026年】母の日に本当に喜ばれるプレゼント15選｜予算別おすすめギフト</div><div class="popular-tag">母の日</div></div></a></li>
+      <li><a href="blog/fathers-day-2026.html"><span class="popular-rank">2</span><div><div class="popular-title">【2026年】父の日に喜ばれるプレゼント15選｜予算別おすすめギフト</div><div class="popular-tag">父の日</div></div></a></li>
+      <li><a href="blog/birthday-gift-women.html"><span class="popular-rank">3</span><div><div class="popular-title">【年代別】女性が本当に嬉しい誕生日プレゼント｜20代・30代・40代・50代</div><div class="popular-tag">誕生日</div></div></a></li>
+      <li><a href="blog/gift-budget-3000.html"><span class="popular-rank">4</span><div><div class="popular-title">予算3,000円以下でも高見え！センスが光るプレゼント12選</div><div class="popular-tag">予算別</div></div></a></li>
+      <li><a href="blog/gift-for-boyfriend.html"><span class="popular-rank">5</span><div><div class="popular-title">彼氏が喜ぶ誕生日プレゼント｜年代別おすすめ15選【2026年版】</div><div class="popular-tag">誕生日</div></div></a></li>
+    </ul>
+    <div style="text-align:center;margin-top:16px;">
+      <a href="blog/" style="display:inline-block;padding:10px 28px;border:2px solid var(--rose);color:var(--rose);border-radius:999px;font-size:.85rem;font-weight:700;transition:all .2s;">コラム一覧を見る</a>
+    </div>
+  </div>
+</div>
+
 <footer class="footer">
-  <span class="footer-logo">Okurite</span>
-  <p>シーン別ギフト・プレゼント検索サービス</p>
-  <p><a href="#">プライバシーポリシー</a> · <a href="#">お問い合わせ</a> · <a href="blog/">コラム</a> · <a href="/recruit/">🚚 配送スタッフ募集中</a></p>
-  <p style="margin-top:12px;font-size:.75rem">
-    当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。<br>
-    © 2026 Okurite. All rights reserved.
-  </p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Okurite</span>
+        <p>シーン別ギフト・プレゼント検索サービス。<br>母の日・父の日・誕生日・結婚祝いなど、あらゆるシーンのギフト選びをサポートします。</p>
+      </div>
+      <div class="footer-col">
+        <h4>シーン別</h4>
+        <ul>
+          <li><a href="blog/mothers-day-2026.html">母の日</a></li>
+          <li><a href="blog/fathers-day-2026.html">父の日</a></li>
+          <li><a href="blog/birthday-gift-women.html">誕生日</a></li>
+          <li><a href="blog/wedding-gift-guide.html">結婚祝い</a></li>
+          <li><a href="blog/baby-shower-gift.html">出産祝い</a></li>
+          <li><a href="blog/christmas-gift-2026.html">クリスマス</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>予算別</h4>
+        <ul>
+          <li><a href="blog/budget-500-gift.html">500円以下</a></li>
+          <li><a href="blog/gift-exchange-1000.html">1,000円</a></li>
+          <li><a href="blog/gift-budget-3000.html">3,000円</a></li>
+          <li><a href="blog/budget-5000-gift.html">5,000円</a></li>
+          <li><a href="blog/budget-10000-gift.html">10,000円</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>相手別</h4>
+        <ul>
+          <li><a href="blog/gift-for-boyfriend.html">彼氏</a></li>
+          <li><a href="blog/gift-for-wife-birthday.html">妻</a></li>
+          <li><a href="blog/gift-for-husband.html">旦那</a></li>
+          <li><a href="blog/gift-for-boss.html">上司</a></li>
+          <li><a href="blog/gift-for-grandparents.html">祖父母</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。</p>
+      <p style="margin-top:8px;"><a href="blog/">コラム</a> | <a href="compare.html">比較</a> | <a href="/recruit/">配送スタッフ募集中</a></p>
+      <p style="margin-top:8px;">&copy; 2026 Okurite. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
 
 <script>

@@ -12,48 +12,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ギフトコラム｜Okurite - 贈り物選びのヒント</title>
-  <meta name="description" content="母の日・誕生日・結婚祝いなど、シーン別のギフト選びに役立つコラム記事。失敗しないプレゼント選びのコツをご紹介。">
+  <meta name="description" content="母の日・父の日・誕生日・結婚祝いなど、シーン別のギフト選びに役立つコラム記事50本以上。予算別・相手別のプレゼント選びのコツをプロが解説。">
+  <link rel="canonical" href="https://richend0913.github.io/okurite/blog/">
+  <meta property="og:title" content="ギフトコラム｜Okurite - 贈り物選びのヒント">
+  <meta property="og:description" content="母の日・父の日・誕生日・結婚祝い...シーン別のギフト選びコラム50本以上。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://richend0913.github.io/okurite/blog/">
+  <meta property="og:image" content="https://richend0913.github.io/okurite/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://richend0913.github.io/okurite/"},
+      {"@type": "ListItem", "position": 2, "name": "ギフトコラム", "item": "https://richend0913.github.io/okurite/blog/"}
+    ]
+  }
+  </script>
   <style>
-    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
-    .blog-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 14px; overflow: hidden; transition: all .3s; }
-    .blog-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(139,105,20,.08); }
-    .blog-card img { width: 100%; height: 180px; object-fit: cover; }
-    .blog-card-body { padding: 20px; }
-    .blog-card-tag { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: .7rem; background: rgba(139,105,20,.06); color: #8b6914; border: 1px solid rgba(139,105,20,.12); margin-bottom: 8px; }
-    .blog-card-title { font-size: 1rem; font-weight: 400; color: #3a3a3a; margin-bottom: 8px; line-height: 1.6; }
-    .blog-card-excerpt { font-size: .8rem; color: #aaa; line-height: 1.8; margin-bottom: 12px; }
-    .blog-card-date { font-size: .7rem; color: #ccc; }
-    .blog-card a { color: inherit; text-decoration: none; }
-    .breadcrumb { font-size: .8rem; color: #999; margin-bottom: 24px; }
-    .breadcrumb a { color: #8b6914; }
+    .popular-section { background: linear-gradient(135deg, #fffbf0, #fff8f2); border: 1px solid rgba(180,160,120,.2); border-radius: 20px; padding: 32px; margin-bottom: 48px; }
+    .popular-section h2 { font-size: 1.2rem; font-weight: 700; color: var(--gold); margin-bottom: 20px; text-align: center; }
+    .popular-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .popular-card { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px; transition: all .2s; text-decoration: none; color: inherit; }
+    .popular-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+    .popular-rank { font-size: 1.4rem; font-weight: 700; color: var(--gold-light); min-width: 32px; text-align: center; }
+    .popular-card-body { flex: 1; min-width: 0; }
+    .popular-card-title { font-size: .85rem; font-weight: 600; color: var(--text); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .popular-card-tag { font-size: .68rem; color: var(--gold); margin-top: 4px; }
+    .category-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 32px; }
+    .category-nav a { padding: 6px 18px; border-radius: 999px; font-size: .82rem; font-weight: 600; border: 1.5px solid var(--border); color: var(--text-sub); transition: all .2s; background: #fff; }
+    .category-nav a:hover, .category-nav a.active { background: var(--gold); border-color: var(--gold); color: #fff; }
+    @media (max-width: 600px) { .popular-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
-      <a href="../" class="logo" style="text-decoration:none;">Okurite</a>
-      <button class="hamburger" onclick="document.querySelector('.nav').classList.toggle('open')">&#9776;</button>
+      <a href="../" class="logo">Okurite</a>
+      <button class="hamburger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="menu">&#9776;</button>
       <ul class="nav">
-        <li><a href="../#gifts">カテゴリ</a></li>
-        <li><a href="../#gifts">人気ギフト</a></li>
-        <li><a href="./">コラム</a></li>
+        <li><a href="../">TOP</a></li>
+        <li><a href="../#gifts">ギフト検索</a></li>
+        <li><a href="./" style="color:var(--gold);border-bottom-color:var(--gold);">コラム</a></li>
       </ul>
     </div>
   </header>
 
-  <div style="height:80px;"></div>
+  <div style="height:60px;"></div>
 
   <section class="section">
-    <div class="breadcrumb"><a href="../">TOP</a> &gt; ギフトコラム</div>
+    <div class="breadcrumb"><a href="../">TOP</a> <span>&gt;</span> ギフトコラム</div>
     <h1 class="section-title">ギフトコラム</h1>
     <p class="section-sub">贈り物選びに役立つ情報をお届けします</p>
 
+    <!-- Popular Articles -->
+    <div class="popular-section">
+      <h2>人気記事ランキング</h2>
+      <div class="popular-grid">
+        <a href="mothers-day-2026.html" class="popular-card">
+          <span class="popular-rank">1</span>
+          <div class="popular-card-body">
+            <div class="popular-card-title">【2026年】母の日に本当に喜ばれるプレゼント15選</div>
+            <div class="popular-card-tag">母の日</div>
+          </div>
+        </a>
+        <a href="fathers-day-2026.html" class="popular-card">
+          <span class="popular-rank">2</span>
+          <div class="popular-card-body">
+            <div class="popular-card-title">【2026年】父の日に喜ばれるプレゼント15選</div>
+            <div class="popular-card-tag">父の日</div>
+          </div>
+        </a>
+        <a href="birthday-gift-women.html" class="popular-card">
+          <span class="popular-rank">3</span>
+          <div class="popular-card-body">
+            <div class="popular-card-title">【年代別】女性が本当に嬉しい誕生日プレゼント</div>
+            <div class="popular-card-tag">誕生日</div>
+          </div>
+        </a>
+        <a href="gift-budget-3000.html" class="popular-card">
+          <span class="popular-rank">4</span>
+          <div class="popular-card-body">
+            <div class="popular-card-title">予算3,000円以下でも高見え！センスが光るプレゼント12選</div>
+            <div class="popular-card-tag">予算別</div>
+          </div>
+        </a>
+        <a href="gift-for-boyfriend.html" class="popular-card">
+          <span class="popular-rank">5</span>
+          <div class="popular-card-body">
+            <div class="popular-card-title">彼氏が喜ぶ誕生日プレゼント｜年代別おすすめ15選</div>
+            <div class="popular-card-tag">誕生日</div>
+          </div>
+        </a>
+        <a href="baby-shower-gift.html" class="popular-card">
+          <span class="popular-rank">6</span>
+          <div class="popular-card-body">
+            <div class="popular-card-title">出産祝いで本当に嬉しかったもの12選</div>
+            <div class="popular-card-tag">出産祝い</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+      <a href="#" class="active" data-cat="all">すべて</a>
+      <a href="#" data-cat="mothers-day">母の日</a>
+      <a href="#" data-cat="birthday">誕生日</a>
+      <a href="#" data-cat="budget">予算別</a>
+      <a href="#" data-cat="celebration">お祝い</a>
+      <a href="#" data-cat="season">季節</a>
+      <a href="#" data-cat="business">ビジネス</a>
+      <a href="#" data-cat="anniversary">記念日</a>
+    </div>
+
     <div class="blog-grid">
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="business">
         <a href="last-minute-gift.html">
-          <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="即日ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="即日ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お急ぎ</span>
             <h2 class="blog-card-title">急なプレゼントに！当日買える即日ギフト15選｜コンビニ・駅ナカ・ネット</h2>
@@ -63,9 +144,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="mothers-day">
         <a href="gift-for-mother-in-law.html">
-          <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="義母プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="義母プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">家族</span>
             <h2 class="blog-card-title">義母（お義母さん）に贈るプレゼント15選｜誕生日・母の日のおすすめ</h2>
@@ -75,9 +156,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="budget">
         <a href="budget-500-gift.html">
-          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="500円プチギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="500円プチギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">予算別</span>
             <h2 class="blog-card-title">予算500円以下で喜ばれるプチギフト15選｜ばらまき・お返しに</h2>
@@ -87,9 +168,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="gift-for-newlyweds.html">
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=360&fit=crop" alt="結婚祝い">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=360&fit=crop" alt="結婚祝い" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お祝い</span>
             <h2 class="blog-card-title">結婚祝いに喜ばれるプレゼント15選｜友人・同僚・親族向け</h2>
@@ -99,9 +180,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="gift-for-health-conscious.html">
-          <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&h=360&fit=crop" alt="健康ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&h=360&fit=crop" alt="健康ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">健康</span>
             <h2 class="blog-card-title">健康志向の方に贈るプレゼント15選｜食品・グッズ・体験</h2>
@@ -111,9 +192,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="gift-for-teens.html">
-          <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=360&fit=crop" alt="中学生・高校生プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=360&fit=crop" alt="中学生・高校生プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">中学生・高校生に贈るプレゼント15選｜男子・女子別おすすめギフト</h2>
@@ -123,9 +204,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="eco-gift.html">
-          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=360&fit=crop" alt="エコギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=360&fit=crop" alt="エコギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">エコ</span>
             <h2 class="blog-card-title">エコでおしゃれなサステナブルギフト15選｜環境にやさしいプレゼント</h2>
@@ -135,9 +216,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="business">
         <a href="gift-for-teacher.html">
-          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&h=360&fit=crop" alt="先生へのプレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&h=360&fit=crop" alt="先生へのプレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お礼</span>
             <h2 class="blog-card-title">先生・恩師に贈るプレゼント15選｜卒業・お礼・退職のおすすめギフト</h2>
@@ -147,21 +228,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
-        <a href="gift-for-teens.html">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=360&fit=crop" alt="中高生プレゼント">
-          <div class="blog-card-body">
-            <span class="blog-card-tag">誕生日</span>
-            <h2 class="blog-card-title">中学生・高校生に贈るプレゼント15選｜男子・女子別おすすめギフト</h2>
-            <p class="blog-card-excerpt">中高生に喜ばれるプレゼント。女子・男子・ユニセックスを15個厳選。</p>
-            <span class="blog-card-date">2026.04.13</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="gift-for-pet-lover.html">
-          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=360&fit=crop" alt="ペット好きプレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=360&fit=crop" alt="ペット好きプレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">趣味</span>
             <h2 class="blog-card-title">ペット好き・愛犬家・愛猫家に贈るプレゼント15選</h2>
@@ -171,9 +240,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="gift-for-husband.html">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=360&fit=crop" alt="旦那誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=360&fit=crop" alt="旦那誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">旦那・夫が喜ぶ誕生日プレゼント15選｜20代・30代・40代年代別おすすめ</h2>
@@ -183,9 +252,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="anniversary">
         <a href="couple-anniversary-gift.html">
-          <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=360&fit=crop" alt="記念日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=360&fit=crop" alt="記念日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">記念日</span>
             <h2 class="blog-card-title">彼氏・彼女への記念日プレゼント15選｜1年記念・誕生日におすすめ</h2>
@@ -195,9 +264,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="budget">
         <a href="budget-2000-gift.html">
-          <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="予算2000円プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="予算2000円プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">予算別</span>
             <h2 class="blog-card-title">予算2,000円で贈るセンスのいいプレゼント15選｜女性・男性・職場向け</h2>
@@ -207,9 +276,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="gift-wrapping-manners.html">
-          <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=600&h=360&fit=crop" alt="ラッピングマナー">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=600&h=360&fit=crop" alt="ラッピングマナー" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">マナー</span>
             <h2 class="blog-card-title">プレゼントの渡し方・ラッピングマナー完全ガイド｜のし・メッセージカードの書き方</h2>
@@ -219,9 +288,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="birthday-gift-men-20s.html">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=360&fit=crop" alt="20代男性誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=360&fit=crop" alt="20代男性誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">20代男性が喜ぶ誕生日プレゼント15選｜彼氏・友達・同僚向けおすすめ</h2>
@@ -231,9 +300,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="birth-celebration-gift.html">
-          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&h=360&fit=crop" alt="出産祝い">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&h=360&fit=crop" alt="出産祝い" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お祝い</span>
             <h2 class="blog-card-title">【2026年】出産祝いに喜ばれるプレゼント15選｜相場・マナー・時期も解説</h2>
@@ -243,9 +312,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="get-well-gift.html">
-          <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&h=360&fit=crop" alt="お見舞い・快気祝い">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&h=360&fit=crop" alt="お見舞い・快気祝い" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お見舞い</span>
             <h2 class="blog-card-title">お見舞い・快気祝いに喜ばれるプレゼント15選｜マナーとNG品も解説</h2>
@@ -255,9 +324,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="business">
         <a href="farewell-gift-coworker.html">
-          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="送別会・異動のプレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="送別会・異動のプレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">ビジネス</span>
             <h2 class="blog-card-title">送別会・異動する同僚に贈るプレゼント15選｜予算1,000円〜5,000円</h2>
@@ -267,9 +336,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="birthday-gift-women-40s.html">
-          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=360&fit=crop" alt="40代50代女性プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=360&fit=crop" alt="40代50代女性プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">40代・50代女性が喜ぶ誕生日プレゼント15選｜母・上司・友人向け</h2>
@@ -279,9 +348,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="gift-for-grandparents.html">
-          <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&h=360&fit=crop" alt="祖父母プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&h=360&fit=crop" alt="祖父母プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">敬老の日</span>
             <h2 class="blog-card-title">おじいちゃん・おばあちゃんに贈るプレゼント15選｜敬老の日・誕生日に</h2>
@@ -291,9 +360,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="budget">
         <a href="budget-10000-gift.html">
-          <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="予算1万円プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="予算1万円プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">予算別</span>
             <h2 class="blog-card-title">予算1万円で贈る特別感のあるプレゼント15選｜男女別・シーン別おすすめ</h2>
@@ -303,9 +372,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="experience-gift.html">
-          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=360&fit=crop" alt="体験ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=360&fit=crop" alt="体験ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">体験</span>
             <h2 class="blog-card-title">もらって嬉しい体験ギフト・カタログギフト15選｜思い出に残るプレゼント</h2>
@@ -315,9 +384,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="season">
         <a href="valentines-day-2027.html">
-          <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600&h=360&fit=crop" alt="バレンタイン2027">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600&h=360&fit=crop" alt="バレンタイン2027" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">バレンタイン</span>
             <h2 class="blog-card-title">【2027年】バレンタインに贈るプレゼント15選｜本命・義理・友チョコ別おすすめ</h2>
@@ -327,9 +396,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="season">
         <a href="white-day-2027.html">
-          <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&h=360&fit=crop" alt="ホワイトデー2027">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&h=360&fit=crop" alt="ホワイトデー2027" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">ホワイトデー</span>
             <h2 class="blog-card-title">【2027年】ホワイトデーお返しおすすめ15選｜本命・義理・職場別ガイド</h2>
@@ -339,9 +408,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="business">
         <a href="gift-for-boss.html">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=360&fit=crop" alt="上司へのプレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=360&fit=crop" alt="上司へのプレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">ビジネス</span>
             <h2 class="blog-card-title">上司へのプレゼントおすすめ15選｜誕生日・昇進・異動・お礼に</h2>
@@ -351,9 +420,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="moving-gift.html">
-          <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=360&fit=crop" alt="引越し祝い">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=360&fit=crop" alt="引越し祝い" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お祝い</span>
             <h2 class="blog-card-title">引越し祝いに喜ばれるプレゼント15選｜友人・同僚・家族向けおすすめ</h2>
@@ -363,9 +432,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="season">
         <a href="christmas-gift-2026.html">
-          <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&h=360&fit=crop" alt="クリスマスプレゼント2026">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&h=360&fit=crop" alt="クリスマスプレゼント2026" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">クリスマス</span>
             <h2 class="blog-card-title">【2026年】クリスマスプレゼントおすすめ15選｜彼氏・彼女・友達別ガイド</h2>
@@ -375,9 +444,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="anniversary">
         <a href="parents-anniversary-gift.html">
-          <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=360&fit=crop" alt="両親の結婚記念日">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=360&fit=crop" alt="両親の結婚記念日" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">記念日</span>
             <h2 class="blog-card-title">両親の結婚記念日に贈るプレゼント15選｜銀婚式・金婚式のおすすめギフト</h2>
@@ -387,9 +456,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="budget">
         <a href="gift-exchange-1000.html">
-          <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="1000円プレゼント交換">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="1000円プレゼント交換" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">予算別</span>
             <h2 class="blog-card-title">予算1,000円のプレゼント交換で喜ばれるギフト15選｜職場・友達・子供向け</h2>
@@ -399,9 +468,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="season">
         <a href="oseibo-2026.html">
-          <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&h=360&fit=crop" alt="お歳暮2026">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&h=360&fit=crop" alt="お歳暮2026" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">季節</span>
             <h2 class="blog-card-title">【2026年】お歳暮おすすめギフト15選｜相場・マナー・時期も解説</h2>
@@ -411,9 +480,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="birthday-gift-men-30s.html">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=360&fit=crop" alt="30代男性誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=360&fit=crop" alt="30代男性誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">【2026年】30代男性が本当に喜ぶ誕生日プレゼント15選｜予算別おすすめ</h2>
@@ -423,9 +492,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="gift-for-wife-birthday.html">
-          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=360&fit=crop" alt="妻への誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=360&fit=crop" alt="妻への誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">妻が本当に喜ぶ誕生日プレゼント15選｜20代・30代・40代年代別おすすめ</h2>
@@ -435,9 +504,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="gift-for-friend-female.html">
-          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="女友達への誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="女友達への誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">【センス抜群】女友達に贈る誕生日プレゼント15選｜予算1,000円〜5,000円</h2>
@@ -447,9 +516,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="graduation-gift.html">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=360&fit=crop" alt="卒業祝い・入学祝い">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=360&fit=crop" alt="卒業祝い・入学祝い" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お祝い</span>
             <h2 class="blog-card-title">【2026年】卒業祝い・入学祝いにおすすめプレゼント15選｜相場とマナーも解説</h2>
@@ -459,21 +528,21 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="kanreki-gift.html">
-          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="還暦祝いプレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="還暦祝いプレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お祝い</span>
             <h2 class="blog-card-title">【2026年】還暦祝いに喜ばれるプレゼント15選｜男性・女性別おすすめギフト</h2>
-            <p class="blog-card-excerpt">60歳の節目を祝う還暦祝い。男性向け・女性向け・共通で喜ばれるギフトを15個厳選。予算相場や選び方のコツも解説。</p>
+            <p class="blog-card-excerpt">60歳の節目を祝う還暦祝い。男性向け・女性向け・共通で喜ばれるギフトを15個厳選。</p>
             <span class="blog-card-date">2026.04.13</span>
           </div>
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="budget">
         <a href="thank-you-gift-casual.html">
-          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="ちょっとしたお礼ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="ちょっとしたお礼ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">予算別</span>
             <h2 class="blog-card-title">【厳選】ちょっとしたお礼に喜ばれるプチギフト15選｜500円〜3,000円</h2>
@@ -483,9 +552,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="business">
         <a href="retirement-gift.html">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=360&fit=crop" alt="退職祝い・送別品">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=360&fit=crop" alt="退職祝い・送別品" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">ビジネス</span>
             <h2 class="blog-card-title">退職祝い・送別品のおすすめ10選｜上司・同僚・部下への贈り物</h2>
@@ -495,9 +564,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="budget">
         <a href="budget-5000-gift.html">
-          <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=600&h=360&fit=crop" alt="予算5,000円プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=600&h=360&fit=crop" alt="予算5,000円プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">予算別</span>
             <h2 class="blog-card-title">予算5,000円で贈るセンスのいいプレゼント12選｜男女別おすすめ</h2>
@@ -507,9 +576,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="anniversary">
         <a href="anniversary-gift-couple.html">
-          <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=360&fit=crop" alt="結婚記念日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=360&fit=crop" alt="結婚記念日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">記念日</span>
             <h2 class="blog-card-title">結婚記念日のプレゼント｜年数別おすすめギフトと過ごし方</h2>
@@ -519,9 +588,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="gift-for-kids-birthday.html">
-          <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=360&fit=crop" alt="子供の誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=360&fit=crop" alt="子供の誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">子供が喜ぶ誕生日プレゼント｜年齢別おすすめ15選【2026年】</h2>
@@ -531,9 +600,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="housewarming-gift.html">
-          <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=360&fit=crop" alt="新築祝い・引越し祝い">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=360&fit=crop" alt="新築祝い・引越し祝い" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お祝い</span>
             <h2 class="blog-card-title">新築祝い・引越し祝いのおすすめギフト10選｜マナーと相場も解説</h2>
@@ -543,9 +612,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="season">
         <a href="ochugen-2026.html">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=360&fit=crop" alt="お中元2026">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=360&fit=crop" alt="お中元2026" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">お中元</span>
             <h2 class="blog-card-title">【2026年】お中元おすすめ12選｜もらって嬉しい人気ギフトランキング</h2>
@@ -555,9 +624,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="wedding-gift-guide.html">
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=360&fit=crop" alt="結婚祝いガイド">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=360&fit=crop" alt="結婚祝いガイド" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">結婚祝い</span>
             <h2 class="blog-card-title">結婚祝いの贈り物マナーとおすすめギフト10選｜金額相場も解説</h2>
@@ -567,9 +636,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="gift-for-boyfriend.html">
-          <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600&h=360&fit=crop" alt="彼氏への誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600&h=360&fit=crop" alt="彼氏への誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">彼氏が喜ぶ誕生日プレゼント｜年代別おすすめ15選【2026年版】</h2>
@@ -579,9 +648,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="celebration">
         <a href="baby-shower-gift.html">
-          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&h=360&fit=crop" alt="出産祝い">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&h=360&fit=crop" alt="出産祝い" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">出産祝い</span>
             <h2 class="blog-card-title">出産祝いで本当に嬉しかったもの12選｜先輩ママの声から厳選</h2>
@@ -591,9 +660,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="season">
         <a href="fathers-day-2026.html">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=360&fit=crop" alt="父の日ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=360&fit=crop" alt="父の日ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">父の日</span>
             <h2 class="blog-card-title">【2026年】父の日に喜ばれるプレゼント15選｜予算別おすすめギフト</h2>
@@ -603,9 +672,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="mothers-day">
         <a href="mothers-day-2026.html">
-          <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=600&h=360&fit=crop" alt="母の日ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=600&h=360&fit=crop" alt="母の日ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">母の日</span>
             <h2 class="blog-card-title">【2026年】母の日に本当に喜ばれるプレゼント15選｜予算別おすすめギフト</h2>
@@ -615,9 +684,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="mothers-day">
         <a href="mothers-day-not-flowers.html">
-          <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="花以外の母の日ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&h=360&fit=crop" alt="花以外の母の日ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">母の日</span>
             <h2 class="blog-card-title">母の日に花以外で贈りたい！お母さんが喜ぶ実用的なプレゼント10選</h2>
@@ -627,9 +696,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="budget">
         <a href="gift-budget-3000.html">
-          <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&h=360&fit=crop" alt="3000円以下ギフト">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&h=360&fit=crop" alt="3000円以下ギフト" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">予算別</span>
             <h2 class="blog-card-title">予算3,000円以下でも高見え！センスが光るプレゼント12選</h2>
@@ -639,9 +708,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="mothers-day">
         <a href="mothers-day-from-husband.html">
-          <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&h=360&fit=crop" alt="義母へのプレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&h=360&fit=crop" alt="義母へのプレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">母の日</span>
             <h2 class="blog-card-title">義母への母の日プレゼント｜失敗しない選び方と人気ギフト8選</h2>
@@ -651,9 +720,9 @@
         </a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card" data-cat="birthday">
         <a href="birthday-gift-women.html">
-          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="女性への誕生日プレゼント">
+          <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=360&fit=crop" alt="女性への誕生日プレゼント" loading="lazy"></div>
           <div class="blog-card-body">
             <span class="blog-card-tag">誕生日</span>
             <h2 class="blog-card-title">【年代別】女性が本当に嬉しい誕生日プレゼント｜20代・30代・40代・50代</h2>
@@ -667,7 +736,65 @@
   </section>
 
   <footer class="footer">
-    <p>&copy; 2026 Okurite. All rights reserved.</p>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Okurite</span>
+          <p>シーン別ギフト・プレゼント検索サービス。<br>母の日・父の日・誕生日・結婚祝いなど、<br>あらゆるシーンのギフト選びをサポートします。</p>
+        </div>
+        <div class="footer-col">
+          <h4>シーン別</h4>
+          <ul>
+            <li><a href="mothers-day-2026.html">母の日ギフト</a></li>
+            <li><a href="fathers-day-2026.html">父の日ギフト</a></li>
+            <li><a href="birthday-gift-women.html">誕生日プレゼント</a></li>
+            <li><a href="wedding-gift-guide.html">結婚祝い</a></li>
+            <li><a href="baby-shower-gift.html">出産祝い</a></li>
+            <li><a href="christmas-gift-2026.html">クリスマス</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>予算別</h4>
+          <ul>
+            <li><a href="budget-500-gift.html">500円以下</a></li>
+            <li><a href="gift-exchange-1000.html">1,000円</a></li>
+            <li><a href="budget-2000-gift.html">2,000円</a></li>
+            <li><a href="gift-budget-3000.html">3,000円</a></li>
+            <li><a href="budget-5000-gift.html">5,000円</a></li>
+            <li><a href="budget-10000-gift.html">10,000円</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。</p>
+        <p style="margin-top:8px;"><a href="../">TOP</a> | <a href="./">コラム</a> | <a href="../compare.html">比較</a></p>
+        <p style="margin-top:8px;">&copy; 2026 Okurite. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+<script>
+// Category filter
+document.querySelectorAll('.category-nav a').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.category-nav a').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.blog-card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Header shadow on scroll
+window.addEventListener('scroll', () => {
+  document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 10);
+});
+</script>
 </body>
 </html>
