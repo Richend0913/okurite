@@ -428,7 +428,7 @@ img { max-width: 100%; height: auto; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 32px;
   margin-bottom: 32px;
 }
@@ -491,6 +491,14 @@ img { max-width: 100%; height: auto; }
 }
 
 /* -- Utility -- */
+/* -- Reading Time -- */
+.reading-time {
+  display: inline-block;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-left: 12px;
+}
+
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); border: 0;
