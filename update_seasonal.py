@@ -113,8 +113,11 @@ def main():
     sp = SPOT.get(name)
     if sp and (BLOG / f"{sp[0]}.html").exists():
         slug, tag, ct, cd, kw = sp
+        import gen_article_ai as G
+        rel = G.get_image(kw, "seasonal", slug)
+        img_src = ("blog/" + rel) if rel else G.FALLBACK_IMG
         card = (f'<a href="blog/{slug}.html" class="featured-card">\n'
-                f'      <img class="featured-card-img" src="{lf(kw,400,240,slug)}" alt="{ct}" loading="lazy">\n'
+                f'      <img class="featured-card-img" src="{img_src}" alt="{ct}" loading="lazy">\n'
                 f'      <div class="featured-card-body">\n'
                 f'        <span class="featured-card-tag">{tag}</span>\n'
                 f'        <div class="featured-card-title">{ct}</div>\n'

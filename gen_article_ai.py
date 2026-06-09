@@ -45,10 +45,33 @@ def llm(prompt, key, max_tokens=2200):
         return json.load(r)["choices"][0]["message"]["content"]
 
 
-def lf(kw, w, h, seed):
-    """loremflickrでキーワード関連の画像URL(lockで固定)。商品に合った画像を出す。"""
-    k = urllib.parse.quote((kw or "gift").strip().replace(" ", ","))
-    return f"https://loremflickr.com/{w}/{h}/{k}?lock={abs(hash(str(seed))) % 100000}"
+IMGDIR = HERE / "blog" / "img"
+FALLBACK_IMG = "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&h=400&fit=crop"
+
+
+def get_image(kw, slug, idx):
+    """Openverse(キー不要のCC画像検索)で関連実画像をローカルに保存し相対パスを返す。
+    商品キーワードに合った本物の写真。失敗時はNone(呼び出し側でfallback)。"""
+    IMGDIR.mkdir(parents=True, exist_ok=True)
+    name = f"{slug}_{idx}.jpg"
+    dest = IMGDIR / name
+    try:
+        u = f"https://api.openverse.org/v1/images/?q={urllib.parse.quote(kw or 'gift')}&page_size=5&mature=false"
+        d = json.load(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "okurite/1.0"}), timeout=20))
+        for r in d.get("results", []):
+            src = r.get("url") or r.get("thumbnail")
+            if not src or not src.startswith("http"):
+                continue
+            try:
+                data = urllib.request.urlopen(urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
+                if len(data) > 3000:
+                    dest.write_bytes(data)
+                    return f"img/{name}"
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return None
 
 
 def amazon(kw):
@@ -124,7 +147,7 @@ FOOTER = """    <footer class="footer">
 
 def render(d, slug):
     url = f"https://richend0913.github.io/okurite/blog/{slug}.html"
-    hero_img = lf(d.get("hero_kw", "gift present"), 800, 400, slug)
+    hero_img = get_image(d.get("hero_kw", "gift present"), slug, "hero") or FALLBACK_IMG
     toc = "\n".join(f'      <a href="#s{i}">{i+1}. {s["h2"]}</a>' for i, s in enumerate(d["sections"]))
     secs = []
     for i, s in enumerate(d["sections"]):
@@ -133,8 +156,9 @@ def render(d, slug):
     cards = []
     for j, g in enumerate(d["gifts"]):
         kw = g["keyword"]
+        card_img = get_image(g.get('img') or g['name'], slug, j) or FALLBACK_IMG
         cards.append(f'''    <div class="gift-card">
-      <img class="gift-card-img" src="{lf(g.get('img') or g['name'], 400, 250, slug + str(j))}" alt="{g['name']}" loading="lazy">
+      <img class="gift-card-img" src="{card_img}" alt="{g['name']}" loading="lazy">
       <div class="gift-card-title">{j+1}. {g['name']}</div>
       <div class="gift-card-price">{g['price']}</div>
       <div class="gift-card-desc">{g['desc']}</div>
