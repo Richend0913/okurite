@@ -46,6 +46,22 @@ CAL = [
 ]
 
 
+import urllib.parse
+def lf(kw, w, h, seed):
+    k = urllib.parse.quote((kw or "gift").strip().replace(" ", ","))
+    return f"https://loremflickr.com/{w}/{h}/{k}?lock={abs(hash(str(seed))) % 100000}"
+
+# 季節ごとの「人気記事」筆頭スポット(slug, tag, card_title, card_desc, 画像kw)。既存featuredと被らない記事を選ぶ
+SPOT = {
+    "父の日": ("gift-for-father-in-law", "父の日", "義父も喜ぶ父の日ギフト｜失敗しない選び方", "目上の方にも安心の上質ギフトを予算別に厳選", "fathers day gift"),
+    "お中元": ("ochugen-2026", "お中元", "【2026】お中元おすすめギフト｜相場とマナー", "夏のご挨拶に喜ばれる贈り物を厳選", "summer gift box"),
+    "クリスマス": ("christmas-gift-2026", "クリスマス", "【2026】クリスマスプレゼント15選｜相手別", "彼氏・彼女・友達別の本命ギフトを厳選", "christmas gift"),
+    "母の日": ("mothers-day-2026", "母の日", "【2026】母の日に本当に喜ばれるプレゼント15選", "予算別にお母さんが喜ぶギフトを厳選", "mothers day flowers"),
+    "バレンタイン": ("valentine-gift", "バレンタイン", "本命・義理別バレンタインギフト", "チョコ以外も喜ばれる選び方", "valentine chocolate"),
+    "ホワイトデー": ("white-day-gift", "ホワイトデー", "ホワイトデーお返し特集｜相場とおすすめ", "もらって嬉しいお返しを厳選", "white day gift"),
+}
+
+
 def pick(today):
     md = today.strftime("%m-%d")
     future = [e for e in CAL if e[0] >= md]
@@ -92,6 +108,20 @@ def main():
     # 特集リンク群
     html = re.sub(r'(<div class="countdown-links">)[\s\S]*?(\n    </div>)',
                   lambda m: m.group(1)+"\n"+links_html(cands)+m.group(2), html, count=1)
+
+    # 「人気記事」の筆頭カードを季節スポットに差し替え(トップ商品が季節と不一致な問題の解消)
+    sp = SPOT.get(name)
+    if sp and (BLOG / f"{sp[0]}.html").exists():
+        slug, tag, ct, cd, kw = sp
+        card = (f'<a href="blog/{slug}.html" class="featured-card">\n'
+                f'      <img class="featured-card-img" src="{lf(kw,400,240,slug)}" alt="{ct}" loading="lazy">\n'
+                f'      <div class="featured-card-body">\n'
+                f'        <span class="featured-card-tag">{tag}</span>\n'
+                f'        <div class="featured-card-title">{ct}</div>\n'
+                f'        <p class="featured-card-desc">{cd}</p>\n'
+                f'      </div>\n    </a>')
+        html = re.sub(r'(<div class="featured-grid">\s*)<a href="[^"]*" class="featured-card">[\s\S]*?</a>',
+                      lambda m: m.group(1)+card, html, count=1)
 
     if html != orig:
         INDEX.write_text(html, encoding="utf-8")

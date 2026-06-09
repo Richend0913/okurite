@@ -45,6 +45,12 @@ def llm(prompt, key, max_tokens=2200):
         return json.load(r)["choices"][0]["message"]["content"]
 
 
+def lf(kw, w, h, seed):
+    """loremflickrでキーワード関連の画像URL(lockで固定)。商品に合った画像を出す。"""
+    k = urllib.parse.quote((kw or "gift").strip().replace(" ", ","))
+    return f"https://loremflickr.com/{w}/{h}/{k}?lock={abs(hash(str(seed))) % 100000}"
+
+
 def amazon(kw):
     return f"https://www.amazon.co.jp/s?k={urllib.parse.quote(kw)}&tag={AMAZON_TAG}"
 
@@ -67,8 +73,9 @@ def gen_json(theme, key):
    {{"h2":"見出し","paras":["本文"]}}
  ],
  "gifts": [
-   {{"name":"具体的な商品名(必ず実在ブランド例を括弧で。例:名入れタンブラー(サーモス・スタンレー))","price":"¥3,000〜¥8,000","desc":"なぜその相手に喜ばれるか具体的根拠で130字","keyword":"購入につながる具体的な日本語検索キーワード"}}
+   {{"name":"具体的な商品名(必ず実在ブランド例を括弧で。例:名入れタンブラー(サーモス・スタンレー))","price":"¥3,000〜¥8,000","desc":"なぜその相手に喜ばれるか具体的根拠で130字","keyword":"購入につながる具体的な日本語検索キーワード","img":"商品写真用の英語キーワード1-2語(例:tumbler, wristwatch, whiskey, leather wallet)"}}
  ],
+ "hero_kw": "記事トップ画像用の英語キーワード(例: fathers day gift)",
  "matome": ["まとめ段落1(100字)","背中を押すまとめ段落2(100字)"]
 }}
 厳守要件:
@@ -117,6 +124,7 @@ FOOTER = """    <footer class="footer">
 
 def render(d, slug):
     url = f"https://richend0913.github.io/okurite/blog/{slug}.html"
+    hero_img = lf(d.get("hero_kw", "gift present"), 800, 400, slug)
     toc = "\n".join(f'      <a href="#s{i}">{i+1}. {s["h2"]}</a>' for i, s in enumerate(d["sections"]))
     secs = []
     for i, s in enumerate(d["sections"]):
@@ -126,7 +134,7 @@ def render(d, slug):
     for j, g in enumerate(d["gifts"]):
         kw = g["keyword"]
         cards.append(f'''    <div class="gift-card">
-      <img class="gift-card-img" src="{CARD_IMGS[j % len(CARD_IMGS)]}" alt="{g['name']}" loading="lazy">
+      <img class="gift-card-img" src="{lf(g.get('img') or g['name'], 400, 250, slug + str(j))}" alt="{g['name']}" loading="lazy">
       <div class="gift-card-title">{j+1}. {g['name']}</div>
       <div class="gift-card-price">{g['price']}</div>
       <div class="gift-card-desc">{g['desc']}</div>
@@ -154,7 +162,7 @@ def render(d, slug):
   <meta property="og:description" content="{d['desc']}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{url}">
-  <meta property="og:image" content="{HERO}">
+  <meta property="og:image" content="{hero_img}">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -170,7 +178,7 @@ def render(d, slug):
     <div class="breadcrumb"><a href="../">TOP</a> &gt; <a href="./">コラム</a> &gt; {d['title']}</div>
     <h1>{d['title']}</h1>
     <div class="article-meta">{date.today().year}年{date.today().month}月{date.today().day}日 公開｜ギフト特集</div>
-    <img class="article-hero" src="{HERO}" alt="{d['title']}">
+    <img class="article-hero" src="{hero_img}" alt="{d['title']}">
 {intro}
     <div class="toc"><div class="toc-title">この記事の目次</div>
 {toc}
