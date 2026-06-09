@@ -70,14 +70,13 @@ def main():
     existing = existing_titles()
     print(f"既存{len(existing)}記事。AIが新テーマ{n}個を考案中...")
     topics = ai_topics(existing, n, key)
-    # 既出の kanreki も(あれば)一覧未登録なので含める
-    if (BLOG / "kanreki-gift.html").exists() and "kanreki-gift" not in [t["slug"] for t in topics]:
-        topics.insert(0, {"theme": "還暦祝い 父 母 60歳 プレゼント", "slug": "kanreki-gift", "tag": "お祝い"})
     print("採用テーマ:", [t["slug"] for t in topics])
 
     cards, sitemap_lines, published = [], [], []
     for t in topics:
         try:
+            if (BLOG / f"{t['slug']}.html").exists():
+                print(f"  skip {t['slug']}: 既存記事のため上書きしない"); continue
             d = G.gen_json(t["theme"], key)
             (BLOG / f"{t['slug']}.html").write_text(G.render(d, t["slug"]), encoding="utf-8")
             cards.append(card_html(t["slug"], d["title"], t.get("tag", "ギフト"), d["desc"][:55]))
