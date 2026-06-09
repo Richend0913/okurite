@@ -106,7 +106,9 @@ def main():
     msg = f"feat: AI自律生成 {len(published)}記事公開 ({', '.join(s for s,_ in published)})"
     for cmd in [["git", "add", "-A"], ["git", "commit", "-m", msg], ["git", "push", "origin", "master"]]:
         r = subprocess.run(cmd, cwd=HERE, capture_output=True, text=True)
-        print(f"$ {' '.join(cmd[:2])}: rc={r.returncode} {(r.stderr or r.stdout).strip()[:160]}")
+        print(f"$ {' '.join(cmd[:2])}: rc={r.returncode} {((r.stderr or '') + (r.stdout or '')).strip()[:160]}")
+        if r.returncode != 0 and cmd[1] == 'commit' and 'nothing to commit' not in (r.stdout or ''):
+            pass  # commit失敗(空コミット等)でもpushは試みる
 
 
 if __name__ == "__main__":
