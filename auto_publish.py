@@ -96,11 +96,14 @@ def main():
     pos = idx.find(CARD_MARK)
     idx = idx[:pos] + "".join(cards) + idx[pos:]
     INDEX.write_text(idx, encoding="utf-8")
-    # sitemap.xml に追記(</urlset>の前)
-    sm = SITEMAP.read_text(encoding="utf-8")
-    sm = sm.replace("</urlset>", "\n".join(sitemap_lines) + "\n</urlset>")
-    SITEMAP.write_text(sm, encoding="utf-8")
-    print(f"index/sitemap更新: {len(published)}記事")
+    # 新記事にSEO/CV改善を適用(結論ボックス/見るボタン/lazy/クリック計測/関連記事/JSON-LD)+sitemap全頁再生成
+    try:
+        import seo_cv_upgrade as U
+        U.upgrade_files([str(BLOG / f"{s}.html") for s, _ in published])
+        print(f"SEO/CV改善適用+sitemap再生成: {len(published)}記事")
+    except Exception as e:
+        print(f"SEO/CV改善でエラー(記事公開は継続): {e}")
+    print(f"index更新: {len(published)}記事")
 
     # git公開
     msg = f"feat: AI自律生成 {len(published)}記事公開 ({', '.join(s for s,_ in published)})"

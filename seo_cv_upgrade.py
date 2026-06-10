@@ -140,6 +140,31 @@ def process(f, registry, apply):
     return changes
 
 
+def regen_sitemap():
+    """全公開ページでsitemap.xmlを再生成(admin.html除外)。"""
+    today = date.today().isoformat()
+    pages = [("", "1.0", "daily"), ("compare.html", "0.5", "monthly"), ("blog/", "0.8", "daily")]
+    for f in sorted(BLOG.glob("*.html")):
+        if f.name != "index.html":
+            pages.append((f"blog/{f.name}", "0.7", "monthly"))
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for rel, prio, freq in pages:
+        out.append(f'  <url><loc>{BASE}/{rel}</loc><lastmod>{today}</lastmod>'
+                   f'<changefreq>{freq}</changefreq><priority>{prio}</priority></url>')
+    out.append('</urlset>')
+    (HERE / "sitemap.xml").write_text("\n".join(out) + "\n", encoding="utf-8")
+    return len(pages)
+
+
+def upgrade_files(files):
+    """指定記事に改善処理を適用(自動公開パイプラインから呼ぶ用)。"""
+    reg = build_registry()
+    for f in files:
+        process(Path(f), reg, apply=True)
+    regen_sitemap()
+
+
 def main():
     apply = "--apply" in sys.argv
     reg = build_registry()
