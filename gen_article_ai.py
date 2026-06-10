@@ -49,28 +49,68 @@ IMGDIR = HERE / "blog" / "img"
 FALLBACK_IMG = "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&h=400&fit=crop"
 
 
-def get_image(kw, slug, idx):
-    """Openverse(キー不要のCC画像検索)で関連実画像をローカルに保存し相対パスを返す。
-    商品キーワードに合った本物の写真。失敗時はNone(呼び出し側でfallback)。"""
-    IMGDIR.mkdir(parents=True, exist_ok=True)
-    name = f"{slug}_{idx}.jpg"
-    dest = IMGDIR / name
+def _env(name):
+    for cand in [HERE / ".env", HERE.parent / "short-video-maker" / ".env"]:
+        if cand.exists():
+            for line in cand.read_text(encoding="utf-8").splitlines():
+                if line.startswith(name + "="):
+                    return line.split("=", 1)[1].strip()
+    return ""
+
+
+def _save(url, dest):
     try:
-        u = f"https://api.openverse.org/v1/images/?q={urllib.parse.quote(kw or 'gift')}&page_size=5&mature=false"
+        data = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
+        if len(data) > 2500:
+            dest.write_bytes(data)
+            return True
+    except Exception:
+        pass
+    return False
+
+
+def _rakuten_image(kw_ja, dest):
+    """楽天商品検索APIで“実際の商品写真”を取得(applicationId要)。商品サイトなので一致率が高い。"""
+    appid = _env("RAKUTEN_APP_ID")
+    if not appid or not kw_ja:
+        return False
+    try:
+        u = ("https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601"
+             f"?applicationId={appid}&keyword={urllib.parse.quote(kw_ja)}&hits=5&imageFlag=1&sort=standard")
+        d = json.load(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "okurite/1.0"}), timeout=20))
+        for it in d.get("Items", []):
+            item = it.get("Item", {})
+            for im in (item.get("mediumImageUrls") or []):
+                url = im.get("imageUrl") if isinstance(im, dict) else im
+                if url:
+                    url = re.sub(r"\?_ex=\d+x\d+", "?_ex=500x500", url)
+                    if _save(url, dest):
+                        return True
+    except Exception:
+        pass
+    return False
+
+
+def _openverse_image(kw_en, dest):
+    try:
+        u = f"https://api.openverse.org/v1/images/?q={urllib.parse.quote(kw_en or 'gift')}&page_size=5&mature=false"
         d = json.load(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "okurite/1.0"}), timeout=20))
         for r in d.get("results", []):
             src = r.get("url") or r.get("thumbnail")
-            if not src or not src.startswith("http"):
-                continue
-            try:
-                data = urllib.request.urlopen(urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
-                if len(data) > 3000:
-                    dest.write_bytes(data)
-                    return f"img/{name}"
-            except Exception:
-                continue
+            if src and src.startswith("http") and _save(src, dest):
+                return True
     except Exception:
         pass
+    return False
+
+
+def get_image(kw_ja, kw_en, slug, idx):
+    """商品画像を取得しローカル保存→相対パス。優先: 楽天“実商品写真”(一致率高)→ Openverse。失敗時None。"""
+    IMGDIR.mkdir(parents=True, exist_ok=True)
+    name = f"{slug}_{idx}.jpg"
+    dest = IMGDIR / name
+    if _rakuten_image(kw_ja, dest) or _openverse_image(kw_en, dest):
+        return f"img/{name}"
     return None
 
 
@@ -147,7 +187,7 @@ FOOTER = """    <footer class="footer">
 
 def render(d, slug):
     url = f"https://richend0913.github.io/okurite/blog/{slug}.html"
-    hero_img = get_image(d.get("hero_kw", "gift present"), slug, "hero") or FALLBACK_IMG
+    hero_img = get_image(None, d.get("hero_kw", "gift present"), slug, "hero") or FALLBACK_IMG
     toc = "\n".join(f'      <a href="#s{i}">{i+1}. {s["h2"]}</a>' for i, s in enumerate(d["sections"]))
     secs = []
     for i, s in enumerate(d["sections"]):
@@ -156,7 +196,7 @@ def render(d, slug):
     cards = []
     for j, g in enumerate(d["gifts"]):
         kw = g["keyword"]
-        card_img = get_image(g.get('img') or g['name'], slug, j) or FALLBACK_IMG
+        card_img = get_image(g['name'], g.get('img') or g['name'], slug, j) or FALLBACK_IMG
         cards.append(f'''    <div class="gift-card">
       <img class="gift-card-img" src="{card_img}" alt="{g['name']}" loading="lazy">
       <div class="gift-card-title">{j+1}. {g['name']}</div>

@@ -114,7 +114,7 @@ def main():
     if sp and (BLOG / f"{sp[0]}.html").exists():
         slug, tag, ct, cd, kw = sp
         import gen_article_ai as G
-        rel = G.get_image(kw, "seasonal", slug)
+        rel = G.get_image(None, kw, "seasonal", slug)
         img_src = ("blog/" + rel) if rel else G.FALLBACK_IMG
         card = (f'<a href="blog/{slug}.html" class="featured-card">\n'
                 f'      <img class="featured-card-img" src="{img_src}" alt="{ct}" loading="lazy">\n'

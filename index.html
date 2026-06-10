@@ -14,7 +14,7 @@
   <title>Okurite（おくりて）| 父の日ギフト特集 2026｜お父さんが本当に喜ぶプレゼント</title>
   <link rel="canonical" href="https://richend0913.github.io/okurite/">
   <meta name="description" content="父の日2026特集。お父さんが本当に喜ぶプレゼントを予算別・相手別に厳選。Amazon・楽天の人気商品を比較。">
-  <meta name="keywords" content="母の日ギフト,母の日プレゼント,母の日2026,ギフト,プレゼント,贈り物,誕生日,結婚祝い,出産祝い,クリスマス,お中元,お歳暮,おすすめギフト">
+  <meta name="keywords" content="父の日ギフト,父の日プレゼント,父の日2026,ギフト,プレゼント,贈り物,誕生日,結婚祝い,出産祝い,母の日,クリスマス,お中元,おすすめギフト">
   <meta name="google-site-verification" content="GRXPtbHLxfl8zA96yG12Rml4YJ00PvNXt6lHKJOYQiE" />
   <meta property="og:title" content="Okurite（おくりて）| 父の日ギフト特集 2026｜お父さんが本当に喜ぶプレゼント">
   <meta property="og:description" content="父の日2026特集。お父さんが本当に喜ぶプレゼントを予算別・相手別に厳選。Amazon・楽天の人気商品を比較。">
@@ -1443,6 +1443,17 @@ fetch('gifts.json')
   .catch(() => {
     document.getElementById('gift-grid').innerHTML = '<div class="empty-state"><p>データの読み込みに失敗しました。ページを再読み込みしてください。</p></div>';
   });
+</script>
+<script>/* okurite-aff-track */
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a'); if(!a||!a.href) return;
+  var h=a.href, t=(a.textContent||''), d=null;
+  if(h.indexOf('amazon.co.jp')>-1||h.indexOf('amzn')>-1) d='amazon';
+  else if(h.indexOf('rakuten.co.jp')>-1||h.indexOf('hb.afl.rakuten')>-1) d='rakuten';
+  else if(h.indexOf('moshimo')>-1||h.indexOf('a8.net')>-1||h.indexOf('valuecommerce')>-1)
+    d = t.indexOf('楽天')>-1?'rakuten':(t.indexOf('Amazon')>-1?'amazon':'affiliate');
+  if(d&&typeof gtag==='function') gtag('event','affiliate_click',{affiliate:d,link_url:h,page:location.pathname});
+},true);
 </script>
 </body>
 </html>

@@ -1,2 +1,3 @@
 .claude/
 logs_auto.txt
+__pycache__/
