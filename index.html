@@ -1312,7 +1312,7 @@
 /* ===== GIFT GRID ===== */
 const BATCH = 12;
 let allGifts = [], filtered = [], shown = 0;
-const filters = { scene: '', target: '', budget: '' };
+const filters = { scene: 'fathers-day', target: '', budget: '' };  /* 父の日シーズン: 初期表示を父の日ギフトに */
 
 const RAKUTEN_AFF = '522e40a0.f2dc4208.522e40a1.385f875e';
 function affUrl(url) {
@@ -1438,6 +1438,8 @@ fetch('gifts.json')
   .then(r => r.json())
   .then(data => {
     allGifts = data;
+    /* 初期フィルタ(父の日)をボタンにも反映 */
+    document.querySelectorAll('[data-type="scene"]').forEach(b => b.classList.toggle('active', b.dataset.value === filters.scene));
     applyFilter();
   })
   .catch(() => {
