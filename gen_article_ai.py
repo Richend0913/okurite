@@ -35,14 +35,27 @@ def nv_key():
     raise SystemExit("NVIDIA_API_KEY not found")
 
 
-def llm(prompt, key, max_tokens=2200):
+def llm(prompt, key, max_tokens=2200, retries=4):
+    """NVIDIA無料枠は間欠的にタイムアウトする。リトライで空振り公開を防ぐ。"""
     body = {"model": "meta/llama-3.3-70b-instruct",
             "messages": [{"role": "user", "content": prompt}],
             "temperature": 0.7, "max_tokens": max_tokens}
-    req = urllib.request.Request(NV_URL, data=json.dumps(body).encode(),
-        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, method="POST")
-    with urllib.request.urlopen(req, timeout=150) as r:
-        return json.load(r)["choices"][0]["message"]["content"]
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(NV_URL, data=json.dumps(body).encode(),
+                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, method="POST")
+            with urllib.request.urlopen(req, timeout=180) as r:
+                return json.load(r)["choices"][0]["message"]["content"]
+        except Exception as e:
+            last = e
+            wait = 5 * (attempt + 1)
+            print(f"  llm retry {attempt+1}/{retries} ({type(e).__name__}); {wait}s待機")
+            try:
+                import time; time.sleep(wait)
+            except Exception:
+                pass
+    raise last
 
 
 IMGDIR = HERE / "blog" / "img"
