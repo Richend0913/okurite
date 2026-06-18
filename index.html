@@ -895,7 +895,9 @@
     </div>
 
     <div class="diagnosis-result" id="diagnosis-result">
-      <h3>あなたにおすすめの記事</h3>
+      <h3>あなたにピッタリのギフト</h3>
+      <div class="gift-grid" id="diagnosis-gifts"></div>
+      <h3 style="margin-top:28px;">参考になる記事</h3>
       <div class="diagnosis-articles" id="diagnosis-articles"></div>
       <button class="diagnosis-restart" id="diagnosis-restart">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
@@ -1266,7 +1268,35 @@
     return score;
   }
 
+  function scoreGiftForDiagnosis(g, ans) {
+    let s = 0;
+    const occMap = { birthday:['birthday'], anniversary:['anniversary','wedding'], celebration:['wedding','graduation','baby-shower','retirement'], thanks:['thanks','mothers-day','fathers-day'] };
+    const relMap = { partner:['female','male'], family:['parents','kids'], friend:['female','male'], coworker:['boss','male','female'] };
+    const budMap = { low:['under1k','1k3k'], mid:['3k5k'], high:['5k10k'], premium:['10k+'] };
+    const sc = Array.isArray(g.scenes) ? g.scenes : [];
+    const tg = Array.isArray(g.targets) ? g.targets : [];
+    if (ans.occasion && occMap[ans.occasion] && occMap[ans.occasion].some(x => sc.includes(x))) s += 3;
+    if (ans.relation && relMap[ans.relation] && relMap[ans.relation].some(x => tg.includes(x))) s += 2;
+    if (ans.budget && budMap[ans.budget] && budMap[ans.budget].includes(g.budget)) s += 2;
+    if (ans.type && g.category) {
+      if (ans.type === 'gourmet' && /グルメ|食品|スイーツ|肉|お酒|ドリンク|飲料/.test(g.category)) s += 2;
+      if (ans.type === 'experience' && /体験|チケット|旅行|カタログ/.test(g.category)) s += 2;
+      if (ans.type === 'stylish' && /コスメ|ファッション|アクセサリー|雑貨|インテリア/.test(g.category)) s += 1;
+      if (ans.type === 'practical' && /家電|キッチン|日用|文具|ガジェット/.test(g.category)) s += 1;
+    }
+    return s;
+  }
+
   function showResult() {
+    // 購入意欲が最高潮の瞬間に、診断回答に合うギフト商品カードを最優先表示
+    const giftBox = document.getElementById('diagnosis-gifts');
+    if (giftBox && allGifts && allGifts.length) {
+      const gscored = allGifts.map(g => ({ g, s: scoreGiftForDiagnosis(g, answers) }))
+        .sort((a, b) => b.s - a.s);
+      let picks = gscored.filter(x => x.s > 0).slice(0, 4).map(x => x.g);
+      if (picks.length < 3) picks = gscored.slice(0, 4).map(x => x.g); // 0マッチでも必ず出す
+      giftBox.innerHTML = picks.map((g, i) => renderCard(g, i)).join('');
+    }
     const scored = articles.map(a => ({ ...a, score: scoreArticle(a) }));
     scored.sort((a, b) => b.score - a.score);
     const top3 = scored.slice(0, 3);
