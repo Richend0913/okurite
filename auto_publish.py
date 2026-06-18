@@ -104,6 +104,12 @@ def main():
     except Exception as e:
         print(f"SEO/CV改善でエラー(記事公開は継続): {e}")
     print(f"index更新: {len(published)}記事")
+    # トップページの「新着記事」ウィジェットも最新に再生成(放置されて4月固定だった不具合の恒久対策)
+    try:
+        import update_home_new as HN
+        HN.main()
+    except Exception as e:
+        print(f"トップ新着更新でエラー(記事公開は継続): {e}")
 
     # git公開
     msg = f"feat: AI自律生成 {len(published)}記事公開 ({', '.join(s for s,_ in published)})"
