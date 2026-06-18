@@ -35,7 +35,7 @@ def nv_key():
     raise SystemExit("NVIDIA_API_KEY not found")
 
 
-def llm(prompt, key, max_tokens=2200, retries=4):
+def llm(prompt, key, max_tokens=2200, retries=6):
     """NVIDIA無料枠は間欠的にタイムアウトする。リトライで空振り公開を防ぐ。"""
     body = {"model": "meta/llama-3.3-70b-instruct",
             "messages": [{"role": "user", "content": prompt}],
