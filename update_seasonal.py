@@ -63,9 +63,13 @@ SPOT = {
 
 
 def pick(today):
-    md = today.strftime("%m-%d")
-    future = [e for e in CAL if e[0] >= md]
-    return future[0] if future else CAL[0]  # 無ければ翌年の最初(バレンタイン)
+    # ギフトは購入リードタイムがあるので「当日」はもう遅い→そのイベント当日に次の季節へ"先取り"で切替える。
+    # さらに数日前から次に寄せたい場合は LEAD を増やす(例:5=5日前から次の特集)。
+    LEAD = 0
+    import datetime as _dt
+    cutoff = (today + _dt.timedelta(days=LEAD)).strftime("%m-%d")
+    future = [e for e in CAL if e[0] > cutoff]   # 厳密に未来のイベントのみ(当日含む過ぎた特集は出さない)
+    return future[0] if future else CAL[0]       # 無ければ翌年の最初(バレンタイン)
 
 
 def links_html(cands):
@@ -93,6 +97,9 @@ def main():
 
     html = re.sub(r"<title>[^<]*</title>", f"<title>Okurite（おくりて）| {title}</title>", html, count=1)
     html = re.sub(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1)+desc+m.group(2), html, count=1)
+    # SEOキーワードも季節に合わせて自律更新(過ぎた特集名が残らないように)
+    html = re.sub(r'(<meta name="keywords" content=")[^"]*(")',
+                  lambda m: m.group(1)+f"{name},{name}2026,{name}ギフト,夏ギフト,ギフト,プレゼント,贈り物,誕生日,結婚祝い,おすすめギフト"+m.group(2), html, count=1)
     html = re.sub(r'(<meta property="og:title" content=")[^"]*(")', lambda m: m.group(1)+f"Okurite（おくりて）| {title}"+m.group(2), html, count=1)
     html = re.sub(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1)+desc+m.group(2), html, count=1)
     # heroバッジ等の「○○ギフト特集 2026」
