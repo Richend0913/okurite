@@ -99,13 +99,13 @@
     }
     .header-nav a:hover { color: var(--rose); border-bottom-color: var(--rose); }
     .hamburger {
-      display: none; flex-direction: column; justify-content: space-between;
-      width: 24px; height: 18px; background: none; border: none; cursor: pointer; padding: 0;
+      display: none; align-items: center; justify-content: center;
+      width: 28px; height: 28px; background: none; border: none; cursor: pointer; padding: 0; color: var(--text);
     }
-    .hamburger span { display: block; height: 2px; background: var(--text); transition: all .3s; transform-origin: center; }
-    .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    .hamburger-icon { width: 24px; height: 24px; }
+    .hamburger-icon--close { display: none; }
+    .hamburger.open .hamburger-icon--menu { display: none; }
+    .hamburger.open .hamburger-icon--close { display: block; }
     @media (max-width: 768px) {
       .hamburger { display: flex; }
       .header-nav {
@@ -644,8 +644,9 @@
         <li><a href="blog/">コラム</a></li>
       </ul>
     </nav>
-    <button class="hamburger" id="hamburger" aria-label="メニュー">
-      <span></span><span></span><span></span>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+      <svg class="hamburger-icon hamburger-icon--menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="hamburger-icon hamburger-icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
     </button>
   </div>
 </header>
@@ -1447,6 +1448,9 @@ document.getElementById('btn-more').addEventListener('click', renderGrid);
 document.getElementById('hamburger').addEventListener('click', function() {
   this.classList.toggle('open');
   document.getElementById('nav').classList.toggle('open');
+  const open = this.classList.contains('open');
+  this.setAttribute('aria-expanded', open ? 'true' : 'false');
+  this.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
 });
 
 const overlay = document.getElementById('modal-overlay');
