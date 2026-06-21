@@ -117,8 +117,9 @@ def main():
     html = re.sub(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1)+desc+m.group(2), html, count=1)
     # heroバッジ等の「○○ギフト特集 2026」
     html = re.sub(r"[一-龯ぁ-んァ-ヶ]+ギフト特集 2026", f"{name}ギフト特集 2026", html)
-    # navラベル
-    html = re.sub(r'(<a href="#mothers-day">)[^<]*(</a>)', lambda m: m.group(1)+f"{name}特集"+m.group(2), html, count=1)
+    # navラベル(リンク先idは #seasonal に統一済。旧 #mothers-day が残っていれば併せて修復)
+    html = html.replace('<a href="#mothers-day">', '<a href="#seasonal">')
+    html = re.sub(r'(<a href="#seasonal">)[^<]*(</a>)', lambda m: m.group(1)+f"{name}特集"+m.group(2), html, count=1)
     # カウントダウン見出し
     html = re.sub(r'(<div class="countdown-header">[\s\S]*?<h2>)[^<]*(</h2>)', lambda m: m.group(1)+f"{name} {jp}"+m.group(2), html, count=1)
     # カウントダウンsub
@@ -178,8 +179,12 @@ def main():
         html = re.sub(r'<li><a href="[^"]*"><span class="popular-rank">2</span>[\s\S]*?</a></li>',
                       lambda m: li2, html, count=1)
 
-    # ランキング日付の「更新: 2026年4月」固定を当月へ
-    html = html.replace("更新: 2026年4月", f"更新: {today.year}年{today.month}月")
+    # 日付の「○○2026年N月」固定を当月へ自律追従(表記ゆれ込み)。
+    #  - trust-bar:   「更新日: 2026年N月」 → 「更新日: {年}年{月}月」
+    #  - popular-date:「更新: 2026年N月」(日なし) → 「更新: {年}年{月}月」
+    # 接尾文言が違うため2つに分ける(一律化すると popular-date 側の表記が崩れる)。
+    html = re.sub(r"更新日: 2026年\d+月", f"更新日: {today.year}年{today.month}月", html)
+    html = re.sub(r"(?<!日)更新: 2026年\d+月", f"更新: {today.year}年{today.month}月", html)
 
     if html != orig:
         INDEX.write_text(html, encoding="utf-8")
