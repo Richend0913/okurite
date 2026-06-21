@@ -62,6 +62,19 @@ SPOT = {
 }
 
 
+# 季節名 → 診断/ギフトグリッドの scene フィルタ値
+SCENE_OF = {"母の日": "mothers-day", "父の日": "fathers-day", "お中元": "mid-year", "お歳暮": "year-end",
+            "クリスマス": "christmas", "バレンタイン": "", "ホワイトデー": ""}
+
+# 人気ランキング #2 用の季節記事(slug, title, tag)。#1のSPOTと別記事。blogに実在するものだけ採用される。
+SPOT2 = {
+    "お中元": ("obon-temiyage-2026", "お盆の手土産・帰省みやげ｜失敗しない選び方", "お盆"),
+    "父の日": ("gift-for-new-dad", "新米パパへの父の日ギフト｜初めての父の日に", "父の日"),
+    "母の日": ("mothers-day-not-flowers", "母の日に花以外で喜ばれるプレゼント10選", "母の日"),
+    "クリスマス": ("gift-for-boyfriend", "彼氏が喜ぶプレゼント｜年代別おすすめ", "誕生日"),
+}
+
+
 def pick(today):
     # ギフトは購入リードタイムがあるので「当日」はもう遅い→そのイベント当日に次の季節へ"先取り"で切替える。
     # さらに数日前から次に寄せたい場合は LEAD を増やす(例:5=5日前から次の特集)。
@@ -132,6 +145,41 @@ def main():
                 f'      </div>\n    </a>')
         html = re.sub(r'(<div class="featured-grid">\s*)<a href="[^"]*" class="featured-card">[\s\S]*?</a>',
                       lambda m: m.group(1)+card, html, count=1)
+
+    # ===== 過ぎた季節の「腐り」を自動修復(終了した父の日/母の日がトップに残る問題) =====
+    scene = SCENE_OF.get(name, "")
+
+    # A. 診断/グリッドの初期フィルタを現季節sceneに。さらに選択ボタンのactiveも同期。
+    html = re.sub(r"const filters = \{ scene: '[^']*', target: '', budget: '' \};[^\n]*",
+                  f"const filters = {{ scene: '{scene}', target: '', budget: '' }};  /* {name}シーズン: 初期表示を{name}ギフトに */",
+                  html, count=1)
+    # 全sceneボタンから active を外す
+    html = html.replace('<button class="filter-btn active" data-type="scene"',
+                        '<button class="filter-btn" data-type="scene"')
+    # 該当sceneのボタン(空なら「すべて」)に active を付与
+    html = html.replace(f'<button class="filter-btn" data-type="scene" data-value="{scene}">',
+                        f'<button class="filter-btn active" data-type="scene" data-value="{scene}">')
+
+    # B. 人気ランキング #1 / #2 を現季節記事に差し替え(終了季節を上位から外す)
+    sp1 = SPOT.get(name)
+    if sp1 and (BLOG / f"{sp1[0]}.html").exists():
+        slug, tag, ct = sp1[0], sp1[1], sp1[2]
+        li1 = (f'<li><a href="blog/{slug}.html"><span class="popular-rank">1</span>'
+               f'<div><div class="popular-title">{ct}</div>'
+               f'<div class="popular-tag">{tag} <span class="popular-date">| 更新: {today.year}年{today.month}月</span></div></div></a></li>')
+        html = re.sub(r'<li><a href="[^"]*"><span class="popular-rank">1</span>[\s\S]*?</a></li>',
+                      lambda m: li1, html, count=1)
+    sp2 = SPOT2.get(name)
+    if sp2 and (BLOG / f"{sp2[0]}.html").exists():
+        slug2, t2, tag2 = sp2
+        li2 = (f'<li><a href="blog/{slug2}.html"><span class="popular-rank">2</span>'
+               f'<div><div class="popular-title">{t2}</div>'
+               f'<div class="popular-tag">{tag2} <span class="popular-date">| 更新: {today.year}年{today.month}月</span></div></div></a></li>')
+        html = re.sub(r'<li><a href="[^"]*"><span class="popular-rank">2</span>[\s\S]*?</a></li>',
+                      lambda m: li2, html, count=1)
+
+    # ランキング日付の「更新: 2026年4月」固定を当月へ
+    html = html.replace("更新: 2026年4月", f"更新: {today.year}年{today.month}月")
 
     if html != orig:
         INDEX.write_text(html, encoding="utf-8")
