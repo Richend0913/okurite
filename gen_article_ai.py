@@ -122,8 +122,10 @@ def get_image(kw_ja, kw_en, slug, idx):
     IMGDIR.mkdir(parents=True, exist_ok=True)
     name = f"{slug}_{idx}.jpg"
     dest = IMGDIR / name
-    if _rakuten_image(kw_ja, dest) or _openverse_image(kw_en, dest):
+    # 楽天の実商品写真(一致率高)のみ採用。Openverse(CC検索)は「ビール→猫」等の無関係画像を返すので使わない。
+    if _rakuten_image(kw_ja, dest):
         return f"img/{name}"
+    # 楽天APIキーが無い/失敗時は、無関係画像を出すより category別の中立なギフト画像にフォールバック(呼び出し側)
     return None
 
 
