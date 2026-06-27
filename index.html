@@ -104,6 +104,20 @@
     html { scroll-behavior: smooth; }
     body { font-family: 'Noto Sans JP', sans-serif; color: var(--text); background: var(--cream); line-height: 1.8; -webkit-font-smoothing: antialiased; }
 
+    /* ===== JP line-wrap balance (mobile readability) ===== */
+    h1, h2, h3,
+    .hero h1, .hero-title, .section-title,
+    .featured-card-title, .card-name, .popular-title,
+    .diagnosis-article-title, .new-article-title {
+      text-wrap: balance;
+      line-break: strict;
+      overflow-wrap: anywhere;
+    }
+    .card-desc, .featured-card-desc, .hero p, .section-sub { text-wrap: pretty; }
+    .card-name, .featured-card-title {
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+
     /* ===== SVG ICON SYSTEM ===== */
     .scene-icon {
       display: inline-flex; align-items: center; justify-content: center;

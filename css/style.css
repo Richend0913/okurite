@@ -43,6 +43,21 @@ a { color: var(--gold); text-decoration: none; transition: color .2s, opacity .2
 a:hover { color: var(--gold-light); }
 img { max-width: 100%; height: auto; }
 
+/* -- JP line-wrap balance (mobile readability) -- */
+h1, h2, h3,
+.section-title, .hero h1, .article h1, .article h2, .article h3,
+.blog-card-title, .cat-card h3, .product-name, .gift-card-title,
+.top-pick-title, .top-pick-product, .related-articles h3, .toc-title {
+  text-wrap: balance;
+  line-break: strict;
+  overflow-wrap: anywhere;
+}
+.article p, .article li,
+.product-desc, .gift-card-desc, .blog-card-excerpt,
+.hero p, .section-sub, .cta-box p {
+  text-wrap: pretty;
+}
+
 /* -- Header -- */
 .header {
   position: fixed; top: 0; width: 100%; z-index: 100;
