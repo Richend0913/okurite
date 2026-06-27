@@ -27,22 +27,56 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Okurite",
+    "@id": "https://richend0913.github.io/okurite/#website",
+    "name": "Okurite（おくりて）",
+    "alternateName": "おくりて",
     "url": "https://richend0913.github.io/okurite/",
-    "description": "シーン別・予算別でぴったりのギフトが見つかるプレゼント検索サービス",
-    "publisher": {"@type": "Organization", "name": "Okurite"}
+    "inLanguage": "ja",
+    "description": "シーン別・予算別・相手別でぴったりのギフトが見つかるプレゼント検索・比較メディア",
+    "publisher": {"@id": "https://richend0913.github.io/okurite/#organization"},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://richend0913.github.io/okurite/?q={search_term_string}#gifts"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://richend0913.github.io/okurite/#organization",
     "name": "Okurite（おくりて）",
+    "alternateName": "おくりて",
     "url": "https://richend0913.github.io/okurite/",
-    "logo": "https://richend0913.github.io/okurite/images/ogp.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://richend0913.github.io/okurite/images/ogp.png"
+    },
     "description": "Okuriteは、シーン・予算・相手別に贈り物を探せるギフト比較メディアです。母の日・父の日・誕生日・結婚祝い・出産祝い・お中元・お歳暮など、シーン別のギフトガイドを掲載しています。",
-    "knowsAbout": ["ギフト","プレゼント選び","お中元","お歳暮","誕生日プレゼント","結婚祝い","出産祝い","贈り物のマナー"],
-    "sameAs": []
+    "knowsAbout": ["ギフト","プレゼント選び","贈り物の相場","贈り物のマナー","お中元","お歳暮","誕生日プレゼント","結婚祝い","出産祝い","還暦祝い","敬老の日"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Okurite ギフトカテゴリ一覧",
+    "description": "シーン・予算・相手別に探せるギフトガイドのカテゴリ",
+    "itemListOrder": "https://schema.org/ItemListUnordered",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "母の日ギフト", "url": "https://richend0913.github.io/okurite/blog/mothers-day-2026.html"},
+      {"@type": "ListItem", "position": 2, "name": "父の日ギフト", "url": "https://richend0913.github.io/okurite/blog/fathers-day-2026.html"},
+      {"@type": "ListItem", "position": 3, "name": "誕生日プレゼント", "url": "https://richend0913.github.io/okurite/blog/birthday-gift-women.html"},
+      {"@type": "ListItem", "position": 4, "name": "結婚祝い", "url": "https://richend0913.github.io/okurite/blog/wedding-gift-guide.html"},
+      {"@type": "ListItem", "position": 5, "name": "出産祝い", "url": "https://richend0913.github.io/okurite/blog/baby-shower-gift.html"},
+      {"@type": "ListItem", "position": 6, "name": "お中元", "url": "https://richend0913.github.io/okurite/blog/ochugen-2026.html"},
+      {"@type": "ListItem", "position": 7, "name": "予算別ギフト", "url": "https://richend0913.github.io/okurite/blog/gift-budget-3000.html"},
+      {"@type": "ListItem", "position": 8, "name": "ビジネスギフト", "url": "https://richend0913.github.io/okurite/blog/gift-for-boss.html"}
+    ]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
