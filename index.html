@@ -80,29 +80,34 @@
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --cream: #fdfaf6;
-      --warm-white: #fff9f2;
-      --blush: #f5c6d0;
-      --blush-light: #fce8ef;
-      --rose: #d4687a;
-      --rose-dark: #b8506a;
-      --gold: #b8922e;
-      --gold-light: #d4ac44;
-      --sage: #6a9e65;
-      --text: #2d2320;
-      --text-sub: #5a4e48;
-      --text-muted: #9a8e88;
-      --border: #e8ddd5;
-      --shadow: 0 4px 20px rgba(100,60,50,.08);
-      --shadow-hover: 0 12px 36px rgba(100,60,50,.15);
-      --radius: 16px;
+      --cream: #f8f4ec;
+      --warm-white: #fffdf9;
+      --blush: #e4cbbc;
+      --blush-light: #f3e8de;
+      --rose: #b3768a;
+      --rose-dark: #965f72;
+      --gold: #9c7b32;
+      --gold-light: #c0a05a;
+      --sage: #7f8b6b;
+      --text: #241f1a;
+      --text-sub: #5b5147;
+      --text-muted: #938875;
+      --border: #e6dccc;
+      --shadow: 0 12px 34px -18px rgba(60,48,30,.24);
+      --shadow-hover: 0 26px 58px -28px rgba(60,48,30,.42);
+      --radius: 18px;
+      --serif: 'Shippori Mincho', 'Noto Serif JP', serif;
+      --display: 'Cormorant Garamond', 'Shippori Mincho', serif;
+      --sans: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
+      --ease: cubic-bezier(.22,1,.36,1);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Noto Sans JP', sans-serif; color: var(--text); background: var(--cream); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--sans); color: var(--text); background: var(--cream); line-height: 1.9; letter-spacing: .012em; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    ::selection { background: var(--gold-light); color: #fff; }
 
     /* ===== JP line-wrap balance (mobile readability) ===== */
     h1, h2, h3,
@@ -148,7 +153,7 @@
       height: 60px; padding: 0 20px;
     }
     .logo {
-      font-family: 'Noto Serif JP', serif; font-weight: 700; font-size: 1.4rem;
+      font-family: var(--serif); font-weight: 700; font-size: 1.4rem;
       color: var(--gold); text-decoration: none; letter-spacing: .04em;
     }
     .header-nav { display: flex; gap: 20px; list-style: none; align-items: center; }
@@ -179,16 +184,17 @@
 
     /* ===== HERO ===== */
     .hero {
-      background: linear-gradient(160deg, #fdf2f4 0%, #fce8ef 30%, #f8d7e0 60%, #f0c4d0 100%);
-      padding: 72px 20px 56px; text-align: center; position: relative; overflow: hidden;
+      background: linear-gradient(165deg, #fbf6ee 0%, #f5ece0 34%, #efe1d1 66%, #e9d8c4 100%);
+      padding: 100px 20px 76px; text-align: center; position: relative; overflow: hidden;
     }
     .hero::before {
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(circle at 20% 80%, rgba(212,104,122,.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(184,146,46,.06) 0%, transparent 50%);
+        radial-gradient(circle at 18% 82%, rgba(179,118,138,.10) 0%, transparent 52%),
+        radial-gradient(circle at 82% 18%, rgba(156,123,50,.10) 0%, transparent 52%);
     }
+    .hero h1 { letter-spacing: .045em; font-weight: 600; }
     .hero::after {
       content: '';
       position: absolute; bottom: 0; left: 0; right: 0; height: 80px;
@@ -204,7 +210,7 @@
     }
     .hero-badge svg { width: 14px; height: 14px; }
     .hero h1 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: clamp(1.6rem, 5vw, 2.6rem); font-weight: 700;
       color: var(--text); line-height: 1.5; margin-bottom: 16px;
       letter-spacing: .02em;
@@ -254,21 +260,21 @@
 
     /* ===== MOTHERS DAY COUNTDOWN ===== */
     .countdown-section {
-      background: linear-gradient(135deg, #fce8ef, #fff5f7);
-      border-radius: var(--radius); padding: 28px 24px; margin-bottom: 32px;
-      border: 1px solid rgba(212,104,122,.15);
+      background: linear-gradient(135deg, #f4e9dc, #fbf5ec);
+      border-radius: var(--radius); padding: 32px 28px; margin-bottom: 36px;
+      border: 1px solid var(--gold-border, rgba(156,123,50,.16));
       position: relative; overflow: hidden;
     }
     .countdown-section::before {
       content: ''; position: absolute; top: -20px; right: -20px;
-      width: 120px; height: 120px; border-radius: 50%;
-      background: rgba(212,104,122,.06);
+      width: 140px; height: 140px; border-radius: 50%;
+      background: rgba(156,123,50,.07);
     }
     .countdown-header {
       display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
     }
     .countdown-header h2 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.05rem; font-weight: 700; color: var(--rose-dark);
     }
     .countdown-sub { font-size: .88rem; color: var(--text-sub); margin-bottom: 16px; }
@@ -281,7 +287,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,.04);
     }
     .countdown-num {
-      font-family: 'Inter', sans-serif; font-size: 1.4rem; font-weight: 900;
+      font-family: var(--display); font-size: 2rem; font-weight: 600;
       color: var(--rose-dark); line-height: 1.2;
     }
     .countdown-label { font-size: .68rem; color: var(--text-muted); font-weight: 500; }
@@ -314,7 +320,7 @@
       text-align: center;
     }
     .diagnosis-section h2 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.15rem; font-weight: 700; color: var(--gold);
       margin-bottom: 8px;
     }
@@ -343,7 +349,7 @@
     .diagnosis-result { display: none; }
     .diagnosis-result.active { display: block; }
     .diagnosis-result h3 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.05rem; font-weight: 700; color: var(--gold);
       margin-bottom: 16px;
     }
@@ -374,7 +380,7 @@
       margin-bottom: 32px; border: 1px solid var(--border);
     }
     .about-section h2 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.05rem; font-weight: 700; color: var(--text);
       margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
     }
@@ -460,7 +466,7 @@
     /* ===== MAIN ===== */
     .main { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
     .section-title {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 20px;
       display: flex; align-items: center; gap: 8px;
     }
@@ -544,7 +550,7 @@
       margin-bottom: 0; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.04);
     }
     .popular-section h2 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.1rem; font-weight: 700; color: var(--text);
       margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
     }
@@ -554,7 +560,7 @@
     .popular-list li:last-child { border-bottom: none; }
     .popular-list a { display: flex; align-items: center; gap: 12px; padding: 12px 0; text-decoration: none; color: var(--text); transition: color .2s; }
     .popular-list a:hover { color: var(--rose); }
-    .popular-rank { font-size: 1.1rem; font-weight: 900; color: var(--text-muted); min-width: 28px; text-align: center; font-family: 'Inter', sans-serif; }
+    .popular-rank { font-size: 1.5rem; font-weight: 600; color: var(--text-muted); min-width: 30px; text-align: center; font-family: var(--display); }
     .popular-list li:nth-child(1) .popular-rank { color: #f59e0b; }
     .popular-list li:nth-child(2) .popular-rank { color: #94a3b8; }
     .popular-list li:nth-child(3) .popular-rank { color: #b45309; }
@@ -575,7 +581,7 @@
     .footer-col a { font-size: .78rem; }
     .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 20px; text-align: center; font-size: .72rem; color: #777; }
     .footer-logo {
-      font-family: 'Noto Serif JP', serif; font-weight: 700; font-size: 1.3rem;
+      font-family: var(--serif); font-weight: 700; font-size: 1.3rem;
       color: var(--gold-light); display: block; margin-bottom: 4px;
     }
     @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 20px; } }
@@ -597,7 +603,7 @@
       max-width: 1100px; margin: 0 auto;
     }
     .category-nav h2 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1rem; font-weight: 700; color: var(--text);
       margin-bottom: 16px; text-align: center;
     }
@@ -625,7 +631,7 @@
       max-width: 1100px; margin: 0 auto; padding: 32px 20px 0;
     }
     .featured-section h2 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.15rem; font-weight: 700; color: var(--text);
       margin-bottom: 20px; display: flex; align-items: center; gap: 8px;
     }
@@ -661,7 +667,7 @@
       max-width: 1100px; margin: 0 auto; padding: 32px 20px 0;
     }
     .new-articles-section h2 {
-      font-family: 'Noto Serif JP', serif;
+      font-family: var(--serif);
       font-size: 1.15rem; font-weight: 700; color: var(--text);
       margin-bottom: 20px; display: flex; align-items: center; gap: 8px;
     }
@@ -688,9 +694,24 @@
       padding: 1px 6px; border-radius: 4px; flex-shrink: 0;
     }
     @media (max-width: 480px) { .new-article-thumb { width: 56px; height: 38px; } .new-article-title { font-size: .8rem; } }
+
+    /* ===== premium enhancements (progressive, no-JS safe) ===== */
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: 9998; pointer-events: none;
+      opacity: .03; mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    #scroll-progress {
+      position: fixed; top: 0; left: 0; height: 2px; width: 0; z-index: 9997;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold)); transition: width .1s linear;
+    }
+    .rv { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+    .rv.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .rv { opacity: 1 !important; transform: none !important; } }
   </style>
 </head>
 <body>
+  <div id="scroll-progress"></div>
 
 <header class="header" id="site-header">
   <div class="header-inner">
@@ -771,7 +792,7 @@
     </div>
     <div class="trust-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      更新日: 2026年6月
+      更新日: 2026年7月
     </div>
   </div>
 </div>
@@ -1188,16 +1209,16 @@
   <div class="popular-section">
     <h2>人気記事ランキング</h2>
     <ul class="popular-list">
-      <li><a href="blog/ochugen-2026.html"><span class="popular-rank">1</span><div><div class="popular-title">【2026】お中元おすすめギフト｜相場とマナー</div><div class="popular-tag">お中元 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/obon-temiyage-2026.html"><span class="popular-rank">2</span><div><div class="popular-title">お盆の手土産・帰省みやげ｜失敗しない選び方</div><div class="popular-tag">お盆 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/birthday-gift-women.html"><span class="popular-rank">3</span><div><div class="popular-title">【年代別】女性が本当に嬉しい誕生日プレゼント｜20代・30代・40代・50代</div><div class="popular-tag">誕生日 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/gift-budget-3000.html"><span class="popular-rank">4</span><div><div class="popular-title">予算3,000円以下でも高見え！センスが光るプレゼント12選</div><div class="popular-tag">予算別 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/gift-for-boyfriend.html"><span class="popular-rank">5</span><div><div class="popular-title">彼氏が喜ぶ誕生日プレゼント｜年代別おすすめ15選【2026年版】</div><div class="popular-tag">誕生日 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/gift-for-wife-birthday.html"><span class="popular-rank">6</span><div><div class="popular-title">妻が本当に喜ぶ誕生日プレゼント15選｜20代・30代・40代年代別</div><div class="popular-tag">誕生日 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/experience-gift.html"><span class="popular-rank">7</span><div><div class="popular-title">もらって嬉しい体験ギフト・カタログギフト15選</div><div class="popular-tag">体験 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/thank-you-gift-casual.html"><span class="popular-rank">8</span><div><div class="popular-title">ちょっとしたお礼に喜ばれるプチギフト15選｜500円〜3,000円</div><div class="popular-tag">お礼 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/baby-shower-gift.html"><span class="popular-rank">9</span><div><div class="popular-title">出産祝いで本当に嬉しかったもの12選｜先輩ママの声から厳選</div><div class="popular-tag">出産祝い <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
-      <li><a href="blog/budget-5000-gift.html"><span class="popular-rank">10</span><div><div class="popular-title">予算5,000円でセンスのいいプレゼント12選｜男女別おすすめ</div><div class="popular-tag">予算別 <span class="popular-date">| 更新: 2026年6月</span></div></div></a></li>
+      <li><a href="blog/ochugen-2026.html"><span class="popular-rank">1</span><div><div class="popular-title">【2026】お中元おすすめギフト｜相場とマナー</div><div class="popular-tag">お中元 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/obon-temiyage-2026.html"><span class="popular-rank">2</span><div><div class="popular-title">お盆の手土産・帰省みやげ｜失敗しない選び方</div><div class="popular-tag">お盆 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/birthday-gift-women.html"><span class="popular-rank">3</span><div><div class="popular-title">【年代別】女性が本当に嬉しい誕生日プレゼント｜20代・30代・40代・50代</div><div class="popular-tag">誕生日 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/gift-budget-3000.html"><span class="popular-rank">4</span><div><div class="popular-title">予算3,000円以下でも高見え！センスが光るプレゼント12選</div><div class="popular-tag">予算別 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/gift-for-boyfriend.html"><span class="popular-rank">5</span><div><div class="popular-title">彼氏が喜ぶ誕生日プレゼント｜年代別おすすめ15選【2026年版】</div><div class="popular-tag">誕生日 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/gift-for-wife-birthday.html"><span class="popular-rank">6</span><div><div class="popular-title">妻が本当に喜ぶ誕生日プレゼント15選｜20代・30代・40代年代別</div><div class="popular-tag">誕生日 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/experience-gift.html"><span class="popular-rank">7</span><div><div class="popular-title">もらって嬉しい体験ギフト・カタログギフト15選</div><div class="popular-tag">体験 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/thank-you-gift-casual.html"><span class="popular-rank">8</span><div><div class="popular-title">ちょっとしたお礼に喜ばれるプチギフト15選｜500円〜3,000円</div><div class="popular-tag">お礼 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/baby-shower-gift.html"><span class="popular-rank">9</span><div><div class="popular-title">出産祝いで本当に嬉しかったもの12選｜先輩ママの声から厳選</div><div class="popular-tag">出産祝い <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
+      <li><a href="blog/budget-5000-gift.html"><span class="popular-rank">10</span><div><div class="popular-title">予算5,000円でセンスのいいプレゼント12選｜男女別おすすめ</div><div class="popular-tag">予算別 <span class="popular-date">| 更新: 2026年7月</span></div></div></a></li>
     </ul>
     <div style="text-align:center;margin-top:16px;">
       <a href="blog/" style="display:inline-block;padding:10px 28px;border:2px solid var(--rose);color:var(--rose);border-radius:999px;font-size:.85rem;font-weight:700;transition:all .2s;text-decoration:none;">コラム一覧を見る</a>
@@ -1518,6 +1539,8 @@ overlay.addEventListener('click', e => { if (e.target === overlay) overlay.class
 /* Header shadow on scroll */
 window.addEventListener('scroll', () => {
   document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 10);
+  const _sp = document.getElementById('scroll-progress');
+  if (_sp) { const h = document.documentElement.scrollHeight - window.innerHeight; _sp.style.width = (h > 0 ? (window.scrollY / h * 100) : 0) + '%'; }
 });
 
 /* Load gifts immediately */
@@ -1543,6 +1566,19 @@ document.addEventListener('click',function(e){
     d = t.indexOf('楽天')>-1?'rakuten':(t.indexOf('Amazon')>-1?'amazon':'affiliate');
   if(d&&typeof gtag==='function') gtag('event','affiliate_click',{affiliate:d,link_url:h,page:location.pathname});
 },true);
+</script>
+<script>
+/* scroll-reveal (progressive enhancement — no-JS keeps everything visible) */
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var sel = '.countdown-section,.diagnosis-section,.about-section,.category-nav,.featured-section,.new-articles-section,.popular-section';
+  var els = document.querySelectorAll(sel);
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function(el){ el.classList.add('rv'); io.observe(el); });
+})();
 </script>
 </body>
 </html>
