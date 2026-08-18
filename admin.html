@@ -275,16 +275,30 @@
     const RAKUTEN_AFF_ID = '522e40a0.f2dc4208.522e40a1.385f875e';
     const AMAZON_TAG = 'okuritegift-22';
 
-    // 許可されたメールアドレス
-    const ADMIN_EMAILS = ['ryosuke459a@gmail.com'];
+    // 許可された管理者
+    // 【2026-08-18】オーナー個人のメールアドレスを平文で公開HTMLに埋め込んでいたため、
+    // SHA-256ハッシュ照合に変更（機能は同じ／配信物から個人アドレスが消える）。
+    // ※クライアント側の判定は「画面を出すか出さないか」だけの制御であり、
+    //   データそのものの保護は Firestore セキュリティルール側で行うこと（ここでは担保できない）。
+    const ADMIN_EMAIL_SHA256 = ['ddbcb3a170daf7f14581d6fc473508543de523ddb27d80fd7a41b40cd96d559b'];
+
+    async function sha256Hex(str) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function isAdminEmail(email) {
+      if (!email) return false;
+      return ADMIN_EMAIL_SHA256.includes(await sha256Hex(email.trim().toLowerCase()));
+    }
 
     // 検索で選んだ商品を保持
     let selectedProduct = null;
 
-    auth.onAuthStateChanged(user => {
+    auth.onAuthStateChanged(async user => {
       currentUser = user;
       if (user) {
-        if (!ADMIN_EMAILS.includes(user.email)) {
+        if (!(await isAdminEmail(user.email))) {
           document.getElementById('loginArea').innerHTML = `
             <div style="color:#c62828; margin-bottom:16px;">管理者権限がありません。</div>
             <p style="color:#999; font-size:.85rem;">このページは管理者専用です。<br>許可されたアカウントでログインしてください。</p>
