@@ -12,6 +12,7 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 import gen_article_ai as G
+import site_layout as L
 
 HERE = Path(__file__).parent
 BLOG = HERE / "blog"
@@ -50,7 +51,7 @@ def ai_topics(existing, n, key):
 def card_html(slug, title, tag, excerpt):
     img = G.CARD_IMGS[abs(hash(slug)) % len(G.CARD_IMGS)]
     d = date.today().strftime("%Y.%m.%d") if False else f"{date.today().year}.{date.today().month:02d}.{date.today().day:02d}"
-    return f'''      <div class="blog-card" data-cat="ai">
+    return f'''      <div class="blog-card" data-cat="{L.blog_category(slug)}">
         <a href="{slug}.html">
           <div class="blog-card-img-wrap"><img src="{img}" alt="{title}" loading="lazy"></div>
           <div class="blog-card-body">

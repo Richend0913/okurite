@@ -54,12 +54,12 @@ def first_product(htmls):
 
 
 def pickup_box(name, amazon, rak):
+    # 見た目は css/style.css の .pickup-box 系で定義（インラインstyleは使わない）
     return (
-        '\n    <div class="pickup-box" style="background:linear-gradient(135deg,#fff8f0,#fdeede);'
-        'border:1px solid rgba(198,40,40,.18);border-radius:14px;padding:20px 22px;margin:0 0 30px;">\n'
-        '      <div style="font-size:.78rem;font-weight:700;color:#c62828;letter-spacing:.04em;margin-bottom:6px;">結論：迷ったらこれ</div>\n'
-        f'      <div style="font-size:1.05rem;font-weight:700;color:#2d2a26;line-height:1.6;margin-bottom:12px;">{name}</div>\n'
-        '      <div class="gift-card-buttons" style="display:flex;gap:10px;flex-wrap:wrap;">\n'
+        '\n    <div class="pickup-box">\n'
+        '      <div class="pickup-label">結論：迷ったらこれ</div>\n'
+        f'      <div class="pickup-name">{name}</div>\n'
+        '      <div class="gift-card-buttons">\n'
         f'        <a href="{amazon}" target="_blank" rel="noopener sponsored" class="gift-card-link">Amazonで見る</a>\n'
         f'        <a href="{rak}" target="_blank" rel="noopener sponsored" class="gift-card-link rakuten">楽天で見る</a>\n'
         '      </div>\n    </div>\n')
@@ -141,9 +141,9 @@ def process(f, registry, apply):
 
 
 def regen_sitemap():
-    """全公開ページでsitemap.xmlを再生成(admin.html除外)。"""
+    """全公開ページでsitemap.xmlを再生成(admin.html / compare.html 除外)。"""
     today = date.today().isoformat()
-    pages = [("", "1.0", "daily"), ("compare.html", "0.5", "monthly"), ("blog/", "0.8", "daily")]
+    pages = [("", "1.0", "daily"), ("blog/", "0.8", "daily")]  # compare.html は社内用のため除外
     for f in sorted(BLOG.glob("*.html")):
         if f.name != "index.html":
             pages.append((f"blog/{f.name}", "0.7", "monthly"))

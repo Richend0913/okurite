@@ -39,6 +39,14 @@ CAL = [
      "お中元2026特集。相場・時期・マナーと、本当に喜ばれる夏の贈り物を厳選。",
      "日頃の感謝を伝える夏のご挨拶。お中元の人気ギフトを厳選しました。",
      [("ochugen-2026", "お中元おすすめギフト", "相場とマナー"), ("natsu-matsuri-sashiire", "夏の差し入れ", "喜ばれる選び方")]),
+    ("09-21", "敬老の日", "2026年9月21日（月・祝）", "敬老の日ギフト特集 2026｜祖父母が喜ぶプレゼント",
+     "敬老の日2026特集。おじいちゃん・おばあちゃんが喜ぶプレゼントを価格帯別に厳選。",
+     "いつまでも元気でいてほしい祖父母へ。感謝が伝わる贈り物を厳選しました。",
+     [("keirou-no-hi-2026", "敬老の日プレゼント12選", "価格帯別おすすめ"), ("gift-for-grandparents", "祖父母へのギフト", "敬老の日・誕生日に")]),
+    ("12-10", "お歳暮", "2026年12月10日（木）", "お歳暮特集 2026｜相場・マナーと人気ギフト",
+     "お歳暮2026特集。相場・時期・マナーと、一年の感謝が伝わる冬の贈り物を厳選。",
+     "一年の感謝を伝える冬のご挨拶。お歳暮の人気ギフトを厳選しました。",
+     [("oseibo-2026", "お歳暮おすすめギフト", "相場・マナー・時期"), ("gift-for-boss", "上司への贈り物", "失礼にならない選び方")]),
     ("12-25", "クリスマス", "2026年12月25日（金）", "クリスマスギフト特集 2026｜彼氏・彼女・友達別",
      "クリスマス2026特集。彼氏・彼女・友達・家族別に本当に喜ばれるプレゼントを厳選。",
      "大切な人と過ごすクリスマス。心に残るプレゼントを厳選しました。",
@@ -55,6 +63,8 @@ def lf(kw, w, h, seed):
 SPOT = {
     "父の日": ("gift-for-father-in-law", "父の日", "義父も喜ぶ父の日ギフト｜失敗しない選び方", "目上の方にも安心の上質ギフトを予算別に厳選", "fathers day gift"),
     "お中元": ("ochugen-2026", "お中元", "【2026】お中元おすすめギフト｜相場とマナー", "夏のご挨拶に喜ばれる贈り物を厳選", "summer gift box"),
+    "敬老の日": ("keirou-no-hi-2026", "敬老の日", "【2026】敬老の日のプレゼントおすすめ12選", "祖父母が喜ぶギフトを価格帯別に厳選", "grandparents gift"),
+    "お歳暮": ("oseibo-2026", "お歳暮", "【2026】お歳暮おすすめギフト15選｜相場とマナー", "一年の感謝を伝える冬の贈り物を厳選", "winter gift box"),
     "クリスマス": ("christmas-gift-2026", "クリスマス", "【2026】クリスマスプレゼント15選｜相手別", "彼氏・彼女・友達別の本命ギフトを厳選", "christmas gift"),
     "母の日": ("mothers-day-2026", "母の日", "【2026】母の日に本当に喜ばれるプレゼント15選", "予算別にお母さんが喜ぶギフトを厳選", "mothers day flowers"),
     "バレンタイン": ("valentine-gift", "バレンタイン", "本命・義理別バレンタインギフト", "チョコ以外も喜ばれる選び方", "valentine chocolate"),
@@ -63,7 +73,7 @@ SPOT = {
 
 
 # 季節名 → 診断/ギフトグリッドの scene フィルタ値
-SCENE_OF = {"母の日": "mothers-day", "父の日": "fathers-day", "お中元": "mid-year", "お歳暮": "year-end",
+SCENE_OF = {"敬老の日": "", "母の日": "mothers-day", "父の日": "fathers-day", "お中元": "mid-year", "お歳暮": "year-end",
             "クリスマス": "christmas", "バレンタイン": "", "ホワイトデー": ""}
 
 # 人気ランキング #2 用の季節記事(slug, title, tag)。#1のSPOTと別記事。blogに実在するものだけ採用される。
@@ -71,6 +81,8 @@ SPOT2 = {
     "お中元": ("obon-temiyage-2026", "お盆の手土産・帰省みやげ｜失敗しない選び方", "お盆"),
     "父の日": ("gift-for-new-dad", "新米パパへの父の日ギフト｜初めての父の日に", "父の日"),
     "母の日": ("mothers-day-not-flowers", "母の日に花以外で喜ばれるプレゼント10選", "母の日"),
+    "敬老の日": ("gift-for-grandparents", "おじいちゃん・おばあちゃんに贈るプレゼント15選", "敬老の日"),
+    "お歳暮": ("christmas-gift-2026", "【2026年】クリスマスプレゼントおすすめ15選｜相手別", "クリスマス"),
     "クリスマス": ("gift-for-boyfriend", "彼氏が喜ぶプレゼント｜年代別おすすめ", "誕生日"),
 }
 
@@ -104,7 +116,10 @@ def links_html(cands):
 def main():
     today = date.today()
     md_, name, jp, title, desc, sub, cands = pick(today)
-    iso = f"2026-{md_}" if md_ >= today.strftime("%m-%d") else f"2027-{md_}"
+    ev_year = today.year if md_ > today.strftime("%m-%d") else today.year + 1
+    ev = date(ev_year, int(md_[:2]), int(md_[3:]))
+    iso = ev.isoformat()
+    jp = f"{ev.year}年{ev.month}月{ev.day}日（{'月火水木金土日'[ev.weekday()]}）"
     html = INDEX.read_text(encoding="utf-8")
     orig = html
 
@@ -112,16 +127,16 @@ def main():
     html = re.sub(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1)+desc+m.group(2), html, count=1)
     # SEOキーワードも季節に合わせて自律更新(過ぎた特集名が残らないように)
     html = re.sub(r'(<meta name="keywords" content=")[^"]*(")',
-                  lambda m: m.group(1)+f"{name},{name}2026,{name}ギフト,夏ギフト,ギフト,プレゼント,贈り物,誕生日,結婚祝い,おすすめギフト"+m.group(2), html, count=1)
+                  lambda m: m.group(1)+f"{name},{name}{ev.year},{name}ギフト,ギフト,プレゼント,贈り物,誕生日,結婚祝い,おすすめギフト"+m.group(2), html, count=1)
     html = re.sub(r'(<meta property="og:title" content=")[^"]*(")', lambda m: m.group(1)+f"Okurite（おくりて）| {title}"+m.group(2), html, count=1)
     html = re.sub(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1)+desc+m.group(2), html, count=1)
     # heroバッジ等の「○○ギフト特集 2026」
-    html = re.sub(r"[一-龯ぁ-んァ-ヶ]+ギフト特集 2026", f"{name}ギフト特集 2026", html)
+    html = re.sub(r"[一-龯ぁ-んァ-ヶ]+ギフト特集 \d{4}", f"{name}ギフト特集 {ev.year}", html)
     # navラベル(リンク先idは #seasonal に統一済。旧 #mothers-day が残っていれば併せて修復)
     html = html.replace('<a href="#mothers-day">', '<a href="#seasonal">')
     html = re.sub(r'(<a href="#seasonal">)[^<]*(</a>)', lambda m: m.group(1)+f"{name}特集"+m.group(2), html, count=1)
     # カウントダウン見出し
-    html = re.sub(r'(<div class="countdown-header">[\s\S]*?<h2>)[^<]*(</h2>)', lambda m: m.group(1)+f"{name} {jp}"+m.group(2), html, count=1)
+    html = re.sub(r'(<div class="countdown-header">[\s\S]*?<h2>)[^<]*(</h2>)', lambda m: m.group(1)+f"{name}　{ev.month}月{ev.day}日（{'月火水木金土日'[ev.weekday()]}）"+m.group(2), html, count=1)
     # カウントダウンsub
     html = re.sub(r'(<p class="countdown-sub">)[^<]*(</p>)', lambda m: m.group(1)+sub+m.group(2), html, count=1)
     # カウントダウンJS目標日
@@ -183,8 +198,8 @@ def main():
     #  - trust-bar:   「更新日: 2026年N月」 → 「更新日: {年}年{月}月」
     #  - popular-date:「更新: 2026年N月」(日なし) → 「更新: {年}年{月}月」
     # 接尾文言が違うため2つに分ける(一律化すると popular-date 側の表記が崩れる)。
-    html = re.sub(r"更新日: 2026年\d+月", f"更新日: {today.year}年{today.month}月", html)
-    html = re.sub(r"(?<!日)更新: 2026年\d+月", f"更新: {today.year}年{today.month}月", html)
+    html = re.sub(r"更新日: \d{4}年\d+月", f"更新日: {today.year}年{today.month}月", html)
+    html = re.sub(r"(?<!日)更新: \d{4}年\d+月", f"更新: {today.year}年{today.month}月", html)
 
     if html != orig:
         INDEX.write_text(html, encoding="utf-8")

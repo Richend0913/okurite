@@ -274,3 +274,4 @@ document.addEventListener('click',function(e){{
 with io.open("blog/fathers-day-last-minute-2026.html", "w", encoding="utf-8") as f:
     f.write(OUT)
 print("WROTE blog/fathers-day-last-minute-2026.html", len(OUT), "bytes")
+import site_layout; site_layout.normalize_file("blog/fathers-day-last-minute-2026.html")  # 共通レイアウトへ統一

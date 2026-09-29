@@ -12,6 +12,8 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 
+import site_layout as L
+
 HERE = Path(__file__).parent
 AMAZON_TAG = "okuritegift-22"
 RAKUTEN_AFF = "522e40a0.f2dc4208.522e40a1.385f875e"
@@ -167,38 +169,7 @@ def gen_json(theme, key):
     return json.loads(m.group(0))
 
 
-STYLE = """    .article { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
-    .article h1 { font-size: 1.5rem; font-weight: 700; color: #2d2a26; line-height: 1.7; margin-bottom: 12px; }
-    .article-meta { font-size: .8rem; color: #999; margin-bottom: 28px; }
-    .article-hero { width: 100%; height: 320px; object-fit: cover; border-radius: 14px; margin-bottom: 32px; }
-    .article h2 { font-size: 1.2rem; font-weight: 700; color: #8b6914; margin: 40px 0 16px; padding-bottom: 10px; border-bottom: 2px solid rgba(139,105,20,.06); }
-    .article h3 { font-size: 1rem; font-weight: 700; color: #2d2a26; margin: 28px 0 12px; }
-    .article p { font-size: .9rem; line-height: 2; color: #555; margin-bottom: 16px; }
-    .article ul, .article ol { margin: 0 0 16px 24px; }
-    .gift-card { background: #fff; border: 1px solid rgba(180,160,120,.12); border-radius: 14px; padding: 24px; margin-bottom: 20px; }
-    .gift-card-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 16px; }
-    .gift-card-title { font-size: 1rem; font-weight: 700; color: #2d2a26; margin-bottom: 4px; }
-    .gift-card-price { font-size: .9rem; color: #c62828; font-weight: 700; margin-bottom: 10px; }
-    .gift-card-desc { font-size: .85rem; color: #666; line-height: 1.8; margin-bottom: 16px; }
-    .gift-card-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
-    .gift-card-link { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 24px; background: #ff9900; color: #fff; border-radius: 8px; font-size: .85rem; font-weight: 600; text-decoration: none; flex: 1; min-width: 140px; text-align: center; }
-    .gift-card-link.rakuten { background: #bf0000; }
-    .toc { background: #faf8f5; border: 1px solid rgba(180,160,120,.15); border-radius: 14px; padding: 20px 24px; margin-bottom: 32px; }
-    .toc-title { font-size: .9rem; font-weight: 700; color: #8b6914; margin-bottom: 12px; }
-    .toc a { font-size: .85rem; color: #555; line-height: 2.2; display: block; padding-left: 16px; }
-    .breadcrumb { font-size: .8rem; color: #999; margin-bottom: 16px; }
-    .breadcrumb a { color: #8b6914; }
-    .cta-box { background: linear-gradient(135deg, #faf8f5, #f0ebe2); border: 1px solid rgba(180,160,120,.15); border-radius: 20px; padding: 32px; text-align: center; margin: 40px 0; }
-    .cta-box p { font-size: .95rem; color: #555; margin-bottom: 16px; }
-    .cta-btn { display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, #c49b1a, #8b6914); color: #fff; border-radius: 999px; font-size: .95rem; font-weight: 600; text-decoration: none; }"""
 
-FOOTER = """    <footer class="footer">
-    <div class="footer-inner"><div class="footer-bottom">
-      <p>当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。</p>
-      <p style="margin-top:8px;"><a href="../">TOP</a> | <a href="./">コラム</a></p>
-      <p style="margin-top:8px;">&copy; 2026 Okurite. All rights reserved.</p>
-    </div></div>
-  </footer>"""
 
 
 def render(d, slug):
@@ -227,7 +198,7 @@ def render(d, slug):
     body_secs = secs[0] + "\n" + "\n".join(cards) + "\n" + "\n".join(secs[1:])
     intro = "\n".join(f"    <p>{p}</p>" for p in d["intro"])
     matome = "\n".join(f"    <p>{p}</p>" for p in d["matome"])
-    return f'''<!DOCTYPE html>
+    html = f'''<!DOCTYPE html>
 <html lang="ja">
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-63VB4HT3T2"></script>
@@ -243,17 +214,9 @@ def render(d, slug):
   <meta property="og:type" content="article">
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="{hero_img}">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-{STYLE}
-  </style>
 </head>
 <body>
-  <header class="header"><div class="header-inner">
-    <a href="../" class="logo" style="text-decoration:none;">Okurite</a>
-    <ul class="nav"><li><a href="../">TOP</a></li><li><a href="../#gifts">ギフト検索</a></li><li><a href="./">コラム</a></li></ul>
-  </div></header>
+  <header></header>
   <article class="article">
     <div class="breadcrumb"><a href="../">TOP</a> &gt; <a href="./">コラム</a> &gt; {d['title']}</div>
     <h1>{d['title']}</h1>
@@ -264,14 +227,16 @@ def render(d, slug):
 {toc}
     </div>
 {body_secs}
-    <div class="cta-box"><p>「結局どれにしよう」と迷ったら。<br>相手・予算・シーンを選ぶだけで、編集部が実際に喜ばれたギフトに絞り込みます。</p>
+    <div class="cta-box"><p>「結局どれにしよう」と迷ったら。<br>相手・予算・シーンを選ぶだけで、ギフトに向く商品を絞り込めます。</p>
       <a href="../#gifts" class="cta-btn">相手に合うギフトを見つける</a></div>
     <h2>まとめ</h2>
 {matome}
   </article>
-{FOOTER}
+  <footer></footer>
 </body>
 </html>'''
+    # ヘッダー/フッター/head/CSS は site_layout で全ページ共通のものに差し替える
+    return L.normalize_article(html)
 
 
 def main():

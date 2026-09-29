@@ -2,6 +2,7 @@
 """法務ページ生成: privacy/terms/contact をブランドデザインで生成(自己完結CSS)。
 サイトワイドのフッター404解消 + ステマ規制/アフィリ規約準拠。"""
 import os, datetime
+import site_layout
 
 ROOT = os.path.dirname(__file__)
 BASE = "https://richend0913.github.io/okurite"
@@ -187,6 +188,7 @@ for slug, title, desc, body in PAGES:
     body_filled = body.format(base=BASE, email=CONTACT_EMAIL)
     html = SHELL.format(title=title, slug=slug, desc=desc, base=BASE,
                         today=TODAY, body=body_filled)
+    html = site_layout.normalize_doc(html)  # 共通ヘッダー/フッター/CSSへ差し替え
     out = os.path.join(ROOT, f"{slug}.html")
     with open(out, "w", encoding="utf-8") as f:
         f.write(html)

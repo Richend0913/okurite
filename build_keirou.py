@@ -345,3 +345,4 @@ document.addEventListener('click',function(e){{
 with open("blog/keirou-no-hi-2026.html", "w", encoding="utf-8") as f:
     f.write(html)
 print("written blog/keirou-no-hi-2026.html", len(html), "bytes")
+import site_layout; site_layout.normalize_file("blog/keirou-no-hi-2026.html")  # 共通レイアウトへ統一

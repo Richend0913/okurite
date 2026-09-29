@@ -20,47 +20,28 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://richend0913.github.io/okurite/privacy.html">
   <meta property="og:image" content="https://richend0913.github.io/okurite/images/ogp.png">
+  <!-- okurite-head -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--cream:#fdfaf6;--warm-white:#fff9f2;--blush-light:#fce8ef;--rose:#d4687a;--rose-dark:#b8506a;--gold:#b8922e;--text:#2d2320;--text-sub:#5a4e48;--text-muted:#9a8e88;--border:#e8ddd5;--radius:16px;}
-    *{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:'Noto Sans JP',sans-serif;color:var(--text);background:var(--cream);line-height:1.9;}
-    a{color:var(--rose-dark);text-decoration:none;}
-    a:hover{text-decoration:underline;}
-    .header{background:var(--warm-white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50;}
-    .header-inner{max-width:1080px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;}
-    .logo{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.5rem;color:var(--rose-dark);letter-spacing:.04em;}
-    .header-nav{list-style:none;display:flex;gap:24px;}
-    .header-nav a{color:var(--text-sub);font-size:.95rem;}
-    main{max-width:760px;margin:0 auto;padding:56px 24px 40px;}
-    .breadcrumb{font-size:.82rem;color:var(--text-muted);margin-bottom:24px;}
-    h1{font-family:'Noto Serif JP',serif;font-size:2rem;color:var(--text);margin-bottom:8px;line-height:1.4;}
-    .updated{color:var(--text-muted);font-size:.85rem;margin-bottom:36px;}
-    h2{font-size:1.25rem;color:var(--rose-dark);margin:38px 0 14px;padding-left:14px;border-left:4px solid var(--gold);}
-    p{margin-bottom:14px;color:var(--text-sub);}
-    ul.doc{margin:0 0 16px 1.4em;color:var(--text-sub);}
-    ul.doc li{margin-bottom:8px;}
-    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px 26px;margin:20px 0;box-shadow:0 4px 20px rgba(100,60,50,.06);}
-    .btn{display:inline-block;background:var(--rose);color:#fff;padding:14px 30px;border-radius:999px;font-weight:700;margin-top:10px;}
-    .btn:hover{background:var(--rose-dark);text-decoration:none;}
-    .footer{background:var(--warm-white);border-top:1px solid var(--border);margin-top:48px;}
-    .footer-inner{max-width:1080px;margin:0 auto;padding:36px 24px;text-align:center;}
-    .footer-bottom p{font-size:.82rem;color:var(--text-muted);margin-bottom:8px;}
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/style.css?v=4">
+  <!-- /okurite-head -->
 </head>
 <body>
-<header class="header">
+<header class="header" id="site-header">
   <div class="header-inner">
-    <a href="https://richend0913.github.io/okurite/" class="logo">Okurite</a>
-    <nav><ul class="header-nav">
-      <li><a href="https://richend0913.github.io/okurite/">トップ</a></li>
-      <li><a href="https://richend0913.github.io/okurite/blog/">コラム</a></li>
+    <a href="./" class="logo" aria-label="Okurite（おくりて）トップへ"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="10" width="26" height="19" rx="5" fill="#1f4d45"/><path d="M16 10v19M3 17h26" stroke="#faf7f2" stroke-width="2.4"/><path d="M16 10c-1.6-4.6-7.5-6-7.5-2.6S12.6 10 16 10zm0 0c1.6-4.6 7.5-6 7.5-2.6S19.4 10 16 10z" fill="#c8711f"/></svg><span class="logo-text"><span class="logo-word">Okurite</span><span class="logo-kana">おくりて</span></span></a>
+    <nav aria-label="メインメニュー"><ul class="nav" id="nav">
+      <li><a href="./#diagnosis">ギフト診断</a></li>
+      <li><a href="blog/">コラム</a></li>
+      <li class="nav-cta"><a href="./#gifts">ギフトを探す</a></li>
     </ul></nav>
+    <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav"><svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
 </header>
-<main>
-  <div class="breadcrumb"><a href="https://richend0913.github.io/okurite/">ホーム</a> &rsaquo; プライバシーポリシー</div>
+<main class="doc-page">
+  <div class="breadcrumb"><a href="./">ホーム</a> &rsaquo; プライバシーポリシー</div>
   <h1>プライバシーポリシー</h1>
   <p class="updated">最終更新日: 2026-06-20</p>
   
@@ -101,12 +82,23 @@
 </main>
 <footer class="footer">
   <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="./" class="logo" aria-label="Okurite（おくりて）トップへ"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="10" width="26" height="19" rx="5" fill="#1f4d45"/><path d="M16 10v19M3 17h26" stroke="#faf7f2" stroke-width="2.4"/><path d="M16 10c-1.6-4.6-7.5-6-7.5-2.6S12.6 10 16 10zm0 0c1.6-4.6 7.5-6 7.5-2.6S19.4 10 16 10z" fill="#c8711f"/></svg><span class="logo-text"><span class="logo-word">Okurite</span><span class="logo-kana">おくりて</span></span></a><p>シーン・予算・相手から、贈って喜ばれるギフトを探せるギフト選びのメディアです。商品はAmazon・楽天市場で購入できます。</p></div>
+      <div class="footer-col"><h4>シーン別</h4><ul><li><a href="blog/mothers-day-2026.html">母の日</a></li><li><a href="blog/fathers-day-2026.html">父の日</a></li><li><a href="blog/birthday-gift-women.html">誕生日</a></li><li><a href="blog/wedding-gift-guide.html">結婚祝い</a></li><li><a href="blog/baby-shower-gift.html">出産祝い</a></li><li><a href="blog/keirou-no-hi-2026.html">敬老の日</a></li><li><a href="blog/christmas-gift-2026.html">クリスマス</a></li><li><a href="blog/oseibo-2026.html">お歳暮</a></li></ul></div>
+      <div class="footer-col"><h4>予算別</h4><ul><li><a href="blog/budget-500-gift.html">500円</a></li><li><a href="blog/gift-exchange-1000.html">1,000円</a></li><li><a href="blog/budget-2000-gift.html">2,000円</a></li><li><a href="blog/gift-budget-3000.html">3,000円</a></li><li><a href="blog/budget-5000-gift.html">5,000円</a></li><li><a href="blog/budget-10000-gift.html">10,000円</a></li></ul></div>
+      <div class="footer-col"><h4>相手別</h4><ul><li><a href="blog/gift-for-boyfriend.html">彼氏</a></li><li><a href="blog/gift-for-girlfriend.html">彼女</a></li><li><a href="blog/gift-for-wife-birthday.html">妻</a></li><li><a href="blog/gift-for-husband.html">夫</a></li><li><a href="blog/gift-for-boss.html">上司</a></li><li><a href="blog/gift-for-grandparents.html">祖父母</a></li><li><a href="blog/gift-for-kids-birthday.html">子ども</a></li></ul></div>
+    </div>
     <div class="footer-bottom">
-      <p>当サイトはAmazonアソシエイト・楽天アフィリエイトプログラムに参加しています。</p>
-      <p><a href="https://richend0913.github.io/okurite/privacy.html">プライバシーポリシー</a> | <a href="https://richend0913.github.io/okurite/terms.html">利用規約</a> | <a href="https://richend0913.github.io/okurite/contact.html">お問い合わせ</a> | <a href="https://richend0913.github.io/okurite/blog/">コラム一覧</a></p>
-      <p>&copy; 2026 Okurite. All rights reserved.</p>
+      <div class="footer-links"><a href="blog/">コラム一覧</a><a href="./privacy.html">プライバシーポリシー</a><a href="./terms.html">利用規約</a><a href="./contact.html">お問い合わせ</a></div>
+      <p>当サイトはAmazonアソシエイト・プログラム、楽天アフィリエイトに参加しており、紹介リンクから収益を得ることがあります。</p>
+      <p>&copy; 2026 Okurite</p>
     </div>
   </div>
 </footer>
+<script>/* okurite-nav */
+(function(){var b=document.getElementById('hamburger'),n=document.getElementById('nav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'メニューを閉じる':'メニューを開く');});
+n.addEventListener('click',function(e){if(e.target.closest('a')){n.classList.remove('open');b.setAttribute('aria-expanded','false');}});})();
+</script>
 </body>
 </html>
