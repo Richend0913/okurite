@@ -194,6 +194,7 @@ STYLE = """    .article { max-width: 720px; margin: 0 auto; padding: 80px 24px 6
 
 FOOTER = """    <footer class="footer">
     <div class="footer-inner"><div class="footer-bottom">
+      <p>【広告・PRについて】当サイトはアフィリエイト広告を利用しています。掲載している商品・サービスのリンクから購入やお申し込みが行われた場合、当サイトが紹介料を受け取ることがあります。</p>
       <p>当サイトはAmazonアソシエイトプログラム・楽天アフィリエイトプログラムに参加しています。</p>
       <p style="margin-top:8px;"><a href="../">TOP</a> | <a href="./">コラム</a></p>
       <p style="margin-top:8px;">&copy; 2026 Okurite. All rights reserved.</p>

@@ -78,6 +78,7 @@ SHELL = """<!DOCTYPE html>
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-bottom">
+      <p>【広告・PRについて】当サイトはアフィリエイト広告を利用しています。掲載している商品・サービスのリンクから購入やお申し込みが行われた場合、当サイトが紹介料を受け取ることがあります。</p>
       <p>当サイトはAmazonアソシエイト・楽天アフィリエイトプログラムに参加しています。</p>
       <p><a href="{base}/privacy.html">プライバシーポリシー</a> | <a href="{base}/terms.html">利用規約</a> | <a href="{base}/contact.html">お問い合わせ</a> | <a href="{base}/blog/">コラム一覧</a></p>
       <p>&copy; 2026 Okurite. All rights reserved.</p>
